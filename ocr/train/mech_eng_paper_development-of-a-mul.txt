@@ -1,0 +1,698 @@
+Available online at www.sciencedirect.com
+
+ScienceDirect
+
+é: Procedia
+
+ELSEVIER Energy Procedia 45 (2014) 879 — 888
+
+Energy
+
+68th Conference of the Italian Thermal Machines Engineering Association, ATI2013
+
+Development of a multi-component based methodology for the
+simulation of reacting high injection pressure Diesel sprays
+
+Simone Malaguti” , Giuseppe Bagli*, Stefano Piccinini’, Giuseppe Cantore*
+
+“ University of Modena and Reggio Emilia, Strada Vignolese 905, Modena, 41125, Italy
+Istituto Motori CNR, Viale Marconi, 8, Napoli, 80125, Italy
+
+Abstract
+
+Modern Diesel engines are attractive for fuel economy and performances but they are suffering from increasingly strict emission
+standards. Therefore the investigation of the injection and combustion processes are mandatory. This paper focuses on the
+development of a multi-component fuel based methodology for the simulation of non-reacting and reacting high injection
+pressure Diesel sprays.
+
+In multi-dimensional modeling fuels are represented predominantly by single components, such as n-Dodecane for Diesel, and
+this is a limitation in their ability to represent real fuels which are blends of hundreds components. This study outlines a method
+by which the fuel composition is represented by means of a Discrete Multi-Component (DMC) model approach in order to
+improve the prediction of the vaporization behavior of high injection pressure Diesel sprays.
+
+A testing blend of 6 hydrocarbons is taken into account and a reduced one is developed in order to reduce the computational cost
+of the CFD simulations while maintaining the advantages due to a multi-component description of the mixture. The CFD
+methodology is developed within Star-CD commercial code while particular care is also dedicated to the prediction of the
+atomization and secondary breakup processes. At the nozzle exit the atomized droplets are predicted by a primary breakup
+approach which is able to take into account the cavitation phenomena and the turbulent effects. The atomization model is based
+on a simplified approach that is able to evaluate the effects of the nozzle geometry.
+
+The preliminary investigations are performed in a constant volume vessel, validating the numerical parameters against
+experimental data in order to correctly reproduce spray vaporization behavior. Then, to illustrate the important differences
+between the vaporization characteristics of a multi-component mixture compared to a mono-component one, the CFD
+methodology is tested investigating the in-cylinder combustion process of a 4 cylinders, Common Rail Diesel engine of current
+production.
+
+© 2013 The Authors. Published by Elsevier Ltd.
+Selection and peer-review under responsibility of ATI NAZIONALE
+
+* Corresponding author. Tel.: +39-059-205 6114.
+E-mail address: simone.malaguti@unimore.it
+
+1876-6102 © 2013 The Authors. Published by Elsevier Ltd.
+Selection and peer-review under responsibility of ATI NAZIONALE
+doi:10.1016/j.egypro.2014.01.093
+
+----$$$$----$$$$----
+880
+
+Simone Malaguti et al. / Energy Procedia 45 (2014) 879 — 888&
+
+Keywords: Discrete Multi-Component, Diesel, numerical spray, combustion, atomization, LES
+
+1. Introduction
+
+Constant improvements in injection systems, turbocharger design and after treatment systems have allowed the
+Direct Injection Diesel (DID) engine to become very attractive for automotive applications with low fuel
+consumption, improved specific power and excellent drivability. On the other hand Diesel engines suffer from
+stringent new pollutants emissions regulations and in this context design improvements can be assessed using CFD
+in order to understand and optimize engines design [1, 2].
+
+However, the numerical codes implemented for engine simulation need further development to become fully
+predictive. This represents a particular challenge because many complex phenomena are involved related to unsteady
+turbulent flow, liquid spray, combustion and pollutant formation and being coupled in a high temperature and high
+pressure environment [3] as the engine cylinder is. Understanding and modeling the behavior of the dispersed phase
+[4] and the combustion mechanisms [5] are essential to improve engine performance.
+
+The aim of this paper is to improve the simulation of reacting high injection pressure DI Diesel sprays,
+developing a new multi-component Diesel mixture. Furthermore a reduced three-component mixture is presented in
+order to limit the computational cost while maintaining the advantages given by the multi-component approach. The
+present simulations allow to assess the ability of the multi-component approach to account for changes of the
+investigated parameters and therefore to reproduce the experimental trends. In particular the predictivity of the
+engine performance and the sensitivity of pollutant emissions during different operating conditions are investigated.
+
+The predictive capability of a RANS based CFD methodology is presented comparing results of evaporating
+sprays against standard lagrangian RANS and LES simulations by means of a numerical fluid dynamic commercial
+code.
+
+The paper is structured as follows: the multi-component mixtures are first described and then the spray and
+combustion modeling are presented. The experimental results used to validate the spray modeling are introduced and
+then a comparison between the different atomization models is carried out. The effects of the multi-component
+approach are then analyzed in a constant volume vessel. Finally, the combustion process is simulated by means of
+the ECFM-3Z model, adopting a simplified approach based on a single fuel vapor component and injecting the
+multi-component fuel in a 4 cylinders Common Rail Diesel engine of current production.
+
+2. Discrete Multi-Component approach
+
+As real Diesel may have up to several hundred fuel components [6] to model the real fuel as a multi-component
+mixture a simplified approach is required. Two different means of modeling multi-component fuels exist. By the
+first, the fuel is modeled as discrete fuel species, the characteristics of which are determined from existing chemical
+libraries. For the second the fuel is treated as a continuous species and the fuel composition is described by a
+probability distribution function (PDF) based on molecular weight. Boiling point or carbon number [7] and fuel
+properties are so deduced from this PDF [8]. While commercial fuels can be composed of hundreds of hydrocarbons,
+most fuels can be accurately modeled with a few components (<10) and for this reason the discrete multi-component
+model approach is developed. As far as the composition of the commercial Diesel is not fully known, for this activity
+the composition of a simplified Diesel is adopted. It is characterized by 6 hydrocarbons whose families are given by
+Thomas et Al. [9] obtained with the analysis of some samples of commercial Diesel. In particular that analysis
+identified three main compounds families and the percentage by mass composition as visible in Table 1.
+
+----$$$$----$$$$----
+Simone Malaguti et al. / Energy Procedia 45 (2014) 879 — 888&
+
+Table 1. Multi-component composition and mass percent
+
+Hydrocarbon class Reduced multi-component %
+n-Dodecane 25.0
+
+Paraffins n-Hexadecane 19.0 | n-Hexadecane 57.0
+n-Octadecane 13.0
+Toluene 4.0
+
+Alkylbenzenes Ethylbenzene 8.0
+Ethylbenzene 4.0
+
+Alkyl-napthalenes 1-Methylnapthalene 35.0 | 1-Methylnapthalene 35.0
+
+In order to reduce computational costs due to the introduction of 6 scalar equations, representative the
+components mixture, a reduced 3 components Diesel formulation is adopted and reported in Table 1.
+
+The multi-component fuel model considers the mixture as an ideal solution and it is able to mix even up to
+infinite different fuel components. The model is then completed adopting polynomial or other type of functions able
+to reproduce the thermo-physical properties as a function of the temperature according to [10].
+
+The bulk properties of the 6 components mixture and of the reduced one are close to those of the commercial
+Diesel used in the in-cylinder experimental activity.
+
+3. CFD Methodology
+
+The CFD simulations are carried out by the commercial code Star-CD [11]. The turbulence is modeled by means
+of the RNG k-s approach, as implemented by Yakhot et Al. [12] and for the dispersed phase, the standard
+Lagrangian approach is adopted.
+
+Concerning the primary breakup process, a new atomization model [13], developed for GDI spray applications, is
+investigated. Turbulent effects are then taken into account in the equations describing the wave growth in the liquid
+fuel; the simplified approach introduced by Huh and Gosman [14] is modified and a contribution of the effects
+generated by the cavitation is superimposed. The new approach provides a simplified yet generalized estimation of
+the flow conditions adopting basic and well-known injector characteristics. The primary breakup model predicts an
+initial droplets distribution at exit of the nozzle holes, while the atomization process is completed by the Kelvin-
+Helmholtz instabilities as developed in the Kelvin-Helmholtz and Rayleigh-Taylor (KH-RT) hybrid model [15]. The
+KH-RT hybrid model is then used to model the secondary breakup process of the fuel droplets.
+
+The evaporating/condensing droplet mass transfer is expressed as [16] where a mass coefficient is introduced by
+the formulation of El Wakil [17] and, as far as a multi-component formulation of the fuel is adopted, the surface area
+of the droplet accounts for the mass fraction of the component i.
+
+The combustion process is modeled by the ECFM three zone (ECFM-3Z) combustion model[18]. The ECFM-3Z
+is based on the Extended Coherent Flame Model (ECFM) which has been developed at IFP for spark ignition engine
+applications. The correlation determined by Ryan & Callahan [19] was chosen to compute the auto-ignition delay.
+EFCM-3Z includes a description of the auto-ignition process by integrating in time the auto-ignition delay based on
+the equivalence ratio and temperature. In the ECFM-3Z the diffusion flame is simply represented by a Magnussen
+type model. As the oxidation process continues, the formation of pollutants (soot and NO,) is taken into account.
+The soot formation is described using a homogeneous mechanism presented in [20] while the NO formation is
+described by the extended Zeldovitch model.
+
+4. Results and discussion: constant volume vessel, no reacting diesel spray
+In order to validate the new atomization model previously described in [13] for high pressure Diesel injection,
+
+CFD simulations of the spray from the Engine Combustion Network (ECN) are performed. The table 2 summarizes
+the experimental data [21].
+
+----$$$$----$$$$----
+882
+
+Simone Malaguti et al. / Energy Procedia 45 (2014) 879 — 888&
+
+Table 2. Sandia experimental configuration
+
+Fuel n-Dodecane (n-C12H26) Injection duration 1.5 ms
+Nozzle Outlet Diameter 90 um Injected fuel mass 3.5 mg
+Discharge Coefficient 0.86 Ambient gas temperature 900 K
+Fuel injection pressure 150 MPa Ambient gas pressure 6.0 MPa
+Fuel injection temperature 363K Ambient gas density 22.8 kg/m°
+
+4.1. Lagrangian setup: atomization and break-up model comparisons
+
+A uniform computational grid made up of hexahedral cells of 1 mm’ of dimension [22] representing the
+experimental quiescent chamber, is used to validate the CFD methodology. In the present work the effects of the grid
+resolution on the n-Dodecane spray evolution are also investigated even considering a grid made up of hexahedral
+cells of 0.5 mm’ of dimension.
+
+The numerical setup based on the new atomization model coupled with KH-RT hybrid break-up model is
+validated against experimental data and compared to the simulations which adopt well-known numerical models
+such as the BLOB model and the Huh-Gosman model with the Reitz-Diwakar approach for the secondary breakup
+of the droplets. As far as KH-RT hybrid break-up model is concerning, for this activity the B1 tuning constant is set
+to 40.0 and the C; tuning constant to 0.1, referring to [11]. Aiming to improve the prediction of the vapor phase and
+consequently the air-fuel mixing capability of the numerical setup, the RANS based simulations are compared
+against the LES-Smagorinsky model.
+
+a) Jet_Penetration b) Vapour_Penetration
+25.0 - EXP 80.0 EXP
+BLOB_KHRT_Imm 70.0 + BLOB_KHRT_lmm
+HUH_ReitzDiwakar_lmm HUH_ReitzDiwakar_lmm
+
+20.0 ~ 7
+= New_Atom_KHRT_Imm EZ 60.0 New_Atom_ KHRT_lmm
+FE} New_Atom_KHRT_0.5mm | New_Atom_ KHRT_0.5mm
+Z 150 / LES New_Atom KHRT_ Imm = 50.0 LES New_Atom_ KHRT_ Imm
+= . LES New_Atom KHRT_0.5mm = LES New Atom KHRT 0.5mm
+= 4 = 40.0 +
+s ( s
+& 10.0 CATE site etme tee ; Aca at & 300
+= : so
+ical S
+> = 20.0
+& 5.0 >
+
+10.0
+0.0 0.0 ‘ 1
+0 0.1 02 #03 04 OS 06 O07 O08 0.9 1 0 0.1 02 #03 04 O5 06 O07 O8 0.9 1
+Time SOT [ms] Time SOI [ms]
+
+Fig.1(a) Jet Penetration, Fig.1(b) Vapor Penetration
+
+The figures l(a) and 1(b) show the jet and vapor phase penetration of the simulated sprays compared to
+experimental data. The figure 1(a) shows that all the atomization models are able to predict the correct jet
+penetration, while the Huh-Gosman atomization model combined with the Reitz-Diwakar break-up model shows an
+overestimation of the jet penetration until 0.4 ms. Concerning the grid sensitivity, it can be seen that the differences
+between the two computational grids (1 mm against 0.5 mm) are not so remarkable. Indeed, since the chamber
+conditions are evaporating, the jet penetration is mainly governed by the evaporation phenomena and, as reported in
+figure 1(b), it is expected the fuel vapor penetration is mainly dependent by the computational grid resolution. Thus
+the prediction of vapor phase is strongly affected by the break-up models, the grids resolution and the turbulence
+models, as visible in the figure 1(b). It is necessary to remark the numerical setup based on the KH-RT break-up
+models show a good numerical and experimental comparison. On the contrary the approach of the Reitz-Diwakar
+model is not able to correctly reproduce the diffusion of the fuel vapor.
+
+As far as the turbulence models are concerned, the simulations carried out using 1 mm grid, overestimate the
+vapor penetration after 0.4 ms after SOI, while the 0.5 mm grid simulations show underestimated results comparing
+to the experiments. The LES-Smagorinsky case with 0.5 mmm strongly reduces the gap with experiments in the
+second part of the injection process.
+
+----$$$$----$$$$----
+Simone Malaguti et al. / Energy Procedia 45 (2014) 879 — 888&
+
+Jet Shape 1.0 ms Vapor Shape 1.5 ms
+
+EXP ——
+
+BLOB_KHRT_Imm eesti hentai
+
+HUH _ReitzDiwakar_lmm ate ters etn d ETL
+NewAtom_KHRT_Imm ve eeabptsieptyusy
+NewAtom KHRT_ 0.5mm se eegbgr gage beige
+LES NewAtom KHRT Imm wad ibid PDS
+
+LES NewAtom_ KHRT_0.5mm ——~»wsiiawicintad teense ap
+
+Fig.2 Jet and vapor shape comparison
+
+In order to point out the differences between the BLOB and Huh cases and the new atomization model, the jet
+shape is investigated in the figure 2. The computational parcel distribution, calculated by the new atomization model,
+shows a good agreement with the experimental image of the liquid phase, while the BLOB case and the Huh case are
+not able to reproduce the experimental cone angle. The remarkable numerical and experimental comparison of the
+new atomization model is due to the improvement in the prediction of the atomization of the droplets far from the
+liquid column.
+
+As the dimension of the computational cell is reduced and the simulation of the gas-jet interaction is enhanced,
+the CFD simulations improve the simulation of the liquid spray diffusion as visible for the computational grid of 0.5
+mm. Both the RANS and LES approaches to the turbulence show an acceptable spray cone angle. It is remarkable
+the increasing number of droplets obtained in LES simulations is only due to the reduced time-step required for LES
+simulations, since a fixed number of numerical parcels per time step is adopted.
+
+The figure 2 shows also the numerical and experimental vapor phase shape of the spray. The vapor fuel diffusion
+is not correctly simulated by the RANS cases even if a uniformity distribution of the vapor on the edge of the spray
+is not expected, due to the nature of the turbulence approach. Contrariwise, an improvement in the CFD simulation
+can be found adopting the LES-Smagorinsky turbulence model, since the vapor shape is predicted more accurately.
+
+The results show that the new atomization model improves the high injection pressure Diesel spray jet simulation,
+meanwhile the LES approach points out great potential in vapor shape prediction.
+
+4.2. Diesel fuel modeling: comparison between mono and multi-component mixtures
+
+In view to deeply investigate different vaporization behavior of the mixtures, in this section a comparison
+between the mono- and the multi-component mixture is reported. The comparing simulations are performed injecting
+the fuel in the constant volume vessel, as far as the previously validated CFD setup is adopted: the new atomization
+model, the KH-RT break-up model and the RANS k-e RNG turbulence approach are chosen.
+
+The figure 3(a) shows the total evaporated mass over the total injected liquid mass. The evaporation rate is
+different between mono- and multi-component mixtures, while the three-component and the six-component mixtures
+have similar behaviors; it is evident that the mono-component fuel evaporates first if compared to the multi-
+component mixtures. As described in [13], referring to gasoline fuel mixture, it can be assumed that the multi-
+component mixture is more consistent with the real fuel mixture as the simplified three-component mixture shows a
+good compromise between accuracy (figure 3(a)) and reduced computational cost (figures 3(b)).
+
+883
+
+----$$$$----$$$$----
+884
+
+Simone Malaguti et al. / Energy Procedia 45 (2014) 879 — 888&
+
+The figure 3(b) reports the computational costs of the adopted CFD fuel setup, compared to the standard pure
+Diesel fuel. As expected, the increased number of the scalar equations, representing the vapor phase of the fuel
+components, increases the computational time of the solver. The computational cost highly increases when
+
+considering one scalar for each component.
+
+a Total evaporated Mass over Total Injected Liquid b)
+900%
+800%
+700%
+600%
+500%
+Mono-component 400%
+300%
+Three-component
+200%
+Six-Component 100%
+0.00 0.10 0.20 0.30 0.40 0.50 0.60 0.70 0.80 0.90 1.00 0%
+
+Time SOI [ms]
+
+Mono
+Component
+
+Computational cost of three-component and six-component
+
+mixtures compared to mono-component one
+
+mOne unique scalar
+
+One scalar for each
+component
+
+Multi-Three
+Component
+
+Multi-Six
+Component
+
+Fig.3(a) Total evaporated mass over total injected liquid, Fig.3(b) Computational cost of three- and six—component mixtures compared to
+
+mono-component one
+
+Since in this preliminary investigation of the multi-component approach for the simulation of the fuel mixture, the
+combustion process and the simulations of the complete engine cycle are performed by means of the ECFM-3Z
+combustion model, a simplified use of the vapor scalars equations is required. Due to the fact the equations of
+ECFM-3Z model takes into account just one reacting vapor scalar, in this activity, the vapor phases of the two
+investigated multi-component mixtures are let to evaporate in a single averaged vapor scalar. Even though some
+vapor scalars properties are missing and the potentialities of the multi-component mixtures is reduced, the
+computational load of the simplified approach is reduced as visible in the graph of the figure 3(b) which shows the
+three-component and the six-component mixtures have a computational cost comparable than mono-component one.
+
+As a final remark, the figures 4(a) and 4(b) show the percentage of the rate of evaporation of the single
+components for the three-component and six-component mixtures. As the fuel droplet is totally evaporated the
+percentage of vapor correctly reproduce the initial liquid fuel composition.
+
+a) Evaporated Scalars over Total Injected Liquid b)
+
+60% Three-component mixture 60%
+
+50% 50%
+
+40% 40%
+
+30%
+
+30%
+
+nHEXADECANE
+20% ETHYLBENZENE 20%
+
+—— 1-METHYLNAPHTHALENE
+
+10% 10%
+
+0% 0%
+0.00 0.10 0.20 0.30 040 0.50 0.60 0.70 0.80 0.90 1.00
+Time SOI [ms]
+
+Evaporated Scalars over Total Injected Liquid
+Six-component mixture
+nDODECANE
+nHEXADECANE
+nOCTADECANE
+TOLUENE
+ETHYLBENZENE
+—— 1-METHYLNAPHTHALENE
+
+0.10 0.20 0.30 040 0.50 0.60 0.70 0.80 0.90 1.00
+Time SOT [ms]
+
+Fig.4(a) Evaporated scalars over total injected liquid — Three-component mixture, Fig.4(b) Evaporated scalars over total injected liquid — Six-
+
+component mixture
+
+5. Results and discussion: in-cylinder simulations
+
+In order to point out the improvement in the simulation of injection and combustion processes using a multi-
+component approach, in-cylinder simulations of a 4 cylinders Common Rail Diesel engine of current production are
+
+----$$$$----$$$$----
+Simone Malaguti et al. / Energy Procedia 45 (2014) 879 — 888& 885
+
+carried out. The engine cycle is simulated by means of the Star-CD commercial code, the new atomization model
+coupled with the KH-RT break-up model is chosen to model the injection process and the RANS RNG k-s model is
+adopted as turbulence approach.
+
+The intake phase process, the in-cylinder flow field and the combustion process are simulated adopting a fully 3D
+grid, as depicted in figure 5. Concerning the computational grid resolution, a mean cell width of 0.5 mm is used. The
+engine specifications are described in table 3 and the two investigated engine operating conditions are reported in
+table 4.
+
+ce
+‘ yp
+Se
+
+d
+
+Nag ad }
+
+Fig.5 Common Rail Diesel Engine and Fully 3D computational mesh used
+
+Table 3. Engine specifications
+
+Bore [mm] 69.6
+Stroke [mm] 82.0
+Compression ratio 17.6:1
+Connecting rod length [mm] 131.3
+Valves/Cylinder 4
+Number of holes 6
+Injector hole diameter [um] 121
+
+Table 4. Operating Conditions
+
+Case B
+Engine speed [1pm] 2000
+Load Partial
+Injection pressure [MPa] 160 80
+Pre-Injection Yes
+Start of Injection(SON) [?CA BTDC] 8.0°
+Injection time [ms] 1.52
+EGR [%] a 10
+
+The initial conditions and the boundary conditions are derived from 1D CFD calculations previously performed
+by the commercial code GT-Power and from experimental data. Three different fuel mixtures are used: mono-
+component mixture, three- and six-component mixture . Droplet-wall interactions and liquid film transport including
+evaporation and boiling are also taken into account.
+
+Due to the complexity of the in-cylinder turbulence phenomena and the dependency from the initial condition
+[23] of such transient phenomena, the LES modeling of the turbulence generation during the in-cylinder cycle is not
+taken into account for the in-cylinder simulations.
+
+5.1. Case A: 4000 rpm full load
+
+Figure 6(a) compares the simulated mean in-cylinder pressures to the experimental curve, during the combustion
+process for the case A, while figure 6(b) focuses on the comparison of the in-cylinder pressure peak. It can be seen
+the six-component approach slightly improves the simulation results compared to the three-component and the
+
+----$$$$----$$$$----
+886
+
+Simone Malaguti et al. / Energy Procedia 45 (2014) 879 — 888&
+
+mono-component case. The burnt mass fraction is reported in the Figure 7(a), which shows that only the six-
+component mixture behaves differently compared to the mono-component one, while the three-component mixture
+has a similar trend to the mono-component one.
+
+The multi-component fuel approach reveals a particular improvement as far as the pollutant emissions are
+compared to experimental data at the exhaust valve opening (EVO), as visible in the figure 7(b). The three-
+component mixture improves the pollutants prediction if compared to the mono-component simulation and the six-
+component mixture further improves the prediction if compared to three-component calculation. Concerning the
+prediction of CO emissions, an improvement of the CFD methodology is mandatory as far a deeper investigation of
+the predictive capability of the soot model.
+
+b)
+
+a) In-Cylinder Pressure [MPa]
+
+Cylinder Peak Pressure [MPa]
+
+- Experimental Data
+
+Mono-component
+
+Three-component
+
+Six-component m Experimental data
+
+= Mono-component
+
+m= Three-component
+
+™ Six-component
+
+700 720 740 760 780 800 820 840
+Crank Angle
+
+Fig.6(a) Comparison between computed and experimental in-cylinder pressure at 4000 rpm full load, Fig.6(b) Comparison between computed
+
+and experimental in-cylinder peak pressure at 4000 rpm full load
+
+a) Burnt mass fraction b) Pollutants at EVO [mg]
+
+1.00 mw Experimental data
+
+0.80 m= Mono-component
+
+Mono-component
+
+0.60 ™ Three-component
+
+Three-component
+
+0.40 lm Six-component
+
+Six-component
+
+730 740 0.00
+Crank Angle NOx Soot co
+Fig.7(a) Burnt mass fraction at 4000 rpm full load, Fig.7(b) Pollutants at EVO at 4000 rpm full load: comparison between computed and
+
+measured data
+
+5.2. Case B: 2000 rpm partial load
+
+As far as the partial load engine condition is investigated (case B), a multi-injection strategy is adopted. The
+figures 8(a) and 8(b) show a similar trend to the case A. The adoption of the six-component approach strongly
+reduces the gap between numerical and experimental in-cylinder pressure and it is remarkable that the different rate
+of evaporations of the multicomponent mixtures influences the combustion process at such operating engine
+condition.
+
+Observing the burnt mass fraction (figure(9)(a)) and pollutants quantities at the exhaust valve opening (EVO)
+(figure(9)(b)) advantages can be found in the implementation of the multi-component mixtures. The mono-
+component mixture burns first if compared to the multi-component ones. The figure 9(b) shows, indeed, that the
+multi-component mixtures improve the pollutants prediction. This trend is the same seen for the 4000 rpm full load
+case.
+
+----$$$$----$$$$----
+Simone Malaguti et al. / Energy Procedia 45 (2014) 879 — 888&
+
+a) In-Cylinder Pressure [Mpa] b)
+
+Cylinder Peak Pressure [MPa]
+
+- Experimental data
+
+Mono-component
+
+Three-component
+
+mw Experimental data
+
+Six-component
+
+= Mono-component
+
+= Three-component
+
+m Six-component
+
+700 720 740 760 780 800 820 840
+Crank Angle
+
+Fig.8(a) Comparison between computed and experimental in-cylinder pressure at 2000 rpm partial load, Fig.8(b) Comparison between
+
+computed and experimental in-cylinder peak pressure at 2000 rpm partial load
+
+a Burnt mass fraction b) Pollutants at EVO [mg]
+100%
+
+90% Mono-component
+
+80%
+
+70% Three-component
+
+m@ Experimental data
+
+60%
+
+50% Six-component m= Mono-component
+
+40%
+
+m@ Three-component
+30%
+
+20% m Six-component
+
+10%
+
+0%
+
+700 710 720 730 740 750 760
+Time SOI [ms] NOx Soot co
+
+Fig.9(a) Burnt mass fraction at 2000 rpm partial load, Fig.9(b) Pollutants at EVO at 2000 rpm partial load: comparison between computed and
+
+measured data
+6. Conclusions
+
+This preliminary activity aims to improve the predictive capability of the CFD simulations preserving to be
+feasible for the industrial applications. Different multi-component Diesel fuel mixtures have been investigated by
+means of a discrete approach.
+
+A new atomization model, formally developed for GDI injector, has been used to simulate high pressure injection
+Diesel spray. Since the jet and the vapor phase of the computed Diesel spray correctly approximate the experimental
+measurements and images, the lagrangian setup showed acceptable results. It has also been reported that using a
+LES turbulence model, the vapor phase prediction could be improved.
+
+The investigation of the fuel compositions showed that the multi-component mixtures behave differently from the
+mono-component Diesel as regard the total evaporated mass. The three- and the six-component mixture behave
+similarly, even though the three-component has a reduced computational cost. In view to investigate the effects of
+the discrete multicomponent approach, in-cylinder simulations have been carried out and two different engine
+operating conditions have been simulated. The two analysis proved the multi-component approach slightly improve
+the prediction of the engine performances (i.e. the in-cylinder pressure) while it influences the prediction of
+pollutant emissions; best results have been reported for the six-component mixture. Despite the promising results,
+additional developments are still required so that numerical simulations become fully predictive. Further
+investigations will focus more specifically to use more than one unique reacting scalar, in order to take the most
+advantage in the use of multi-components mixtures and it is to pointed out that the dependency of the auto-ignition
+process from the vapor mixture must be enhanced.
+
+887
+
+----$$$$----$$$$----
+888
+
+Simone Malaguti et al. / Energy Procedia 45 (2014) 879 — 888&
+
+References
+
+[1] Béard P, Colin O, Miche M, Improved Modelling of DI Diesel Engines Using Sub-grid Descriptions of Spray and Combustion, SAE
+Technical Paper 2003, 2003; doi:10.4271/2003-01-0008.
+
+[2] Cantore G, Fontanesi S, Gagliardi V, Malaguti S, Effects of relative port orientation on the in-cylinder flow patterns in a small unit
+displacement HSDI Diesel Engine, JSAE paper, OSSETC-6, SAE paper 2005-32-0093, 2005. SAE Transactions 2005, p. 1770-1788, N
+0096-736X.
+
+[3] Gosman AD, and Clerides D, Diesel Spray Modelling: A Review, /3” annual Conference on Liquid Atomization and Spray Systems, Florence
+(Italy), p. 12-21, 1997.
+
+[4] Barths H, Antony C, Peters N, Three-dimensional simulation of pollutant formation in a DI Diesel engine using multiple interactive flamelets,
+SAE Technical Paper, 981459, 1998.
+
+[5] Béard P, Duclos J-M, Habchi C, Bruneaux G, Mokkadem K, Baritaud T, Extension of Lagrangian-Eulerian spray modelling: application to
+high pressure evaporating Diesel sprays, SAE Technical Paper, 2000-01-1983, 2000.
+
+[6] Russ SG, Kaiser EW, Sieg] WO, Podsiadlik DH, and Barret KM, Compression Ratio and Coolant Temperature Effects on HC Emissions from
+a Spark-Ignition Engine, SAE Technical Paper, 950163, 1998; doi: 10.4271/950163.
+
+[7] Curtis EW, Aquino CF, Plensdorf WD, Trumpy DK, Davis GC and Lavoie GA, Modeling Intake Valve Warm-up, Paper 97-ICE-40, ICE-
+Vol. 29-1, 1997 Fall Technical Conference, ASME, 1997.
+
+[8] Curtis EW, Aquino CF, Trumpy DK and Davis GC, A New Port and Cylinder Wall Wetting Model To Predict Transient Air/Fuel Excursions
+in a Port Fuel Injected Engine, SAE Technical Paper, 961186, 1996.
+
+[9] Thomas SG, Kleiman JP, Brandt VO, Analysis of Commercial Diesel Fuels by Preparative High Performance Liquid Chromatography and
+Gas Chromatography — Mass Spectrometry, ACS Fuels Volumes FALL (Chicago), 30(4), 1985.
+
+[10] Perry, R.H., Green, D.W., Perry’s Chemical Engineers Handbook, 8, McGraw-Hill, ISBN 0071422943, 2007.
+
+[11] CD-ADAPCO, STAR-CD Methodology, London (UK), 2010.
+
+[12] Yakhot V, Orszag, SA, Thangam S, Gatski TB, and Speziale CG, Development of turbulence models for shear flows by a double expansion
+technique, Phys. Fluids, 1992.
+
+[13] Malaguti S, Bagli G, University of Modena & Reggio Emilia; Montanaro A, Piccinini S, Allocca L, Istituto Motori CNR, Experimental and
+Numerical Characterization of Gasoline-Ethanol Blends from a GDI Multi-Hole Injector by Means of Multi-Component Approach, /CE-
+2013, 2013.
+
+[14] Huh KY, Lee L, Diesel spray atomization model considering nozzle exit turbulence conditions, Atomization and Sprays, vol. 8, 1998.
+
+[15] Beale JC, Reitz RD, Modeling spray atomization with the Kelvin-Helmholtz/Rayleigh-Taylor Hybrid model, Atomization and Sprays, vol. 9
+p. 623-650, 1999.
+
+[16] Bird RB, Stewart EW, and Lightfoot EN, Transport Phenomena, John Wiley & Sons, New York, 1966.
+
+[17] El Wakil MM, Ueyhara OA, and Myers PS, A theoretical investigation of the heating-up period of injected fuel droplets vaporizing in air,
+NACA Technical Note, 3179, 1954.
+
+[18] Beard P, Duclos J-M, and Zolver M, Modelisation de la combustion Diesel — Rapport des activités 2000, JFP Technical Report, 55913,
+2001.
+
+[19] Ryan TW and Callahan TJ, Engine and constant volume bomb studies of Diesel ignition and combustion, SAE Technical Paper, 881626,
+doi:10.4271/881626, 1988.
+
+[20] Martinot S, Beard P, Roesler J and Garo A, Comparison and coupling of homogeneous reactor and flamelet library soot modelling
+approaches for Diesel combustion, SAE Technical Paper, 2001-01-3684, 2001
+
+[21] Engine Combustion Network experimental data archive: http://www.sandia.gov/ecn/index.php
+
+[22] Malaguti S, d’Adamo A, Cantore G, Sementa P et Al., Experimental and Numerical Investigation of the Idle Operating Engine Condition for
+a GDI Engine”, SAE Technical Paper, 2012-01-1144, 2012; included SP-2327: ST Combustion, doi:10.4271/2012-01-1144, ISBN: 978-0-
+7680-7608-0, 2012.
+
+[23] Fontanesi S, Paltrinieri S, d’Adamo A, Duranti S, Investigation of boundary condition and field distribution effects on the cycle-to-cycle
+variability of a turbocharged GDI engine using LES, Oil & Gas Sci. Tech., doi: 10.2516/ogst/2013142, 2013.
+
+----$$$$----$$$$----

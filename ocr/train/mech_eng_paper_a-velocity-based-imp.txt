@@ -1,0 +1,867 @@
+Sensors 2014, 14, 22998-23016; doi:10.3390/s141222998
+
+SENSOrVSs
+
+ISSN 1424-8220
+www.imdpi.com/journal/sensors
+
+Article
+
+A Velocity-Based Impedance Control System for a Low Impact
+Docking Mechanism (LIDM)
+
+Chuanzhi Chen '*, Hong Nie ', Jinbao Chen !* and Xiaotao Wang ”
+
+' State Key Laboratory of Mechanics and Control Mechanical Structures, Nanjing University of
+
+Aeronautics and Astronautics, Nanjing 210016, China; E-Mails: hnie@nuaa.edu.cn (H.N.);
+chenjbao@nuaa.edu.cn (J.C.)
+
+College of Astronautics, Nanjing University of Aeronautics and Astronautics, Nanjing 210016,
+China; E-Mail: wangxtaol1977@nuaa.edu.cn
+
+* Author to whom correspondence should be addressed; E-Mail: chenchuanzhi_987@163.com;
+Tel.: +86-25-8489-6869 (ext. 2384).
+
+External Editor: Anton de Ruiter
+
+Received: 19 September 2014; in revised form: 20 November 2014 / Accepted: 26 November 2014 /
+Published: 3 December 2014
+
+Abstract: In this paper, an impedance control algorithm based on velocity for capturing two
+low impact docking mechanisms (LIDMs) is presented. The main idea of this algorithm is
+to track desired forces when the position errors of two LIDMs are random by designing the
+relationship between the velocity and contact forces measured by a load sensing ring to
+achieve low impact docking. In this paper, the governing equation of an impedance
+controller between the deviation of forces and velocity is derived, and simulations are
+designed to verify how impedance parameters affect the control characteristics. The
+performance of the presented control algorithm is validated by using the MATLAB and
+ADAMS software for capturing simulations. The results of capturing simulations
+demonstrate that the impedance control algorithm can respond fast and has excellent
+robustness when the environmental errors are random, and the contact forces and torques
+
+satisfy the low impact requirements.
+
+Keywords: low impact docking mechanism (LIDM); impedance control; velocity;
+
+capturing simulation
+
+----$$$$----$$$$----
+Sensors 2014, 14 22999
+
+1. Introduction
+
+In order to dock two vehicles using a conventional mechanical docking assembly, the vehicles must
+be pressed together with sufficient forces to re-align the misalignment of the soft capture ring [1]. The
+action of forcing two vehicles together, particularly in space, might result in damages to one or both of
+the vehicles or sensitive systems [2]. Thus, a type of docking mechanism which provides low impact
+mating (i.e., a low impact docking mechanism, abbreviated as LIDM) has been developed by NASA [3],
+ESA [4] and Chinese research institutions [5], respectively, in order to solve the problems noted above.
+In particularly, the LIDM has a reconfigurable control system [1], which permits a load sensing ring
+with an electromagnetic capture mechanism to perform a “soft” capture and mate two vehicles together.
+As a result, a specified desired force, the ideal contact force between two docking mechanisms, could
+be tracked during the capture process. Force tracking is the key to the success of capturing, which can
+be solved by compliance control. Impedance force tracking control is very practical in the field of robotic
+compliance control and the main concept is based on the impedance equation, which is the relationship
+between force and position/velocity error [6].
+
+The impedance control technique proposed by Hogan [7] is one of the fundamental approaches for
+force tracking control of robot manipulators with constrained motion. Then, the performance of impedance
+control was improved and the application was expanded to other fields by many researchers [8—10].
+Differing from the hybrid position and force control approach [11], impedance control regulates the
+force between a manipulator and the environment by defining the target impedance between position
+and contact force. The desired force is indirectly controlled by prespecifying a robot-desired
+displacement, which is determined by the stiffness and location of the environment [12]. One of the
+major practical difficulties with impedance control is that the environmental stiffness cannot be known
+precisely. Therefore accurate desired displacement cannot be designed to achieve accurate force control.
+In the past, many attempts have been made to solve this problem. Lasky and Hsia [13] employed a
+separate desired displacement modification control loop by using integral control. Lee [14] formulated
+the generalized impedance relationship between a motion error and a contact force error, and Seraji [15]
+generated a reference position using adaptive control. A neural network or fuzzy approach of force
+control was introduced to solve a number of uncertainty problems [16]. Besides, the accurate
+environment positions cannot be available in advance in impedance control, another difficulty for its
+implementation, and poorly estimated environmental information may cause poor force tracking
+results [17]. Especially for application of force control with random errors by applying a desired force,
+the exact estimation of environment position is difficult. Therefore, it 1s difficult to design an expected
+docking trajectory of two LIDMs, as the relative position errors of two vehicles are random.
+
+In this paper, an impedance control algorithm based on velocity is proposed. The practical difficulties
+mentioned above of impedance control and the environmental stiffness that cannot be known precisely,
+are satisfactorily solved in this paper by introducing feedback information of contact forces and torques
+measured by force sensors. In addition, a desired velocity is introduced instead of the desired
+displacement since the precise desired displacement cannot be deduced from the position random errors
+between two LIDMs. A relational function between contact force and velocity of load sensing ring 1s
+designed in this algorithm to track desired force as well as the shape of contact surface. Besides, a filter
+is set in this algorithm as the control law of contact forces and torques of two LIDMs. The filter, which
+
+----$$$$----$$$$----
+Sensors 2014, 14 23000
+
+can directly affect each of the contact forces and torques, can affect the trajectory whereby the LIDM
+responds to the same external forces and torques by changing the filtering functions, and a group of
+suitable filtering functions may result in a better trajectory for the capturing process. In order to validate
+the algorithm, a series of simulations with MATLAB and ADAMS are presented. First of all, the
+governing equation between deviation of forces and velocity of an impedance controller is derived, and
+simulations are carried out to validate how impedance parameters affect the control characteristics. Then,
+the model of LIDM is built in ADAMS referring to the Low Impact Docking System of NASA, and a
+control module of LIDM is generated in ADAMS. Finally, the control system is built in MATLAB via
+the usage of the control module. The results of capturing simulations demonstrate that impedance control
+based on velocity is suitable for the LIDM, as well as, that the present algorithm is robust and the filter
+is necessary for the impedance control system.
+
+2. Features of the LIDM and Dynamic Model
+
+The LIDM comprises a six-DOF platform, a tunnel and a control subsystem [1,2]. As shown in
+Figure la, the six-DOF platform is composed of a load sensing ring, a base ring, one or more
+electromagnets, one or more striker plates, a plurality of actuators, and a plurality of alignment guides.
+The load sensing ring and the base ring are coupled together using several actuators, base connection
+points and upper connection points. Structurally, the load sensing ring is comprised of an annular outer
+face, an inner face and a variety of load cells as shown in Figure 1b.
+
+Figure 1. (a) The load impact docking mechanism (LIDM); (b) The LIDM load sensing ring.
+
+electromagnet
+Load sensing ring
+
+Striker plate
+
+a (KD
+
+Six-DOF platform
+
+Tunnel
+
+cD
+
+—
+
+Basering ((——a//. Vow
+
+(a)
+Alignment guide
+
+Annular outer face
+
+Load cell
+Annular inner fage oad ce
+
+(b)
+
+----$$$$----$$$$----
+Sensors 2014, 14 23001
+
+In addition, the six-DOF platform incorporates an active load sensing system so as to automatically
+and dynamically adjust the load ring during capture, instead of requiring significant force to push and
+realign the load ring. Unlike the mechanical trip latches that require a tripping force for capture, the
+LIDM uses electromagnets to achieve “soft” capture. Furthermore, the LIDM could also be controlled
+as a damper in lieu of interconnected linear actuators and separate load attenuation system, to eliminate
+the residual motion and dissipate the forces resulted from ramming two vehicles together. Therefore, the
+contact force and torque fluctuations can be maintained within a small range, and according to
+reference [18], it can be known that the maximum of contact forces and torques are not more than 450 N
+and 450 N-m, respectively. The dynamic model of the LIDM can be expressed as follows:
+
+M(q)q+C@9.Qqt+gQaFktFk,+F, (1)
+
+where M(q), C(q), g(q) represent the inertia matrix, centrifugal term and gravity term respectively; q
+represents the six-DOF generalized coordinate vector of the load sensing ring; F,, Fr and Fe represent the
+generalized driving force vector, generalized friction force vector and generalized external force vector
+respectively. In this paper, each generalized force is named “Force” below, which represents a
+six-dimensional vector and contains three forces and three torques along three axes of the coordinate.
+Similarly, the generalized displacement and the generalized velocity are named “Displacement” and
+“Velocity” respectively below. F is given from reference [19]:
+
+F=J'f (2)
+
+where J represents the Jacobian Matrix, f= [fi 23/45 fe]! represents the driving force matrix of actuators.
+In addition, there should be a certain relationship between external force and load cells as described
+previously, which can be expressed as follows.
+
+Firstly, two coordinate frames are defined, namely O-XYZ and O1-X1YiZ1, which are fixed to the base
+ring and the load sensing ring respectively as shown in Figure 1. Then, the coordinates of load cell
+connection points ai and Ai can be described in O1-X1Y1Z1. Through the screw theory [20], the Jacobian
+Matrix Js' and the external Force in O1-X1¥1Zi can be obtained, as expressed below:
+
+a-A, a,-A,  — 4,—A,;
+. _
+_ a, A| la, —A,| la, — A,| 3
+J. = Axa, A,Xa, A,X, ©)
+a, — A|| la, — A,| la, — A,
+F.=J, f. (4)
+
+where ai and Ai represent the coordinates of the upper and the base connection points of load cells
+separately in O1-X1Y1Z1, Fe' represents the external Force vector in O1-X1YiZ1, fs is a vector composed
+of the values of six load cells. Thus, the external Force vector in O-XYZ can be described as follows:
+
+F,=RF.=RJ'f. (5)
+
+where R 1s the rotation matrix transformed from O1-X1YiZi to O-XYZ, and can be expressed as:
+l 0 0 cos(B) 0 sin(f) || cos(@) —sin(~) 0
+R=|0 cos(@) —sin(@) 0 1 0 sin(@) cos(@”) 0O
+0 sin(@) cos(@) | —sin(f) 0 cos(f) 0 0 l
+
+----$$$$----$$$$----
+Sensors 2014, 14 23002
+
+where a, /, 8 represent the Euler angles about axes Z, Y, X respectively. According to Equations (2) and
+(5), the dynamic model of LIDM can be rewritten as:
+
+M(q)g+C(g.gq+gqQ=J'ft+F,+RJ f. (6)
+3. The LIDM Control System
+3.1. The Flexible Model of LIDM
+
+The LIDM is a rigid structure system, but when controlled by a force tracking control system, it can
+be treated as a flexible system with spring and damper characteristics. Therefore, the LIDM is supposed
+to be a mass-spring-damper system. The supposed model along one direction is shown in Figure 2, where
+md, ka, and ba represent the mass, stiffness and damping respectively, x and xa represent the actual
+displacement and the desired displacement respectively, f; and f represent the desired force and the
+external force respectively. The flexibility of supposed model is determined by parameters ma, ka, and
+ba, which are selected based on Equation (6). According to the flexible model of LIDM, the governing
+equation of an impedance controller can be built as descried in next section.
+
+Figure 2. The flexible model of LIDM.
+
+ba
+
+3.2. Impedance Controller Based on Velocity
+
+The impedance control is based on the concept that it is neither position nor force, but the dynamic
+relationship between them that should be controlled [6]. In this section, g is replaced by X for the purpose
+of mathematical tractability, where X represents the six-DOF generalized coordinate vector of load
+sensing ring. According to Figure 2, the relation is an impedance equation given by:
+
+M, (X-X,)+ By (X-X,)+K (X-X)=E (7)
+
+where E represents the deviation of Force between the external Force and the desired Force, while
+E = F. — F;, in which F; represents the desired Force; X and Xa represent the actual Displacement and
+the desired displacement, respectively; Ma, Ba and Ka are respectively 6 x 6 constant-positive-diagonal
+matrices of desired inertial, damping and stiffness. Apparently, a desired Displacement is necessary for
+an impedance control system based on the position from Equation (7). However, the desired
+Displacement of load sensing ring cannot be obtained, since the initial docking conditions of LIDM are
+random. Therefore, an impedance control method based on velocity is introduced to solve this problem.
+Thus, the relationship between force and velocity can be expressed as follows:
+
+----$$$$----$$$$----
+Sensors 2014, 14 23003
+
+M,V -V,)+B,V -V,)+ K,|V -V, )dt = E (8)
+
+where V and Va represent actual Velocity and desired Velocity, respectively. When the initial docking
+conditions are zero, Equation (8) can be expressed in the Laplace domain as follows:
+
+M s[V(s)-V,(s)]+ ByV (s) -Va(s)]+ KV (8) -Via(s) Vs = E(s) (9)
+
+Let:
+V;(s) =V(s)-V(s) (10)
+
+where Vf (s) represents the Velocity offset, thus, the Vr (s) can be obtained from Equation (9), and
+expressed as follows:
+E(s)s
+
+V.(s) = —___+"—_
+r(s) M,s° +B s+K, (1)
+
+According to Equation (11), the structure diagram of the impedance controller is established as shown
+in Figure 3. If there is no external Force on the LIDM (e.g., Fe = 0) and the desired Force is assumed to
+equal to zero (e.g., Fr = 0), the motion of load sensing ring follows the desired Velocity. Conversely, the
+motion of the load sensing ring is controlled by the correction of Velocity and the desired
+
+Velocity simultaneously.
+
+Figure 3. The structure diagram of the impedance control compensator.
+
+E=F.-F, 4 1 SV,
+> M, Sd ~
+-_ s
+I
+K, «| - «—
+d S
+
+According to Equation (11) and Figure 3, the dynamic relationship between deviation of Force and
+correction of Velocity can be adjusted to adapt to external environment by changing the impedance
+parameters. Detail information about how impedance parameters affect control characteristics will be
+
+shown in the next section.
+3.3. The Influences of Impedance Parameters on Control Characteristics
+
+The purpose of impedance control based on velocity is to achieve an ideal dynamic relationship
+between the velocity of the load sensing ring and external forces by choosing a set of suitable impedance
+parameters. Thus, it is necessary to research how to choose the suitable impedance parameters. In this
+section, three simulations in one direction are presented to introduce how the impedance parameters
+affect control characteristics. The input function of simulations is a step function, and the results are
+
+shown in Figures 4—6.
+
+----$$$$----$$$$----
+Sensors 2014, 14 23004
+
+Figure 4. The responses of impedance control compensator with changing Ma.
+
+— Md=l
+
+— Md=50 |
+
+— Md=100 |
+—— Md=1,000 |:
+— Md=10,000 | !
+
+Velocity /mm/s
+
+25
+
+Time /s
+
+Figure 5. (a) The responses of impedance control compensator with changing Ba; (b) The
+partial enlarged detail of Figure 5a.
+
+eerie pele uber“ teleielelenieler -belelleilen: “colette: “ciliaris wll frst! ool eeleleh cml ty
+
+—— Bd-0 !
+
+“f\ r A Z A 7 Rup 7 iif r ait of os [\=e
+
+— Ba 2,000
+
+Velocity /mm/s
+
+Velocity /mm/s
+
+0 0.5 1 1.5 2 LS 3 3.5 4 4.5 5
+Time /s
+
+The first simulation shows how inertial parameter Ma affects control characteristics by changing the
+value of Ma and keeping Ka and Ba constant, while Ka = 200 N/mm, Ba = 2000 Kg/s. According to
+Figure 4, the inertial parameter Ma of the impedance controller primarily affects the reaction rate of the
+responses. If a lower value is selected for Ma, there will be a rapid response to external forces, but it will
+
+----$$$$----$$$$----
+Sensors 2014, 14 23005
+
+result in a larger acceleration on actuators simultaneously. On the contrary, if a larger value is
+selected for Ma, the response rate of the impedance controller would be slow, resulting in a stronger
+external force.
+
+The second simulation shows how damping parameter Ba affects control characteristics by changing
+the value of Ba and keeping Ka and Ma constant, while Ka = 200 N/mm, Ma = 100 Kg. According to
+Figure 5, the damping parameter of the impedance controller primarily affects the peak and regulation
+time of responses. With the increase of Ba, the peak of response decreases, and the regulation time
+reduces first and then increases. When the value of Ba is equal to zero, the response of the impedance
+controller is undamped oscillation and the regulation time approaches to infinity. The vibration of
+response is not suitable for the compliance of LIDM, because it could result in an enormous
+external force.
+
+The third simulation shows how the stiffness parameter Ka affects the control characteristics by
+changing the value of Ka and keeping Ma and Ba constant, while Ma = 100 Kg, Ba = 2000 Kg/s.
+According to Figure 6, 1t can be concluded that the stiffness parameter Ka of the impedance controller
+primarily affects the attenuation of response. When Ka is equal to zero, there is no attenuation.
+Additionally, the decay rate of response would increase, if the value of Ka increases.
+
+According to the results of simulations, if one or more of contact forces or/and torques are more than
+the maximum of requirements of low impact, a smaller Ma should be selected to decrease them by
+increasing the reaction rate of the responses. The damping parameter Ba must be maintained in a certain
+range where the oscillation of LIDM can be eliminated. When one or more of contact forces or/and
+torques are over the maximum of requirements of low impact, a greater Ba should be selected to decrease
+them by increasing the peak of responses. The stiffness parameter Ka of the impedance controller
+primarily affects the attenuation of responses. It is positive to maintain two LIDMs constant contact with
+each other during the process of capturing when the responses can decay (e.g., Ka > 0) in this control
+system. However, some larger internal forces of LIDM may be caused, if one greater Ka is selected.
+
+3.4. The LIDM Model in ADAMS and the Control Module in MATLAB
+
+The model of LIDM built in ADAMS is shown in Figure 7. In order to simplify the simulations, the
+inoperative parts of LIDM are removed. The ADAMS model comprises two docking assemblies, the
+active docking assembly (below in Figure 7) and the passive docking assembly (above in Figure 7).
+
+Figure 7. The LIDM model built in ADAMS.
+
+
+----$$$$----$$$$----
+Sensors 2014, 14 23006
+
+The active docking assembly is composed of base ring, actuators and load sensing ring. The passive
+docking assembly is only comprised of annular outer face and alignment guides. Contact forces and
+torques of two docking assemblies, delivered to the impedance controller, can be measured by load
+sensing ring in real-time. The actuators can receive velocity signals from impedance controller to adjust
+the position and posture of load sensing ring. Besides, the initial docking conditions of two LIDM can
+be set through adjusting the position and posture of passive docking assembly.
+
+The ADAMS model can be used to generate a control module through “controls” of soft ADAMS.
+The control module of LIDM in MATLAB 1s shown in Figure 8. Vj, vi, v2, v3, v4, v5, Vo are input variables
+of the control module, where V; represents the relative closing speed of two LIDMs, and v1, v2, v3, v4, vs,
+v6 represent the driving velocities of six actuators. a, 6, 0, x, y, z, fil, f2, fh, f4, fs, fo , 8 are the output
+variables, where fi, 2, 3, /4, 5, f6 represent the values of the load cells, and s represents the relative
+
+distance single of two LIDMs, through which completion of capture tasks can be detected.
+Figure 8. The control module of the LIDM in MATLAB.
+
+apO x yzfphph hk fo s
+
+3.5. The Components of the Control System
+
+The control system built for LIDM consists of control modules, desired Force, impedance control,
+forward solution, Velocity transformation J’, desired velocity, filter and other modules as shown in
+
+Figure 9.
+
+Figure 9. Components of the control system.
+
+Desired
+Force
+F;
+E
+Impedance
+Control
+Ss V;
+i Va Desired
+oO .
+Velocity
+F Vr
+A
+ya 2 BO | Forward
+YZ | Solution
+v, |
+Control i
+Module
+fi |
+Fe
+
+RJ,"
+
+
+----$$$$----$$$$----
+Sensors 2014, 14 23007
+
+The desired Force provides desired forces and torques along three Cartesian axes, which represents
+the ideal interaction Force between the two LIDMs. The input of impedance control part is the difference
+between actual external Force Fe and desired contact Force F;. The output is Velocity offset Vs. V:;
+represents the actual Velocity of load sensing ring in Cartesian-space which has been adjusted to adapt
+to the docking environment, while V;= V+ Va. vr is driving velocity vector of six actuators, converted
+from velocity V; by equation v;= J Vr. The length vector of six actuators / can be converted to the position
+and attitude angles (i.e., x, y, z, a, 6, 0) of load sensing ring in Cartesian coordinates by forward solution.
+In addition, the control module is generated in ADAMS, which is the interface between ADAMS and
+MATLAB, and contacts the LIDM model in ADAMS with control system in MATLAB. Therefore, the
+control module can be seen as a MATLAB module that has the same effect on the model in ADAMS.
+In order to reduce computational complexity, x, y, z, a, 6, 9 can be directly obtained from control module,
+thus the forward solution in this simulation is unnecessary. However, this method is not suitable for
+physical test. Besides, the values of load cells can be converted to the contact Forces Fe in
+Cartesian-space through Jacobian matrix RJs!.
+
+A filter is set in the feedback loop to control the values of external Forces passing the filter. When
+any one of the absolute values of input forces and torques of filter (except Fey) is less than or equal to
+critical value, the output of it is equal to zero, on the contrary, the output value is equal to input. In
+addition, whatever the input value is, the output of filter about Fey is always equal to zero. The filter can
+not only remove some interference from environment, but also control the sensitivity about forces and
+torques along three Cartesian axes, which determines who responses to the same input data first. Without
+filter, the docking of two LIDMs may not be successful.
+
+4. Simulation and Analysis
+4.1. Simulation Setups
+
+The control system is built in MATLAB using the control module, as shown in Figure 10. The sample
+time of simulation is 0.001 s. The simulation is mainly built to validate the performance of impedance
+control based on velocity in uncertain environment and the reasonableness of LIDM model. The
+impedance parameters are given by:
+
+100 O 0) 0) 0) 0) 2000 0) 0) 0) 0) 0
+0 100 O 0) 0) 0) 0) 2000 0) 0) 0) 0)
+0) 0 100 O 0) 0) 0) 0) 2000 0) 0) 0)
+M,= ,B, =
+
+0 0 0 300 0O 0) 0) 0) 0) 2000 0) 0)
+0 0 0 0 300 O 0) 0) 0) 0) 2000 0)
+0) 0) 0 0 0 300 0) 0) 0) 0) 0) 2000
+
+200 O 0 0 0 0
+
+0 200 0 0 0 0
+
+0 0 200 O 0 0
+
+K,=
+
+0 0 0 200 O 0
+
+0 0 0 0 200 O
+
+0 0 0 0 0 200
+
+----$$$$----$$$$----
+Sensors 2014, 14 23008
+
+The structure parameters of LIDM are given by Table 1, where ai and Ai represent the coordinates of
+upper connection points and base connection points of load cells separately in O1-X1¥iZ1, bi represents
+the upper connection points of actuators in O1-X1YiZ1, while Bi represents the base connection points of
+actuators in O-XYZ.
+
+Figure 10. The control system built in MATLAB.
+
+Embedded
+
+MATLAB Function =
+
+Table 1. The structure parameters of the low impact docking mechanism (LIDM).
+i 1 2 3 4 5 6
+716.58 —245.25 —471.33 —471.33 —245.25 716.58
+a;/mm —62.09 —62.09 —62.09 —62.09 —62.09 —62.09
+—130.5 —685.84 —555.32 555.32 685.84 130.5
+722.27 —279.67 —442.6 —442.6 —279.67 722.27
+A/mm —102.28 —102.28 —102.28 —102.28 —102.28 —102.28
+—94.09 —672.54 —578.47 578.47 672.54 94.09
+532.25 —532.25 —602.25 —70 70 602.25
+bi/mm —150 —150 —150 —150 —150 —150
+—388.12 —388.12 —266.88 655 655 —266.88
+70 —70 —662.97 —592.87 592.87 662.87
+Bi/mm 0 0 0 0 0 0
+—725 —725 301.88 423.12 423.12 301.88
+The filtering functions are expressed as Equations (12):
+0 < 35 IM_,,|< 20 0 |M,|s1s__
+fa =) p sas Ma Vy i | 20° IM 159%?) 2)
+ei ei ei ey
+
+where Fei and Mei represent the force component and the torque component of Fe along
+
+i-axis respectively.
+
+----$$$$----$$$$----
+Sensors 2014, 14 23009
+
+The initial docking conditions of two LIDMs are shown in Table 2, where g, ® and yw represent the
+yaw angle, pitch angle and roll angle respectively, Xe and Ze represent the transversal offset along X-axis
+and Z-axis in Cartesian space, while Vj; represents the relative speed of two LIDMs.
+
+Table 2. The initial docking conditions of two LIDMs.
+
+Case go/Degree @/Degree Y/Degree X-/mm Z./mm V\/mm/s
+Case 1 0 0 0 100 0 10
+Case 2 0 0 20 0 0 10
+Case 3 0 10 0 0 0 10
+Case 4 5 5 5 100 100 10
+
+4.2. Simulation of the Capturing Process of Two LIDMs
+
+The purpose of the simulation is to study whether impedance control based on velocity is suitable for
+low impact docking of LIDMs or not. In this simulation, the impedance controller controls the velocity
+of actuators, so the load sensing ring can track the desired Force F; = [0,0,0,0,0,0]' as well as the desired
+Velocity Va = [0,0,0,0,0,0]'. The results are shown in Figures 11-19, where alpha, beta, and theta
+represent a, /, 6 respectively.
+
+Figures 11 and 12 show the simulation results of Case 1. The initial contact time of two LIDMs 1s
+close to 27 s, and the contact forces do not exceed 150 N and torques do not exceed 60 N-m during the
+capturing process.
+
+Figures 13 and 14 show the simulation results of Case 2. The initial contact time of two LIDMs 1s
+around 19 s, and the contact forces do not exceed 200 N and torques do not exceed 100 N-m during the
+process of capturing.
+
+Figure 11. The force tracking results of Case 1.
+
+<
+3)
+S
+as
+25 30 35 40 45
+Time /s
+Figure 12. The torque tracking results of Case 1.
+=
+=
+i)
+=)
+oO
+S
+EH
+
+5 30 Re) 40 45
+
+Time /s
+
+----$$$$----$$$$----
+Sensors 2014, 14 23010
+
+Figure 13. The force tracking results of Case 2.
+
+Force /N
+
+Time /s
+
+Figure 14. The torque tracking results of Case 2.
+
+Torque /N-m
+
+15 20 25 30 35 40 45
+
+Time /s
+
+Figure 15. The force tracking results of Case 3.
+
+Force /N
+
+Time /s
+
+Figure 16. The force tracking results of Case 3.
+
+Torque /N:m
+
+Time /s
+
+----$$$$----$$$$----
+Sensors 2014, 14 23011
+
+Figures 15 and 16 show the simulation results of Case 3. The initial contact time of two LIDMs is
+close to 27.5 s, and the contact forces do not exceed 200 N and torques do not exceed 40 N-m during the
+capturing process. Figure 17 shows the docking process of two LIDMs of Case 4. According to
+Figures 18 and 19, the initial contact time of two LIDMs 1s close to 16 s, and the contact forces do not
+exceed 250 N and torques do not exceed 150 N-m during the capturing process. According to
+Figures 11—19, it is easy to find out that there exist some larger forces or torques changing suddenly in
+all the results of simulations. This phenomenon is triggered by changing the type of contact of two
+LIDMs from one to another.
+
+Figure 17. The docking process of Case 4.
+
+Contact force /N
+
+15 20 25 30 35 40
+Time /s
+
+Figure 19. The torque tracking results of Case 4.
+
+Contact torque /N:m
+
+Time /s
+
+----$$$$----$$$$----
+Sensors 2014, 14 23012
+
+According to the simulation results of the four cases, it can be concluded that the contact forces and
+torques between two LIDMsS are instantly translated to adapt to the docking environment with impedance
+control based on velocity, and the contact forces and torques can be controlled in a small range during
+the process of capturing. Furthermore, the maximum of contact force and torque are less than 250 N and
+150 N-m, respectively, in simulations meeting the requirements, the maximum of contact force and
+torque are not more than 450 N and 450 N-m, respectively, of docking two LIDMs with low impact
+forces. Besides, the instantaneous stronger forces are caused by changing the type of contact of two
+LIDMs from one to another suddenly.
+
+4.3. The Influences of Filtering Functions on Control Characteristics
+
+The purpose of this section is to study how filter affects the control characteristics of LIDM. In this
+section, another filtering function is given as shown in Equation (13). So the corollary can be obtained
+by comparing results of two simulations. The results are present in Figures 20—25:
+
+0 |F,|<35 0 |M,
+Fi = oP =0,M,=
+F, |F,|>35° ° ’ |M, |M,
+
+el el
+
+<35
+> 35°
+
+(i= X,2Z; / =X, y,Z) (13)
+
+As shown in Figures 20—25, the largest contact force is close to 4000 N while the largest contact
+torque is more than 300 N-m. Comparing the forces and torques of Figures 20 and 21 with
+Figures 18 and 19, the largest contact force and torque based on Equation (13) are far more than the
+values based on Equation (12). Besides, the largest value of force changing suddenly is far more than
+the value of normal forces during the process of capturing. By comparison, the filter based on
+Equation (12) is more suitable for the process of capturing, because the sensitivity of forces and torques
+along three axes of filter has more significant influences during capture.
+
+Figure 20. The force tracking results based on Equation (13).
+
+Contact force /N
+
+15 20 25 30 35 40 45
+
+Time /s
+
+----$$$$----$$$$----
+Sensors 2014, 14 23013
+
+The final values of translation displacement and angular displacement are shown in Figures 22—25.
+Two simulations are consistent with the same initial docking conditions as shown in Table 2, but the
+process of moving is entirely different. Without prewired movement path in this method, the motion of
+load sensing ring is not regular. Thus, how to set the sensitivities about forces and torques of filter along
+three axes in Cartesian can affect the moving path of the load sensing ring in a manner. In summary, it
+
+can be concluded that a filter with suitable filtering functions might greatly improve the capturing process.
+
+Figure 21. The torque tracking results based on Equation (13).
+
+Contact torque /N-m
+
+15 20 J Ja) 30 a 40
+
+Time /s
+
+Figure 22. The translation displacement of load sensing ring based on Equation (12).
+
+150
+
+The translation displacement
+
+15 20 p 30 35 40
+
+Time /s
+
+Figure 23. The angular displacement of load sensing ring based on Equation (12).
+
+The angular displacement
+
+Time /s
+
+----$$$$----$$$$----
+Sensors 2014, 14 23014
+
+Figure 24. The translation displacement of load sensing ring based on Equation (13).
+
+150
+100
+50
+
+0
+
+The translation displacement
+/mm
+
+-50
+1
+
+Time /s
+
+Figure 25. The angular displacement of load sensing ring based on Equation (13).
+
+The angular displacement
+
+Time /s
+
+5. Conclusions
+
+In the capturing simulation by ADAMS and MATLAB, the results of force tracking based on suitable
+filtering functions are satisfactory. The contact forces and torques of two LIDMs are controlled in a
+small rang, that the maximum of contact force and torque are not more than 250 N and 150 N-m,
+respectively, meeting the requirements of docking two LIDMs with low impact forces. In particular, the
+control system can maintain the contact forces/torques close to expected values when the initial docking
+conditions are random. Thus, the impedance control algorithm based on velocity is robust and the control
+system is suitable for LIDM. Although the results are effective, there is still space or room for
+improvement to reduce the values of contact forces and torques, possibly by choosing more proper
+impedance parameters or filtering functions.
+
+Acknowledgments
+
+This work was supported by the National Natural Science Foundation of China (Grant No. 51105196)
+and Natural Science Foundation of Jiangsu Province (Grant No. BK2011733).
+
+Author Contributions
+
+Chuanzhi Chen conceived, designed and performed the control system and simulations; Hong Nie
+and Chuanzhi Chen analyzed the data; Jinbao Chen and Xiaotao Wang contributed materials and analysis
+tools; Chuanzhi Chen wrote the paper.
+
+----$$$$----$$$$----
+Sensors 2014, 14 23015
+
+Conflicts of Interest
+The authors declare no conflict of interest.
+References
+
+1. Lewis, J.L.; Carroll, M.B.; Le, T.D.; Morales, R.H.; Robertson, B.R. Low-Impact Mating System.
+U.S. Patent 7,543,779 B1, 9 June 2009.
+
+2. Lewis, J.L.; Carroll, M.B.; Morales, R.H.; Le, T.D. Androgynous, Reconfigurable Closed Loop
+Feedback Controlled Low Impact Docking System with Load Sensing Electromagnetic Capture
+Ring. U.S. Patent 6,354,540 B1, 12 March 2002.
+
+3. Parma, G. Overview of the NASA docking system and the international docking system standard.
+In Proceedings of the AIAA Annual Technical Symposium, Houston, TX, USA, 20 May 2011.
+
+4. New International Standard for Spacecraft Docking. Available online: http://www.esa.int/
+Our Activities/Human_Spaceflight/New_ international standard for spacecraft docking (accessed on
+3 July 2014).
+
+5. Liu, Z.; Zhang, C.F.; Shao, J.M.; Zheng, Y.Q.; Wang, W.J.; Chu, H.W. Androgynous,
+Stiffness-Damped, Closed Loop Feedback Controlled Low Impact Docking System. China Patent
+CN 102,923,318A, 13 February 2012.
+
+6. Chen, J.B.; Han, D. The control of Tendon-Driven Dexterous Hands with Joint Simulation. Sensors
+2014, 74, 1723-1739.
+
+7. Hogan, N. Impedance control: An approach to manipulator, part I, I, WI. ASWE J. Dyn. Syst. Meas.
+Control 1985, 107, 1-24.
+
+8. Platt, R.; Abdallah, M.; Wampler, C. Multiple-Priority Impedance Control. In Proceedings of the
+IEEE International Conference on Robotics and Automation, Shanghai, China, 9-13 May 2011;
+pp. 6033-6038.
+
+9. Chen, Z.; Lu, N.Y.; Jin, M.; Fan, S.W.; Liu, H. Cartesian Impedance Control on Five-Finger
+Dexterous Robot Hand DLR-HIT II with Flexible Joint. In /ntelligent Robotics and Applications;
+Liu, H.H., Ding, H., Xiong, Z.H., Zhu, X.Y., Eds.; Springer: Berlin/Heidelberg, Germany, 2010;
+pp. 1-12.
+
+10. Biagiotti, L.; Liu, H.; Hirzinger, G.; Melchiorri, C. Cartesian Impedance Control for Dexterous
+Manipulation. In Proceeding of the 2003 IEEE/RSJ International Conference on Intelligent Robots
+and Systems, Las Vegas, NV, USA, 27-31 October 2003; pp. 3270-3275.
+
+11. Raibert, M.H.; Craig, J.J. Hybrid position and force control of robot manipulators. ASME J. Dyn.
+Syst. Meas. Control 1981, 102, 126—133.
+
+12. Jung, S.; Hsia, T.C.; Bonitz, R.G. Force tracking impedance control of robot manipulators under
+unknown environment. JEEE Trans. Control Syst. Techonl. 2004, 12, 474-483.
+
+13. Lasky, T.; Hsia, T.C. On force-tracking impedance control of robot manipulators. In Proceedings
+of the 1991 IEEE International Conference on Robotics and Automation, Sacramento, CA, USA,
+9-11 April 1991; pp. 274-280.
+
+----$$$$----$$$$----
+Sensors 2014, 14 23016
+
+14.
+
+15.
+
+16.
+
+17.
+
+18.
+
+19.
+
+20.
+
+Lee, S.; Lee, H.S. Intelligent control of manipulators interfacing with an uncertain environment
+based on generalized impedance. In Proceedings of the IEEE Symposium on Intelligent Control,
+Arlington, VA, USA, 13—15 August 1991; pp. 61-66.
+
+Seraji, H. Adaptive admittance control: An approach to explicit force control in compliant motion.
+In Proceedings of the 1994 IEEE International Conference on Robotics and Automation, San Diego,
+CA, USA, 8-13 May 1994; pp. 2705-2712.
+
+Kiguchi, K.; Fukuda, T. Fuzzy-neuro position/force control of robot manipulators—Two-stage
+adaptation approach. In Proceedings of the 1999 IEEE/RSJ International Conference on Intelligent
+Robots and Systems, Kyongju, Korea, 17—21 October 1999; pp. 448-453.
+
+Jung, S.; Hsia, T.C. Force Tracking Impedance Control of Robot Manipulators for Environment
+with Damping. In Proceedings of the 33rd Annual Conference of the IEEE Industrial Electronics
+Society, Taipei, Taiwan, 5—8 November 2007; pp. 2742—2747.
+
+Low Impact Docking System (LIDS). Available online: http://www.nasa.gov/centers/johnson/en
+gineering/projects/low_impact docking system/index.html (accessed on 23 October 2014).
+
+Chen, C.Z.; Nie, H.; Chen, J.B.; Wang, X.T. Analysis of Force Transmissibility Performance of the
+Low Impact Docking Mechanism During the Capturing Process. J. Nanjing Univ. Aeronaut.
+Astronaut. 2014, 46, 452-456.
+
+Hong, Z.; Zhao, Y.S. Advanced Spatial Mechanism, 2nd ed.; High Education Press: Beijing, China,
+2008; pp. 295-300.
+
+© 2014 by the authors; licensee MDPI, Basel, Switzerland. This article is an open access article
+
+distributed under the terms and conditions of the Creative Commons Attribution license
+
+(http://creativecommons.org/licenses/by/4.0/).
+
+----$$$$----$$$$----
+Copyright of Sensors (14248220) is the property of MDPI Publishing and its content may not
+be copied or emailed to multiple sites or posted to a listserv without the copyright holder's
+express written permission. However, users may print, download, or email articles for
+individual use.
+
+----$$$$----$$$$----

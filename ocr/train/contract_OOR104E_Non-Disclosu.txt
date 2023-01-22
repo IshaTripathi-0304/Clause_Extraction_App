@@ -1,0 +1,380 @@
+NON-DISCLOSURE AGREEMENT
+
+This Agreement is entered into by and between:
+
+; having its principal place of business at
+
+(“Company”), herein represented by —————Ss ly
+
+authorized to sign the present agreement on behalf of Company as s/he so declares;
+AND
+
+CONCORDIA UNIVERSITY, a corporation duly incorporated by the Concordia University Act, S.Q.
+1948, c. 91 as amended by S.Q. 1959-60, c. 191 and S.Q. 2006, c. 69 having its head office at 1455 de
+Maisonneuve Blvd. West, City of Montreal, Province of Quebec H3G 1M8, (“Concordia”) herein acting
+and represented by Dr. Justin Powlowski, Associate Vice-President Research, Strategic Initiatives and
+Partnerships, duly authorized to sign the present Agreement on behalf of University, as he so declares.
+
+Hereinafter individually referred to as a “Party” and collectively as the “Parties”.
+
+WHEREAS the Parties wish to exchange information for the sole purpose of [DESCRIPTION OF
+(the “Purpose”); and
+
+WHEREAS the Parties desire to protect the confidentiality of such information;
+
+NOW THEREFORE in consideration of the mutual covenants and obligations contained herein and other
+good and valuable consideration, the receipt and sufficiency of which are hereby acknowledged, the Parties
+agree as follows:
+
+1. DEFINITIONS
+In this Agreement, the following terms will have the following meanings:
+
+“Affiliate” means any legal entity that a Receiving Party Controls, is Controlled by, or with which it is
+under common Control, where Control means to own or control, directly or indirectly, over 50% of voting
+shares.
+
+“Business Day” means any day other than a Saturday, Sunday or statutory holiday in the Province of
+Quebec;
+
+“Confidential Information” means any information which 1s confidential in nature or that is treated as
+confidential by a Party and that is furnished or transferred by or on behalf of such Party (the “Disclosing
+Party”) to the other Party (the “Receiving Party”), whether such information is or has been conveyed
+verbally or in written or tangible form, and whether such information is acquired directly or indirectly such
+as in the course of discussions, site visits or other investigations by the Receiving Party, including but not
+limited to, scientific, technical, financial or business information, data, ideas, concepts or know-how,
+formula, analysis, process, design, sketch, photograph, plan, drawing, specification, sample, report, study,
+finding, prototype and non-published patent applications, that are considered and treated as being
+confidential by the Disclosing Party. Confidential Information disclosed in tangible or electronic form may
+be identified by Disclosing Party as confidential with conspicuous markings, or otherwise identified with a
+legend as being confidential. Where the information is disclosed verbally or visually and the Disclosing
+Party requires that the Receiving Party maintain the confidential nature of the information, the Disclosing
+Party shall express a verbal statement of confidentiality at the time of disclosure followed by confirmation
+
+|
+
+----$$$$----$$$$----
+in writing within thirty (30) days of such disclosure. Notwithstanding the foregoing, in no event shall the
+absence of such a mark, legend or verbal confirmation preclude disclosed information, or information
+accessed through discussions or site visits, which would be considered as confidential by a party exercising
+reasonable judgment from being treated as Confidential Information by the Receiving Party.
+
+“Corporate Advisors” means any lawyers, accountants, financial and other professional advisors of
+Receiving Party who are required by law, by contract or otherwise to keep all Confidential Information that
+may be disclosed to them by Receiving Party.
+
+“Disclosing Party” means a Party that discloses Confidential Information to the other Party pursuant to
+this Agreement.
+
+“Effective Date” shall mean XXXX
+
+“Receiving Party” means a Party that receives Confidential Information from the other Party pursuant to
+this Agreement.
+
+“Retained Information” shall mean one (1) copy of the Disclosing Party’s Confidential Information that
+is retained by the Receiving Party: (1) 1f and to the extent such Confidential Information is required by law,
+regulation, administrative or court order, and (11) where such Confidential Information is stored as electronic
+data due to automatic archiving and back up procedures.
+
+2. USE AND DISCLOSURE OF CONFIDENTIAL INFORMATION
+2.1 Receiving Party agrees that it shall not:
+
+2.1.1 use any of the Disclosing Party’s Confidential Information for any reason other than the
+Purpose; or
+
+2.1.2 disclose, disseminate or otherwise communicate, in whole or in part, any of Disclosing
+Party’s Confidential Information to any third party.
+
+2.2 Receiving Party may disclose the Disclosing Party’s Confidential Information to those of its
+officers, directors, employees, (including those of its Affiliates) or Corporate Advisors who have a
+need to know such Confidential Information provided that such individuals are bound by
+obligations of confidentiality to the Receiving Party or have entered into agreements with the
+Receiving Party with obligations of confidentiality no less stringent than those of this Agreement.
+
+2.3 The Receiving Party shall be liable to Disclosing Party for all actions of its Affiliates, Corporate
+Advisors, employees, officers, directors and those of its Affiliates that result in the unauthorized
+disclosure of the Disclosing Party’s Confidential Information.
+
+2.4 Receiving Party shall not disclose Disclosing Party’s Confidential Information to anyone other than
+as permitted herein and shall use efforts commensurate with those that 1t employs for protecting
+the confidentiality of 1ts own information, which efforts shall in no event be less than a reasonable
+degree of care.
+
+2.5 In the event that a Receiving Party becomes legally compelled by law, regulation or order of court
+or administrative body to disclose any of a Disclosing Party’s Confidential Information, such
+Receiving Party shall be entitled to disclose such Confidential Information subject to the
+requirements of this Section 2.5. Such Receiving Party shall provide the Disclosing Party with
+
+----$$$$----$$$$----
+prompt written notice of such requirements so that the Disclosing Party may, at its sole expense,
+seek a protective order or other appropriate remedy and/or waive compliance with the terms of this
+Agreement. In the event that such protective order or other remedy is not obtained, or that the
+Disclosing Party waives compliance with the provisions hereof, the Receiving Party agrees to
+furnish only that portion of the Disclosing Party’s Confidential Information which is legally
+required.
+
+3. EXCEPTIONS
+
+3.1 Notwithstanding anything to the contrary herein, the following will not constitute Confidential
+Information for the purposes of this Agreement:
+
+3.1.1 information that a Receiving Party can show, by documentary and competent evidence,
+was known by it prior to the disclosure thereof by the Disclosing Party;
+
+3.1.2 information that is or becomes generally available to the public other than as a result of
+disclosure directly or indirectly by a Receiving Party in breach of this Agreement;
+
+3.1.3 information that is or becomes available to a Receiving Party on a non-confidential basis
+from a source other than the Disclosing Party, provided that such source is not in breach
+of its obligations of non-disclosure towards the Disclosing Party;
+
+3.1.4 information that a Receiving Party can show, by documentary and competent evidence,
+to have been developed independently by Receiving Party without using the Disclosing
+Party’s Confidential Information; or
+
+3.1.5 information of which the Disclosing Party has authorized the unrestricted disclosure.
+4. NO IMPLIED OBLIGATIONS
+
+Except for the matters specifically agreed to herein, no Party will be under any legal obligation of any kind
+to enter into any further agreement with respect to the Purpose or any other matter whatsoever, absent a
+further written agreement between the Parties executed by their duly authorized representatives.
+
+5. OWNERSHIP
+
+The Disclosing Party will remain the owner of its intellectual property, including any title, ownership, or
+license under any patents, copyrights or other intellectual property rights in the Disclosing Party’s
+Confidential Information. Nothing in this Agreement is to be construed as granting a Receiving Party any
+title, ownership, or any license under any patents, copyrights or other intellectual property rights in any of
+the Disclosing Party’s Confidential Information.
+
+6. INDEPENDENT DEVELOPMENT
+Nothing in this Agreement will be construed as a representation that a Receiving Party will not develop,
+communicate or use technology, information or products that, without violation of this Agreement, compete
+
+with, are the same as, or similar to the Disclosing Party’s Confidential Information.
+
+7. NO WARRANTY OF ACCURACY
+
+----$$$$----$$$$----
+The Disclosing Party’s Confidential Information is provided on an ‘AS IS’ basis, without any
+representations or warranties as to its accuracy or completeness. The Disclosing Party shall have no liability
+to the Receiving Party resulting from any use by the Receiving Party of the Disclosing Party’s Confidential
+Information and all implied warranties of merchantability and fitness for a particular purpose are expressly
+disclaimed and excluded.
+
+8. TERM, TERMINATION AND CONFIDENTIALITY PERIOD
+
+8.1 This Agreement shall commence on the Effective Date, and unless earlier terminated in accordance
+herewith, shall continue in force for a period of [NUMBER OF] year(s) from the Effective Date.
+Notwithstanding the expiration or earlier termination of this Agreement, the obligations of
+confidentiality with respect to any Confidential Information exchanged between the Parties prior
+to the expiration or earlier termination of this Agreement, shall remain in full force and effect until
+such Confidential Information falls within the scope of the exceptions set out in Article 3.
+
+8.2 A Party may terminate this Agreement, without cause, upon twenty (20) Business Days’ prior
+written notice to the other Party.
+
+8.3 Unless otherwise requested in writing by the Disclosing Party within fifteen (15) days of the
+expiration or earlier termination of this Agreement, or upon written notice given at any time during
+the Term of this Agreement requesting the return of the Disclosing Party’s Confidential
+Information, following the expiration of the fifteen (15) day delay provided for above the Receiving
+Party shall destroy all tangible forms and destroy/delete all intangible forms of Disclosing Party’s
+Confidential Information (including any originals and all copies thereof) in its possession.
+Notwithstanding the foregoing, the Receiving Party shall be permitted to retain one copy of the
+Retained Information and such Retained Information shall be treated by the Receiving Party in
+accordance with this Agreement. Upon written request by the Disclosing Party, the Receiving Party
+shall provide to the Disclosing Party or shall cause to be provided to the Disclosing Party, a written
+confirmation executed by a duly authorized officer of the Receiving Party that all originals and any
+copies of Disclosing Party’s Confidential Information (other than Retained Information) or any
+portion thereof have been returned or destroyed, as the case may be, and shall no longer be used in
+any manner whatsoever by the Receiving Party.
+
+9. REMEDIES
+
+Receiving Party acknowledges that the disclosure of the Disclosing Party’s Confidential Information in
+breach of this Agreement may result in irreparable injury to Disclosing Party for which monetary damages
+alone would not be an adequate remedy. Therefore, Receiving Party agrees that in the event of a breach or
+threatened breach of Receiving Party’s confidentiality obligations hereunder, Disclosing Party will be
+entitled to seek specific performance and injunctive relief as remedy for any such breach or anticipated
+breach. Any such relief shall be in addition to and not in lieu of monetary damages.
+
+10. GENERAL PROVISIONS
+10.1 Assignment: This Agreement may not be assigned by either Party, in whole or in part, without the
+prior written consent of a duly authorized representative of the other Party. Any such assignment
+
+shall not relieve a Party of its obligations hereunder.
+
+10.2. Advice of Counsel: Each Party to this Agreement represents and warrants to the other that such
+Party has read and fully understands the terms and provisions hereof and has executed this
+
+----$$$$----$$$$----
+10.3
+
+10.4
+
+10.5
+
+10.6
+
+10.7
+
+10.8
+
+10.9
+
+Agreement based upon such Party's own judgment and advice of independent legal counsel (if
+sought).
+
+Amendment: This Agreement may only be amended by a written agreement executed by the duly
+authorized representatives of the Parties.
+
+Entire Agreement: This Agreement, and any amendments thereto signed by the duly authorized
+representatives of the Parties, constitute the complete and exclusive statement of terms and
+conditions between the Parties with respect to the subject matter hereof and supersedes all prior
+and/or contemporaneous agreements, oral or written statements which are inconsistent herewith,
+whether or not such other agreements have been signed by the employees, students or other agents
+of the Parties.
+
+Export Controls: The Parties shall comply with any law, by-law, regulation, rule, order, ruling,
+policy or directive, from any relevant jurisdictional authority or body, governing or controlling the
+transfer, export, retransfer, re-export or furnishing of information. Each Party shall inform the other
+Party of any restriction or control applying to the circulation of any given information prior to
+disclosing such information to such other Party, or as soon as possible after such restriction or
+control comes into force. Neither Party will disclose information under this Agreement that is
+controlled or otherwise restricted from use or export under the International Traffic in Arms
+Regulations (ITAR).
+
+Governing Law: This Agreement shall be governed by and construed in accordance with the laws
+of Quebec and the laws of Canada applicable therein. The Parties hereby irrevocably attorn to the
+exclusive jurisdiction of the courts of the Province of Quebec for any legal proceedings arising out
+of this Agreement or the performance of the obligations hereunder.
+
+Language: The Parties hereto have requested that this Agreement and all correspondence and all
+documentation relating to this Agreement, be written in the English language. Les parties aux
+présentes ont exigé que la présente entente, de méme que toute la correspondance et la
+documentation relative a cette entente, soient rédigées en langue anglaise.
+
+Notices: All notices under the terms of this Agreement shall be given in writing and sent by
+registered mail, electronic mail, or delivered by hand to the following addresses.
+
+CONCORDIA UNIVERSITY i
+
+1455 de Maisonneuve Blvd. West GM-910 Address:
+Montréal, Québec H3G 1M8
+
+Attention: Attention:
+
+All notices shall be presumed to have been received when they are hand delivered or transmitted
+via email, or five (5) Business days after their mailing by registered mail or courier.
+
+Publicity and use of name: Neither Party shall, without prior written authorization from the other,
+use the logo, any trade or service mark(s) owned or controlled by the other Party. Additionally,
+neither Party shall use the name of the other Party, nor of any employee of the other Party, in any
+advertising or publicity without the prior written approval of an authorized representative of the
+other Party. Notwithstanding the foregoing, the Parties agree that each Party shall be free to
+
+5
+
+----$$$$----$$$$----
+10.10
+
+10.11
+
+10.12
+
+10.13
+
+disclose the following without prior authorization of the other Party: the names of the Parties; the
+nature of the relationship established herein; and, the duration of the Agreement.
+
+Remedies cumulative: No single or partial exercise of any right or remedy under this Agreement
+shall preclude any other or further exercise of any other right or remedy in this Agreement or as
+provided at law or in equity. Rights and remedies provided in this Agreement are cumulative and
+not exclusive of any right or remedy provided at law or in equity.
+
+Severability: If any provision, or portion thereof, of this Agreement is determined by a court of
+competent jurisdiction to be invalid, illegal or unenforceable, such determination shall not impair
+or affect the validity, legality or enforceability of the remaining provisions of this Agreement, and
+each provision, or portion thereof, 1s hereby declared to be separate, severable and distinct.
+
+Signatures: This Agreement may be executed in counterparts, each of which shall be deemed an
+original and all of which together shall constitute one and the same instrument, and signatures
+transmitted in electronic form, including without limitation a PDF file, shall be acceptable to bind
+each Party and shall not affect the validity of the Agreement in any way.
+
+Waiver: A term or condition of this Agreement can be waived or modified only by written consent
+of the Parties. No failure or delay in exercising any right, power or privilege hereunder shall operate
+as a waiver thereof, nor shall any single or partial exercise thereof preclude any other or further
+exercise thereof or the exercise of any right, power or privilege hereunder.
+
+AGREED TO AND SIGNED by the duly authorized representatives of the Parties.
+
+CONCORDIA UNIVERSITY COMPANY
+
+By: By:
+
+
+----$$$$----$$$$----
+Acknowledgement to a Non-Disclosure Agreement
+
+I, Dr. [ ], having read and understood the Non-Disclosure Agreement (the “NDA”’) to be
+entered into between [ |] (‘Company’) and Concordia University (“Concordia”), hereby
+agree to act in accordance with all the terms and conditions therein.
+
+I further agree to ensure that all Concordia participants who will be provided access to Company’s
+Confidential Information, as such term is defined in the NDA, are informed of their obligations under such
+terms and conditions, and to procure from them an executed Intervention of a Participant, attached hereto
+as Appendix A, prior to providing them access to the Confidential Information.
+
+Date:
+[print name |
+Recipient Scientist
+
+----$$$$----$$$$----
+Appendix A
+
+INTERVENTION OF A PARTICIPANT
+
+IMPORTANT: IT IS THE RECIPIENT SCIENTIST’S RESPONSIBILITY TO ENSURE THAT THIS
+
+INTERVENTION IS SIGNED BY ALL PARTICIPANTS WHO SHALL BE RECEIVING
+
+CONFIDENTIAL INFORMATION UNDER THE NON-DISCLOSURE AGREEMENT AND COPIES ARE
+
+PROVIDED TO OOR.
+
+Whereas Concordia University (“Concordia”) has entered into a non-disclosure agreement dated (the
+“NDA”) with XXX (the “Company”);
+
+Whereas, | understand that information related to discussions with the Company to
+explore a collaboration on XXXX, received, or accessed directly or indirectly, by me (the “Confidential
+Information’), is subject to the terms and conditions of the NDA;
+
+I hereby agree to:
+
+1.
+
+il.
+
+11.
+
+treat the Confidential Information as confidential at all times;
+use the Confidential Information only as directed by Dr. ;
+
+maintain the Confidential Information in a secure manner pat restricts access by any individual not
+approved and/or directed by Dr. ;
+
+iv. maintain the confidentiality of Confidential Information and not disclose Confidential Information
+to any third party;
+
+v.  toreturn to Dr. the Confidential Information, and all copies thereof,
+upon receipt of a written request to this effect from Dr. and/or prior to
+the termination of my studies/employment at Concordia;
+
+vil. | cooperate with Concordia in ensuring compliance with all applicable export regulations and
+restrictions which may apply to the Confidential Information.
+
+Signature:
+
+Date:
+
+----$$$$----$$$$----

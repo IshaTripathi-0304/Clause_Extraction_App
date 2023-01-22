@@ -1,0 +1,940 @@
+Sensors 2014, 14, 7229-7247; doi:10.3390/s140407229
+
+SENSOrS
+
+ISSN 1424-8220
+www.imdpi.com/journal/sensors
+Article
+
+An Interactive Control Algorithm Used for Equilateral Triangle
+Formation with Robotic Sensors
+
+Xiang Li * and Hongcai Chen
+
+Department of Physics and Electronic Engineering, Hanshan Normal University, Chaozhou 521041,
+China; E-Mail: chc2523136@hstc.edu.cn
+
+* Author to whom correspondence should be addressed; E-Mail: lixiang@hstc.edu.cn;
+Tel.: +86-180-98 10-6360; Fax: +86-768-2317-759.
+
+Received: 1 February 2014; in revised form: 16 April 2014 / Accepted: 16 April 2014 /
+Published: 22 April 2014
+
+Abstract: This paper describes an interactive control algorithm, called Triangle Formation
+Algorithm (TFA), used for three neighboring robotic sensors which are distributed
+randomly to self-organize into and equilateral triangle (E) formation. The algorithm 1s
+proposed based on the triangular geometry and considering the actual sensors used in
+robotics. In particular, the stability of the TFA, which can be executed by robotic sensors
+independently and asynchronously for E formation, is analyzed in details based on
+Lyapunov stability theory. Computer simulations are carried out for verifying the
+effectiveness of the TFA. The analytical results and simulation studies indicate that three
+neighboring robots employing conventional sensors can self-organize into E formations
+
+successfully regardless of their initial distribution using the same TFAs.
+
+Keywords: robotic sensor; interactive control; stability analysis; computer simulation
+
+1. Introduction
+
+There is a growing research interest in formation control theories for multi agent systems. Multi-agent
+systems are typically applied to tasks that cannot be handled by individual agents [1]. The main
+inspiration of the research in this field stems from the collaborative behaviors commonly observed in
+social animals, for instance, flocks of birds, and schools of fishes [2]. However, there are only local
+interactive rules utilized behind these complex behaviors [3,4]. Formation control of a multi-agent
+
+----$$$$----$$$$----
+Sensors 2014, 14 7230
+
+system has potential applications in many other domains other than the robotics such as sensor
+networks [5], surveillance missions [6], and search and rescue [7].
+
+The pioneering formation model, flocking, was created successfully and applied for computer
+graphics by Reynold [8]. A main contribution of Reynold’s work is that 1t demonstrates that a global
+behavior can emerge from local interactive rules used by the agents. Balch and Arkin [9] proposed a
+behavior-based control approach for a small group of mobile robots (up to four) to strive to maintain
+some specific geometric formations. Formation task of a robot 1s decomposed into some basic
+behaviors and the aim of motion control can be gained through synthesizing these basic behaviors. The
+robots are heterogeneous since each robot’s position in the formation depends on an ID number.
+Subsequently, Balch and Hybinette [10,11] extended the behavior-based approach to large scale robot
+formations. The behavior-based approach doesn’t benefit stability analysis of formation.
+
+In this study, we are concerned with three homogeneous robots employing commonly available
+sensors to group into an equilateral traingle (E) formation based on triangular geometry. Reif and
+Wang [12] extended the potential field approach which is widely applied to navigation of single robots
+to control multiple robots in formations for the first time. In their work, local minima had to be treated
+and potential function value would tend to reach infinity when two robots are close enough, which
+isn’t realizable in practice. Kim et al. [13] presented a set of analytical guidelines for designing
+potential functions to avoid local minima for a number of representative scenarios. An important issue
+that has to be addressed is the selection of proportional parameters representing the relative strength of
+attractive and repulsive forces in a complexity and uncertainty environment. For these potential
+field approaches, the regular even local formation is not taken into account in formation control.
+Spears et al. [14,15] proposed an artificial physics-based framework for controlling a group of robots
+using attractive/repulsive forces between them. The decision of each robot depends on the local
+information. However, this approach tends to make the robots cluster unpredictably and also requires
+that robots must be close enough to each other at the start. To circumvent these problems, inspired by
+physics, a decentralized control mechanism based on virtual spring mesh was developed by Shucker
+and Bennett [16,17] for the deployment of robotic macrosensors. Each robotic sensor in the
+macrosensor interacts with its neighbors by using the physics model of virtual spring mesh abstraction
+while the neighbors are required to satisfy the acute condition. Related model parameters have to be set
+carefully in practice. Chen and Fang [18,19] introduced a geometry-based control approach for multi-agent
+ageregations while collision avoidance between members still uses a potential function-based method.
+The value of a potential function exerting on an agent tends to reach infinity when it is close enough to
+its neighbors and regular formation isn’t involved there. Lee at al. [20,21] described a geometric
+motion planning framework which is constructed upon a geometric method for a group of robots in
+formation. The assumption of three neighboring robots starting from an acute triangle configuration 1s
+their major weakness though local regular triangular formation is considered in their work. However,
+in our study a group of three robots with basic sensor units that are capable of detecting each other are
+desired to organize into a basic E formation starting from any arbitrary initial distribution.
+
+The modeling and stability analysis of the basic system considered in our study can also be
+extended and considered as a large interconnected system. Recently, analysis and stabilization of
+multiple time-delay interconnected systems is also receiving increasing attention from the scientific
+
+community [22-26]. In practice, the interconnected systems include electric power systems, process
+
+----$$$$----$$$$----
+Sensors 2014, 14 7231
+
+control systems, different types of societal systems, and so on. Chen and Chiang [25] extended the T-S
+fuzzy control representation to the stability analysis for nonlinear interconnected systems with multiple
+time-delays using LMI theory and proposed a LMI-based stability criterion which can be solved
+numerically. In [26], a fuzzy robust control design which combines H infinity control performance
+with T-S fuzzy control for the control of delayed nonlinear structural systems under external
+excitations is presented by them. The modeling error is further considered for resolution in this work.
+The emphasis of the work of Chen and Chiang is on the stability and stabilization of complex
+interconnected systems which are usually modeled as a unified formula. In contrast to many systems
+considered in the literature, in our study we are concerned with local interactive rule design so that an
+effective global behavior emerges from these rules. By comparison, the time-delay and modeling error
+are not immensely significant in our study. Hence, they are not taken into account in the design and
+stability analysis of the TFA.
+
+The remainder of this paper is organized as follows: Section 2 gives the problem statement
+including the state transition model and motion control equation of robotic sensors. The detailed design
+procedure of the interactive control algorithm, TFA, is presented in Section 3. In Section 4, we conduct
+the stability analysis of the TFA which can be executed by robotic sensors independently and
+asynchronously for E formation. Section 5 demonstrates E formation behavior and typical formation
+convergences of three neighboring robotic sensors through computer simulations. Finally, conclusions
+and future work are stated in Section 6.
+
+2. Problem Statement
+
+We consider low cost homogeneous robots embodying simple and commonly available sensors.
+This means that the members cannot have strong capability, e.g., remote communication, and can only
+interact with neighbors or their environment. In fact, compared with single robotic sensors with
+complex structure and comprehensive function, there is less probability for a simple robotic sensor to
+be destroyed while performing tasks. In the following subsections, the state transition model and
+motion control equation of a robotic sensor, and definitions involved later are stated first.
+
+2.1. State Transition Model
+
+In our model, we assume that a real robotic sensor consists of four basic hardware components:
+(1) proximity sensor (such as infra-red sensor, sonar sensor, camera, efc.), to detect the distances
+between itself and neighbors; (2) digital compass, to detect the azimuths of neighbors within its local
+coordinate system; (3) central processor, to compute goal position using the designed interactive
+control algorithm based on the local information gained by (1) and (2); (4) actuator, to drive the robot
+and its sensor unit to move with the velocity calculated by motion control equation based on the goal
+position. The first two components together complete the collection of the local information.
+
+To emphasize the development of a cooperative mechanism, the model abstract of a robotic sensor
+is assumed in following statement, where hardware composition and action characteristics of robotic
+
+sensors are taken into account:
+
+----$$$$----$$$$----
+Sensors 2014, 14 7232
+
+Assumption 1: A robotic sensor only has the ability of gaining local information and possesses three
+executable states: detecting, computing and moving. Transition happens between these three states
+subsequently and periodically when the robotic sensor runs, as shown in Figure 1, and there is no
+time-delay and disturbance during the transitions.
+
+Figure 1. The state transition model of a robotic sensor.
+
+detecting ——— computing ;—— moving
+
+In fact, execution of each state adds to the time cost and the transition between any two states also
+has a time-delay for robotic sensors. During the detection stage, a robotic sensor needs time to detect
+the distances from its neighbors and simultaneously determine the azimuths of corresponding
+neighbors, especially for the case that the robotic sensor which is equipped with only one infra-red
+sensor and has to perform 360° rotation to collect information. The calculation of goal position 1s
+based on the local information and it also adds to the time cost.
+
+For the robotic sensor Rj, the details of goal position calculation using detected distances and
+azimuths of its two neighbors is described in Figure 2. There are four robotic sensors which are
+distributed randomly in the plane, while only robotic sensors Rj; and Rj are located within the
+detectable radius r, of the robotic sensor Rj, and robotic sensor Rj3 is not detectable by Rj since Riz is
+located outside the detectable radius r, of Rj. d;, and d,, denote the distances of Rj, and Riz from R;
+respectively, while @, and @, denote the local azimuths of R;; and Rjo respectively within R;’s local
+coordinate system. Consequently, R; is able to calculate Rj,’s local position P,(P,(*), PW))
+according to Equation (1) based on the detected local information about Rj. Similarly, the local
+position of Rj2 can also be calculated. However, R; can’t detect any position information about Rj3
+since R;3 is not detectable to R;:
+
+{? (x)=d,, cos@,
+Pi (vy) =, sin 6, (1)
+
+Figure 2. The detection of neighbor’s local position information.
+
+
+----$$$$----$$$$----
+Sensors 2014, 14 7233
+
+The condition for three robotic sensors to configure an E formation is that each robot-sensor unit
+has to be positioned within the detection ranges of the other two. For the rest of this paper, unless
+stated otherwise this condition 1s assumed to be satisfied when they are distributed at the start. Robotic
+sensor R; collects the local position information of its other two neighbors during the detection stage,
+then executes an interactive control algorithm, TFA, to calculate its goal position, and finally puts the
+goal position into a motion control equation to output the desired motion state. The motion state means
+goal velocity which has two properties of speed and direction. The actuator of R; will drive Rj to move
+with the velocity.
+
+Among three robotic sensors, any one robotic sensor and its position are denoted by Rj and Pp,
+respectively, and the other two may be denoted by Rj, Riz and accordingly their positions by P,;,, Pj.
+NP. denotes the position set {P,,P;.} of R;’s neighbors. d j« Aenotes the distance between P; and
+P,. ID denotes the index set {i,i1,i2} of the robotic sensors.
+
+Definition I (Generalized triangle, G): Generalized triangle, G, is defined as an arbitrary three-point
+formation determined by position set, G={P,, P;;,. P;2}, where three elements may be collinear.
+
+Definition 2 (Equilateral triangle, E): Equilateral triangle, E, is defined as the G where the distances
+between any pair in {P,.P;>P,.} are equal to D, where D is called side-length of E.
+
+Based on the definitions of G and E, E formation behavior of three neighboring robotic sensors may
+be stated as follows:
+
+Problem I (E formation behavior): Three neighboring robotic sensors self-organize into the desired
+E formation with side-length D through cooperation between each other starting from arbitrary initial
+G formation which depends on their initial distribution.
+
+2.2. Motion Control Equation
+
+At each time step, robotic sensor Rj uses collected local information to calculate its goal position.
+This goal position is considered invariable during the interval between two time steps. Therefore, we
+
+introduce following motion control equation for R;:
+P; — —C(p; — Pig) (2)
+
+where Pp; and P;, denote the current and goal positions of Rj respectively; C is a constant relying on
+the maximum speed || V,,.. || and detecting radius 1, of R;, which could be determined according to the
+following procedure. As Seen from Equation (2), during Rj’s movement, || P; |= Cll 2. — P; || holds at
+all time. For some C, the maximum of the right term, C|| 2, — P; ||, is C-1,. The left term, || 7; ||, is
+the speed of R;. As long as || ?; ||S|| Vinx ||, a proper C could always be found such that || P, IF C-r,.
+Therefore an acceptable C should make Equation (4) satisfied:
+
+I Max I
+
+C< — (3)
+
+S
+
+After selecting a proper value for C, R;’s motion state at the next time step is dependent on goal
+position Pi, as demonstrated in Equation (2). The Pig 1s calculated by R; using an interactive control
+algorithm, TFA, so the design of TFA is key for solving Problem 1.
+
+----$$$$----$$$$----
+Sensors 2014, 14 7234
+
+3. Presentation of Interactive Control Algorithm (TFA)
+
+During E formation configuration, each robotic sensor executes the same interactive control
+algorithm and their behaviors are independent and asynchronous. As a member of the group, actions of
+the member should be beneficial to achieving global task. According to this rule, the goal position for a
+given robotic sensor Rj; should be the position from which the distances to the rest of the two neighbors
+are equal. If this goal position can be calculated then there will be two possible solutions as shown in
+Figure 3a. This conflict is solved by choosing the one which is closer to R; and denoting it as Pi, .The
+side-length of desired E formation is denoted by D and D<r, should hold, otherwise the desired E
+formation will not be possible to achieve as neighbors are not detecting each other. In order to let all
+robotic sensors have specific goal positions at the same time, the below equation must be satisfied:
+
+d,, <2D, Vj,k eID, j #k (4)
+
+where @;, represents the distance between ?; and p, which are the positions of robotic sensors R;
+and R, respectively.
+
+Here, we divide the process of configuring the E formation of three robotic sensors into two stages:
+adjusting process (APr) and clustering process (CPr). For APr, Equation (4) holds while for CPr it does
+not. The corresponding algorithms executed on the robotic sensor are called adjusting algorithm (AA)
+and clustering algorithm (CA), respectively.
+
+3.1. Adjusting Process (APr)
+
+During the adjusting process, Equation (4) holds and at the same time each member of the three
+robotic sensors is able to calculate its specific goal position for the next step. The mathematical
+significance of P;, for robotic sensor Rj may be stated as Equations (5) and (6) where the sign
+of ||-|| means Euler norm-2 which is used for distance solution between any pair of positions in
+two-dimensional space:
+
+P={p\|p—p,|=D,vme NP, pe R’| (5)
+
+) (6)
+
+The calculation method of goal position P;, of robotic sensor R; under all typical distributions are
+
+Py =arg| min(||p—p,
+peP
+
+illustrated within the local coordinate system of R; in Figure 3b—e. In these figures, a hollow circle
+indicates the goal position and a full circle indicates the robotic sensor position. The arrowhead
+pointing to Pig from Pp; indicates expected motion direction of R;. The center of line segment P,, P,,
+is denoted by p.. The Piz which has the same distance D from p;, and p;, locates on the line which
+is perpendicular to line P;,P;. and passes through p.. ] represents the line which passes through the
+origin and is also parallel to line P,,P;.. k indicates the slope of line / within R,’s local coordinate
+system. @ indicates the included angle between line / and horizontal axis x. The pseudo code of basic
+AA algorithm with respect to adjusting process is described in Table 1.
+
+----$$$$----$$$$----
+Sensors 2014, 14 7235
+
+Table 1. The pseudo code of the basic AA algorithm.
+Algorithm 1 for Adjusting Process
+
+FUNCTION p,, = 9,,(NP)
+
+R; calculates its goal position p, which satisfies Equations (5) and (6) according to Figure 3b-e.
+
+Figure 3. The calculation methods of specific Pi, for Rj. (a) The case where two possible
+
+destinations for P;. (b) P,P;. 18 parallel to axis y. (c) P,P; 18 parallel to axis x. (d)
+P. under line /.(e) Pp. above (on) line /.
+
+(b)
+
+/ \ Ry P il fe" \
+/ N
+
+N N \ / xX
+/ \ SLD; ‘S \
+
+aN
+vA
+
+(C)
+
+----$$$$----$$$$----
+Sensors 2014, 14 7236
+
+Figure 3. Cont.
+
+(d)
+
+(e)
+3.2. Clustering Process (CPr)
+
+At each time step, robotic sensor R; calculates the distance between the other two neighbors after
+detection. If this distance satisfies Equation (4), R; can calculate it’s the specific Pig which satisfies
+Equations (5) and (6) using the AA algorithm. If robotic sensor R; located at P;, , could form an
+isosceles triangle together with its two neighbors and the waist lengths are equal to D. Rj moving
+towards Piz benefits E formation. However, it is not guaranteed that at the same time step the other
+two neighbors also have specific goal positions, which is completely dependent on their current
+distribution. A distribution of three robotic sensors, for instance, is shown in Figure 4, where 4,;. <D,
+and the goal position of Rj is Pi, (not Piz ) because Fei) = Aig ir =D and Pj, is closer to p, than Pig .
+
+Figure 4. A position distribution and the Pig of Ri.
+
+
+----$$$$----$$$$----
+Sensors 2014, 14 7237
+
+Since R; is located so far from Rj; that Riz cannot calculate a specific goal position Pj, to make
+dj; =4igi2 =D hold. After detected the distances @;;, and 4%;;. using proximity sensor and the
+azimuths 9, and 9%. using digital compass, R; can calculate the distance between Rj, and Rj
+according to Equation (7):
+
+2 2
+di + d; —2: d; i “d; 7 -cos(@. ,, 6.)
+
+1
+
+di, 2 —
+
+1
+
+(7)
+
+If Equation (4) doesn’t hold, at least one robotic sensor can’t calculate a specific goal position
+because the goal position doesn’t exist. They should first cluster together enough prior to the
+calculation of goal position. Therefore, we define following strategy: when R; found that Equation (4)
+doesn’t hold, it will take the average position of three robotic sensors as its approximate goal position
+Piz . According to this strategy, when Equation (4) doesn’t hold, the three robotic sensors first cluster
+until Equation (4) is satisfied. After Equation (4) holds, each robotic sensor has its own specific goal
+position at the same time step and they will join the adjusting process. Adjusting process straightly
+goes to configure E formation, while clustering process only aims to make three robotic sensors cluster
+enough to ensure that they all can finally join adjusting process. The pseudo code of basic CA
+algorithm with respect to clustering process 1s described in Table 2.
+
+Table 2. The pseudo code of basic CA algorithm.
+
+Algorithm 2 for Clustering Process
+
+FUNCTION Pie = Pca NF)
+—~ Pt Pat P; , . ,;
+p= — 3 ;// p, =(0,0) is the origin of R,’s local coordinate system.
+
+Pig =);
+
+In fact the CA algorithm itself has no specific requirement for position distribution of three robotic
+sensors because the approximate goal position, i.e., the average position of them, is available at any
+given time step. If the three robotic sensors only execute the same basic CA algorithms, they will move
+towards a common position. The execution procedure of basic CA algorithm for R; is illustrated in
+Figure 5a.
+
+Figure 5. The execution procedures of basic CA and AA algorithms for Rj.
+
+detect local detect local
+—— > information — information
+d,,,0.,,d;, 0, d,,,0.,,d;, 0,
+calculate calculate
+Pio Pi2 Pio Pi2
+| a | od
+; CA | ; AA |
+move R; move R;
+
+
+----$$$$----$$$$----
+Sensors 2014, 14 7238
+
+Different from the CA algorithm, the AA algorithm has the requirement for position distribution of
+three robotic sensors. In other words, Equation (4) must hold, otherwise the specific goal position will
+not exist for at least one robotic sensor, which will cause severe problems. The three robotic sensors
+will go to configure an E formation directly by executing the same basic AA algorithms. The execution
+procedure of the basic AA algorithm for R; is illustrated in Figure 5b.
+
+3.3. TFA Description
+
+A robotic sensor’s choice of which process from the clustering and adjusting processes to join is
+completely dependent on the current distribution of three robotic sensors. If one robotic sensor joins
+the adjusting process first, it will no longer join the clustering process and go into configuring an E
+formation directly. If a robotic sensor joins the clustering process first, it will have to join the adjusting
+process for configuring an E formation after the three robotic sensors cluster enough. The detailed
+analysis and results on these issues will be presented in the next section. Here, we name the proposed
+interactive control algorithm Triangle Formation Algorithm (TFA). The same TFA algorithm is
+executed on each robotic sensor independently and asynchronously while configuring an E formation.
+For the convenience of description, two definitions are given below for classifying the distributions of
+three robotic sensors:
+
+Definition 3 (Clustering Formation, CF): CF is defined as the G formation which doesn’t satisfy
+Equation (4).
+
+Definition 4 (Adjusting Formation, AF): AF is defined as the G formation which satisfies Equation (4).
+
+The G formation, configured by three robotic sensors, only belongs to one type of the CF or AF.
+The robotic sensor will execute the CA algorithm when it locates in CF, and the AA algorithm in AF.
+Three robotic sensors can cluster enough through executing the same CA algorithms so as to make
+Equation (4) hold. Equation (4) needs to be satisfied for the AA algorithm. However these algorithms
+as parts of the TFA algorithm have the common aim to achieve the E formation. To complete the
+global task, the AA algorithm is the part each robotic sensor has to execute at the end. For a robotic
+sensor, the part of the CA algorithm is not guaranteed to be executed. It depends on the current
+formation configured by the three robotic sensors. Therefore, the TFA algorithm used for three robotic
+sensors to configure an E formation is composed of the basic CA and AA algorithms. For a robotic
+sensor to choose which part of the TFA algorithm to execute depends on the type of current formation
+configured by the three robotic sensors. The pseudo code of the TFA algorithm is described in Table 3.
+The execution procedure of the TFA algorithm for R; 1s illustrated in Figure 6.
+
+Table 3. The pseudo code of TFA algorithm.
+
+Algorithm 3 used for E formation behavior
+FUNCTION p,, = Qprs (NF)
+
+IF G is CF THEN
+
+Pig = Pea (NF);
+
+ELSE p,, = @.,(NF) ;
+
+END IF
+
+----$$$$----$$$$----
+Sensors 2014, 14 7239
+
+Figure 6. The execution procedure of the TFA algorithm for Rj.
+
+detect local
+
+information
+d;1,6;,,4;, 6,
+
+calculate move R
+{NP,, p;}
+
+| modified sub- |
+| algorithm _ |
+
+reach stop
+ondition?
+
+In practice when three robotic sensors locate along a line, it may happen that the two robotic sensors
+at the ends are unable to detect each other due to the robotic sensor located in the middle, but the
+middle robotic sensor is able to detect the other two neighbors on both sides. Figure 7 indicates this
+kind of position distribution.
+
+Figure 7. The collinear distribution of three robotic sensors.
+
+a2
+
+Here, despite the fact the three robotic sensors locate in a line, any one is still at the detectable range
+of the other two. In Figure 7, the shadowed block is a blocked area for Rj; which is caused by the
+middle robotic sensor, Rj, while Riz precisely locates at the blocked area, as a result, Rj; isn’t able to
+
+detect Riz. Similarly, Riz isn’t able to detect Rj; for the same reason. Therefore, we suggest a modifying
+
+----$$$$----$$$$----
+Sensors 2014, 14 7240
+
+sub-algorithm as illustrated in Figure 8 for robotic sensors in practice. During E formation
+configuration, once a robotic sensor detects only one neighbor, the robotic sensor should stop moving
+but still continue to detect and calculate processes. When a robotic sensor only detects two neighbors
+and further finds that it and its two neighbors are residing on a line, the robotic sensor can confirm that
+itself is in the middle. The robotic sensor will randomly choose one direction along the line which is
+perpendicular to the base line where the three robotic sensors locate and move towards that direction.
+Consequently, any one robotic sensor at the end will be able to detect the other at the end and begin to
+execute the CA or AA algorithms which are part of the TFA algorithm. Thus the deadlock situation of
+
+the three robotic sensors which locate on a line is broken.
+
+Figure 8. The detail of modified sub-algorithm in Figure 6.
+
+stop moving
+(still work)
+
+two positions
+detected?
+
+randomly move
+along the line
+
+perpendicular to
+the base line
+
+hree positions
+on a line?
+
+4. Stability Analysis for TFA
+
+The design procedure of TFA has been stated in the last section with the description of related
+pseudo codes. The theoretic results of the TFA used for three neighboring robotic sensors to configure
+an E formation are presented in detail in this section. The same TFA algorithm is executed on each
+robotic sensor independently and asynchronously. A global coordinate system is assumed for analysis.
+
+Lemma 1: The average position p of three neighboring robotic sensors is invariable during
+clustering process, i.e., p=0.
+
+Proof: During clustering process, each robotic sensor executes the same CA algorithm, as shown in
+Figure 5a. Seen from CA algorithm principle, there is Pj =P, ic ID, and considering the motion
+
+control equation Equation (2), we would have:
+Di = -C(p, — Pz) = —C(p, —P) » Pi = -C(p, Pg) = —C(p,, —p) )
+
+Pir — -C(p,, — Pir.) — -C(p,, — Pp).
+
+----$$$$----$$$$----
+Sensors 2014, 14 7241
+
+, _ +p. +p, or , , ; ;
+Since Dp (24 Pat Pa) , after derivative operation for two sides of this equation, then we
+
+3
+can obtain:
+pa [ Breathe) (MAP) Cry PIC UPa PP) _ (BAB * Ps -? |
+P =| — |= = —————— Pp
+3 3 3
+=-C(p-p)=0
+
+Lemma | has been proved.
+
+Lemma 2: Three neighboring robotic sensors which execute basic CA algorithms can cluster into
+the neighborhood 8,(P) with radius 7 around the center p after spent time T :
+
+=\ _ —n + a
+#,()={elle—Pl<n} T= Zn|
+
+where 7 may be any positive number and M = max (| p,(0)— pll:ie ID)
+
+Proof: According to lemma 1, the average position of three neighboring robotic sensors executing
+the same CA algorithms satisfies p =0. For any robotic sensor R;, i¢ ID, denote the error variable as
+
+e,(t) = P; — Pig , and the energy function as V,(t) = =< (t)e,(t) , after an operation of derivative is used
+for this function, we may have:
+
+; . T . . \F
+
+V(t) — (é(¢)) e,(t) — (2, - Py) (p, — DP)
+
+= ( p.- pb) (p,—p) (during clustering process, p,, = 7)
+
+=(p,) (p,-P)=-C(p,-3D) (p,-3P)
+=-Clp,- pl <0.
+
+e,(2)||=|
+
+sensor R; can go into the neighborhood with 7 around the center p after spending enough time /7;,.
+Since V,(t)= —C||p, - pl =-C(e, (t))’ e(t)=—2CV,(t) , the solution of this differential equation is
+
+V.(t)=V,(0)e*“ . Here, when
+
+and J; is used to denote the time spent on going into the neighborhood. From the energy function,
+
+rat Hf PO
+
+2
+= * , the result is C 0 | . Therefore, the
+
+To V7>0, when P;-P\|>7, always V.(t)<0. From Lyapunov stability theory, robotic
+
+€; (t)|| =7] , Rj is considered to have gone into the 7 neighborhood of p
+
+~2CT,
+
+2
+there is V,(7;) = e , and solving equation V,(O)e
+
+shortest time which three neighboring robotic sensors have to spend to go into 7 neighborhood of 7p 1s:
+
+T = max (TZ, :i ¢ ID)=max dao 20) sie fm 2
+
+POF) <1)
+n
+
+7]
+
+----$$$$----$$$$----
+Sensors 2014, 14 7242
+
+= din( “), wher M = max(|
+Cn
+
+D,(0) — p|| LE ID) ,
+Lemma 2 has been proved.
+
+Lemma 3: Three neighboring robotic sensors can self-organize into AF from any CF successfully
+and in addition this 1s an irreversible process for the TFA algorithm.
+
+Proof: According to Lemma 2, three neighboring robotic sensors which execute CA algorithms can
+cluster enough such that max(|| p,—p, ||:i, 7 «ID 4 j)<7 , let 7=2D then Equation (4) holds.
+Thus, the former part of Lemma 3 is proved.
+
+If AF is transformed into CA, a critical formation as shown in Figure 9 must be experienced at this
+time step where max(|| p, — p, ||:7, 7 ¢1D,i 4 7) =2D . Without the loss of generality, we only need to
+consider the case where robotic sensor R; locates in the area formed by the two circles and the line
+formed by RjRiz. It should be noted that the length of line segment RjRiz2 1s equal to 2D and the
+circles shown are only used for analysis, they are not the maximum detectable boundaries of
+robotic sensors.
+
+Figure 9. The critical formation necessary for CF transforming into AF.
+
+Pig
+@
+f F
+
+Obviously, if the transformation from AF into CF happens, deviation movement between Rj; and
+Rj must first happen at this time step. Considering the symmetry, here we only discuss Rj, as a similar
+analysis is suitable for Riz as well. During the deviation movement, the motion direction of Rj; must be
+upward line /,. The line /, is vertical to line Rj,Ri2. That means the goal position Pig of Rj; must be in
+the area above line /,. As a result, the distance from Piz to Riz must be larger than 2D. However,
+robotic sensor Rj; is still in AF and executing the AA algorithm of its adjusting process. Seen from the
+adjusting process, the distance from P,:, to Ri must be less than 2D, which causes a contradiction, so
+the assumption of Pig at the above of /, doesn’t hold. Similar analysis for Riz can deduct that Pi2.
+cannot be below /,. Therefore, the deviation movement between R;, and Rj. can’t happen since they
+are in AF. The latter part of Lemma 3 1s proved.
+
+Combining above, Lemma 3 has been proved.
+
+Lemma 4: Three neighboring robotic sensors which execute basic AA algorithms can directly
+self-organize into an E formation starting from any AF.
+
+----$$$$----$$$$----
+Sensors 2014, 14 7243
+
+Proof: For any robotic sensor Ri, j EID, since the goal position is invariable during the interval
+
+between two time steps, so there is Pj, =9. We define the error function as &(¢)=P;— Pj. and the
+
+| r
+energy function as Vit) = Dy (6) e(0) , then we would have:
+
+V;(t) — (2, (t))' e,(t) — (P; — Pie) (P; — Pig) — (p,) (p, — Pig) — —C(p, — Pie) (P; — Pig)
+=—-C | Pi — Pig IPs 0
+
+As seen from above, when || 2; — Pic F>0, always V.(t)<0. According to Lyapunov stability
+theory, P; asymptotically converges to Pi, , i.e., at last there is P; =Pig . Known from adjusting
+
+process definition, we have:
+
+Il Pie — P; ED, j ¢ NP
+
+and after putting P; =P, into the above equation, we can obtain:
+| P:-P; ||FD. Je NE.
+
+That is to say, the distances of any robotic sensor R; to its other two neighbors are equal to D.
+Therefore, the AF configured by the three robotic sensors finally transformed into an E formation.
+Lemma 4 has been proved.
+
+Theorem I: Three neighboring robotic sensors which execute the TFA algorithms can self-organize
+into an E formation starting from any initial distribution, i.e., the TFA algorithm can solve Problem 1.
+
+Proof: If the initial distribution of three neighboring robotic sensors is a CF formation, they will
+join the clustering process and execute CA algorithms. According to Lemma 3, the CF formation will
+transform into an AF formation and a reversible process never happens. According to Lemma 4 the AF
+formation will transform into an E formation. However, if the initial distribution of three neighboring
+robotic sensors is an AF formation, according to Lemma 4, the AF formation will directly transform
+into an E formation. The combination of the above indicates that the three neighboring robotic sensors
+can self-organize into an E formation regardless of their initial distribution. The theorem has thus
+been proved.
+
+5. Simulation Studies
+
+In the last two sections, we first designed the interactive control algorithm, TFA, and then stated the
+related theoretic results which indicate that three neighboring robotic sensors can self-organize into an
+E formation regardless of their initial distribution. In this section we aim to conduct simulation
+experiments on a computer so as to test the effectiveness of the TFA. All simulation programs were
+written in Steve based on the Breve platform [27]. Breve is a 3D simulation environment for the
+simulation of decentralized systems and artificial life, using the object oriented language, Steve, as
+programming language. Breve also contains a commonly used class library which assists with fast
+model simulation and algorithm test. The interested reader is referred to our earlier work [28] for the
+detailed simulation programs in Steve used 1n this section.
+
+----$$$$----$$$$----
+Sensors 2014, 14 7244
+
+Parameter settings for simulation experiments are as following: side-length of the desired E
+formation, D=10 (units); detection radius of a robotic sensor, ft, =50 (units); maximal speed of
+robotic sensor, || Vax |-=10 (units/s); control constant of Equation (2), C=|| Vin {| /", =9-2 , which
+satisfies Equation (3); at the beginning of simulations, robotic sensors are randomly distributed in the
+circle area whose radius is r,/2, which ensures any one robotic sensor can detect all the other ones;
+robot sensor R; is instructed to stop running when || v, ||< 0.01 where || v, || means instant speed of Ri,
+in other words, stop condition is specified for the simulation of E formation behavior. In fact, the
+limited || v,|| of R; reflects the deviation degree between p, and Pj, , which can be seen from
+Equation (2). To be convenient to evaluate the change of the close degree between the current
+formation and the desired E formation over time, we defined average side-length error, E,,(¢) ,
+
+as formula:
+
+~ |l2@-p,Ol|-D
+_ i, jEIDANiF#j 8
+Fal card (ID) °)
+
+in Equation (8), card(ID) represents the number of elements in set ID.
+
+We simulated an E formation behavior for three robotic sensors extensively based on typical initial
+distributions. These distributions are: (1) CF-1 (17.47, 16.06, 30.42), elements are side-length values
+and only one side-length value is larger than 2D; (2) CF-2 (36.66, 15.75, 30.56), two side-length
+values are larger than 2D; (3) CF-3 (21.94, 24.49, 27.00), all three side-length values are larger than
+2D; (4) AF (11.60, 15.69, 11.61), all three side-length values are less than 2D, i.e., Equation (4)
+holds. The simulations of E formation behavior demonstrate that three neighboring robotic sensors can
+self-organize into an E formation starting from these typical initial distributions using TFA. For
+instance, Figure 10 shows the trajectories of three robotic sensors during an E formation configuration
+starting from distribution CF-2.
+
+Figure 10. The E formation behavior of three robotic sensors starting from CF-2 distribution.
+
+The changes of average side-length errors over the time under these typical distributions are
+illustrated in Figure 11. The error curves indicate that those typical initial formations configured by
+three robotic sensors can always transform into the desired E formation with side-length D. In short,
+
+since these typical distributions summarize all the possible initial distributions, computer simulations
+
+----$$$$----$$$$----
+Sensors 2014, 14 7245
+
+show us that three neighboring sensors can self-organize into an E formation through executing the
+same TFA algorithm starting from any initial distribution.
+
+Figure 11. The changes of average side-length error over time under typical initial distributions.
+
+18 = CF-1
+@e CF-2
+164°
+; A CF-3
+44 vw AF
+A®
+124, 4°
+= A®
+S 1048 A®
+a: ™,ae
+LU 8 a A®
+2 e
+A
+6 a 1, %e
+[| A °,
+i A e
+A e
+v, ".. a ®e,
+‘A
+2 Vy. ""a5, ® e
+
+6. Conclusions and Future Work
+
+In this paper, first, we established the state transition model for real robotic sensors. Then, the
+design procedure of the TFA algorithm is presented in detail. The same TFA algorithm is executed by
+each robotic sensor independently and asynchronously during E formation configuration. Finally, we
+conducted stability analysis and simulation verification for the TFA algorithm. Theoretical analysis
+and computation simulations both indicate that the proposed TFA algorithm can ensure that three
+neighboring robotic sensors self-organize into an E formation regardless of their initial distributions.
+However, the TFA algorithm is not our ultimate goal. In our future work, we are interested in
+extending it to controlling large scale robotic sensors to configure a uniform sensor network which has
+a specific local formation.
+
+Acknowledgments
+
+The authors wish to express sincere gratitude to anonymous referees for the valuable comments
+which led to substantial improvements of this paper. We also appreciated the financial support from
+Doctor Scientific Research Startup Project of Hanshan Normal University (No. QD20140116). This
+work is also partly supported by the 2013 Comprehensive Specialty (Electronic Information Science
+and Technology) Reform Pilot Projects for Colleges and Universities granted by the Chinese Ministry
+of Education (No. ZG0411) and the Education Department of Guangdong Province in China
+(No. [2013]322).
+
+Author Contributions
+
+All authors contributed equally to this work. Xiang Li designed the interactive control algorithm
+and performed theoretic analysis. Hongcai Chen supervised the project and assisted with experiments.
+
+----$$$$----$$$$----
+Sensors 2014, 14 7246
+
+Xiang Li wrote the paper. All authors discussed the results and implications and commented on the
+manuscript at all stages.
+
+Conflicts of Interest
+The authors declare no conflict of interest.
+References
+
+1. Bayindir, L.; Sahin, E. A review of studies in swarm robotics. Turk. J. Electr. Eng. Comput. Sci.
+2007, 75, 115-147.
+
+2. Sahin, E. Swarm robotics: From sources of inspiration to domains of application. Lect. Notes
+Comput. Sci. 2005, 3342, 10-20.
+
+3. Ballerini, M.; Cabibbo, N.; Candelier, R.; Cavagna, A.; Cisbani, E.; Giardina, I., Orlandi, A.;
+Parisi, G.; Procaccini, A.; Viale, M.; et al. Empirical investigation of starling flocks: A benchmark
+study in collective animal behaviour. Anim. Behav. 2008, 76, 201-215.
+
+4. Warburton, K.; Lazarus, J. Tendency-distance models of social cohesion in animal groups.
+J. Theor. Biol. 1991, 4, 473-488.
+
+5. Chong, C.Y.; Kumar, S.P. Sensor networks: Evolution, opportunities, and challenges. Proc. [EEE
+2003, 5, 1247-1256.
+
+6. Godwin, M.F.; Spry, S.C.; Hedrick, J.K. Distributed system for collaboration and control of UAV
+groups: Experiments and analysis. Lect. Notes Econ. Math. Syst. 2007, 588, 139-156.
+
+7. Gustafson, E.H.; Lollini, C.T.; Bishop, B.E.; Wick, C.E. Swarm technology for search and rescue
+through multi-sensor multi-viewpoint target identification. In Proceedings of the 37th
+Southeastern Symposium on System Theory, Tuskeegee, AL, USA, 20-22 March 2005;
+pp. 352-356.
+
+8. Reynolds, C. Flocks, birds, and schools: A distributed behavioral model. Comput. Gr. 1987, 21,
+25-34.
+
+9. Balch, T.; Arkin, R.C. Behavior-based formation control for multi-robot teams. JEEE Trans.
+Robot. Autom. 1998, 14, 926-939.
+
+10. Balch, T.; Hybinette, M. Behavior-based coordination of large scale robot formations. In
+Proceedings of the 4th International Conference on Multiagent Systems, Boston, MA, USA,
+10-12 July 2000; pp. 363-364.
+
+11. Balch, T.; Hybinette, M. Social potentials for scalable multi-robot formations. In Proceedings of
+the IEEE International Conference on Robotics and Automation, San Francisco, CA, USA,
+24-28 April 2000; Volume 1, pp. 73—80.
+
+12. Reif, J.H.; Wang, H. Social potential fields: A distributed behavioral control for autonomous
+robots. Robot. Auton. Syst. 1999, 27, 171-194.
+
+13. Kim, D.H.; Wang, H.; Shin, S. Decentralized control of autonomous swarm systems using artificial
+potential functions: Analytical design guidelines. J. Intell. Robot. Syst. 2006, 45, 369-394.
+
+14. Spears, W.M.; Spears, D.F.; Heil, R.; Kerr, W.; Hettiarachchi, S. An overview of
+physicomimetics. Lect. Notes Comput. Sci. 2005, 3342, 84—97.
+
+----$$$$----$$$$----
+Sensors 2014, 14 7247
+
+15.
+
+16.
+
+17.
+
+18.
+
+19.
+
+20.
+
+21.
+
+22.
+
+23.
+
+24.
+
+25.
+
+26.
+
+27.
+
+28.
+
+Spears, W.M.; Spears, D.F; Hamann, J.C.; Heil, R. Distributed, physics-based control of swarms
+of vehicles. Auton. Robots 2004, 2, 137-162.
+
+Shucker, B.; Bennett, J.K. Scalable Control of Distributed Robotic Macrosensors. In Distributed
+Autonomous Robotic Systems 6; Alami R., Chatila R., Asama, H., Eds.; Springer: Tokyo, Japan,
+2007; pp. 379-388.
+
+Shucker, B.; Bennett, J.K. Virtual Spring Mesh Algorithms for Control of Distributed Robotic
+Macrosensors; Technical Report CU-CS-996-05; University of Colorado: Boulder, CO, USA,
+May 2005.
+
+Chen, S.; Fang, H. Modeling and stability analysis of large-scale intelligent swarm, Control Decis.
+2005, 5, 490-494.
+
+Chen, S.; Fang, H. Modeling and Behaviour analysis of large-scale social foraging swarm. Control
+Decis. 2005, 12, 1392-1396.
+
+Lee, G.; Chong, N.Y. Decentralized formation control for a team of anonymous mobile robots. In
+Proceedings of the 6th Asian Control Conference, Bali, Indonesia, 18—21 July 2006; pp. 971-976.
+
+Lee, G.; Chong, N.Y. A geometric approach to deploying robot swarms. Ann. Math. Artif. Intell.
+2008, 52, 257-280.
+
+Hsiao, F.H.; Chen, C.W.; Liang, Y.W.; Xu, S.D.; Chiang, W.L. T-S fuzzy controllers for
+Nonlinear interconnected systems with multiple time delays. JEEE Trans. Circuits Syst. 2005, 52,
+1883-1893.
+
+Hsiao, F.H.; Hwang, J.D.; Chen, C.W.; Tsai, Z.R. Robust stabilization of nonlinear multiple
+time-delay large-scale systems via decentralized fuzzy control. JEEE Trans. Fuzzy Syst. 2005, 13,
+152-163.
+
+Chen, C.W.; Yeh, K.; Liu, K.F.; Lin, M. Applications of fuzzy control to nonlinear time-delay
+systems using the linear matrix inequality fuzzy Lyapunov method. J. Vib. Control 2012, 18,
+1561-1574.
+
+Chen, C.W.; Chiang, W.L.; Hsiao, F.H. Stability analysis of T-S fuzzy models for nonlinear
+multiple time-delay interconnected systems. Math. Comput. Simul. 2004, 66, 523-537.
+
+Chen, C.W. Application of Fuzzy-model-based Control to Nonlinear Structural Systems with
+Time Delay: An LMI Method. J. Vib. Control 2010, 16, 1651-1672.
+
+Klein, J. Breve: A 3D simulation environment for the simulation of decentralized systems and
+artificial life. In Artificial Life VIII, Proceedings of the Eighth International Conference on
+Artificial Life; Standish, R., Bedau, M.A., Abbass, H.A., Eds.; MIT Press: London, UK, 2002;
+pp. 329-334.
+
+Li, X.; Ercan, M.F.; Fung, Y.F. A triangular formation strategy for collective behaviors of robot
+swarm. Lect. Notes Comput. Sci. 2009, 5592, 897-911.
+
+© 2014 by the authors; licensee MDPI, Basel, Switzerland. This article is an open access article
+
+distributed under the terms and conditions of the Creative Commons Attribution license
+
+(http://creativecommons.org/licenses/by/3.0/).
+
+----$$$$----$$$$----
+Copyright of Sensors (14248220) is the property of MDPI Publishing and its content may not
+be copied or emailed to multiple sites or posted to a listserv without the copyright holder's
+express written permission. However, users may print, download, or email articles for
+individual use.
+
+----$$$$----$$$$----

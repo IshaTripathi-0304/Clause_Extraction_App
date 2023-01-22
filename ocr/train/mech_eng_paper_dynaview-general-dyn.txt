@@ -1,0 +1,637 @@
+Hindawi Publishing Corporation
+Mathematical Problems in Engineering
+Volume 2012, Article ID 542501, 13 pages
+doi:10.1155/2012/542501
+
+Research Article
+
+DynaView: General Dynamic Visualization
+Model for SHM
+
+Peng Sun,’ Ziyan Wu,” Qingyi Hua,’
+Zhanhuai Li,* and Muning Kang’
+
+’ College of Computer Science, Northwestern Polytechnical University, Xi'an 710072, China
+
+? School of Mechanics, Civil Engineering and Architecture, Northwestern Polytechnical University,
+Xi'an 710072, China
+
+3 School of Information Science and Technology, Northwest University, Xi’an 710069, China
+
+Correspondence should be addressed to Peng Sun, sunpeng@nwpu.edu.cn
+Received 12 April 2012; Accepted 26 June 2012
+Academic Editor: Yuping Wang
+
+Copyright © 2012 Peng Sun et al. This is an open access article distributed under the Creative
+Commons Attribution License, which permits unrestricted use, distribution, and reproduction in
+any medium, provided the original work is properly cited.
+
+We present a general dynamic visualization model named DynaView to construct virtual scenes
+of structural health monitoring (SHM) process. This model consists of static, dynamic, and
+interaction submodels. It makes the visualization process dynamic and interactive. By taking an
+example of a simplified reinforced concrete beam structure model, we obtain raw data through the
+examination. We conduct the effective general and practicable assessment of structural damage
+conditions based on fuzzy pattern recognition to compute the assessment results. We construct the
+DynaView model of the sample structure and visualize it. The instance indicates that DynaView
+model is efficient and practically applicable.
+
+1. Introduction
+
+The process of damage detection and identification for civil structure is called structural
+health monitoring (SHM).SHM is the process of observing and collecting periodic sampling
+data. Firstly, the SHM system analyzes those damage features that are abstracted from those
+sampling data. Then it valuates current structure’s health state. SHM technology is a powerful
+tool [1] to help ensure the safety of large and complicated civil infrastructures.
+
+SHM of large structures has become a leading edge of civil engineering. It is very vital
+for damage condition assessment to judge the structure’s working state and health state with
+those sampling data. It is also important for engineers to recognize the damaged parts and
+degree to assess the damage condition [2].
+
+Besides the front-end intelligent monitoring and diagnosing function, the back-end
+visualization function plays an important role within the whole SHM system. Visualization
+
+----$$$$----$$$$----
+2 Mathematical Problems in Engineering
+
+output not only can reflect the monitoring and diagnostic technology but also can connect
+the user and the system. Visualization allows one to display the structure state, safety alert,
+intelligent assessment, and user feedback [3].
+
+SHM visualization which is one of the most important components of SHM can
+visualize the sampling data. It preprocess the data (including abstracting, filtering, and
+analyzing), assesses the damage state, constructs the visualization model, and completes the
+visual scene. It shows the damage conditions to users in a direct way.
+
+SHM visualization is a critical bridge which connects the system and the user. On
+one hand, SHM results can be displayed in the scene by visualization technology and alert
+user directly. On the other hand, the visual scenes help users to confirm the correctness and
+effectiveness of an SHM system.
+
+At present, there are mainly three classes in the terms of visualization environment:
+visual application environment, visual development environment, and visual software
+environment. The first class is the visual application environment supported by application
+software. It is always integrated into the system which can provide necessary data, model,
+and visual method. The second class is the visual development environment supported by
+some certain operating systems and development platforms. It takes good use of graphics
+toolkits which are provided by some famous software, such as MATLAB, OpenGL, and
+Open Inventor. The last class is visual software environment supported directly by some
+visualization software just like AutoCAD, 3DMax, and Maya.
+
+We present a dynamic and interactive visualization model named DynaView which
+consists of static submodel, dynamic submodel, and interactive submodel. The static
+submodel describes static features of structure. It is the visual mapping of the structure.
+The dynamic submodel describes those constant changing dimensions or variables during
+the whole SHM process. It is the kernel technology of dynamic visualization modeling. The
+Interactive submodel provides the ability to interact with visual scenes which can respond
+to time elapsing events, mouse and keyboard interaction. We preprocess the sampling data
+and then assess the structure health state by using the effective and practicable assessment
+of structural damage condition based on fuzzy pattern recognition. Lastly, we construct the
+DynaView model to visualize the dynamic and interactive scenes by using VC6.0 and Open
+Inventor. Users can directly perceive and master the instance structure’s health situation
+through the visual scenes which can promote the safety of the structure.
+
+2. Key Technologies in SHM Visual Modeling
+2.1. VRML
+
+Virtual reality modeling language (VRML) is a file format which can describe interactive
+3D objects. In 1997, VRML was released as international standard by International Standard
+Organization(ISO). Now it is called VRML97 which is authorized formally by ISO in 1998.
+VRML files include space models and its nodes. The nodes describe model, color, light,
+viewpoint, timer sensor, touch sensor, and interpolator and can locate the model’s position
+and orientation. VRML describes 3D space using Scene Graph. Scene Graph is the inner pre-
+sentation of VRML 3D spaces. The nodes construct the Scene Graph according to some certain
+rules. Scene Graph looks like a reversed tree which has lots of root nodes. It is comprised of
+node-attribute value. All the nodes are hierarchical and form a directed acyclic graph.
+VRML provides Event-Route mechanism which is separated from hierarchical
+structure. Event-Route mechanism can build a dynamic 3D virtual scene. Users can interact
+
+----$$$$----$$$$----
+Mathematical Problems in Engineering 3
+
+with 3D scenes or change the state and attributes of 3D scenes. VRML ROUTE statement is
+a special rule which provides the ability to change 3D scenes. It spreads the event from the
+occurred node to the target node in order to change the latter’s state and attributes. Once
+the event happens, it is immediately transmitted from the sending node to the receiving
+node according to the ROUTE rule. The target node handles the event by updating state and
+attributes, triggering another event or by changing the scene’s structure. ROUTE statements
+always construct from EventOut to EventIn, while the type of both points must accurately
+match each other.
+
+2.2. Open Inventor
+
+Open Inventor is a 3D interactive graphical toolkit developed by SGI. It uses OpenGL toolkit
+as base platform and can precisely and quickly render VRML scenes. Open Inventor becomes
+both a foundation and a superset of VRML. VRML is a subset of modified and enlarged Open
+Inventor 3D graphic file format. Open Inventor is now the only 3D interactive graphical
+toolkit which can support VRML nodes perfectly. The most important thing is that Open
+Inventor supports ROUTE as well as the other nodes in VRML97. It provides attribute-
+to-attribute method to save ROUTE statement with no information loss. The applications
+developed based on Open Inventor can make good use of ROUTE statement to build dynamic
+and interactive 3D virtual scene.
+
+3. Dynamic Visual Modeling for SHM
+
+In the engineering project, SHM system obtains the periodic sampling data through sensors.
+In order to understand and analyze the computing results, we must display those important
+data in a visual scene for better observation and interaction. The dynamic visualization
+technology helps to describe continuous monitoring. The dynamic feature also helps users
+to understand how the changing data have great influence on the whole structure [4]. Due to
+more and more complicated civil structure, the dynamic characters need to be analyzed by
+finite element and dynamic scene. It is very useful to dynamic analyzing the civil structures
+by using modern graphic development environment and visualization technologies [5].
+Therefore, it is of great importance and necessary to build a dynamic visual model to be
+displayed in a visual scene.
+
+SHM system is a kind of overall monitoring. Both static feature such as permanent
+load and dynamic feature such as variable load are all monitored in time. Some abnormal
+conditions at certain critical points of the civil structure are monitored by SHM system. Those
+abnormal states are indicated by sampling feature data [2]. SHM dynamic visual modeling is
+a complicated process: firstly, it abstracts, filters, and analyzes the periodic sampling data;
+secondly, it assesses those computed data by using the assessment method of structural
+damage condition; lastly, it maps those information into graphic elements by using the static
+and dynamic models. The implied civil structure’s state information is shown by directly
+perceived visual scenes.
+
+3.1. Architecture of SHM System
+
+The architecture of SHM system is shown as Figure 1 which is composed of Data Collection
+Module, Data Preprocess Module, Structural Assessment Module, and Data Visualization
+
+----$$$$----$$$$----
+4. Mathematical Problems in Engineering
+
+Data ||Data |] Data
+abstract} | filter | janalysis
+
+900_ | 900 | 900 User
+2700
+
+Figure 1: Architecture of SHM system.
+
+Module. The working flow of SHM system is as follows. As a first step, we obtain sampling
+raw data through those sensors distributed on the structural key points. In the second
+step, we save the sampling raw data and input them into the Data Preprocess Module to
+abstract, filter, analyze, and process. Then, we standardize and output them to the Structural
+Assessment Module. In the third step, we handle the standardized data and acquire the
+structural health state by using the assessment of structural damage condition based on fuzzy
+pattern recognition. After that, we output the state information to the Data Visualization
+Module. For the last step, we build dynamic model and map it to visual scenes by using
+the visualization engine. Users can observe and understand the civil structure’s health state
+information and interact with the scene.
+
+3.2. Structural Assessment Module of SHM System
+
+The assessment of structural damage condition is used to solve four questions [1]. Firstly, the
+module indicates whether the warning appears or not. Secondly, the module locates where
+the damage appears. Thirdly, the module makes sure of the degree of the structural damage.
+Lastly, the module gives the rest usable time of the damaged structure. Giraldo divides the
+damage monitor and recognition into three classes [1]: method based on vibratory, method
+based on static force, and method based on directly monitor. The Structural Assessment
+Module gets the assessment attributes and results through valid and practicable computing.
+The results are very important for the Data Visualization Module.
+
+We use an effective general and practicable assessment of structural damage condition
+based on fuzzy pattern recognition to change the structural state fuzzy variables into
+a certainty question. The fuzzy variables are not limited by the state feature types.
+The assessment method is based on both structural characters and prediction by fuzzy
+professionals. It constructs structural fuzzy sets with overlap features. Without assuming
+the probability distribution and density function of structural damage features, we can
+entirely assess the damage state. When the civil structure is damaged, it causes the structural
+attributes such as quality, rigidity, and damp coefficient changing constantly which leads
+to the variation, of the structural natural frequency of vibration, mode of vibration and
+impedance [1]. We assess the structural damage state by the approximation principle. We
+also use fuzzy pattern recognition method to identify the coherence of similar objects and to
+assure the attributes of the structural damage state fuzzy sets, state similarity matrix, and the
+membership grade function.
+
+The certification of attributes needs two steps as follows.
+
+The first step is that we obtain the structural damage state fuzzy sets and state
+similarity matrix. Assuming that . is the eigenvalue of structural state, the membership grade
+
+----$$$$----$$$$----
+Mathematical Problems in Engineering 5
+
+function of structural damage state fuzzy sets using normal membership grade construction
+function is as follows:
+
+healthy state:
+1 A <q,
+H(A) = {caro L> An, (3.1)
+little damage state:
+uy(A) = eo (A-d)/o1)" LER, (3.2)
+moderate damage state:
+um(A) = e(G-Am)/omy yy ER (3.3)
+severe damage state:
+e((A-As)/05)" Vc Ne
+\)=- ened 3.4
+Hs (A) 1 Lode. (3.4)
+
+Au, AL, 4m, Ag is the arithmetic mean value of four structural states’ eigenvalues. o1,
+OL, Om, Os is the standard deviation of four eigen values. Based on the conception of structural
+state overlap and damage accumulating, constructing the state similarity matrix SM is used to
+reflect the degree of overlapping of the random two structural states. It is defined as follows:
+
+SMpyy SMuy, SMum SMus
+SMry SMrir SMim SMrs
+SMuyu SMmut SMum SMms]-
+SMsy SMs, SMsm SMsgs
+
+SM = (3.5)
+
+As for the matrix element SM_7, is the lattice degrees of nearness of two random state
+fuzzy sets I and J. Its value varies from 0 to 1. The lattice degrees nearness of the same fuzzy
+sets is 1.0. So, SM is a real symmetric matrix whose main diagonal elements are all 1.0. If SM
+is assigned by the professionals, the value is decided by their experiences.
+
+As for the second step, we obtain the attributes of the membership grade function.
+
+Ay and o# of the structural state can be calculated from the undamaged sampling
+data. Their values can be substituted into formula (3.1) and can confirm the function fy (A).
+Before we confirm the other three structural damage state fuzzy sets and the membership
+erade functions, we must get the values of Az, Aw, As, OL, Om and Os.
+
+Assuming the discussing domain U = U; (overlap level of H and L), U2(overlap level
+of H and M), U3(overlap level of H and S), U,(overlap level of L and S), Us(overlap level
+of L and M), U¢(overlap Level of M and S)}, we get the value of the fuzzy subsets A from
+
+----$$$$----$$$$----
+6 Mathematical Problems in Engineering
+
+the six elements of state similarity matrix. The professionals predict by experiments the fuzzy
+subsets A’, A, and A’ are as follows:
+
+SM, SMym SMuys SMim SMrs SMwms
+A= 4 gp 5 = 5
+
+uy u2 U3 U4 U5 U6
+
+(3.6)
+
+» fr po bs ba ps peo
+A= — 4+ 4e 4 ER 4+ ; = [0,1]). ;
+fini iat ue te (yu [ }) (3.7)
+
+In the two formula, the sign SM7,/u; is not a concept of “fraction,” but a sigh which
+means a degree of element A being a member of element u;. The sigh “+” is not a concept of
+“addition,” but a sign which subs a kind of connection.
+
+Assuming f is the European measurement of close degree of A and A’, we can solve
+the formula (3.6) and formula (3.7) and get the solution of the six unknown attributes:
+
+1 6 1/2
+Max f=1-(75(a-4)") ; (3.8)
+i=1
+
+Mi <dt<dm<a
+a Ms esr (3.9)
+
+OL,OM,OS > 0.
+
+The larger the value of the target function is, the closer A and A’ are. Inputting the
+solution into formula (3.2), formula (3.3), and formula (3.4), we can obtain the other three
+structural damage state fuzzy sets.
+
+3.3. Data Visualization Module of SHM System
+3.3.1. Framework of Data Visualization Module and Visual Workflow
+
+The Data Visualization Module is as shown in Figure 2. Among the Data Visualization
+Modules of SHM system, OpenGL graphic toolkit is at the lowest level. OpenGL is a 3D
+interactive graphic toolkit developed by SGI Inc. It provides basic drawing graphic elements
+and has the ability to parameterize the attributes. Above this level it is the Open Inventor
+eraphic toolkit. Open Inventor is also a 3D interactive graphic toolkit developed by SGI Inc.
+It uses OpenGL as the bottom rendering platform. Open Inventor is special in accurately
+and quickly rendering the visual scene, especially the VRML scene. Between the user and
+the toolkit, it is the dynamic interactive visualization model which is comprised of static
+submodel, dynamic submodel, and interactive submodel. The static submodel describes
+static features of structure. It is the visual mapping of the structure. The dynamic submodel
+describes those constant changing dimensions or variables during the whole SHM process.
+It is the kernel technology of dynamic visualization modeling. The Interactive submodel
+provides the ability for users to interact with visual scenes which can response time elapse,
+interactive mouse and interactive keyboard events. The user is on the top level of the
+visualization model. The user can directly perceive and master the instant structure’s health
+situation through the visual scene which can promote the safety of the structure. Moreover,
+the user can deeply observe and judge the state by interactting with mouse and keyboard.
+
+----$$$$----$$$$----
+Mathematical Problems in Engineering 7
+
+Dynamic
+submodel
+
+Open inventor
+
+Figure 2: Data Visualization Module of SHM System.
+
+Visual mappin
+PP
+<—
+
+Visual
+scenes
+
+Figure 3: Visual workflow of SHM System.
+
+The kernel of Visual Workflow in SHM system is visual mapping, as shown in Figure 3.
+There are three steps to complete the flow. In the first step, we input the preprocessed,
+standardized, and assessed data into the visual model DynaView. The visual model can
+map those data dimensions into the visual dimension. The critical step can produce the
+static submodel and dynamic submodel. In the second step, the visual model can also map
+the interactive information such as time lapse and interaction with mouse or keyboard into
+the interaction submodel. In the third step, all of the information of the three submodels is
+displayed in the visual scenes for users to examine and interact.
+
+3.3.2. DynaView: Data Visualization Model of SHM System
+
+OpenGL and Open Inventor is a real kind of mathematics state machine which can control the
+basic graphical programming. They can handle lots of mathematics computing in graphical
+problems. The developer and designer concentrate on how to build those visual scenes.
+
+----$$$$----$$$$----
+8 Mathematical Problems in Engineering
+
+Static submodel Dynamic submodel Interactive submodel
+
+Static Graphic
+attributes elements Stress value
+
+Visual Visual
+
+Feature Visual : . : .
+dimensions dimensions
+
+attributes dimensions
+Strain value
+
+Figure 4: DynaView Visualization Model.
+
+Although both OpenGL and Open Inventor provide the ability to produce lots of complicated
+dynamic and interactive visual scenes, those toolkits themselves can only provide the method
+or function of building and rendering the visual scenes. They do not provide the visualization
+models in special domain. It is necessary for the SHM professionals to build a sophisticated
+dynamic visual model to be fit for the SHM system.
+
+DynaView, the Data Visualization Model of SHM System, is presented to solve the
+problem we met. It is shown in Figure 4. Firstly, DynaView model maps the static data
+dimensions to the basic elements of visual graphics such as cylinder, sphere, point, line,
+and surface. The DynaView model also maps the data dimensions to the elements’ visual
+dimensions such as material, color, brightness, angle, transparency, and height. All the basic
+elements and their visual dimensions construct the static submodel. Secondly, DynaView
+model connects the motoring and computing data with those basic elements and their visual
+dimensions. The sampling data is changing with time lapse. All the assessed data derived
+from the sampling data are also dynamic changing. All those data construct the dynamic
+submodel. Lastly, DynaView model maps the user interactions into interactive model which
+provides the ability to receive and handle the user’s interactive needs.
+
+(1) Static submodel: input data of this model is preprocessed sampling data. The
+submodel translates them into standardized modeling attributes. It abstracts the
+geometrical characteristics and maps them into the basic visual elements. It also
+builds the static visual scenes using visual dimensions such as points, lines and
+surface. At the same time, the submodel maps the structural attributes into the basic
+graphical elements’ visual dimensions with detailed information. The static visual
+scenes are the visual mapping of the civil structures.
+
+(2) Dynamic submodel: input data of this model is the preprocessed and assessed
+changing data which can reflect the changing civil structures such as stress
+and strain. In order to construct visual scenes, those data are changed into
+standardized modeling attributes which can be mapped into basic visual elements
+and their visual dimensions. Because the sampling data is constantly changing,
+the standardized modeling attributes are dynamic data too. The DynaView model
+
+----$$$$----$$$$----
+Mathematical Problems in Engineering 9
+
+Table 1: Load-deflection experiment data.
+
+Number Load (KN) Test 1 (mm) Test 2 (mm) Test 3 (mm) Test 4 (mm) Test 5 (mm)
+
+0 0 0 0 0 0 0
+
+1 3.673 —0.0909 0.601 0.696 0.430 —0.0301
+2 8.440 —0.1118 0.611 2.121 1.380 —0.0668
+3 13.210 —0.1241 1.939 4.151 2.703 —0.1011
+4 17.966 —0.1444 3.338 5.883 3.842 —0.1323
+5 22.737 —0.1842 4.292 7.747 5.103 —0.1570
+6 25.121 —0.2203 5.027 8.835 5.860 —0.1913
+7 27.505 —0.2504 5.619 9.761 6.472 —0.2213
+8 29.889 —0.2734 6.241 10.7 7.084 —0.2530
+9 32.273 —0.3005 7.061 11.967 7.903 —0.2910
+10 34.657 —0.3351 7.731 12.977 8.630 —0.3243
+
+maps the dynamic data to the TimeSensor nodes which is provided by the toolkit.
+Those changing data make the scenes dynamic.
+
+(3) Interactive submodel: input data of this model is the interactive event information
+from mouse or keyboard. The model transmits the interactive event to the
+TouchSensor nodes and ProximitySensor nodes which are provided by the toolkit.
+
+The user interactivity can be responded in the visual scenes.
+
+When the DynaView model is built, it also needs Open Inventor toolkit to render visual
+scenes in the computer. The user can observe, translate, rotate, examine, and interact with the
+visual scenes in the ExamineViewer which is provided by the toolkit. The user can also watch
+the dynamic scenes on a regular Web Browser such as IE if the proper plugins are installed.
+The user can directly realize current health state of the civil structure and can interact with
+the visual scenes to get more information about the structure.
+
+4. Experiments
+4,1. Preprocess the Sampling Data
+
+The experiment simulates that the reinforced concrete beam is pressed to concentrated load
+on the center of beam during the course of pressing. The experiment is completed in the
+Key Laboratory of Structural Engineering and Earthquake Resistance. As Figure 5 shows,
+Figure 5(a) is the structure of beam. Figure 5(b) is the load of the beam. Figure 5(c) is the
+distribution of testing point. The input parameters are as follows: f, is compressive strength
+of concrete; fy, is the vertical steel area in the area of tensile; A, is the steel in the area of
+tensile; fy is the vertical steel in the area of compression; A, is the steel area in the area of
+compression. b and h are the broad and height cross-section.
+
+The experiment simulates load on the center of beam’s changing when every test point
+is pressed. The value of deflection and strain is concerned. All the experimental data are listed
+in Tables 1 and 2. Under the condition, the warning value of deflection and stain is 13.5 mm
+the former and 1550ye the latter. When the load is changing from zero to 34.657 KN, the
+values from 5 test point are recorded into the two tables. From the data, it is concluded that
+the value of deflection never exceeds the warning value, though the value of strain starts to
+over the warning value when the load is bigger than 29.889 KN.
+
+----$$$$----$$$$----
+10 Mathematical Problems in Engineering
+
+$6.5@100
+
+900 900 900
+
+50 50
+
+S2_ S456. S8__S10_
+
+(S1) (83) (85) (S7) (89)
+900 225 | 225 | 225 | 225 900
+
+180
+
+S1_ $3 $5 $7 $9 S2_S4_G6 $8 $10
+(c)
+
+Figure 5: The experiment model of reinforced concrete beam.
+
+Table 2: Load-strain experiment data.
+
+Number Load (KN) Test 1 (pe) Test 2 (HE) Test 3 (HE) Test 4 (pe) Test 5 (pe)
+
+0 0 0 0 0 0 0
+
+1 3.673 60 94 55 72 62
+2 8.440 272 327 304 332 251
+3 13.210 562 653 613 653 558
+4 17.966 767 895 850 883 817
+5 22.737 990 1136 1122 1145 1082
+6 25.121 1137 1298 1290 1310 1273
+7 27.505 1260 1434 1431 1460 1399
+8 29.889 1380 1571 1565 1595 1551
+9 32.273 1542 1754 1785 1789 1738
+10 34.657 1699 1925 1935 1956 1888
+
+----$$$$----$$$$----
+Mathematical Problems in Engineering 11
+
+Table 3: Arithmetic mean value and standard deviation of four damage states.
+
+Health state Little damage state Moderate damage state Severe damage state
+Arithmetic mean value 22.6 46.8 64.5 73.9
+Standard deviation 22.8 26.2 19.5 3.8
+
+Table 4: Eigen values of three recognizing damage states.
+
+Arithmetic mean value Standard deviation
+Recognizing state 1 24.7 21.4
+Recognizing state 2 36.1 24.6
+Recognizing state 3 25.1 22.1
+
+Table 5: The lattice degrees of nearness of three recognizing damage states.
+
+SHu Stu Smu Ssu Max
+Recognizing state 1 0.9668 0.7703 0.2014 0.0864 0.9685
+Recognizing state 2 0.9455 0.9388 0.7899 0.5011 0.9855
+Recognizing state 3 0.9455 0.7211 0.2217 0.0744 0.9642
+
+The formula o = Ee < fy, can compute the section’s reinforcement stress value. E in
+the formula is a constant, and E = 2.1 x 10° (Unit: N/mm7), while fy is a constant too, and
+fy = 310 KN. The sampling data such as deflection and stress are obtained in the experiment.
+Substituting both the two constants’ value into the formula, we can get the value of the stress
+o. Comparing the value with yield strength f,, it is concluded that if the compared value
+is between 30% and 40%, the values are normal. The users must pay great attention to the
+abnormal values in case of the unexpected accidents.
+
+4,2. Assessment of Structural Damage State
+
+The experimental structure is shown in Figure 5. There are the arithmetic mean value and
+standard deviation of four structural states’ eigen values in Table 3. The eigen values of three
+recognizing damage states are shown in Table 4. The lattice degrees of nearness with random
+state fuzzy sets of three recognizing damage states are shown in Table 5. All the data indicate
+that the assessment of structural damage condition based on fuzzy pattern recognition is
+effective and practicable.
+
+4.3. Dynamic Visualization of the Experimental Structure
+
+The experimental structure is shown in Figure 5. According to the experiment’s structure, the
+preprocessing data, and the assessment information, we can build the dynamic model for the
+example structure.
+
+(1) The example static submodel: the experimental structure is a simplified reinforced
+concrete beam. We map the beam’s structure into the graphical elements with Open
+Inventor hierarchical nodes to create the static submodel. As shown in Figure 6, a
+simple virtual beam is in the visual scene which is organized as a tree inside.
+
+----$$$$----$$$$----
+12
+
+Mathematical Problems in Engineering
+
+Figure 6: Static model of the experimental structure.
+
+Figure 7: Dynamic model of the experimental structure.
+
+(2) The example dynamic submodel: according to the assessed information and
+
+damage state, we build the dynamic submodel. The various information and the
+changing state can also be mapped into the graphical elements with Open Inventor
+hierarchical nodes. Especially, the midspan load of the experimental structure is
+from one side to another. Its values change consciously with the characteristic
+of instantaneity. So we map the time lapse event into the TimeSensor node and
+complete the scene with ROUTE statement to get the dynamic scenes. As shown in
+Figure 7, a simple virtual dynamic visual scene which is organized as a tree inside
+is properly built.
+
+(3) The example interactive submodel: the experiment considers some simple user
+
+interaction such as dragging the load object (e.g., a car or something) from one side
+to the other side. Dragging interaction can be a direct and subjective operation for
+the users to get more information about the health state. The interactive submodel
+obtain the user’s interactive event and handle it. After the interaction, the next scene
+is built. The events are mapped into the TouchSensor node or another sensor node
+with Open Inventor toolkit and ROUTE statement. As shown in Figure 8, a simple
+interactive visual scene which is organized as a tree inside is properly built.
+
+We build DynaView model of the experimental structure, including the static
+
+submodel, the dynamic submodel, and the interactive submodel with the development
+environment VC++6.0 and Open Inventor toolkit. In fact, DynaView Model is a visual scene
+
+----$$$$----$$$$----
+Mathematical Problems in Engineering 13
+
+Figure 8: Interactive model of the experimental structure.
+
+tree constructed by Open Inventor nodes. Users can observe the visual scenes in the inbuilt
+browser provided by Open Inventor. Users can directly examine and interact with the scenes,
+paying more attention to the structural damage state at any time.
+
+5. Conclusion
+
+A general and dynamic visualization model named DynaView is proposed. This model
+consists of static submodel, dynamic submodel, and interaction submodel. The raw data
+is from sampling monitoring data. The assessment method is an effective general and
+practicable assessment of structural damage condition based on fuzzy pattern recognition.
+We built virtual scenes with DynaView model and Open Inventor toolkit in VC++6.0. We
+implement the dynamic and interactive visual display in SHM system. Using the DynaView
+Model, users can directly examine and interact with the virtual scenes. User also can
+reconstruct the dynamic process of inner or outside changing on the structure. Although the
+experimental structure is a simplified reinforced concrete beam, the DynaView model is the
+base of handling complicated and large structure such as large bridge and large building. In
+the future, DynaView model also can provide more and more interactive ability for users to
+analyze the health states.
+
+Acknowledgments
+
+This work was supported by the NSFC Grant no. 50878184 and National 863 Program
+Grant no. 2006AA047Z437. Thanks to Yang Yang who participates in the visual modeling
+work. Thanks to Haifeng Yang who provides important professional SHM knowledge for
+the project.
+
+References
+
+[1] K. Zhou, Q. Wang, W. Liu, and J. Zhang, “A summary review of recent advances in research on
+structural health monitoring for civil engineering infrastructures,” Industrial Construction, vol. 39, no.
+3, 2009.
+
+[2] A. Liand Y. Ding, Engineering Structural Damage Early Warning—Theory and Application, Science Press,
+Bei Jing, China, 2007.
+
+[3] J. Yuan, L. Zhong, W. Qu, and P. Jin, “Study on visualization for structure health monitoring system,”
+Journal of Wuhan University of Technology, vol. 32, no. 5, pp. 925-928, 2008.
+
+[4] L. Cheng, The studies on damage identification method and damage results visualization in arch [Ph.D. thesis],
+Jinan University, 2010.
+
+[5] L. Zhong, J. L. Yuan, M. L. Lou, and J. Y. Chen, “Study of structure dynamic simulation methods,”
+Journal of Earthquake Engineering and Engineering Vibration, vol. 23, no. 2, pp. 51-56, 2003.
+
+----$$$$----$$$$----
+Copyright of Mathematical Problems in Engineering 1s the property of Hindawi Publishing Corporation and its
+content may not be copied or emailed to multiple sites or posted to a listserv without the copyright holder's
+
+express written permission. However, users may print, download, or email articles for individual use.
+
+----$$$$----$$$$----

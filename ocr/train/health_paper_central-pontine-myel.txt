@@ -1,0 +1,730 @@
+Rev Bras Anestesiol
+2009; 59: 3: 344-349
+
+INFORMAGAO CLINICA
+CLINICAL REPORT
+
+Mielinolise Pontina Central apos Transplante Hepatico:
+oO Sodio E o Unico Vilao? Relato de Caso*
+Central Pontine Myelinolysis after Liver Transplantation:
+is Sodium the Only Villain? Case Report
+
+Bruno Salomé de Morais, TSA', Fabiano Soares Carneiro, TSA', Rodolfo de Morais Araujo’,
+Guilherme Freitas Araujo*, Rodrigo Bernardes de Oliveira‘
+
+RESUMO
+
+Morais BS, Carneiro FS, Araujo RM, Oliveira RB, Araujo GF -
+Mielindlise Pontina Central apds Transplante Hepatico: o Sddio E o
+Unico Vildo? Relato de Caso.
+
+JUSTIFICATIVA E OBJETIVOS: A ocorréncia de sintomas neuro-
+ldgicos em pacientes gravemente enfermos 6 comum e, muitas ve-
+zes, um desafio propedéutico. Descrita ha cerca de 50 anos, a
+desmielinizagao dos neurénios da regiao pontina é uma alteracao
+patologica associada a quadros neuroldgicos e psiquiatricos apds
+transplante hepatico. O objetivo deste relato foi apresentar a
+mielinolise pontina central diagnosticada no pds-operatorio de
+transplante hepatico e discutir sua fisiopatologia.
+
+RELATO DO CASO: Paciente do sexo feminino, 29 anos, subme-
+tida a transplante hepatico devido insuficiéncia hepatica fulminan-
+te. No pds-operatorio apresentou quadro neuroldgico caracteristico
+de Sindrome Locked In e lesédes compativeis com mielinolise
+pontina central a ressonancia nuclear magnética. A paciente nao
+apresentou oscilag¢des exageradas do sddio plasmatico, fon fre-
+quentemente incriminado como agente causal, evoluindo com me-
+lhora significativa em algumas semanas.
+
+CONCLUSOES: A mielinélise pontina central tem etiologia
+multifatorial e atencao especial deve ser dada ao grupo de paci-
+entes com maior risco, tais como aqueles submetidos a alteragdées
+abruptas da natremia, transplantados de figado, etilistas crénicos
+e desnutridos. E importante reconhecer que as sindromes desmie-
+linizantes osmoésticas podem surgir em pacientes com niveis
+séricos de sddio baixo, normal ou elevado, evidenciando a contri-
+bui¢cao de outros fatores desencadeantes.
+
+Unitermos: CIRURGIA, Transplante: figado; COMPLICACOES: mie-
+lindlise central da ponte.
+
+* Recebido do (Received from) Servico de Anestesia para Transplante de Or-
+gaos do Hospital das Clinicas da Universidade Federal de Minas Gerais (HC/
+UFMG), Belo Horizonte, MG
+
+1. Anestesiologista do Hospital Lifecenter e do Grupo de Transplante de Or-
+gaos do HC/UFMG
+
+2. ME, do CET de Anestesiologia do Hospital das Clinicas da UFMG
+
+3. Graduando em Medicina pela UFMG; Académico da Iniciagao Cientifica
+
+4. Anestesiologista do Grupo de Transplante de Orgaos do HC/UFMG;
+Anestesiologista do Hospital Vila da Serra; Anestesiologista e Coordenador
+da Residéncia de Anestesiologista do Hospital Semper
+
+Apresentado (Submitted) em 11 de dezembro de 2008
+Aceito (Accepted) para publicagcao em 9 de fevereiro de 2009
+
+Enderego para correspondéncia (Correspondence to):
+Dr. Bruno Salomé de Morais
+
+Rua Donato da Fonseca 213/102
+
+Cora¢ao de Jesus
+
+30380-260 Belo Horizonte, MG
+
+E-mail: brunomoraisanet@yahoo.com.br
+
+344
+
+SUMMARY
+
+Morais BS, Carneiro FS, Araujo RM, Oliveira RB, Araujo GF — Cen-
+tral Pontine Myelinolysis after Liver Transplantation: Is Sodium the Only
+Villain? Case Report.
+
+BACKGROUND AND OBJECTIVES: Critically ill patients
+frequently develop neurologic symptoms, which frequently become
+a Clinical challenge. Described approximately 50 years ago, pontine
+neuronal demyelination is a pathologic change associated with
+neurologic and psychiatric problems after liver transplantation. The
+objective of this report was to present a case of central pontine
+myelinolysis diagnosed after liver transplantation and to discuss its
+pathophysiology.
+
+CASE REPORT: A 29 years old female patient underwent liver
+transplantation for fulminant hepatic failure. Postoperatively, she
+developed neurologic symptoms characteristic of the Locked In
+Syndrome and the MRI showed changes compatible with central
+pontine myelinolysis. The patient did not develop dramatic changes
+in sodium plasma levels, which is frequently incriminated as the cau-
+sal agent, and improved considerably within a few weeks.
+
+CONCLUSIONS: The etiology of central pontine myelinolysis is
+multifactorial, and special attention should be given to the group of
+patients at greater risk, such as those with sudden changes in the
+plasma levels of sodium, liver transplantation, chronic alcoholics, and
+malnourished. It is important to recognize that osmotic demyelination
+can develop in patients with low, normal, or elevated plasma levels
+of sodium, indicating the contribution of other trigger factors.
+
+Keywords: COMPLICATIONS: central pontine myelinolysis; SUR-
+GERY, Transplantation: liver.
+
+INTRODUGAO
+
+A mielindlise pontina central (MPC) € uma complicagao neu-
+rologica grave e incomum caracterizada por desmielinizagao
+aguda de neur6énios localizados na regiao centro-pontina,
+acompanhada de manifestag6es graves e por vezes irre-
+versiveis '. Apesar de se acreditar que a correcao rapida do
+sddio plasmatico seja o principal fator causal 7, este relato
+reforca que existem outros fatores relacionados ao apare-
+cimento da MPC.
+
+RELATO DO CASO
+
+Trata-se de paciente feminina, 29 anos, 1,65m, 58 kg, MELD 40,
+submetida a transplante hepatico ortotd6pico de doador cadaver
+
+Revista Brasileira de Anestesiologia
+Vol. 59, N° 3, Maio-Junho, 2009
+
+----$$$$----$$$$----
+MIELINOLISE PONTINA CENTRAL APOS TRANSPLANTE HEPATICO: O SODIO E O UNICO VILAO? RELATO DE CASO
+
+por hepatopatia aguda fulminante. Encaminhada do CTI intu-
+bada, em ventilagao mecanica ha 48 horas devido a deterio-
+ragao do quadro neurologico e instabilidade hemodinamica.
+A paciente foi monitorizada com eletrocardidgrafo, oximetro
+de pulso, pressao intra-arterial, cateter de artéria pulmonar
+com medidas continuas de débito cardiaco e saturacgao ve-
+nosa mista de oxigénio. Tromboelastografia, eritrograma,
+coagulograma, ionograma e gasometria arterial foram rea-
+lizados periodicamente durante toda a intervengao cirurgica.
+Foi mantida anestesia geral balanceada e infusao continua de
+noradrenalina para manutengao de pressao arterial média
+acima de 60 mmHg. A reposi¢ao volémica, guiada pelos
+exames seriados, foi realizada com solugao de Ringer com
+lactato com albumina a 5% e hemoderivados. A paciente evo-
+luiu com estabilidade hemodinamica e viabilidade do enxerto,
+sendo extubada 48 horas apos o transplante, quando apre-
+sentou quadro neurologico caracterizado por tetraplegia e
+anartria. Seguia o examinador com o olhar horizontal, mas nao
+obedecia a ordens e apresentava sinal de Babinski bilate-
+ralmente. Apds 24 horas, foi realizada ressonancia nuclear
+magnetica (RNM) de cranio que evidenciou desmielinizagao
+em regiao centro-pontina (Figura 1), firmando o diagnostico de
+MPC. A paciente recuperou-se bem em poucas semanas e
+
+Figura 1 — Ressonancia Magnética do Cranio. Imagem hiperintensa
+em T, (axial) e hipointensa em T, (sagital), triangular e acaptante,
+no centro geométrico da ponte. Conformagao em asa de
+morcego observada no corte axial.
+
+Tabela | — Evolugao da Natremia durante o Perioperatorio
+
+Periodo Natremia (mEq.L”)
+Veéspera da operacgao 138
+Fase pré anepatica 133
+Fase anepatica 136
+Fase neohepatica 138
+D 1 pds-operatorio 138
+D 2 pds-operatorio 142
+D 3 pods-operatorio 139
+
+Revista Brasileira de Anestesiologia
+Vol. 59, N° 3, Maio-Junho, 2009
+
+teve alta hospitalar com leves disartria e dismetria. Apresen-
+tou boa recuperacgao da forg¢a muscular e voltou a deambular
+normalmente. O acompanhamento neuroldgico foi mantido
+no pds-operatorio. Durante todo o periodo perioperatorio a
+paciente nao apresentou alteragoes bruscas nos niveis
+plasmaticos de sddio, conforme tabela |.
+
+DISCUSSAO
+
+Complicag6es neurologicas aparecem frequentemente apos
+transplante hepatico, com incidéncia variando de 8% a
+47% '°8. Essas complicagées, que incluem encefalopatias,
+desordens cerebrovasculares, infeccdes, neurotoxicidade
+induzida por imunossupressores e lesdes nervosas perifé-
+ricas, podem ter grande influéncia na sobrevida e qualida-
+de de vida do paciente '.
+
+A MPC foi primeiramente descrita em 1959 °, sendo relatada
+apos transplante hepatico em 1978 '°. Apresenta incidéncia
+de 1,2% a 10% em receptores de figado, com alta incidéncia
+de mortalidade ®"'. Por definicao, trata-se de desmieliniza-
+cao nao-inflamatoria, frequentemente simétrica, concentra-
+da no centro da ponte. Entretanto, em 10% dos casos, a
+desmielinizagao também ocorre em regides extrapontinas,
+tendo-se proposto o termo sindromes desmielinizantes
+osmoticas (SDO) para tais situagdes 2'7. As SDO sao rapi-
+damente progressivas e geralmente fatais. A MPC 6 a mais
+grave complicagao neurologica apos o transplante hepatico,
+com mortalidade acima de 50% nas duas primeiras sema-
+nas e 90% em seis meses. Quando os pacientes sobrevi-
+vem, a maioria apresenta deficits neuroldgicos ‘*"°.
+
+A etiologia da desmielinizagao osmotica nao é bem entendida.
+Embora a rapida corregao do sodio sérico na hiponatremia
+tenha sido implicada como principal fator causal, o abuso de
+alcool e transplante hepatico sao fortes fatores preditivos in-
+dependentes *°. Outros fatores de risco estao sendo identifi-
+cados, como insuficiéncia adrenal, desnutricao, faléncia renal
+cronica e hemodialise, sepse e malignidades; podendo de-
+senvolver-se na auséncia de flutuacdes do sddio sérico 177°.
+A MPC é uma sindrome clinica caracterizada por tetraplegia
+e paralisia pseudobulbar, frequentemente acompanhada por
+depressao da consciéncia '%. Progressiva letargia, quadripa-
+resia, disartria, oftalmoplegia, disfasia, ataxia e alteragdes dos
+reflexos ocorrem em dois a sete dias apos o inicio do trata-
+mento da doenga subjacente ou da corregao de disturbios
+hidreletroliticos 7. Como consequéncia, um pseudocoma tipi-
+co se desenvolve, também conhecido como sindrome locked-
+in (tetraplegia, anartria, seguir 0 examinador com os olhos
+sem obedecer suas ordens, sinal de Babinski positivo bila-
+teralmente) '°. Embora possa ser reversivel, o curso clinico
+usual 6 a progressao para Obito apds dias ou semanas °°.
+Confirmagao radioldgica 6 necessaria para a exclusao de
+outros diagnosticos e para determinagao da extensao do
+processo de desmielinizagao. A tomografia computadorizada
+pode subestimar a verdadeira extensao da doenga. O valor
+
+345
+
+----$$$$----$$$$----
+MORAIS, CARNEIRO, ARAUJO E COL.
+
+da ressonancia nuclear magnética (RNM) em determinar o
+numero e a extensao das lesdes é de grande significancia,
+apresentando leso6es desmielinizantes agudas simétricas
+com hipointensidade em T, e hiperintensidade em T,, duran-
+te a fase subaguda, devido as micro-hemorragias secunda-
+riaS a presenga de injuria endotelial. As lesoes na RNM
+aparecem dias ou semanas apdos 0 inicio dos sintomas °°.
+As SDO s@ao caracterizadas pela dissolugcao das bainhas de
+mielina, poupando os ax6énios nervosos. Surpreendente-
+mente, ha auséncia de resposta inflamatoria, levando a su-
+gestao de que a morte celular 6 mediada por apoptose ?”.
+Células gliais, vulneraveis na MPC, tém significante papel no
+controle da osmolalidade extracelular dos neurénios que
+sustentam, utilizando a glicose como substrato metabodlico.
+Durante a hiponatremia, na tentativa de diminuir o edema
+celular, as células expulsam particulas osmoticamente ativas,
+como a taurina, para reduzir o acumulo de agua intracelular *°.
+No processo reverso, as células gliais ativam bombas de
+Na*-K*ATPase para importar eletrolitos, as custas de gran-
+de gasto metabdlico, utilizando toda a glicose disponivel '°.
+Esse estresse metabolico resulta na liberagao de glutamato
+e de outros neuromoduladores excitatorios, causando a
+abertura de canais de calcio que, juntamente com a maior
+producgao de radicais livres pelas mitoc6éndrias, iniciam o
+processo apoptotico '*.Em pacientes com faléncia hepatica,
+as células gliais nao tém um suprimento adequado de glico-
+se ou glicogénio, portanto, pequenos desarranjos levam a
+rapida deplecao de energia e morte celular 7. Osmolitos or-
+ganicos protegem o encéfalo de rapidas mudang¢as na
+osmolalidade sérica. Pacientes hepatopatas tém deficién-
+cia de mioinositol, um importante osmolito, tornando-os
+susceptiveis a MPC. Além do mais, tais pacientes encon-
+tram-se em balango nitrogenado negativo, diminuindo a
+quantidade de aminoacidos disponiveis para a formacao de
+osmolitos organicos essenciais (taurina, creatina) ®. Fator de
+risco adicional é€ a hipocalemia, pois aumenta o potencial de
+acao contra o qual a ATPase deve operar '°. Modelos animais
+demonstraram que os niveis encefalicos de fosfocreatina,
+creatina, mioinositol, glicerofosforilcolina, taurina, glutamato
+e glutamina diminuem em 24 horas apos o inicio da
+hiponatremia, mas se reacumulam lentamente durante a
+terapia corretiva, independentemente do ritmo de corregao
+da natremia. Esse fato explica porque nivel normal de sddio
+nao exclui o diagnéstico de SDO *.
+
+A predilegao da ponte nas SDO deve-se ao arranjo dos
+neur6énios e células gliais em conformagao linear rigida, for-
+cando as células a perderem mais osmolitos como mecanis-
+mo adaptativo, pois nao podem se edemaciar. Tal arranjo
+também limita o estoque e transporte de glicose, devido a
+maior demanda metabolica e pior perfusao sanguinea, ja que
+esta se da apenas por ramos perfurantes da artéria basilar *°.
+Nenhum tratamento especifico tem se mostrado capaz de
+interromper ou reverter o progresso das SDO. Embora rela-
+tos de casos isolados sugiram que esteroides, hormdénios
+liberadores de tireotropina e plasmaférese ‘7° possam ser
+
+346
+
+uteis, tais tratamentos necessitam de maior fundamentacao,
+visto que nenhum trabalho com distribuigao aleatoria dos
+pacientes comprovou sua eficacia. Varias diretrizes 11:19:16.2"
+sobre a adequada reposicao de sddio em pacientes hipo-
+natrémicos ja foram publicadas, devendo-se evitar sua ele-
+vacgao acima de 12 mEq.L" nas primeiras 24 horas. Uma
+abordagem adequada sugerida é repor o deéficit de sddio de
+0,5 a 1 mEq.L".h" e nao exceder a natremia de 130 mEq.L"
+nas primeiras 48 horas:. Apesar do paciente, no presente
+caso, nao ter apresentado hiponatremia importante, a vari-
+acao do sddio foi inferior a 10 mEq.L' em 24 horas, duran-
+te toda internagao. Ha uma escassez de recomendagoes
+para se tratar individuos com sddio sérico normal.
+
+Até o momento, a prevengao da desmielinizagao osmotica
+é o esteio do tratamento. A visao predominante (originada
+grandemente de estudo de casos) € que individuos com um
+ou mais fatores de risco (doenga sistémica grave, alcoolis-
+mo, transplante hepatico, desnutrigao) devem ser submeti-
+dos a frequentes exames neuroldgicos, juntamente com
+exames de imagem. SDO devem ser consideradas em pa-
+cientes que nao se recuperam como esperado de uma en-
+fermidade grave ou em pacientes que manifestam novos
+sintomas psiquiatricos depois de um quadro grave.
+Recomenda-se que nos pacientes de alto risco deve-se evi-
+tar o estresse metabolico com reposicao de tiamina e, se
+necessaria correcao do sddio, fazé-la lentamente. Deve-se
+realizar controle glicémico rigoroso, dialise pré-operatoria
+nos nefropatas e correcao de fons, além da correcao de ou-
+tros fatores exacerbantes 2.
+
+Destaca-se, portanto, que a MPC tem uma etiologia multi-
+fatorial, relacionada em parte ao estresse osmodtico neuronal
+e glial e, em parte, a deficiéncias no suprimento energético
+glial/neuronal e sua utilizagao, culminando com o processo
+de apoptose celular '*. Outro ponto relevante é que a reposi-
+cao lenta de sddio na hiponatremia crénica é fundamental
+para a prevencao desta doenga, porem atencao especial deve
+ser dada a grupo de pacientes de maior risco como os trans-
+plantados de figado, etilistas cr6nicos e desnutridos. E impor-
+tante reconhecer que as SDO podem surgir em pacientes
+com niveis séricos de sodio baixo, normal ou elevado.
+
+Central Pontine Myelinolysis after Liver
+Transplantation: is Sodium the Only
+Villain? Case Report
+
+Bruno Salomé de Morais, TSA, M.D.; Fabiano Soares Carnei-
+ro, TSA, M.D.; Rodolfo de Morais Araujo, M.D.; Rodrigo
+Bernardes de Oliveira, M.D.; Guilherme Freitas Araujo, M.D.
+
+INTRODUCTION
+
+Central pontine myelinolysis (CPM) is a rare and severe neu-
+rologic complication characterized by acute central pontine
+
+Revista Brasileira de Anestesiologia
+Vol. 59, N° 3, Maio-Junho, 2009
+
+----$$$$----$$$$----
+CENTRAL PONTINE MYELINOLYSIS AFTER LIVER TRANSPLANTATION: IS SODIUM THE ONLY VILLAIN? CASE REPORT
+
+neuronal demyelination along with severe and occasionally
+irreversible manifestations '. Although it is believed that fast
+correction of the plasma levels of sodium is the main cau-
+se 7, this report supports the presence of other factors related
+to the development of CPM.
+
+CASE REPORT
+
+This is a 29-year old female, 1.65 m, 58 kg, MELD 40, who
+underwent orthotopic liver transplantation from a dead donor
+by reason of a fulminant liver failure. The patient was
+transferred to the ICU intubated and on mechanical ventila-
+tion for 48 hours due to worsening of her neurologic condition
+and hemodynamic instability.
+
+The patient was monitored with electrocardiogram, pulse
+oximeter, intra-arterial blood pressure, pulmonary artery
+catheter with continuous measurements of the cardiac output
+and mixed venous oxygen saturation. Thromboelastography,
+erythrogram, coagulogram, blood electrolytes, and arterial
+blood gases were done periodically during the surgery. She
+was maintained with balanced general anesthesia and
+continuous infusion of noradrenaline to maintain mean ar-
+terial pressure above 60 mmHg. Ringer’s lactate, 5%
+albumin, and blood products were administered according
+to the results of serial exams. The patient evolved with hemo-
+dynamic stability and transplant viability. She was extubated
+48 hours after the transplant, when she developed neuro-
+logic changes with quadriplegia and anarthria. She followed
+movements with horizontal eye movements, but she did not
+followed commands, and Babinski sign was positive bila-
+terally. After 24 hours, and magnetic ressoance imaging (MRI)
+of the head showed central pontine demyelination (Figure 1),
+confirming the diagnosis of CPM. The patient recovered in a
+few weeks, being discharged from the hospital with mild
+dysarthria and dysmetria. She presented good recovery of the
+muscle strength and was walking normally. Neurologic
+follow-up continued throughout the postoperative period.
+
+Figure 1 — MRI of the Head. Hyperdense image on T2 (axial) and
+hypodense in T1 (sagittal), triangular and without capture, at the
+geometric center of the pons. Bat-wing shape seen on axial
+view.
+
+Revista Brasileira de Anestesiologia
+Vol. 59, N° 3, Maio-Junho, 2009
+
+Table | — Perioperative Evolution of Sodium Serum Levels
+
+Period Sodium Levels (mEq.L")
+Day before surgery 138
+Pre-anhepatic phase 133
+Anhepatic phase 136
+Neohepatic phase 138
+D 1 postoperative 138
+D 2 postoperative 142
+D 3 postoperative 139
+
+During the entire perioperative period, the patient did not
+develop sudden changes in the plasma levels of sodium, as
+shown in Table I.
+
+DISCUSSION
+
+Neurologic complications are frequent after liver transplan-
+tation, with an incidence between 8% and 47% '*°. Those
+complications, which include encephalopathies, cerebro-
+vascular disorders, infections, immunosupressor-induced
+neurotoxicity, and peripheral nerve lesions can influence
+considerably survival and quality of life of patients *.
+
+Central pontine myelinolysis was first described in 1959 ° and
+in 1978 reported after liver transplantation '°. It has an incidence
+that ranges from 1.2% to 10% in liver transplant recipients,
+with a high mortality rate ®:. By definition, it is a non-inflam-
+matory, frequently symmetrical central pontine demyelination.
+However, in 10% of the cases demyelination also affects ex-
+tra-pontine areas, and the term osmotic demyelination
+syndrome (ODS) was proposed for such cases *:'7. Osmotic
+demyelination syndromes are rapidly progressive and
+usually fatal. Central pontine myelinolysis is the most severe
+post-liver transplantation neurologic complication with a
+mortality rate higher than 50% in the first two weeks and 90%
+in six months. When patients survive most of them have
+neurologic deficits '*"°.
+
+The etiology of osmotic demyelination is not well unders-
+tood. Although rapid correction of serum sodium levels in
+hyponatremia have been implicated as the main cause,
+alcohol abuse and liver transplantation are strong indepen-
+dent risk factors '*. Other risk factors such as adrenal insuf-
+ficiency, mal nutrition, chronic renal failure and hemodialysis,
+sepsis, and neoplasms are being identified and it can deve-
+lop in the absence of fluctuations in sodium serum levels 17°.
+Central pontine myelinolysis is a clinical syndrome charac-
+terized by quadriplegia and pseudobulbar paralysis, and it is
+frequently associated with loss of consciousness ‘°. Progres-
+sive lethargy, quadriparesis, dysarthria, ophthalmoplegia,
+dysphasia, ataxia, and changes in reflexes develop two to
+seven days after the onset of the treatment of the underlying
+
+347
+
+----$$$$----$$$$----
+MORAIS, CARNEIRO, ARAUJO ET AL.
+
+disease or correction of hydrolelectrolytic imbalance '*. As a
+consequence, a typical pseudocoma, also known as the
+locked-in syndrome (quadriplegia, anarthria, a capacity to
+follow the examiner with the eyes but not to follow command,
+bilateral Babinski sign) develops ‘’. Although it can be rever-
+sible the patient usually dies after several days or weeks °°.
+Radiological confirmation is necessary to exclude other
+diagnosis and to determine the exact extension of the de-
+myelination. Computed tomography can underestimate the
+real extension of the disease. Magnetic resonance imaging
+plays a fundamental role in the determination of the number
+and extension of the lesions showing acute, symmetrical
+demyelinating lesions, with hypointensity in T, and hyperinten-
+sity in T, in the subacute phase due to microhemorrhages
+secondary to endothelial damage. Lesions are visible on MRI
+a few days or weeks after the onset of the symptoms *.
+Osmotic demyelinating syndromes are characterized by the
+dissolution of myelin shafts, sparing the axons. Surprisin-
+gly, inflammation is absent suggesting that cell death is by
+apoptosis 2. Glial cells vulnerable on CPM play an important
+role in controlling the extracellular osmolality of the neurons
+they support using glucose as a metabolic substrate. During
+hyponatremia, in an attempt to reduce cellular edema, cells
+expel osmotically active particles such as taurine to reduce
+the amount of intracellular water '®. In the reverse process,
+glial cells activate Na*-K*ATPase pumps to import electroly-
+tes at the expense of a high metabolic cost using all glucose
+available '®. This metabolic stress results in the release of
+glutamate and other excitatory modulators that cause the
+opening of calcium channels, which, along with the increased
+production of free radicals by the mitochondria, start the
+process of apoptosis ‘. In patients with liver failure, glial cells
+do not have adequate glucose or glycogen supply and,
+therefore, small derangements lead to energy depletion and
+cell death 7. Organic osmolytes protect the brain from sudden
+changes in serum osmolality. Patients with liver disease
+have a deficiency of myo-inositol, an important osmolyte, be-
+coming susceptible to CPM. Besides, those patients present
+negative nitrogen balance decreasing the amount of amino
+acids available to form essential organic osmolytes (taurine,
+creatine) ®°. Hypocalcemia represents an additional risk factor
+because it increases the action potential against which
+ATPAse has to work ‘. Animal models demonstrated that
+brain levels of phosphocreatine, creatine, myo-inositol, glyce-
+rophosphorylcholine, taurine, glutamate, and glutamine
+decrease 24 hours after the beginning of hyponatremia, but
+accumulate again slowly during corrective treatment in-
+dependently of the rate of correction of sodium levels. This
+explains why normal sodium levels do not exclude the diag-
+nosis of ODS *.
+
+Osmotic demyelinating syndromes have a predilection for
+the pons because in this structure neurons and glial cells
+are arranged in a strict linear configuration forcing cells to
+lose more osmolytes as an adaptive mechanism, since they
+cannot become edematous. This set up also limits glucose
+
+348
+
+storage and transportation due to greater metabolic needs
+and worse perfusion, since it is done only by perforating
+branches of the basilar artery.
+
+Specific treatments capable of interrupting or reverting the
+progress of ODS do not exist. Although isolated reports that
+corticosteroids, thyrotropin releasing hormones, and plas-
+mapheresis ‘7° can be useful, those treatments need more
+support, since there are no randomized studies proving their
+efficacy. Several guidelines ‘'*'®21 on adequate sodium
+administration to hyponatremic patients have been publi-
+shed and one should avoid raising it above 12 mEq.L" in the
+first 24 hours. A proper approach would be to administer 0.5
+to 1.0 mEq.L".h" without exceeding sodium levels of 130
+mEq.L" in the first 48 hours. Although the patient presented
+here did not develop important hyponatremia, sodium chan-
+ges were lower than 10 mEq.L" in 24 hours throughout
+hospitalization. Recommendations on treating individuals
+with normal serum levels are lacking.
+
+Currently, treatment consists basically on preventing osmotic
+demyelination. The predominating view (based mainly on case
+reports) is that individuals with one or more risk factors (Severe
+systemic disease, alcoholism, liver transplantation, malnu-
+trition) should undergo frequent neurological exams, along
+with imaging exams. The diagnosis of osmotic demyelinating
+syndrome should be considered in patients who do not
+recover as expected from a severe disease or in patients who
+develop new psychiatric symptoms after being severely ill.
+Avoiding metabolic stress with administration of thiamine and
+if necessary slow correction of the serum levels of sodium
+are recommended in high-risk patients. Strict control of glu-
+cose levels, preoperative dialysis in patients with renal failure,
+and correction of electrolytes levels and other exacerbating
+factors are recommended 2.
+
+Central pontine myelinolysis has a multifactorial etiology,
+partly related to neuronal and glial osmotic stress, and partly
+to deficiencies on glial/neuronal energy supply and use
+culminating in the process of cellular apoptosis '. Slow cor-
+rection of chronic hyponatremia is fundamental for the pre-
+vention of this disorder; however, special attention should be
+given to the group of patients with higher risk factors like liver
+transplantations, alcoholism, and mal nutrition. It is important
+to recognize that ODS can affect patients with low, normal, or
+elevated serum levels of sodium.
+
+REFERENCIAS — REFERENCES
+
+01. Kim BS, Lee SG, Hwang S et al. - Neurologic complications in
+adult living donor liver transplant recipients. Clin Transplant 2007;
+21:544-547.
+
+02. Huq S, Wong M, Chan H et al. - Osmotic demyelination
+syndromes: central and extrapontine myelinolysis. J Clin Neurosci
+2007;14:684-688.
+
+03. Lewis MB, Howdle PD - Neurologic complications of liver
+transplantation in adults. Neurology 2003;61:1174-1178.
+
+04. Lopez OL, Estol C, Colina | et al. - Neurological complications
+after liver retransplantation. Hepatology 1992;16:162-166.
+
+Revista Brasileira de Anestesiologia
+Vol. 59, N° 3, Maio-Junho, 2009
+
+----$$$$----$$$$----
+05.
+
+06.
+
+07.
+
+08.
+
+09.
+
+10.
+
+11.
+
+12.
+
+13.
+
+14.
+
+15.
+
+16.
+
+17.
+
+18.
+
+CENTRAL PONTINE MYELINOLYSIS AFTER LIVER TRANSPLANTATION: IS SODIUM THE ONLY VILLAIN? CASE REPORT
+
+Sterzi R, Santilli 1, Donato MF et al. - Neurologic complications
+following orthotopic liver transplantation. Transplant Proc 1994;
+26:3679-3680.
+
+Burkhalter EL, Starzl TE, Van Thiel DH - Severe neurological
+complications following orthotopic liver transplantation in patients
+receiving FK 506 and prednisone. J Hepatol 1994;21:572-577.
+Ghaus N, Bohlega S, Rezeig M - Neurological complications in
+liver transplantation. J Neurol 2001;248:1042-1048.
+
+Bronster DJ, Emre S, Boccagni P et al. - Central nervous system
+complications in liver transplant recipients: incidence, timing,
+and long-term follow-up. Clin Transplant 2000;14:1-7.
+
+Adams RD, Victor M, Mancall EL - Central pontine myelinolysis:
+a hitherto undescribed disease occurring in alcoholic and
+malnourished patients. AMA Arch Neurol Psychiatry 1959;81:
+154-172.
+
+Starzl TE, Schneck SA, Mazzoni G et al. - Acute neurological
+complications after liver transplantation with particular referen-
+ce to intraoperative cerebral air embolus. Ann Surg 1978;187:
+236-240.
+
+Yu J, Zheng SS, Liang TB et al. - Possible causes of central
+pontine myelinolysis after liver transplantation. World J Gastro-
+enterol 2004;10:2540-2543.
+
+Soupart A, Ngassa M, Decaux G - Therapeutic relowering of the
+serum sodium in a patient after excessive correction of hypona-
+tremia. Clin Nephrol 1999;51:383-386.
+
+Sterns RH, Baer J, Ebersol S et al. - Organic osmolytes in acute-
+hyponatremia. Am J Physiol 1993;264:F833-836.
+
+Newell KL, Kleinschmidt-DeMasters BK - Central pontine
+myelinolysis at autopsy; a twelve year retrospective analysis. J
+Neurol Sci 1996;142:1394-1399.
+
+Brown WD - Osmotic demyelination disorders: central pontine
+and extrapontine myelinolysis. Curr Opin Neurol 2000;13:691-
+697.
+
+Ashrafian H, Davey P - A review of the causes of central ponti-
+ne myelinosis: yet another apoptotic illness? Eur J Neurol 2001;
+8:103-109.
+
+Taneja K, Sabharwal RK, Taneja A et al. - Central pontine mye-
+linolysis in a normonatremic child. Indian Pediatr 1997;34:153-
+156.
+
+Mast H, Gordon PH, Mohr JP et al - Central pontine myelinolysis:
+clinical syndrome with normal serum sodium. Eur J Med Res 1995;
+1:168-170.
+
+Revista Brasileira de Anestesiologia
+Vol. 59, N° 3, Maio-Junho, 2009
+
+19. Ardizzone G, Arrigo A, Schellino MM et al. - Neurological com-
+plications of liver cirrhosis and orthotopic liver transplant. Trans-
+plant Proc 2006;38:789-792.
+
+20. Grimaldi D, Cavalleri F, Vallone S et al. - Plasmapheresis improves
+the outcome of central pontine myelinolysis. J Neurol 2005;252:
+734-735.
+
+21. Snell DM, Bartley C - Osmotic demyelination syndrome following
+rapid correction of hyponatraemia. Anaesthesia 2008;63:92-95.
+
+RESUMEN
+
+Morais BS, Carneiro FS, Araujo RM, Oliveira RB, Araujo GF - Mie-
+lindlisis Pontina Central después del Transplante Hepatico: ¢Es el
+sodio el unico villano? Relato de Caso.
+
+JUSTIFICATIVA Y OBJETIVOS: El aparecimiento de sintomas neu-
+roldgicos en pacientes gravemente enfermos es comun y muchas
+veces, es un reto propedéutico. Descrita hace cerca de 50 afios, la
+desmielinizacion de las neuronas de la region pontina, es una alte-
+racion patologica asociada a cuadros neuroldgicos y psiquiatricos
+posteriores al transplante hepatico. El objetivo de este relato, fue
+presentar la mielinolisis pontina central diagnosticada en el
+postoperatorio de transplante hepatico y discutir su fisiopatologia.
+
+RELATO DEL CASO: Paciente del sexo femenino, 29 anos,
+sometida a transplante hepatico debido a un fracaso hepatico ful-
+minante. En el postoperatorio, present6 un cuadro neuroldgico ca-
+racteristico de Sindrome Locked In y lesiones compatibles con la
+mielinolisis pontina central a la resonancia nuclear magnética. La
+paciente no presento oscilaciones exageradas del sodio plasma-
+tico, que es el ion frecuentemente acusado de ser el agente causa-
+dor, y evolucioné con una mejoria significativa en algunas semanas.
+
+CONCLUSIONES: La mielindlisis pontina central tiene una etiologia
+multifactorial, y una atenci6n especial debe darsele al grupo de pa-
+cientes con mayor riesgo, tales como los sometidos a alteraciones
+abruptas de la natremia, transplantados de higado, etilistas
+cronicos y desnutridos. Es importante reconocer, que los sindromes
+de desmielinizaci6n osmosticos pueden surgir en pacientes con ni-
+veles séricos de sodio bajo, normal o elevado, evidenciando la
+contribucion de otros factores desencadenantes.
+
+349
+
+----$$$$----$$$$----

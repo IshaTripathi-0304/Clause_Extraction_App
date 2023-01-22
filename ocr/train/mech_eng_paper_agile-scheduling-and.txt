@@ -1,0 +1,735 @@
+Available online at www.sciencedirect.com
+
+ScienceDirect
+
+ELSEVIER
+
+Procedia CIRP 12 (2013) 330 — 335 ——————
+www.elsevier.com/locate/procedia
+
+8" CIRP Conference on Intelligent Computation in Manufacturing Engineering
+
+Agile scheduling and control for industrial product-service systems
+
+H. Meier’, E. Uhlmann”, N. Raue’, T. Dorka**
+
+“Ruhr-Universitat Bochum, Chair for Production Systems, Universitdtsstr. 150, 44801 Bochum, Germany
+Technische Universitat Berlin,Institute for Machine Tools and Factory Management, PascalstraBe 8 — 9, D-10587 Berlin, Germany
+* Corresponding author. Tel.: +49 (0) 234 32 28925; fax: +49 (0) 234 32 08925. E-mail address: dorka@I|ps.ruhr-uni-bochum.de.
+
+Abstract
+
+An Industrial Product-Service System (IPS?) is characterized by a high integration of product and service shares. This implies that
+the providing company develops an IPS? consisting of product share, e.g. a highly complex precision machine tool, and service
+share to increase customer value, strengthen the relationship between customer and provider and finally generate profit. However,
+providing an IPS? involves a high degree of organizational effort. The operation of an IPS? includes the detection of service
+demands, strategic and operative scheduling of processes and resources, coordination of service and supply network partners and
+the monitored delivery of service processes.
+
+In this paper, an IPS? Control Architecture for the operation phase is proposed. Then, the function and application area of two
+software systems, the IPS?-Execution System and the IPS?-Control System, are described and their interaction within the proposed
+architecture is outlined. Furthermore, the detailed interaction process is illustrated in an application scenario in order to demonstrate
+the advantages and necessity of both systems and their interdependency. Also, an outlook on further research is given.
+
+© 2013 The Authors. Published by Elsevier B.V.
+Selection and peer review under responsibility of Professor Roberto Teti
+
+Keywords: Control; System Architecture; Industrial Product-Service System.
+
+managed. A system which fulfills this function in the
+
+1. Introduction
+
+An industrial product-service system (IPS*) 1s
+characterized by a high integration of product and
+service shares. This integration implies that the
+providing company develops an IPS? consisting of
+product share, e.g. a highly complex precision machine
+tool, and service share to increase customer value,
+strengthen the relationship between customer and
+provider and finally generate profit [1]. However,
+providing an IPS? involves a_ high degree of
+organizational effort. Development of adequate business
+models, engineering of IPS? and support of the operation
+thereof are some of the challenges IPS? providers are
+confronted with.
+
+When looking closer at the operation phase of an
+IPS’, the detection of service demands, strategic and
+operative scheduling of processes and _ resources,
+coordination of service and supply network partners and
+the monitored execution of delivery processes has to be
+
+field of the precision machine tool industry will be
+introduced and illustrated with a control loop analogy.
+
+2. State of the Art
+
+To create a basic understanding for IPS? operation,
+the topics of IPS? itself, IPS* organization and planning
+and IPS? condition monitoring and service process
+support will be introduced.
+
+2.1. IPS?
+
+In [1] an enhanced definition of IPS* based on [2] is
+given:
+
+“An Industrial Product-Service System _ is
+characterized by the integrated and mutually determined
+planning, development, provision and use of product and
+service shares including its immanent software
+components in Business-to-Business applications and
+
+2212-8271 © 2013 The Authors. Published by Elsevier B.V.
+Selection and peer review under responsibility of Professor Roberto Teti
+doi:10.1016/j.procir.2013.09.057
+
+----$$$$----$$$$----
+H. Meier et al. / Procedia CIRP 12 (2013) 330 — 335
+
+represents a knowledge-intensive — socio-technical
+system.”
+
+IPS? aim at fulfilling contractually defined customer
+needs by the provision of product as well as service
+shares. To be able to guarantee a contracted business
+model [3], delivery processes are developed, planned
+and executed. Delivery processes can be maintenance
+procedures, technological upgrades, spare part deliveries
+or even training courses. Each of the delivery processes
+has requirements that have to be fulfilled by resources.
+These resources can be provided by a network of
+partners as well as by the provider or the customer.
+Hence, for the operation of IPS’, the organization of
+
+networks and the planning methods need to be executed.
+2.2. IPS? organization and planning
+
+The organization needed for providing IPS? is a
+layered network structure. The provider can use third
+party suppliers and resources of the IPS? customer to
+ensure the operation of an IPS?. The provider and all his
+suppliers form the Provider Network (PN) [4]. With the
+methods of strategic capacity and operational resource
+planning for IPS*, IPS? networks are formed [5]. They
+consist of all partners that take care of a specific IPS?.
+The IPS? network includes the customer of the IPS? as
+well. For each delivery process that is executed, an IPS?
+delivery network (IPS? DN) is_ instantiated. Only
+partners involved in the execution are involved in the
+IPS? DN [4].
+
+Strategic capacity planning is used to determine the
+capacities needed to supply all IPS? of a provider.
+Capacities of all kind of resources like humans, spare
+parts and tools are taken into account. The result of the
+planning is a delivery plan for all IPS”. It contains a
+schedule for each delivery process to be executed and
+the assignment of resources to delivery processes [5].
+
+Whenever an unplanned incident occurs at one IPS?
+which requires a new delivery process to be planned,
+Operational resource planning is used. The available
+resources are redistributed and the delivery schedule
+adjusted to provide the new delivery process for one
+IPS? while not affecting the operation of other IPS”. Both
+the strategic and operational planning methods can be
+implemented using an genetic algorithm [5].
+
+Network management for IPS? as well as planning
+has to be carried out by the IPS? provider. To support
+him in performing these tasks, a software tool fitting his
+needs can be used. An IPS?-Execution System (IPS?-ES)
+can provide the required functionality. Using cloud
+computing, the task of planning capacities and resources
+for several IPS?, possibly hundreds, can be executed in
+real time. The closely connected management of the
+network is supported by using an open architecture
+inside the system [6]. Especially information about
+
+planned delivery processes and resource availability has
+to be exchanged.
+
+2.3. Condition monitoring and service process support
+
+The automation of the operation of an IPS? aims at
+the control of processes in both product and service
+shares. On product share side, these processes can
+include condition monitoring of critical components [7],
+tools [8] or the automated execution of service related
+machine routines [9]. On service share side, the
+processes include human processes such as diagnosis or
+spare part exchange. The closed-loop control of such
+human processes is established through interactive
+instructions for a service technician with an adaptive
+workflow sensitive to the actual state of the product
+share. An IPS? process can include several involved
+actors on product as well as on service side.
+
+An agent system therefore provides means_ to
+represent all actors involved in IPS? operation and to
+execute such necessary processes [10]. The agent
+paradigm is founded on the view of a system as a
+computational organization consisting of various
+interacting roles [11]. The machine tool, individual
+components or consumable parts such as milling tools
+can be subject to monitoring, for example if their
+availability is guaranteed in the IPS? contract. Also each
+party involved in the IPS? operation is represented by a
+software agent to ensure the automated communication
+between these partners.
+
+The advantage of this agent-based IPS? control
+system is the flexibility of reacting to changing business
+models and service network partners. Furthermore, the
+complexity within one technical system consisting of
+many components can be handled in an efficient manner.
+Lastly, the shared definition of an overall concept in
+terms of a common ontology facilitates the agent
+communication and the long term data processing
+leading to an externalized knowledge representation.
+
+3. Proposed Concept for IPS? Control
+
+A machine tool sold and operated as an IPS? is
+characterized by a high integration of product and
+service shares. This implies that product and service
+share can be substituted if they have the same function
+or sub function in terms of fulfilling a customer need.
+During operation, the provision of service shares require
+that organizational efforts are undertaken in order to
+fulfill a contracted degree of service (e.g. availability) in
+an economically feasible way. A complete automation of
+necessary processes seems desirable in this context, but
+is highly challenging due to the vast multitude of
+uncertainties that had to be considered. This especially
+applies to the manual processes that become necessary
+
+331
+
+----$$$$----$$$$----
+332
+
+H. Meier et al. / Procedia CIRP 12 (2013) 330 — 335
+
+on site of the product share. Looking at the current state
+of the art in planning, execution and documentation of
+engineering services and their great potential for
+rationalization, these challenges need to be overcome in
+order to assure an efficient, secure and high quality
+operation of IPS?.
+
+The proposed approach encapsulates tasks necessary
+for the IPS? delivery and treats them as control
+problems. By pursuing this approach, a_ partial
+automation of processes shall be reached. Parts of the
+processes that require the manual execution of tasks are
+considered analogously.
+
+The fact that an IPS? is a dynamic system that
+requires continuous effort of the IPS? provider is
+inherent in its definition [1], [2]. These circumstances
+already lead to the representation of an IPS? as a control
+loop in the development phase [12]. However, in order
+to control an IPS? including its product and service
+shares during the operation phase, further aspects have
+to be considered and the control loop has to be extended
+to this phase of the lifecycle. Therefore, an IPS? Control
+Architecture is proposed.
+
+3.1. Design of an IPS? Control Architecture
+
+An IPS? can be considered a Large-Scale Complex
+System: it is composed of a number of smaller
+constituents which serve particular functions, share
+particular resources, governed by interrelated goals and
+constraints and require more than one controller [13].
+Controlling these kinds of systems, there are different
+approaches, which all aim at the reduction of
+complexity. From purely hierarchical multilevel
+systems, which allow the circulation of feedback only
+along the vertical axis, a development towards
+heterarchical concepts emerged [14]. Heterarchical
+control schemes allow the horizontal exchange of
+information among different control units on the same
+level, providing means for cooperation.
+
+Looking at the abovementioned challenges in IPS?
+operation, an IPS? fulfills customer needs by providing a
+specified degree of performance. This level can be
+expressed in contractually defined parameters, e. g. in
+terms of availability or quality of output parts.
+
+In order to provide the degree of performance agreed
+upon during the operation phase, the IPS? has to be
+influenced on various levels depending on its current
+State.
+
+3.1.1. IPS? Control Model
+
+During its operation, an IPS? can be influenced on
+several levels. In the framework of this paper, these
+levels are distinguished as follows:
+
+1. Lifecycle level
+
+2. Operation level
+3. Process level
+4. Effect level
+IPS? operation on each of these levels is considered as
+a closed-loop control system (Figure 1). A closed-loop
+control system generally consists of controller, actuator,
+controlled system and measuring unit (see Figure 1 on
+operation level). Through a continuous measurement of
+the controlled system, its deviation from the command
+variables is assessed in the controller. A decision is
+made in the controller on basis of the deviation and a
+correcting variable is passed on to the actuator, which
+imposes a correcting effect in the controlled system.
+Subsequently, the controlled system is measured.
+Higher level control loops determine the goals of the
+lower levels, resulting in command variables. Thus, all
+levels mutually affect each other.
+
+Lifecycle level
+
+The Lifecycle level contains the contract definition
+for and the development of the IPS?. Based on the
+customer demands, the business model is created and an
+adequate IPS? product model developed and
+implemented. The IPS? is then continuously evaluated
+regarding its fulfillment of customer needs and possible
+deviations from the defined goals are reacted to with
+adaptions of the business model. Newly arising or
+changing customer demands can be covered by business
+model adaptions. According to the changes, the IPS?
+product model is adjusted. By these means, the overall
+customer value is maintained throughout the IPS?
+lifecycle. The control loop has a time horizon of several
+days to weeks.
+
+Operation level
+
+Looking at the operation in greater detail, the
+Operation level provides the basis for ensuring required
+command variables. These are defined as IPS? target
+values, in order to determine the level of performance
+for the IPS? operation. A target value could be the
+Overall Equipment Effectiveness (OEE), or individual
+factors of the OEE equation. The desired influence on
+these values is achieved by strategic and operational
+planning of delivery processes and the consideration of
+process requests due to unplanned demands.
+
+Based on the IPS? product model, the initial delivery
+plan consisting of delivery processes is created with the
+strategic capacity planning method. The continuous
+monitoring of relevant machine and operational data on
+Process and Effect level measures the actual IPS?
+performance parameters. These parameters are then
+compared with the target corridors and allow the
+detection of any deviations.
+
+Such deviations indicate new and often unforeseen
+demands. The operative scheduling of processes with
+
+----$$$$----$$$$----
+H. Meier et al. / Procedia CIRP 12 (2013) 330 — 335
+
+available resources is necessary to fulfill these demands.
+The needed type of process has to be available in the
+IPS? product model in order to be _ scheduled
+automatically as a response to the demand. The adequate
+process is selected by the IPS?-CS. Based on this
+selection the process is included in the updated delivery
+plan. If no suitable process is available in the product
+model, the demand for a new process is escalated to the
+Lifecycle level. The consequence would be a
+reconfiguration of the IPS? business model. The
+Operation level has a time horizon from several hours to
+several weeks.
+
+Process level
+
+For each of the deployed processes of the delivery
+plan, a closed-loop control is established on the Process
+level. The whole solution space of possible process steps
+including available alternatives is defined in a so-called
+process network. Utilizing the inherent flexibility of
+these process networks, the optimal sequence of process
+steps will be adapted to the actual situation according to
+the closed-loop feedback.
+
+Recognized symptoms are transformed into possible
+goals and lead to a decision about which process step to
+choose next. The aim is to execute the overall process in
+the most effective way. Whenever it is not possible to
+reach the goal with the range of available process steps,
+
+| Lifecycle Level | IPS? strategic goals
+
+Acquire technological
+Skills
+
+Outsource activities
+outside of core focus
+
+Betrieb
+
+, imeranien
+Operation Level IPS? target values
+E.g.: OEE
+¢ Availability,
+
+* Technical Av.
+
+* Organisational Av.
+
+@ H Output Quality
+Ch Machine Accuracy
+- F Machine Performance 4:n
+
+IPS? process
+
+target values
+
+* Process execution
+time
+
+* Process result
+
+Process Level
+
+;
+
+IPS? process
+
+step measure
+¢ Process step result
+¢ Machine state
+change
+¢ Parameter
+adjustment
+Process step
+execution time
+
+Effect Level
+
+Sa
+
+actuator system
+
+an additional delivery process has to be scheduled on the
+Operation level. The Process level has a time horizon
+ranging from hours to minutes.
+
+Effect level
+
+Each concrete process step is controlled on the Effect
+level by influencing the system and monitoring the
+result. Both the product share (the technical system) and
+the service share (the service activity) are controlled
+interdependently. The Process level has a time horizon
+ranging from milliseconds to minutes, depending on the
+type of effect to be obtained.
+
+For the technical system, the influence is obtained
+automatically, either through actuators or the changing
+of intrinsic system variables. Means of condition
+monitoring are applied in order to track each action.
+Depending on whether the intended effect was achieved
+or not, appropriate measures can be taken as a reaction.
+The operations on this level therefore come closest to the
+conventional, technical understanding of a closed-loop
+control system.
+
+On the service side, the influence is achieved by
+multi-modal instructions for the personnel providing the
+service process [15]. The monitoring of the action can be
+realized by directly tracking the human activity [16] or
+the effect on the technical system by the monitoring
+function of the IPS?-CS.
+
+Customer need
+
+IPS? Business ps2 fulfillment
+e
+Development Model
+Marketing
+IPS?
+operation
+
+_|PS?-CS > DDD |
+
+Course of
+influence
+
+Figure 1: Levels of the IPS’ control architecture (IPS?-CS = IPS? Control System, IPS?-ES = IPS? Execution System)
+
+333
+
+----$$$$----$$$$----
+334
+
+H. Meier et al. / Procedia CIRP 12 (2013) 330 — 335
+
+When an inappropriate action or effect is detected,
+according instructions are issued.
+
+The interdependencies between product and service
+share which exist in an IPS? are visible on the Effect
+level and express how the IPS? control architecture can
+utilize both to reach an effect. However, when the
+intended effect cannot be achieved with the selected
+process step, an alternative step has to be selected on the
+process level.
+
+All levels are connected through the consistent goal,
+from which the command variables on all levels are
+derived. Also the abovementioned _ escalation
+mechanisms provide means for transfer of control
+towards a higher level to expand the solution space in
+order to deliver the contractually defined customer
+value. While the control on the process level and the
+Effect level is executed for one specific IPS’, the
+Lifecycle levels and the Operation levels of different
+IPS? are interconnected and have a wider range of
+influence. On the Lifecycle level, features and processes
+are developed for one specific customer, however, the
+results can be used to design and implement an IPS? for
+another customer. On the Operation level, processes for
+multiple IPS? are planned centrally, but the request for
+including a process for one IPS? in an updated delivery
+plan is issued by each IPS? independently.
+
+On all levels, data has to be collected to provide an
+information basis for new developments or changes of
+IPS?. Among this data are the command variables, the
+control factors, the control variables and the measured
+variables. Based on knowledge that can be derived from
+this data, the control on the Lifecycle level, especially
+the design and implementation phases for an IPS’,
+retrieves new input for a better fulfillment of customer
+needs.
+
+In the following, the focus is set on the Operation
+level of the IPS? control architecture. On these levels, the
+existing methods developed for the management of
+delivery networks, the planning of capacities and
+resources as well as the control of process steps will be
+set into context accordingly. Through the connection of
+these systems, the core of the IPS? Control Architecture
+will be established.
+
+4. Operation Level in Detail
+
+On the operation level, the agent-based IPS?-Control
+System (IPS?-CS) is considered as the controller (Figure
+1) and the IPS?-Execution System (IPS?-ES) as the
+actuator. They determine what influences have to be
+exerted in order to keep the IPS? as the controlled system
+in Figure 1 in stable operation. The monitoring
+component of the IPS?-CS is the measurement unit and
+ensures the closed-loop control by providing the data the
+
+IPS?-CS needs to make a decision. The decision is
+submitted to the IPS?-ES in order to become effective.
+
+Looking closer at this functional behavior, we first
+have to understand which decisions can be made for
+what reason by the IPS?-CS. The following example is
+given: A micro machine tool is operated in an
+availability-oriented business model: Therefore, critical
+components are subject to monitoring. The IPS? solution
+space offers delivery processes for keeping up the
+availability. Therefore, a plan with scheduled delivery
+processes is in effect.
+
+During the manufacturing operation, a critical state of
+the spindle is reached and detected by the monitoring
+component of the IPS’*-CS. Because a failure of the
+component would affect the availability of the whole
+machine, the IPS?-CS decides that a spindle exchange is
+required. The spindle exchange process is defined in the
+IPS? product model and has several requirements
+regarding human resources (skills), tools and spare parts.
+The IPS?-CS also derives the urgency of the process
+from the monitoring data, e. g. the actual availability of
+the IPS*. Because the availability is guaranteed to be
+above 95%, and the actual value in this example is above
+98%, the criticality is considered medium. Subsequently,
+this data is submitted to the IPS?-ES.
+
+The IPS?-ES retrieves data about the required process
+from the IPS? product model. The default time window
+could be 72h. Thus, the individual time window is
+calculated. The calculation is based on the default time
+window given by the process description and the
+criticality provided by the IPS?-CS. For this example, the
+actual time window could be adjusted to 48h.
+
+The process including the generated time window
+information is then included in the delivery plan and the
+planning algorithm is executed to optimize the delivery
+plan. The scheduled downtime of the machine given by
+the IPS* customer is taken into account during this step.
+This determines, at which time the process is actually
+executed and which resources are utilized. The new
+delivery plan is then passed on to the IPS?-CS.
+
+In this example, the requirements for the interfaces
+between the IPS?-CS and the IPS?-ES are clearly visible.
+The first interface needed has to be designed for
+information transfer from the IPS?-CS to the IPS?-ES.
+Through this interface, data about a required process and
+its urgency is transferred. The information has to be
+consistent throughout both systems. Therefore, the IPS?
+product model has to contain an individual ID for each
+available process for reference and IPS?-CS and IPS?-ES
+have to agree on a domain for urgency. Based on this
+urgency domain, specific rules on how the different
+urgency values are applied to the default time windows
+have to be defined.
+
+The other interface to be established is for
+information transport from the IPS?-ES back to the IPS?-
+
+----$$$$----$$$$----
+H. Meier et al. / Procedia CIRP 12 (2013) 330 — 335
+
+CS. Here, data about the new delivery plan for a specific
+IPS? is transferred. The delivery plan contains delivery
+processes including their actor and the time at which
+they are scheduled. Also, the resources involved in the
+delivery process execution are specified. With this
+information, the IPS?-CS can then start the control on the
+Process level for each individual delivery process.
+
+5. Conclusion and Outlook
+
+In this paper, an IPS* Control Architecture is
+proposed to set the several levels of IPS? during the
+Operation phase into a general context. Lifecycle level,
+Operation level, Process level and Effect level mutually
+influence each other by controlling delivery processes or
+a whole IPS?. Each level is used to guarantee the
+contracted customer value on a different level and with a
+different scope. While the Lifecycle level focuses on the
+general IPS? and the design of product and service shares
+as well as the necessary delivery processes, the operation
+level uses the IPS? target values inherited from the
+Lifecycle level to provide a structured plan for the
+execution of the delivery processes. On the Process
+level, each delivery process is guided to provide the
+intended effect. Human activities and automated routines
+are supervised on the Effect level.
+
+To provide the aforementioned complex control,
+control systems are in effect on each distinct level.
+Based on information about state of a machine tool or a
+delivery process, required measures can be derived.
+Setting these measures into effect has an influence on
+the IPS? and therefore the customer value.
+
+With an example, a detailed view on the operation
+level is given. IPS?-CS and IPS?-ES are introduced as the
+controller and the actuator respectively on this level. The
+exchange of data between these systems to provide the
+control needed is described in detail.
+
+Further research has to be carried out to substantiate
+all levels of the IPS? Control Architecture. Moreover, the
+interaction between the individual control systems has to
+be analyzed in-depth. For the operation level, the
+proposed interfaces have to be realized and the definition
+of the urgency domain is required.
+
+Acknowledgements
+
+The authors would like to thank the German Research
+Foundation (Deutsche Forschungsgemeinschaft, DFG,
+www.dfg.de) for funding their research within the
+project Transregio 29 “Engineering of Industrial
+Product-Service Systems” (www.tr29.de).
+
+References
+
+[1] Meier, H., Roy, R., Seliger, G., 2010. Industrial Product-Service
+Systems - IPS2. In: CIRP Annals - Manufacturing Technology 59
+(2), p. 607.
+
+[2] Meier, H., Kortmann, D., Uhlmann, E., 2005. Hybride
+Leistungsbiindel. Nutzenorientiertes Produktverstandnis durch
+interferierende Sach- und _ Dienstleistungen. In: wt
+Werkstattstechnik online 95, p. 528.
+
+[3] Rese, M., Meier, H., Gesing, J., BoBlau, M., 2011. HLB-
+Geschaftsmodelle. Partialmodellierung zur Systematisierung von
+Geschaftsmodellen "Hybrider Leistungsbiindel" (HLB). In: wt
+Werkstattstechnik online 101 (7/8), p. 498.
+
+[4] Meier, H., Volker, O., 2012. Aufbau- und Ablauforganisation zur
+Erbringung hybrider Leistungsbiindel. In: Horst Meier und Eckart
+Uhlmann  (Hg.):  Integrierte Industrielle Sach- und
+Dienstleistungen. Vermarktung, Entwicklung und Erbringung
+hybrider Leistungsbiindel. Berlin, Heidelberg: Springer, p. 137.
+
+[5] Meier, H., Funke, B., 2012. Planungsmethoden fiir den Betrieb
+hybrider Leistungsbiindel. In: Horst Meier und Eckart Uhlmann
+(Hg.): Integrierte Industrielle Sach- und Dienstleistungen.
+Vermarktung, Entwicklung und Efrbringung _hybrider
+Leistungsbiindel. Berlin, Heidelberg: Springer, p. 163.
+
+[6] Meier, H., Funke, B., Dorka, T., 2012. Cloud Computing fiir eine
+integrierte Leistungssteuerung. In: Industrie Management 2012
+(1), p. 49.
+
+[7] Neugebauer, R., Fischer, J., Praedicow, M., 2011. Condition-
+based preventive maintenance of main spindles. In: Prod. Eng.
+Res. Devel 5 (1), p. 95.
+
+[8] Uhlmann, E., Mahr, F., Lowenstein, A., Raue, N., Oberschmidt,
+Dirk, 2011. “Performance characteristics of coated micro milling
+tools,” In: Konstantinos-Dionysios Bouzakis (Hg.): Proceedings.
+9th International Conference THE "A" Coatings in
+Manufacturing Engineering 2011. Thessaloniki, Greece, 3-5
+October 2011, p. 173.
+
+[9] Uhlmann, E., Geisert, C., Hohwieler, E., 2008. “Monitoring of
+slowly progressing deterioration of computer numerical control
+machine axes,” In: Proceedings of the Institution of Mechanical
+Engineers, Part B: Journal of Engineering Manufacture 222 (10),
+p. 1213.
+
+[10] Uhlmann, E., Geisert, C., 2009. “Availability Oriented IPS?
+Supported by Software Agents — Feedback Control Approaches
+for Robust IPS? Operation,” In: SFB/TR29 2nd International
+Seminar 2009.
+
+[11] Wooldridge, M., Nicholas, R. Jennings David Kinny, 1999. A
+Methodology for Agent-Oriented Analysis and Design.
+
+[12] Hassanein, Sadek, T., 2009. Ein modellorientierter Ansatz zur
+Konzeptentwicklung industrieller Produkt-Service-Systeme.
+Aachen: Shaker (2009,1).
+
+[13] Mahmoud, Magdi, S., 1977. Multilevel Systems Control and
+Applications: A Survey. In: IEEE Trans. Syst., Man, Cybern 7 (3),
+p. 125.
+
+[14] Nof, Shimon, Y., 2009. Springer handbook of automation - Ch.
+36. Dordrecht , New York: Springer.
+
+[15] Schmuntzsch, U., Rotting, M., 2011. Multimodal User Interfaces
+in IPS. In: Vincent G. Duffy (Hg.): Digital Human Modeling,
+Bd. 6777: Springer (Lecture Notes in Computer Science), p. 347.
+
+[16] Beckmann, M., Dzaack, J., 2011. Incorporating Motion Data and
+Cognitive Models in IPS*. In: Vincent G. Duffy (Hg.): Digital
+Human Modeling, Bd. 6777: Springer (Lecture Notes in
+Computer Science), p. 379.
+
+335
+
+----$$$$----$$$$----

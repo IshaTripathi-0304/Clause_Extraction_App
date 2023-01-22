@@ -1,0 +1,861 @@
+Hindawi Publishing Corporation
+
+Advances in Materials Science and Engineering
+Volume 2013, Article ID 543594, 9 pages
+http://dx.doi.org/10.1155/2013/543594
+
+Research Article
+
+Critical Assessment of Temperature Distribution in
+Submerged Arc Welding Process
+
+Vineet Negi and Somnath Chattopadhyaya
+
+Department of ME&MME, ISM, Dhanbad 826004, India
+
+Correspondence should be addressed to Vineet Negi; negi.vineet@ismu.ac.in
+Received 31 May 2013; Accepted 27 August 2013
+
+Academic Editor: S$. Miyazaki
+
+Copyright © 2013 V. Negi and S. Chattopadhyaya. This is an open access article distributed under the Creative Commons
+Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is
+properly cited.
+
+Temperature distribution during any welding process holds the key for understanding and predicting several important welding
+attributes like heat affected zone, microstructure of the weld, residual stress, and distortion during welding. The accuracy of the
+analytical approaches for modeling temperature distribution during welding has been constrained by oversimplified assumptions
+regarding boundary conditions and material properties. In this paper, an attempt has been made to model the temperature
+distribution during submerged arc welding process using finite element modeling technique implemented in ANSYS v12. In the
+present analysis, heat source is assumed to be double-ellipsoidal with Gaussian volumetric heat generation. Furthermore, variation
+of material properties with temperature and both convective and radiant heat loss boundary condition have been considered. The
+predicted temperature distribution is then validated against the experimental results obtained by thermal imaging of the welded
+
+plate, and they are found to be in a good agreement.
+
+1. Introduction
+
+Submerged arc welding (SAW) process is a widely used weld-
+ing process in the industry for welding of thick plates, partic-
+ularly steel. SAW is essentially an automatic or semiautomatic
+process with consumable electrode being continuously fed
+from a wire electrode roll. The process involves generation
+of heat by an arc produced between the consumable wire
+electrode and the work piece. The arc so produced is covered
+in a mass of fusible granular flux. The flux aids the process
+in many ways: it forms a protective coating over the weld,
+removes impurities form the weld in the form of slag, shapes
+the weld bead, and influences the chemical composition of
+the weld and its mechanical properties. Since the arc as well
+as the weld pool is covered by a layer of granulated flux,
+the loss of heat energy is considerably reduced. This makes
+SAW one of the most efficient welding processes with arc
+efficiencies reaching as high as 0.84+0.03 [1]. The diameter of
+the consumable electrode ranges from 1 to 5 mm. A constant-
+potential DC power source, which allows the arc length
+control by self-adjusting effect, is generally used with thin
+wires (up to 2.4mm). For wires having higher diameter,
+
+constant current DC source is used. However, at very high
+welding currents, AC is preferred in order to minimize arc
+blow [2]. Owing to the higher heat generation in this process,
+high welding speeds up to 5 m/min are attainable. Higher heat
+generation and rapid welding considerably reduce distortion
+during welding, which occurs due to the expansion and
+contraction of the weld adjacent base metal [3].
+
+Analysis of temperature distribution during welding is
+important because temperature distribution has a significant
+influence on residual stress, distortion, and hence, the fatigue
+behavior of weld structure [4]. This problem, a transient heat
+transfer type, essentially involves consideration for the type
+of heat source, temperature dependent material properties,
+effect of latent heat, heat of phase transformation, plate geom-
+etry, and convection and surface depression in weld pool, and
+convective and radiant heat loss at boundaries [5]. Over the
+years, several attempts have been made to solve this problem
+by making various assumptions regarding the aforemen-
+tioned factors. Rosenthal formulated an analytical solution to
+transient temperature field in a semi-infinite body subjected
+to an instant point heat source, line heat source, or surface
+heat source [6]. Christensen et al’s work showed a good
+
+----$$$$----$$$$----
+agreement between Rosenthal's point heat-source based solu-
+tion and actual weld bead geometry, under a wide range
+of welding conditions and material properties, over several
+orders of magnitude. However, the work also reported exper-
+imental scatter ranging up to a factor of three [7]. Rykalin
+and Nikolaev and Lin stressed on the need to consider
+nonconstant thermal properties, heat of phase transforma-
+tion, heat input magnitude and distribution, convection and
+surface depression in weld pool in transient heat flow model
+to improve its accuracy [8, 9]. Grosh and Trabant showed
+that the effect of nonconstant thermal properties can only
+contribute about 10-15 percent error observed in weld pool
+geometry [10]. The effect of latent heat has also been shown
+to produce only 5-10 percent error in prediction of weld
+geometry [5]. This clearly highlighted the importance of other
+factors, besides latent heat and nonconstant thermal proper-
+ties, in contributing to the scatter observed in Christensen’
+experiments. Investigations into the actual heat intensity dis-
+tribution in arcs on a water-cooled copper anode made it pos-
+sible to determine the effect of distributed heat source on the
+weld geometry [11]. This solution retained all the assumptions
+in Rosenthal’s analysis, including absence of convection in
+weld pool, variation of material properties, and latent heat of
+phase transformation, except the assumption to consider arc
+as a point heat source. Rosenthal’s solutions can satisfactorily
+predict temperature field only in the region far from the
+weld pool. However, solutions considering arc as a distributed
+heat source were able to eliminate much of the experimental
+deviations in close vicinity of weld pool. Eagar and Tsai mod-
+ified Rosenthal’s solution to include a two-dimensional (2-D)
+surface Gaussian distributed heat source with a constant dis-
+tribution parameter (which can be considered as an effective
+solution of arc radius) and found an analytical solution for the
+temperature of a semi-infinite body subjected to this moving
+heat source [12]. Although the 2-D Gaussian heat distribution
+was able to reduce the experimental scatter, it still could not
+include weld penetration into the picture. A more generalized
+formulation of heat source was much required. Goldak et al.
+first introduced a 3-dimensional double ellipsoidal moving
+heat source. A finite element analysis was performed using
+the double ellipsoidal heat source, and it was found to be
+accurate in predicting temperature distribution in welds
+having deeper penetration [13]. Subsequently, both analytical
+and numerical solutions have been formulated using this
+heat source to predict temperature distribution in various
+welding processes [14]. However, same assumptions except
+about the heat source still applied to the analytical solutions,
+thus constraining their accuracy. In this paper, numerical
+solution using finite element approach has been applied to
+model transient temperature field in SAW process. Unlike the
+analytical approach, assumptions regarding constant material
+properties, semi-infinite plate geometry, and no heat losses
+at boundary have been eliminated for realistic simulation of
+transient temperature field in SAW process.
+
+2. Mathematical Modeling of Heat Source
+
+In the initially proposed ellipsoidal heat source, the volu-
+metric heat generation is distributed in a Gaussian manner
+
+Advances in Materials Science and Engineering
+
+Volumetric heat
+
+Ficure 1: Double ellipsoidal heat source.
+
+throughout the welding region. A major problem associated
+with this type of heat source is that it tends to provide a less
+steep temperature gradient ahead of the arc and steeper gra-
+dient behind the arc than what was experimentally observed.
+The above problem was solved by a double ellipsoidal heat
+source which consists of a combination of two different
+semiellipsoidal heat source volumes as shown in Figure 1. The
+spread of the front semiellipsoid along the weld direction
+is roughly four times the spread of the back semiellipsoid.
+A double ellipsoid is specified by four parameters, namely,
+ay, a, b, and c. Values of these parameters can be obtained
+from the measurement of the weld pool geometry, that is,
+weld bead width and weld penetration [14]. Consider the
+following:
+
+Q(x, y, z,t)
+
+x-vt <0,
+
+2 V a,bc Qy fige Lorn toy e211.
+
+3/2
+
+(1)
+2,Jaybe
+
+- ~vt) +by?+cz7]
+Q,y f ce bar) thy , x-vwt>0,
+73/2 off
+
+where Q is the volumetric heat generation at a point, Q, is
+net heat input in the process, x, y, and z are the coordinates
+measured from starting point of the welding process; v and
+t are welding speed and time elapsed, respectively, f, and
+f, are proportion coefficients representing heat appointment
+in front and back of the heat source. Their values can be
+found by equating the heat generated from the front and rear
+semiellipsoid at their interface in the middle. Consider the
+following:
+
+_ 2a 2a
+f=
+
+The value of the parameters a,, a,, b, and c can be found
+by assuming the volumetric heat generation at the boundary
+between the weld pool and the base material of about
+0.05Q(0) [13].
+
+In forward x-direction,
+
+(2)
+
+Q(A,,0,0) = Q(0)e 4”) = 0.05Q (0). (3)
+Hence,
+a= In20 3 (4)
+f 7 2 — 42°
+Ay Ay
+
+----$$$$----$$$$----
+Advances in Materials Science and Engineering
+
+Similarly,
+
+3 y= 23 _ 3
+A2’ ~ B2? C= © (5)
+
+Il?
+
+ay
+
+ed
+
+where B is half of weld bead width; C is weld penetration;
+Ay, and A, are the semiaxes in forward and backward x-
+direction, respectively, A ¢ can be assumed as one-half of the
+weld width, and A, as twice the weld width [13].
+
+3. Finite Element Modeling
+
+3.1. Material Properties. As mentioned earlier, the analytical
+method to model temperature distribution during welding
+assumes the material properties to be constant. However,
+in the present analysis, the variation of material properties
+as well as the effect of phase transformation and weld
+pool convection is given due consideration. The material
+properties required in the preprocessing step of finite element
+analysis are density, thermal conductivity, and specific heat
+capacity of steel. It is dificult to obtain accurate tempera-
+ture dependent material properties data from the literature.
+Hence, a basic assumption that the material property does
+not vary much with only a slight variation in composition
+of the material has been made while obtaining the material
+properties data. The density of low carbon steel or struc-
+tural steel is taken as 7850kg/m’*, and it is assumed to
+remain constant throughout the process. The same, how-
+ever, cannot be said about conductivity and specific heat
+capacity.
+
+3.1.1. Conductivity. Conductivity of low carbon steel varies
+considerably with temperature. Thermal conductivity of low
+carbon steel is about 53 W/mK at room temperature and
+shows an almost linear reduction with temperature to a value
+of 27 W/mK at approximately 800°C [15].
+
+Weld pool convection increases the heat transfer in the
+molten weld pool due to its stirring effect. Since the exper-
+imental measurement as well as the simulation of the weld
+pool convection is an extremely complex task, the effect of
+weld pool convection is approximated by increasing the con-
+ductivity of the metal beyond the liquidus temperature by a
+multiple, which is usually between eight and ten [16]. Goldak
+et al. (1984) suggested the use of a fictitious value of thermal
+conductivity of 120 W/mK to account for the enhancement in
+heat transfer in the liquid zone due to weld pool convection
+[13]. In this paper, same approach as that of Goldak et
+al. (1984) has been adopted, and the thermal conductivity
+of low carbon steel has been artificially set to 120 W/mK
+in the liquidus region. Figure 2 shows the variation of the
+conductivity with consideration of weld pool convection.
+
+3.1.2. Specific Heat. Specific heat is defined as heat energy
+absorbed by a unit mass of a material to raise its temperature
+by 1K. Like conductivity, specific heat of low carbon steel also
+varies with temperature. Latent heat of phase transformation
+also affects the specific heat of the material near the vicinity of
+phase transformation. The first phase transformation in low
+carbon steel occurs as ferritic structure changes to austenitic
+crystalline structure at about 723°C. This increases the
+specific heat capacity at phase transformation temperature
+(723°C). Consider the following:
+
+425 +7.73 x10 'T, —1.69x 10 °T? + 2.22x10°T?, 20°C <T, < 600°C,
+
+13002
+738-T,
+
+a 17820
+545 + ————_,
+T, -731
+
+666 +
+
+650,
+
+The above variation (Eurocode 3-EN 1993-1-2 (2005) speci-
+fications [17]) is not feasible to be used directly in the FEA
+model as it will make the system highly nonlinear and will
+increase the processing time tremendously. A compromise
+was made by taking a linear approximation of the graph
+segments to prevent the model from becoming unwieldy.
+
+Another phase transformation occurs at solidus-liquidus
+phase change, which has a latent heat of about 260 KJ/Kg.
+However, some researchers suggest that latent heat of fusion
+has insignificant effect on temperature distribution [18].
+Nonetheless, in this paper, the effect of latent heat of fusion
+has been considered. The release of latent heat has been
+assumed to be uniformly distributed between the solidus
+and the liquidus temperatures. The effect of latent heat can
+be incorporated in the model by artificially increasing the
+specific heat capacity of low carbon steel in the solid-liquid
+
+600°C < T, < 735°C,
+
+(6)
+735°C <T, < 900°C,
+
+900°C < T, < 1200°C.
+
+phase transformation region [19]. The overall variation of
+specific heat with temperature is shown in Figure 3.
+
+3.2. Boundary Condition. Heat losses in the welding process
+take place by both convection and radiation. The radiation
+heat loss being proportional to the fourth power of tempera-
+ture becomes prominent only at higher temperature, which is
+encountered in the close vicinity of the weld pool. As opposed
+to the radiation heat loss, convective heat loss becomes a
+primary mechanism of heat loss at low temperature region
+away from the weld line. Some researchers prefer using a
+single heat loss equation to model both processes proposed
+by Vinokurov (7) [20, 21].
+Consider
+
+comb —
+
+Mom = 24.1 x 10 *ET,”, (7)
+
+----$$$$----$$$$----
+=
+N
+So
+
+—
+ooo Fe
+ooo Oo
+
+Conductivity (W/mK)
+wb uan
+ooo CoO CO
+
+N
+So
+
+0 500 1000 1500 2000 2500 3000 3500 4000 4500 5000
+Temperature (°C)
+
+Figure 2: Variation of conductivity with temperature plot.
+
+Specific heat (J/kg-K)
+
+0 200 400 600 800 1000 1200 1400 1600 1800 2000
+Temperature (°C)
+
+— Actual specific heat
+_~-- Fictitious specific heat
+
+FiGureE 3: Apparent variation of specific heat with temperature.
+
+where h.,,,, is combined heat transfer coefficient, E is
+emissivity of material, and T;, is temperature of the body.
+This equation was, however, reported inaccurate by Goldak
+as compared to applying Newton's law of cooling and Stefan
+Boltzmann law of radiation separately. Therefore, in this
+analysis, the radiant heat loss and the convective heat loss
+have been applied separately.
+
+In submerged arc welding process, the granular flux cov-
+ers the weld region completely thereby providing insulation
+to it. This results in a more gradual decrease in temperature of
+the welded zone. Since the flux covers the maximum part of
+the plate (20 cm x 20 cm x 1.5 cm) used in the experiment, the
+top face of the plates has been assumed to be insulated; that is,
+convection and radiation heat losses are ignored in the upper
+face of the plate. This assumption is valid only for submerged
+arc welding process and distinguishes it from other welding
+processes which use an inert gas for shielding the arc like TIG
+and MIG.
+
+3.3. Meshing and Time-Stepping. A finite element model of
+the submerged arc welding process was created using ANSYS
+vl2.0. The accuracy of a model depends upon its element
+size or number of nodes and time step size. The increase
+in number of nodes not only increases the accuracy of the
+model, but it also increases the processing time of the model.
+
+Advances in Materials Science and Engineering
+
+Figure 4: Location and function of the U-piece along with region
+of interest on the welded plate.
+
+An optimum solution could be reached by increasing node
+density near the region of high temperature gradient, which
+is in the vicinity of weld line, and decreasing node density
+near the region of low temperature gradient, which is away
+from the weld line. Also, automatic time stepping, which aims
+at reducing the processing time of the solution especially of
+nonlinear and transient dynamic problems by automatically
+estimating the next time step based on the present state of the
+system and the previous processing step, has been applied.
+
+4. Experimental Procedure
+
+For validation of numerical solution, temperature variation,
+both temporal and spatial, has to be determined experi-
+mentally. In the present work, infrared thermography has
+been used to determine the temperature profile of the plate
+at various time steps, thereby capturing both temporal and
+spatial variation of temperature. In submerged arc welding
+process, the molten weld metal is covered by an envelope of
+molten flux and a layer of unfused flux [22]. The granular
+flux provides insulation to the weld and makes the thermal
+imaging of the region infeasible. Even the sides of the weld
+are covered by stray flux particles, thus interfering with
+the measurement of temperature by IR camera [23]. This
+necessitates the use of a method to remove this flux, thereby
+eliminating any interference in thermal imaging, for example,
+a vacuum flux remover provided just behind the welding
+torch head [23]. In the present work, a (13cm x 5 cm) piece
+of sheet metal was bent in a U-shape having a gap of about
+1 cm between the two arms. A layer of insulation was provided
+at the bottom of the U-shaped sheet metal to minimize the
+heat transfer coefficient at the bottom. This U-shaped sheet
+metal with closed end facing the weld line was inserted into
+the flux covered region at the middle of the weld line from
+the side as shown in Figure 4. The U-piece cleared the flux
+from that zone and provided a window (region of interest
+(ROI)) to measure the temperature profile of the region
+without much altering the profile itself. This was because
+the uncovered region was much smaller as compared to the
+covered region; therefore, the convection and radiation heat
+loss from the uncovered region could not much affect the
+temperature profile of the plate. Also, the negligible area of
+
+----$$$$----$$$$----
+Advances in Materials Science and Engineering 5
+TABLE 1: Experimental data.
+Current (A) Voltage (V) Average speed (cm/min) Weld width (mm) Weld depth (mm) Average MDR (Kg/min)
+400 30 39.52 14.60 7.20 0.08
+>274.61°C >258.97°C
+274 258
+204 194
+134 129
+65 65
+<«37.98°C <K39.58°C
+IR_17 IR_24
+Figure 5: Thermal image of the ROI at t = 55 sec. FiGuRE 7: Thermal image of the ROI at t = 115 sec.
+> 274.04°C .
+angle was prepared as per standards. The plates were joined
+273 preliminarily by tack welding at three points, and welding was
+performed on MEMCO semiautomatic welding equipment
+with a constant voltage rectifier. The flux used was ADOR
+Auto melt Gr II AWS/SFA 5.17 Granular, and the electrode
+used was ADOR 3.15 diameter copper coated wire. The
+203 welding parameters were noted during the actual welding
+process for any fluctuations. The U-shaped sheet metal was
+inserted at the middle as shown in Figure 4, and thermal
+images of the region of interest (ROI) were taken using an
+IR camera (RayCam C.A. 1888) at a regular interval of 10 sec
+134 from 55 sec to 265 sec. The welded plate was then allowed to
+cool, flux was removed using a chipping hammer, and width
+and penetration of the weld bead were measured (see Table 1).
+65 5. Analysis and Results
+<38.27°C The 3D finite element analysis was performed in ANSYS
+
+IR_20
+
+FiGureE 6: Thermal image of the ROI at t = 85 sec.
+
+contact between the U-shaped sheet metal and the plate in
+addition to the insulation provided at the bottom of U-piece
+ensured minimum heat transfer to the sheet metal, while it
+was in contact with the weld plate.
+
+A structural steel plate of dimension (200 mm x 200 mm
+x 15mm) was cut into two equal parts. A V-groove of 60°
+
+vl2.0, and temperature at specific instances of time was
+extracted for the whole plate. To determine the temperature
+in the region of interest (ROI) from the FEA model, the
+temperature was mapped along the path defined by the line
+perpendicular to the weld line on the upper face of the plate
+and intersecting it at its middle. The pseudocolor thermal
+image of ROI was converted to gray-scale image, and the
+intensity value along the middle line was extracted by using
+Matlab code.
+
+These values were then scaled to give the actual temper-
+ature profile along the contour. The predicted temperature
+
+----$$$$----$$$$----
+>232.85°C
+
+231
+
+175
+
+118
+
+61
+
+<39.45°C
+IR_27
+
+Figure 8: Thermal image of the ROI at t = 145 sec.
+
+>208.12°C
+
+207
+158
+108
+59
+
+<40.02°C
+IR_30
+
+Figure 9: Thermal image of the ROI at t = 175 sec.
+
+profile obtained from ANSYS simulation was plotted with the
+temperature profile obtained experimentally for comparison.
+
+The graphs of temperature variation along midline for
+various instances, Figures 10, 11, 12, 13, and 14, as well as
+the thermal images of region of interest (ROI) at these
+instances, Figures 5, 6, 7, 8, and 9, clearly show a reasonably
+good agreement between predicted and experimental results.
+Moreover, r-square statistic and root mean square error
+(RMSE) value in Table 2 quantitatively establish the accuracy
+of prediction of FEA model. Thus, it points to the credibility
+
+Advances in Materials Science and Engineering
+
+Temperature (°C)
+
+0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08
+
+Distance from weld line (m)
+
+— Predicted
+— Experimental
+
+Ficure 10: Temperature plot at t = 55 sec along midline.
+
+300
+250
+O
+© 200
+vo
+3
+f°)
+o
+= 150
+2
+100
+50
+0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08
+Distance from weld line (m)
+— Predicted
+— Experimental
+FiGure ll: Temperature plot at t = 85 sec along midline.
+TABLE 2: Goodness of fit parameters for Figures 10-14.
+; Criteria
+Time
+R-square RMSE
+55 0.9602 16.3836
+85 0.9819 9.3019
+115 0.9927 4.8237
+145 0.9929 3.0913
+175 0.9945 1.7866
+
+of finite element modeling technique in prediction of temper-
+ature variation during submerged arc welding process. The
+errors in the analysis arise primarily due to inaccuracies in
+
+----$$$$----$$$$----
+Advances in Materials Science and Engineering
+
+280
+260
+240
+220
+200
+
+180
+
+Temperature (°C)
+
+160
+140
+120
+100
+
+80
+0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08
+
+Distance from weld line (m)
+
+— Predicted
+— Experimental
+
+FiGurRE 12: Temperature plot at t = 115 sec along midline.
+
+240
+220
+200
+180
+
+160
+
+Temperature (°C)
+
+140
+120
+
+100
+0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08
+
+Distance from weld line (m)
+
+— Predicted
+— Experimental
+
+Figure 13: Temperature plot at t = 145 sec along midline.
+
+modeling of the material properties and the boundary heat
+loss condition. Particularly, the assumption that no heat loss
+due to convection or radiation occurs on the upper face,
+which is largely covered by stray flux particles, compromises
+the accuracy of the model in the outer region and at a later
+time as the outer bare region of the upper face gets heated
+enough to make the heat loss significant. The aforementioned
+factor can be noticed in Figures 12-14, where increased error
+in the region farther from weld line can be seen.
+
+It can be observed from Figure 15 that the temperature
+gradient is much higher in front of the arc than at its back.
+Therefore, the weld region in front of the arc plays no role
+in heat transfer until the arc reaches there. This observation
+justifies the assumption of ignoring the addition of mass of
+the filler electrode by birth and death of the element in FEM.
+
+210
+
+200
+
+190
+
+180
+
+170
+
+160
+
+Temperature (°C)
+
+150
+140
+130
+
+120
+0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08
+
+Distance from weld line (m)
+
+— Predicted
+— Experimental
+
+Figure 14: Temperature plot at t = 175 sec along midline.
+
+1
+
+Nodal solution
+Step =5
+
+Sub = 33
+
+Time = 20
+Temprature (avg)
+RSYS = 0
+
+SMN = 310.4
+SMX = 1996
+
+310.4 684.915 1059 1434 1808
+
+SAW 497.658 872.173 1247 1621 1996
+
+FiGureE 15: Temperature profile of the plate at t = 20sec after the
+start of welding (for heat input of 10200 J/s).
+
+The dissipation of heat in the plate can be clearly dis-
+cerned from the thermal images of the mid-region. The effect
+of stray flux particles in obstructing the view of IR Camera
+is also patent from the thermograms. Moreover, Figure 16
+clearly shows the extent to which the stray flux particles
+shield the upper surface of the plate, thereby supporting our
+assumption of ignoring the heat losses from the upper face.
+
+6. Conclusion
+
+In submerged arc welding (SAW) process, the weld pool and
+the region around it are covered by a blanket of granular
+
+----$$$$----$$$$----
+>173.59°C
+
+173
+133
+94
+55
+
+<39.81°C
+IR_43
+
+Figure 16: Thermogram of the upper face of the plate at time t =
+315 sec.
+
+flux. This makes it infeasible to observe the temperature
+profile directly using either infrared thermometer or camera.
+Thermocouple could provide information regarding tem-
+perature at a point, but due to practical difficulties, like
+their interaction with the measurement, they cannot be used
+in sufficiently large numbers to provide spatial resolution
+necessary to capture temperature pattern reliably and accu-
+rately [5]. Though the experimental methodology followed
+in this paper allows measurement of temperature close to
+weld line, it still does not completely solve the problem
+of direct observation of the weld pool, thereby failing to
+analyze the performance of the FEA model closer to the
+weld pool. Nevertheless, the present work has validated the
+accuracy of FEA modeling in prediction of temperature
+profile sufficiently close to the weld region.
+
+Once the credibility of FEA has been established, it opens
+the door to modeling and understanding a number of other
+properties associated with welding. The heat affected zone
+(HAZ) can be predicted by plotting all the points whose
+maximum temperature reaches more than recrystallization
+temperature 973 K but less than melting point temperature
+(1683 K) [4]. The temperature profile obtained from the tran-
+sient thermal FE analysis can be used as an input loading con-
+dition for uncoupled structural analysis, which assumes that
+structural loads act independently of thermal loads. Similarly,
+the knowledge of temperature history of the plate can shed a
+significant insight on the microstructure of the weld region.
+
+References
+
+[1] J. N. DuPont and A. R. Marder, “Thermal efficiency of arc
+welding processes,’ Welding Journal, vol. 74, no. 12, pp. 406S-
+416S, 1995.
+
+[2] S. Kou, Welding Metallurgy, John Wiley and Sons, 2nd edition,
+2003.
+
+Advances in Materials Science and Engineering
+
+[3] Modern Arc Welding Technologies, Ador Welding Limited, Sec-
+ond edition, 2005.
+
+[4] A. Ghosh and S. Chattopadhyaya, “Analytical solution for tran-
+sient temperature distribution of semi-infinite body subjected
+to 3-D moving heat source of submerged arc welding process,”
+in Proceedings of the International Conference on Mechanical and
+Electrical Technology (ICMET ’10), pp. 733-737, September 2010.
+
+[5] N. D. Malmuth, W. FE Hall, B. I. Davis, and C. D. Rosen,
+“Transient thermal phenonenon and weld geometry in GTAW,’
+Welding Journal, vol. 53, no. 9, pp. 388S—4008, 1974.
+
+[6] D. Rosenthal, “Mathematical theory of heat distribution during
+welding and cutting,” Welding Journal, vol. 20, no. 5, pp. 220S-
+2348S, 1941.
+
+[7] N. Christensen, V. Davies, and K. Gjermundsen, “Distribution
+of temperature in Arc welding,’ British Wleding Journal, vol. 12,
+no. 2, pp. 54-75, 1965.
+
+[8] N. N. Rykalin and A. V. Nikolaev, “Welding arc heat flow,’
+Welding in the World, vol. 9, no. 3-4, pp. 112-133, 1971.
+
+[9] M. L. Lin, Influence of Surface Depression and Convection on
+weld Pool Geometry [M.S. thesis], MIT, Cambridge, Mass, USA,
+1982.
+
+[10] R. J. Grosh and E. A. Trabant, “Arc Welding temperature,’
+Welding Journal, vol. 35, no. 3, pp. 396-400, 1956.
+
+[11] O. H. Nestor, “Heat intensity and current density distributions
+at the anode of high current, inert gas arcs,’ Journal of Applied
+Physics, vol. 33, no. 5, pp. 1638-1648, 1962.
+
+[12] T. W. Eagar and N.-S. Tsai, “Temperature fields produced by
+traveling distributed heat sources,’ Welding Journal, vol. 62, no.
+12, pp. 346-355, 1983.
+
+[13] J. Goldak, A. Chakravarti, and M. Bibby, “A new finite element
+model for welding heat sources,” Metallurgical Transactions B,
+vol. 15, no. 2, pp. 299-305, 1984.
+
+[14] N. T. Nguyen, A. Ohta, K. Matsuoka, N. Suzuki, and Y. Maeda,
+“Analytical solutions for transient temperature of semi-infinite
+body subjected to 3-D moving heat sources,’ Welding Journal,
+vol. 78, no. 8, pp. 265S-274S, 1999.
+
+[15] L. Gardner and K. T. Ng, “Temperature development in struc-
+tural stainless steel sections exposed to fire,” Fire Safety Journal,
+vol. 41, no. 3, pp. 185-203, 2006.
+
+[16] M. Ericsson, Simulation of Robotic TIG-Welding, Department of
+Technology, University of Trolhattan, 2003.
+
+[17] U. Wickstrom, “Eurocode 3. Design of steel structures.Part 1-2:
+general rules: structural fire design,” Fire Safety Journal, vol. 40,
+no. 2, pp. 191-192, 2005.
+
+[18] A. Wu, S. Syngellakis, and B. G. Mellor, “Finite element analysis
+of residual stresses in a Butt weld,’ in Proceedings of the 7th
+Postgraduate conference in Engineering Materials, pp. 37-38,
+2003.
+
+[19] C.K. Takemori, D. T. Muller, and M. A. de Oliveira, “Numerical
+simulation of transient heat transfer during welding process,’
+in Proceedings of the International Compressor Engineering
+Conference, 2010.
+
+[20] E. A. Bonifaz, “Finite element analysis of heat flow in single-pass
+arc welds,’ Welding Journal, vol. 79, no. 5, pp. 121S-125S, 2000.
+
+[21] H. G. Fan, H. L. Tsai, and S. J. Na, “Heat transfer and fluid flow
+in a partially or fully penetrated weld pool in gas tungsten arc
+welding,’ International Journal of Heat and Mass Transfer, vol.
+44, no. 2, pp. 417-428, 2001.
+
+----$$$$----$$$$----
+Advances in Materials Science and Engineering
+
+[22] AWS Welding Handbook, vol. 2, American Welding Society,
+Miami, Fla, USA, 8th edition, 1991.
+
+[23] H. C. Wikle III, S. Kottilingam, R. H. Zee, and B. A. Chin,
+“Infrared sensing techniques for penetration depth control
+of the submerged arc welding process,’ Journal of Materials
+Processing Technology, vol. 113, no. 1-3, pp. 228-233, 2001.
+
+----$$$$----$$$$----
+Copyright of Advances in Materials Science & Engineering is the property of Hindawi
+Publishing Corporation and its content may not be copied or emailed to multiple sites or
+posted to a listserv without the copyright holder's express written permission. However, users
+may print, download, or email articles for individual use.
+
+----$$$$----$$$$----

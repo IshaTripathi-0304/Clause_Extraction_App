@@ -1,0 +1,1632 @@
+Helinski et al. Malar J (2015) 14:366
+
+DOI 10.1186/s12936-015-0899-5 MALARIA
+
+JOURNAL
+
+RESEARCH Open Access
+
+Impact of a behaviour change Om
+communication programme on net durability
+in eastern Uganda
+
+Michelle H. Helinski', Geoffrey Namara!, Hannah Koenker’, Albert Kilian*4, Gabrielle Hunter’, Angela Acosta? ,
+Leah Scandurra2, Richmond Ato Selby!?, Kenneth Mulondo®’, Megan Fotheringham® and Matthew Lynch?
+
+Abstract
+
+Background: The importance of net durability and the average useful life of a net is increasingly recognized as one
+of the critical factors that determine how often nets need to be replaced. A study to assess the effect of a net care and
+repair behaviour change communication (BCC) programme on net durability was conducted in one district in Eastern
+Uganda with a district in a neighbouring region serving as a comparison. Both districts had received LLINs in Septem-
+ber of 2012.
+
+Methods: The intervention was comprised of radio programmes, school and community events. Two-stage cluster
+sampling household surveys to assess net condition, exposure to BCC messages, and attitudes towards net care and
+repair were conducted in both districts at baseline (2-3 months post net distribution) and endline (20-21 months
+post distribution). Net condition was assessed using the proportionate hole index, with nets being classified as either
+serviceable or too torn.
+
+Results: The intervention led to an additional 31.2 % increased exposure to net care and repair messages in the
+intervention district. Respondents in the intervention district had a more positive attitude towards net care and repair
+(32 % of respondents were classified as having a very positive attitude compared to 10 % in the comparison district),
+which was positively associated with the number of channels through which messages had been received (P < 0.001).
+Nets belonging to respondents with a very positive attitude were more often categorized as serviceable (80.2 %)
+compared to respondents with a poor/average attitude (66.4 %; odds ratio: 2.05, P = 0.028); however, this was only
+observed for the net brand with the greater physical integrity. Additionally, socio-economic status was a significant
+predictor of net condition. Although nets in the intervention district had significantly more repairs done per net, the
+act of repairing alone did not improve net condition.
+
+Conclusions: |n conclusion, the evaluation showed that the BCC programme resulted in improved knowledge
+and attitudes towards care and repair, which impacted positively on net condition. Repairs alone were not sufficient
+to improve net condition. Additional research on which care behaviours and attitudes are most associated with
+improved net condition would help BCC planners hone their campaigns.
+
+Keywords: LLIN, Malaria, ITN, Care and repair, Durability, BCC, Uganda
+
+Background
+Malaria prevention with long-lasting insecticidal mos-
+quito nets (LLIN) has seen a tremendous scale-up in
+
+*Correspondence: aacosta4@jhu.edu
+
+* Johns Hopkins University Center for Communication Programs,
+Baltimore, MD, USA
+
+Full list of author information is available at the end of the article
+
+C ) BioMed Central
+
+sub-Saharan Africa in recent years [1]. As many countries
+have now achieved high ownership coverage with LLINs
+and are approaching the universal coverage target of one
+net for every two people of the population at risk as rec-
+ommended by the World Health Organization (WHO)
+[1], the question of how these high coverage levels can
+be maintained becomes the focus of discussion. In this
+
+© 2015 Helinski et al. This article is distributed under the terms of the Creative Commons Attribution 4.0 International License
+(http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and reproduction in any medium,
+provided you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license,
+
+and indicate if changes were made. The Creative Commons Public Domain Dedication waiver (http://creativecommons.org/
+publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated.
+
+----$$$$----$$$$----
+Helinski et al. Malar J (2015) 14:366
+
+context, the importance of net durability and the “average
+useful life” of a net is increasingly recognized as one of
+the critical factors that determine the frequency at which
+nets need to be replaced, and methods to measure net
+durability in the field have been established [2]. There is
+a paucity of data available on how the durability of a net
+is influenced by behaviour of net maintenance, care and
+repair and whether behavioural change communication
+(BCC) interventions could improve net life-span.
+
+Nets are exposed to a number of factors that may
+impact on its durability. Rodents have been implicated as
+a major cause of net damage in some communities [3],
+but also children, fire, sharp objects, and certain sleeping
+materials such as mats, are mentioned by owners of bed
+nets as common sources of damage [4—6]. Such damages
+may be partly associated with net hanging and storing
+habits, as well as other household practices around food
+storage and preparation which could attract rodents.
+Besides mechanical damage, washing and drying prac-
+tices of nets impact on the insecticidal properties of the
+net, and there is some evidence that over-washing may
+also deteriorate fabric integrity [5, 7]. While it is unclear
+to what extend household owners can prevent some of
+these damages, it is likely that increased knowledge of net
+care and awareness of potential net damage are beneficial
+to improve the overall lifespan of the net.
+
+Besides net care, repair of nets that have acquired holes
+is advocated to maintain an effective barrier against the
+mosquito vector and to increase overall lifespan of the
+net. In this light, the early repair of small holes, before
+they become bigger, has been put forward as an effec-
+tive way to repair nets [6]. Where investigated, net repair
+behaviour can vary considerably between regions, with
+nets in some communities showing few signs of repair
+[5, 8] while in others more repairs are observed [9, 10].
+The effect of such repair behaviours on net longevity has
+not been studied to a great extent, yet in Kenya nets that
+showed signs of repair did not have an improved overall
+net condition compared to unrepaired nets [5]. Authors
+noted, however, that repairing of nets was not a com-
+mon practice in this study site, and that nets with signs of
+repair had many holes [5].
+
+Intensive BCC programmes have been associated with
+increases in LLIN use in Cameroon [11] and Zambia [12],
+and with increases in other malaria preventive behav-
+iours elsewhere in sub-Saharan Africa [13-16]. However,
+only two BCC interventions focusing on care and repair
+are found in the literature. Implemented in the Gambia,
+a 2006 study observed a significant increase in repair
+behaviours, specifically the proportion of holes repaired,
+following an intervention composed of community song
+competitions and posters, but did not measure overall
+durability [17]. A recent study in Nigeria, similar to the
+
+Page 2 of 15
+
+present one in design and scope, is described elsewhere
+[18].
+
+The main goal of this study was to determine how the
+durability of a net is influenced by behaviours of net
+maintenance, care and repair and whether BCC could
+significantly impact on net durability.
+
+Methods
+Study areas
+The study took place in Eastern Uganda. Serere district
+was selected as the intervention district receiving the
+BCC programme while Kaliro, a nearby district, was used
+as the comparison district. The two districts are geo-
+graphically and culturally similar with similar housing,
+however different languages are spoken (Teso in Serere
+and Lusoga in Kaliro) and districts do not share borders.
+The Government of Uganda distributed 22.2 million
+LLINs as part of a national universal coverage campaign
+from 2012 to 2014. The intervention and comparison dis-
+trict participated in the four-district pilot phase of the
+universal coverage campaign (UCC) and received their
+nets in September 2012.
+
+Design of the BCC intervention programme
+
+The net care and repair BCC programme started in the
+intervention district in June 2013 (9 months post-distri-
+bution) and ran for 10 months until April 2014. The cam-
+paign was designed by BCC experts jointly with district
+leaders, school teachers and community health workers.
+Activities were conducted in two phases (June—Novem-
+ber 2013 and January—April 2014; Fig. 1). The two-phase
+approach was used to give planners an opportunity to
+refresh campaign approaches, prevent audience fatigue
+and incorporate monitoring and midline qualitative data.
+Phase I was based on data from an unpublished quali-
+tative study on the culture of net use in Uganda; while
+phase II used data from a qualitative midline assessment
+[19] and monitoring reports from phase I. Target audi-
+ences for the interventions were mainly mothers and pri-
+mary school children in classes P2-P7 (ages 9-15). Both
+qualitative studies had identified women as the main
+household members responsible for net care and repair
+and children’s behaviour as a leading cause of damage.
+Men were not a primary audience of the campaign but
+field coordinators tried to encourage and increase male
+participation. During phase I, community activities were
+mostly attended by women and children. However, dur-
+ing phase II, more men attended the events although
+overall women were still predominant.
+
+The key messages of the campaign focused on ben-
+efits of net care, methods to take care of and repair nets
+including early repair of holes and tying up the net and
+net washing practices. The messages were selected based
+
+----$$$$----$$$$----
+Helinski et al. MalarJ (2015) 14:366
+
+(— >)
+
+BCC for national LLIN campaign
+
+YM aualitative midline
+
+Sep [> Universal coverage campaign
+x Baseline household survey
+xb Endline household survey
+
+Phase | Phase II
+bo 2 8 ' 2£ 2 5 5B FeO BSB MHF FSF 8 £25 & SCE
+of a8 P2FSFFSSFZR OZ ASP F2E 5
+2012 2013 2014
+
+Fig. 1 Timing of universal coverage campaign, BCC intervention, and
+surveys. In addition, the time period when BCC activities as part of
+the national LLIN campaign took place is indicated
+
+XN SS
+
+on the theory that perceptions of malaria risk, the feasi-
+bility of net care and repair, and the value of repaired nets
+are vital to behaviour change, as described in the concep-
+tual model by Koenker et al. [18]. The activities that were
+organized were mass media and community mobilization
+events. As part of the mass media activities, 3230 radio
+spots, 2188 DJ mentions (i.e., short 45-s scripts) and 19
+radio talk shows were aired on two radio stations in the
+intervention district. In addition posters were used in
+health facilities, market areas and schools of the 30 vil-
+lages in which the household surveys took place.
+
+Community mobilization events took place in the 30
+villages and their associated schools and consisted of a
+number of activities. Community events included com-
+pound dialogues, 34 song competition events, home vis-
+its, and 45 forum theatre performances, and were mainly
+led by village health team (VHT) members. District
+education leaders set aside two arts and craft class ses-
+sions for net care and repair and created a curriculum on
+this topic. School events consisted of net care and repair
+classes, quizzes, debates, and music, dance and drama
+competitions, and were mainly organized by teachers.
+The radio shows featured community and school events
+and their participants and brought district leaders and
+project members to discuss net care and repair. Radio
+and print materials and drama scripts were pretested
+with groups of men and women to ensure the acceptabil-
+ity and relevance of the messages.
+
+The project paid for the cost of radio spots, DJ men-
+tions, and talk shows, the training of teachers and VHTs,
+supervision visits and public address systems and awards
+for selected community activities. VHTs, troupes and
+teachers were not compensated for their time but they
+received allowances for food and transportation for train-
+ings, the semi-final and final rounds for the song compe-
+tition, the school music, dance and drama competition
+
+Page 3 of 15
+
+and for all forum theater events. VHTs and teachers
+were also equipped with kits for demonstrating net care
+and repair that were used in the school, community and
+drama activities.
+
+Uganda distributed LLINs throughout the country
+as part of the main national campaign from September
+2013 onwards. BCC messaging to support this campaign
+was ongoing through national and regional channels
+(mainly radio) to inform people about the distribution
+and how to use and take care of their nets, and it is likely
+that respondents in both districts were exposed to some
+degree to these messages.
+
+Surveys
+
+The principal evaluation design was that of repeated,
+cross-sectional, two-stage cluster sampling household
+survey representative of the rural population of the two
+selected districts participating in the LLIN distribution.
+Data was collected at baseline (2-3 months post-net
+distribution) and at endline (18 months post-baseline,
+and 20-21 months post-distribution; Fig. 1). Qualitative
+data was collected at midline to monitor the reach and
+reception to the campaign and collect further insights on
+behavioural motivators and barriers that could be used to
+improve the programme and its methods and results are
+described elsewhere [19].
+
+A sample of 30 clusters with 15 households each (450
+households) per site and time point was used. First stage
+sampling involved selection of clusters using probabil-
+ity proportionate to size (PPS). Clusters were taken as
+villages, and the number of households in a village was
+obtained from LLIN campaign registration lists. At sec-
+ond stage, households were randomly selected from a
+listing of all households in the village. Clusters for the
+household survey were selected at baseline and main-
+tained during endline while households were randomly
+selected at each survey round.
+
+Households were eligible if they had received nets as
+part of the September 2012 campaign. Survey respond-
+ents were at least 18 years of age. Where possible, these
+respondents were the head of household or his/her
+spouse. Prior to field survey activities, local authorities
+and chiefs were informed of the purpose and expected
+time of the survey and their support sought. Commu-
+nities were sensitized and mobilized in order to obtain
+maximum cooperation for the survey.
+
+The household questionnaire asked questions regard-
+ing household characterization (composition, assets etc.),
+net care and repair behaviour of all nets in household,
+including exposure to care and repair messages, nets
+received from campaign, loss and reasons for loss, use
+of nets, and care and repair behaviour of campaign nets,
+including net hole assessment. The endline questionnaire
+
+----$$$$----$$$$----
+Helinski et al. Malar J (2015) 14:366
+
+contained a number of additional questions not asked
+during baseline to provide more detailed information
+to assess the BCC programme. For these questions only
+endline comparisons between intervention and compari-
+son district are presented.
+
+Oversampling Olyset nets at endline
+
+During the baseline survey it was found that while the
+comparison district had exclusively received the LLIN
+Olyset® made from polyethylene, the intervention dis-
+trict had primarily received the LLIN PermaNet® made
+from polyester with only a small number of Olyset nets
+distributed in a few clusters. To account for this unantici-
+pated and uneven distribution, during the endline survey
+Olyset nets were purposively oversampled in the three
+clusters where the baseline survey had identified them
+alongside PermaNet. In these clusters, following the ran-
+dom sample as above, all households were visited and
+interviewed if Olyset nets were present. In two of these
+clusters, a nearby village was also sampled to increase
+sample size. The full questionnaire was administered to
+the respondents yet questionnaires were marked to dis-
+tinguish them from the random sampling ones.
+
+Outcome measures
+
+Each campaign net found in the household was assessed
+for physical condition and signs of repair after permis-
+sion was given by the respondent. All sides and roof of
+the net were examined for holes or repairs, with existing
+holes counted and categorized into four different sizes
+(size 1: 0.5—2 cm, size 2: 2-10 cm, size 3: 10-25 cm and
+size 4: larger than 25 cm in diameter) based on WHO
+guidelines [20]. Nets that had too many holes to count, or
+were damaged severely such that large parts of the nets
+were missing, were scored as having 10 size 4 holes. The
+presence and number of repaired holes was noted but
+these were not counted as holes. Partially repaired holes
+were counted as holes and as partial repairs. Data from
+the net hole assessment was transformed into the pro-
+portionate Hole Index (pHI) for each net [20]. Based on
+the pHI, each net was categorized as “good’, “damaged”
+or “too torn’ condition [21]. Any net that is not “too torn”
+is considered “serviceable”
+
+Net attrition was calculated for the campaign nets
+received and defined as the proportion of originally
+received nets (as reported by the households) which had
+been (1) lost overall (overall attrition) and for (2) those
+nets which had been lost due to wear and tear (thrown
+away, destroyed) at the time of assessment (attrition due
+to wear and tear). Net survival was then defined as the
+proportion of LLINs functionally surviving to time x,
+which is calculated as the proportion of received nets not
+given away for use by others that are still present and in
+
+Page 4 of 15
+
+“serviceable” condition. Nets received but given away for
+use by others or stolen were excluded from the denomi-
+nator for the net survival.
+
+Data processing and analyses
+
+A double data entry and validation system was designed
+in EpiData 3.1 software. Analyses were conducted using
+Stata v12.0 (StataCorp, USA). Despite the sampling
+expected to generate a self-weighting sample, weighted
+analyses were conducted since the cluster sizes were
+found to have varying sizes. Sampling weights were com-
+puted and used through use of the “svy” command in
+Stata.
+
+The socioeconomic status (SES) was calculated at the
+household level based on household characteristics and
+assets using a principal component analysis (PCA) and
+a wealth index was created from the first component.
+Households were then classified into wealth quintiles
+(five) according to their index value.
+
+To evaluate the impact of the BCC programme, com-
+parisons were made between districts for each survey
+round (baseline or endline), or between survey rounds
+for each district, dependent on what was most relevant.
+Tests of differences were analysed using Chi square tests
+for categorical variables and use of Student’s t-tests for
+continuous variables. For some indicators, a difference
+in differences (DID) was calculated, using either logis-
+tic regression or the “diff” command in Stata. The DID
+calculates the effect of the intervention on an outcome
+indicator by comparing difference between the change in
+the outcome indicator for the intervention group to the
+change for the comparison group.
+
+A series of 11 positive and negative statements on net
+care and repair (i.e., benefits of net care and repair, ease
+of net care and repair) were read to respondents and
+their attitudes were captured on a Likert-type scale |i.e.,
+strongly disagree (—2), somewhat disagree (—1), some-
+what agree (1), strongly agree (2)] during the endline
+survey. Negative statements scores were inverted dur-
+ing analyses. A composite index was created using these
+responses to ascertain attitudes of respondents. Average
+scores were generated per respondent and were classified
+in three groups; poor/average attitude (<1), positive atti-
+tude (1-1.5), and very positive attitude (>1.5). Ordered
+logistic regression was used to determine the associa-
+tion between attitude and exposure dose and attitude and
+number of messages heard.
+
+Multivariate logistic regressions were generated for
+each LLIN brand (PermaNet and Olyset) separately using
+the physical net condition as the outcome variable (0
+“too torn’, 1 “serviceable”) and a number of predictors
+were included as independent variables. Potential pre-
+dictors included in the model were those known based
+
+----$$$$----$$$$----
+Helinski et al. Malar J (2015) 14:366
+
+on previous research, those independently associated
+with net condition, as well as others that the study team
+believed would impact on net condition. First, a crude
+model was built by assessing the relationship between
+each predictor on net outcome. The final adjusted model
+was arrived at by iterative removal of predictors whose
+removal had no impact on the model as determined by
+the Wald test, starting from least significant predictor.
+
+Purposively sampled households
+
+Purposively selected households were not included in the
+analyses with the exception of results around net condi-
+tion. Sampling weights were re-calculated and applied
+when the purposively sampled households were included
+in the analyses. Due to observed significant differences in
+net durability between the two net brands, for the endline
+dataset Olyset nets from the randomly selected house-
+holds in the comparison district were compared versus
+the randomly and purposively sampled Olyset nets in the
+intervention district. In addition, a separate analysis was
+done for nets identified as PermaNet in the intervention
+district.
+
+To ascertain that key variables were similar between
+random and purposively sampled households in the
+intervention district, data analyses were also done com-
+paring the two groups. Besides some minor differences
+in distribution of answers in multiple answer questions,
+there were no differences between random and purpo-
+sively sampled households when looking at key variables.
+
+Ethical clearance
+
+Ethical clearance was obtained from the institutional
+review boards of the Vector Comparison Division of the
+Uganda Ministry of Health and the Uganda National
+Council for Science and Technology (SS-2982) and Johns
+Hopkins School of Public Health (IRB #4534 and #5549).
+In addition, oral consent from the participants was
+obtained prior to the start of the interview.
+
+Results
+
+Response rates during baseline and endline surveys var-
+ied between 94 and 100 % (i.e., 425-450 households). In
+the intervention district, an additional 266 households
+were purposively sampled during the endline survey to
+obtain a sufficient sample of Olyset nets. This was short
+of the desired 425 due to limited number of clusters in
+which Olyset had been found at baseline and the total
+number of households available in these clusters.
+
+Household characterization
+
+Respondents were mainly female and the head of
+the household or the spouse in both districts. Age of
+respondents was similar between districts and was on
+
+Page 5 of 15
+
+average 39.9 years (P = 0.708). Significant differences
+were observed in the education level of the respondents,
+these were overall higher in the comparison district. In
+contrast, reading abilities were significantly better in the
+intervention district, where 63.4 % of respondents were
+able to read to some degree compared to 51.4 % in the
+comparison district (P < 0.001). The percent of house-
+holds that had children in school classes P2—P7 (approxi-
+mately 9-15 years of age) was similar between districts
+and was on average 71.9 % of households.
+
+Radio ownership was similarly high for both dis-
+tricts and at endline ownership was on average 71.8 %
+(P = 0.307). During baseline it was observed that the
+comparison district had significantly more households
+belonging to higher wealth quintiles than the interven-
+tion district (P < 0.001). Therefore, wealth quintiles were
+created separately for each district to determine if there
+was a change in distribution from baseline to endline. In
+the comparison district, no differences were observed in
+SES between endline and baseline surveys. In the inter-
+vention district, more households during endline were
+classified into higher wealth quintiles compared to base-
+line figures (P = 0.027).
+
+Food was stored regularly in sleeping rooms in both
+districts (69.8 %; P = 0.317). In the intervention district,
+cooking occurred in rooms also used for sleeping signifi-
+cantly more often, although this happened only in 10 %
+of households (P = 0.004). Presence of rodents were
+reported in the large majority of households in both dis-
+tricts, more so in the comparison district (95.7 %) com-
+pared to the intervention district (90.2 %; P = 0.009).
+
+Household net ownership in both districts was high,
+and almost all households (>98 %) owned at least one
+mosquito net (i.e., previously owned nets and campaign
+nets combined) at endline. This reflects the eligibility cri-
+teria that only included households that had received nets
+as part of the September 2012 campaign. Households in
+the intervention district owned significantly more nets
+(average 3.2 nets) at endline than the comparison district
+(average 2.7 nets; P = 0.003). At baseline, 72.4 and 77.6 %
+of households owned enough nets to cover all its resi-
+dents assuming one net for every two people, in the com-
+parison and intervention district, respectively. Eighteen
+months later, the percent of households with at least one
+net for every two people had dropped to 39.2 and 46.0 %,
+respectively, translating to a similar percent point drop in
+both districts of around 32 %.
+
+Exposure to net care and repair messages
+
+Before the start of the BCC programme, there was no
+significant difference between the districts in the per-
+cent of respondents who had ever heard any messages
+on net care and repair, on average 29.8 %. At endline, a
+
+----$$$$----$$$$----
+Helinski et al. Malar J (2015) 14:366
+
+significantly greater percent of respondents had heard
+net care and repair messages compared to the baseline in
+both districts, yet the increase was much greater in the
+intervention district where at endline 81.1 % of respond-
+ents had ever heard such messages compared to 49.0 % in
+the comparison district (Fig. 2).
+
+Radio was the main medium through which respond-
+ents had heard these messages at endline in both dis-
+tricts (81.4 %), followed by health workers (Table 1).
+Respondents in the intervention district had also heard
+messages at religious gatherings due to the tendency
+of VHTs to schedule their events around such venues.
+Other channels through which the BCC programme
+operated, i.e., students, community events, and post-
+ers/banners, were another source of information in the
+intervention district, albeit at lower recall frequency
+(<21 %). The exposure dose, i.e., the number of chan-
+nels mentioned by respondents who had heard such
+messages, was similar at baseline between districts and
+was on average 1.5 channels (P = 0.118). However, at
+endline the exposure dose was significantly higher in
+the intervention district with 3.2 channels mentioned
+per respondent compared to 1.7 for respondents in the
+comparison district (P < 0.001). There was no signifi-
+cant difference in frequency of messages heard on net
+care and repair in both the comparison and intervention
+district, and the majority of people (58.0 and 66.5 % in
+the comparison and intervention district, respectively)
+had heard such messages six or more times in the past
+12 months (P = 0.373).
+
+The main message recalled in the intervention district
+was to “repair holes early” (Table 1), followed by “handle
+the net carefully” This latter message was also recalled
+in the comparison district at a high rate. A message spe-
+cific to the BCC programme (Silent nights, Happy days:
+care, repair, protect) was remembered by one quarter
+
+Comparison
+
+Intervention
+
+70 32.155"**
+
+net care and repair
+wn
+oO
+
+26.3%***
+
+% respondents ever heard messages
+
+Baseline Endline
+Fig. 2 Percent of respondents [95 % Cl] that ever heard messages on
+net care and repair, by survey and district. P values for the differences
+
+at baseline and endline between districts are indicated. Additionally,
+
+the difference of difference is indicated; where ***P < 0.001
+
+Page 6 of 15
+
+of respondents in the intervention district, against only
+1.1 % of respondents in the comparison district.
+Respondents from the intervention district were also
+more likely to remember messages around tying up a net
+when not in use, inspecting nets for holes, drying nets
+in the shade, avoiding bleach for washing, keeping nets
+away from fire and reducing the frequency of washing.
+Reach of a national LLIN campaign message was similar
+between districts, with limited exposure of respondents
+to this message (18.1 %). The mean number of messages
+recalled was significantly higher in the intervention dis-
+trict (4.6 messages) than in the comparison district (3.0
+messages; P < 0.001) at endline.
+
+Significantly more families in the intervention district
+(83.6 %) reported discussing net care and repair in the
+preceding 12 months compared to the comparison dis-
+trict (51.1 %; P < 0.001). Additionally, significantly more
+children had discussed net care and repair in their fami-
+lies in the past 12 months in the intervention (49.7 %)
+compared to the comparison district (23.5 %; P < 0.001).
+
+Knowledge about net care
+
+More people in the intervention district (58.5 %) identi-
+fied repairing holes as a method to take care of their nets
+compared to the comparison district (10.3 %; Table 2). In
+addition, respondents in the intervention district men-
+tioned more often to protect nets from damage inflicted
+by rodents and children. In contrast, more people in
+the comparison district mentioned that nets should be
+washed less often and with ordinary soap (Table 2).
+
+Significantly more people in the intervention dis-
+trict were able to cite various methods to repair a net,
+including sewing, tying and patching. In the compari-
+son district, more often respondents indicated they did
+not know what the recommended way was to repair a
+net (16.5 %) compared to only 0.3 % in the intervention
+district (Table 2). In addition, repairing holes early was
+significantly more often mentioned in the intervention
+compared to the comparison district.
+
+The composite attitude index showed that respondents
+in the intervention had a more positive attitude, with
+31.8 % of respondents classified as having a very positive
+attitude towards nets and net care and repair, compared
+to 10 % in the comparison district (Table 2). The number
+of sources respondents could recall regarding messages
+on net care and repair was positively associated with
+their attitude in both districts (P < 0.001; Fig. 3). Addi-
+tionally, respondents that could recall more messages had
+a better attitude in both districts (P < 0.001).
+
+At baseline there was no significant difference in the
+average number of times respondents thought a mos-
+quito net should be washed each year in both districts,
+and the average frequency was 18.4 washes. In the
+
+----$$$$----$$$$----
+Helinski et al. MalarJ (2015) 14:366
+
+Page 7 of 15
+
+Table 1 Exposure to messages on net care and repair; percent distribution of level of exposure to messages at endline
+
+Comparison Intervention P value”
+N = 445 N = 425
+Source of messages®
+Radio 82.2 81.1 0.780
+Television 3,2 2.1 0.499
+Village health worker 38.2 51.3 0.043
+Health (facility) worker 23.1 36.8 0.051
+Community leader 74 34.2 <0.001
+Church or mosque 1.0 42.5 0.001
+Family or friend 7.6 19.8 0.004
+Poster or banner 0.0 14.2 0.022
+Students 0.0 14.3 0.007
+Teacher 0.5 2.9 0.065
+Community event 5.5 20.6 0.001
+Messages most remembered?
+Handle net carefully 57.9 62.1 0.538
+Keep net away from fire/flame 8.7 18.6 0.010
+Repair holes early 36.6 75.3 <0.001
+Frequency of washing 24.3 12.9 0.011
+Avoid bleach for washing 29.2 55.5 <0.001
+Dry net in shade 36.0 55.9 0.003
+Take care net prevent malaria 26.5 35.9 0.093
+Inspect net for holes 43 17.3 <0.001
+Keep net away from rats 14.8 15.7 0.833
+Take care net to make last longer 15.7 17.5 0.653
+Roll up/tie up when not in use 11.8 39.5 <0,.001
+Silent nights, Happy days: care, repair, protect 1.1 25.1 <0.001
+LLIN national campaign (“Protect yourself from malaria, use a net every day”) 16.2 18.9 0.567
+Other 19.3 9.3 0.031
+
+™ P values are shown for endline comparisons between district
+
+* Only among those who heard messages on net care and repair
+
+comparison district there was no change at endline.
+However, in the intervention district a significant reduc-
+tion was observed at endline compared to baseline figures
+(P < 0.001) and respondents indicated that a net should
+be washed on average 9.9 times a year. The majority of
+people in the intervention district knew that nets should
+be washed gently (55.5 %), and with ordinary soap, not
+detergent (73.7 %), and this was significantly higher com-
+pared to respondents in the comparison district where
+34.8 % of respondents knew that nets should be washed
+gently and 55.0 % mentioned ordinary soap, not deter-
+gent. Respondents in the comparison district, however,
+overwhelmingly knew that nets should be washed in a
+basin (82.2 %) compared to respondents from the inter-
+vention district (33.0 %). Also, in the comparison district,
+significantly more people knew that nets should only be
+washed when dirty.
+
+Net care and repair behaviours
+
+At baseline, significantly more respondents in the inter-
+vention district reported to have ever experienced holes
+in any of the nets they owned compared to the compari-
+son district (Fig. 4a). Additionally, significantly more
+respondents in the intervention district reported to have
+ever tried to repair these holes (Fig. 4b). Because of these
+inherent differences in reported behaviour and experi-
+ence prior to the BCC programme, a difference in differ-
+ence (DID) was calculated.
+
+The percent of respondents that had noticed holes
+in their nets increased in both districts, and at end-
+line 86.0 and 93.6 % of respondents had ever expe-
+rienced holes in their nets in the comparison and
+intervention districts, respectively, yet the the rate of
+increase was significantly greater in the comparison
+district compared to the intervention district (Fig. 4a).
+
+----$$$$----$$$$----
+Helinski et al. Malar J (2015) 14:366
+
+Table 2 Percent distribution of knowledge about net care
+and repair at endline
+
+Endline P value”
+Comparison Intervention
+N = 445 N = 425
+How can people take care of their nets?*
+Handle nets with care 28.3 39.9 0.059
+Keep away from flame or fire 17.6 16.6 0.800
+Keep away from rats 11.4 21.3 0.007
+Keep away from children 15.5 29.3 0.003
+Roll up or tie up when notin 51.1 57.0 0.215
+use
+Wash nets less often 31.9 16.7 0.001
+Wash nets with ordinary soap 73.9 62.0 0.014
+Dry nets in shade 52.7 61.2 0.080
+Repair holes 10.3 58.5 <0.001
+What is the recommended way to repair a net??
+Repair holes immediately 6.2 218 <0.001
+Sew 64.6 79.8 0.007
+Tie 29.4 41.9 0.020
+Patch 2.2 13.1 <0.001
+Do not know 16.5 0.3 <0.001
+Composite attitude index
+Poor/average attitude 60.5 37.3 <0.001
+Positive attitude 29.5 30.9
+Very positive attitude 10.0 31.8
+* P values compare responses between districts for endline only
+* Answers mentioned <10 % and “Other” not included
+(— >)
+
+oOo WoO FP Nn WwW
+
+Mean (+SEM) number of
+sources recalled
+
+od
+
+poor/average very positive
+attitude attitude
+Fig. 3 Mean (4SEM) number of sources respondents could recall
+grouped by their attitude score for comparison (grey) and interven-
+tion (white) districts
+
+positive attitude
+
+X y,
+
+Similarly, the percent of respondents that had ever
+tried to repair holes increased in both districts com-
+pared to baseline figures, yet in the comparison dis-
+trict a significantly greater increase in percent points
+was observed compared to the intervention district
+(Fig. 4b).
+
+Page 8 of 15
+
+The main cause of tears/holes in both districts were
+reported to be rodents (i.e., significantly more often men-
+tioned by respondents in the intervention district (61.1 %)
+than in the comparison district (50.2 %; P = 0.030 at end-
+line) followed by nets getting caught on edges/nails and
+nets that were pulled and tore on corners.
+
+Of the households who reported repairing nets at
+endline, the majority of repairs were done using stitch-
+ing (68.7 and 86.8 % in the comparison and intervention
+district, respectively), followed by knotting or tying. The
+majority of repairs were done by the respondents of the
+survey, which were mainly the heads of households or
+their spouses. Of the households who did not repair nets
+at endline, more respondents in the comparison district
+indicated they did not know how to repair nets (31.4 %)
+compared to 11.2 % of respondents in the intervention
+district (P = 0.003). Other common reasons mentioned
+for not repairing nets were not enough time for repairs,
+materials not available for repairs, and too difficult to
+repair.
+
+Campaign nets distribution and attrition
+
+Households received on average 2.4 nets from the cam-
+paign in 2012 (Table 3). During baseline it was observed
+that the net distribution campaign did not distribute the
+same nets in both districts. The comparison district had
+received exclusively Olyset nets while in the intervention
+district PermaNet was almost exclusively distributed,
+alongside a few Olyset nets (ie., 5.5 %). The proportion
+of all nets that were campaign nets increased in both dis-
+tricts at endline compared to baseline figures, most likely
+because older, non-campaign nets had been discarded in
+the meantime.
+
+The percent of households that still had all campaign
+nets given to them was 82.7 and 86.8 % at endline in
+the comparison and intervention district, respectively
+(Table 3). Overall attrition was 8.9 % of nets in the com-
+parison district, and 6.8 % of nets in the intervention dis-
+trict (Table 3) at endline. When only taking into account
+those nets lost due to wear and tear, attrition was signifi-
+cantly higher in the comparison district, with an attri-
+tion rate of 5.4 % compared to 1.7 % in the intervention
+district.
+
+Almost half of all nets in the intervention district that
+were no longer in the possession of the household were
+reported to be lost within the first 3 months after receiv-
+ing the nets (48.5 %) while in the comparison district
+the majority of nets were lost within 6-12 months after
+receiving them (44.9 %). The average age that nets were
+lost in the intervention district was thus lower than in
+the comparison district (Table 3). At baseline, the large
+majority of nets no longer in the possession of the house-
+hold were given away to relatives or others (80.8 %),
+
+----$$$$----$$$$----
+Helinski et al. MalarJ (2015) 14:366
+
+Page 9 of 15
+
+(— >)
+100 - vy 1005
+a a 2 b
+Ss 90- 17.6%*** Sg 90-
+3 80 a 80 |
+= 70) & 70. [essere
+3 60, 17.7%*** 5 60
+So £6 @ so. 36.4%***
+g #
+@ 40-4 & 40;
+3 30. -10%* 3 30-
+= = $$ >
+9 20-4 Comparison a 207 -13%* :
+3 . Fs Comparison
+= 10- Intervention = 10 .
+3S se Intervention
+° 0+ ° 0+
+Baseline Endline Baseline Endline
+Fig. 4 Percent of respondents [95 % Cl] that a ever experienced holes in their nets or b ever repaired holes in their nets, by survey and district. P
+values for the differences at baseline and endline between districts are indicated. Additionally, the difference in difference is indicated; whereby a
+negative DID indicates that the comparison group had a greater change over time compared to the intervention group; *P < 0.05; ***P < 0.001
+XX yy
+Table 3 Percent distribution of selected characteristics about nets received from the campaign that were lost
+Baseline Endline
+Comparison Intervention Pvalue” Comparison Intervention =P value”
+N = 428 N = 450 N = 445 N = 425
+Average nets received [95 % Cl] 2.5 [2.3-2.7] 2.3 [2.2-2.4] 0.045 2.3 [2.1-2.5] 2.3 [2.2-2.4] 0.991
+Proportion of households still with all nets given [95 % Cl] 94.5 [92.7-96.2] 95.6 [92.9-98.4] 0.476 82.7 [77.8-87.6] 86.8 [83.3-90.3] 0.177
+Average age losing the net, months [95 % Cl] 1.8 [1.3-2.3] 1.6 [1.2-2.0] 0.593 10.3 [8.9-11.7] 6.6 [5.3-7.9] <0.001
+Attrition overall [95 % Cl] 2.3 [1.3-3.3] 2.2 [0.8-3.6] 0.869 8.9 [6.4-11.4] 6.8 [4.9-8.7] 0.190
+Attrition due to wear and tear [95 % Cl]° 0.6 [0-1.2] 0.2 [0-0.4] 0.149 54 [3.6-7.3] 1.7 [0.9-2.4] <0.001
+
+* P values are shown for baseline and endline comparisons separately
+
+* Only including nets destroyed, nets lost to wear and tear, other and do not know answers
+
+indicating that these nets were not lost but rather redis-
+tributed. At endline this was still the case for the inter-
+vention district and 62.6 % of all lost nets had been given
+away to others, against only 35.4 % in the comparison
+district. In the comparison district, a much larger num-
+ber of respondents indicated having thrown away the net
+(49.0 %) compared to the intervention district (17.1 %;
+P = 0.036). The main reason for no longer keeping the
+net in the comparison district was because it was too torn
+(53.7 %), while in the intervention district most often
+respondents indicated that they had given the net away to
+others because they needed it more (45.3 %; P = 0.007).
+
+Campaign nets, location and use
+
+During the endline survey, the majority of campaign nets
+in the intervention district were observed to hang loose
+over the sleeping place (61.4 %), compared to 49.3 % in
+the comparison district (P < 0.001). Although the tying/
+rolling up of hanging nets was a key message of the BCC
+intervention to prevent net damage, a similar percent of
+nets were observed tied in the intervention (26.7 %) com-
+pared to the comparison district (27.0 %).
+
+Of all the nets that were reported to be in use (i.e.,
+excluding nets never used), more than 94 % of nets at
+endline were slept under by a person the previous night,
+and no differences were observed between intervention
+and comparison district (P = 0.331). The majority of nets
+(>91.2 %) were used every night of the week, although
+use frequency rates were slightly higher in the interven-
+tion district during both surveys (P < 0.01). The main
+reason mentioned for not sleeping under a net was that
+there were already sufficient nets available in the house-
+hold and the net was surplus.
+
+Campaign nets, net care and repair behaviours
+
+Almost all campaign nets had been washed at least once
+in both districts at endline (>97 %). The average wash
+frequency was similar between districts and was three
+washes in the last 3 months, or once a month (P = 0.212).
+In both districts bar/liquid soap was used by the large
+majority of respondents for net washing (75.7 % in com-
+parison and 90 % in intervention district). Importantly,
+bleach was never reported to be used to wash the nets.
+An increasing number of nets were reported to be dried
+
+----$$$$----$$$$----
+Helinski et al. Malar J (2015) 14:366
+
+in the shade as is appropriate in both districts compared
+to baseline figures, yet significantly more respondents
+indicated doing this in the intervention district (78.4 %)
+than in the comparison district (65.8 %; P < 0.001).
+
+Net durability and survival
+
+Net care and repair behaviour was assessed for the cam-
+paign nets that were in use. Analyses were done sepa-
+rately by net brand as there were significant differences
+in the durability of the two brands observed (P < 0.001).
+Since no PermaNets were observed in the comparison
+district, only data for the intervention district are pre-
+sented for this brand.
+
+At baseline, nets had just been received and few nets
+were reported to have had holes, and there were no dif-
+ferences between districts in the proportion of nets with
+any repairs or in net condition (Table 4). Twenty months
+post-distribution, the large majority of nets had at least
+one hole. More Olyset nets in the intervention district
+were reported to have had a hole compared to nets in the
+comparison district. The percent of Olyset nets with evi-
+dence of any repair done (i.e., full or partial) was similar
+between districts and varied between 48.0 % of nets for
+the comparison district and 56.4 % of nets for the inter-
+vention district. The average number of repairs done,
+either full or partial, per net were greater in the inter-
+vention than in the comparison district (Table 4). Net
+
+Page 10 of 15
+
+condition was worse in the intervention district, where
+20—21 months after net distribution on average 42.2 %
+of Olyset nets in the intervention district had survived in
+‘serviceable’ condition, against 55.4 % of nets in the com-
+parison district. The PermaNet brand nets were in better
+condition, and 74.6 % of nets were considered serviceable
+(Table 4).
+
+Net survival, i.e., the proportion of received nets not
+given away for use by others that are still present and in
+“serviceable” condition for Olyset nets overall was esti-
+mated at 55.2 % [95 % CI 48.2—62.3] which was similar to
+a two-year median survival curve, while for the PermaNet
+sample survival was 74.3 % [95 % CI 68.3-—80.4] and nets
+followed closer to a 3 year median survival curve.
+
+Predictors of net condition
+
+A number of factors were assessed to see if they could
+predict net outcome using a logistic regression model.
+The main analysis was done for PermaNets as these
+nets were in significantly better overall condition.
+Exposure to net care and repair messages, respond-
+ent’s attitude towards net care and repair, and socio-
+economic status were all positively associated with a
+better net condition (Table 5). Seventy-eight and 80 %
+of PermaNets belonging to respondents with a positive
+or very positive attitude, respectively were in service-
+able condition, compared to only 66 % of nets from
+
+Table 4 Percent distribution of level wear and tear (holes) and repair practices of the nets received from the campaign
+
+Baseline Endline
+Olyset sample PermaNet sample
+Comparison Intervention Pvalue* Comparison Intervention Pvalue” Intervention
+Net ever had a hole N = 795 N = 695 N=718 N = 535 N=718
+Yes [95 % Cl] 11.1 [8.3-13.9] 15.4 [7.2-23.6] 0.329 82.5 [76.5-88.4] 93.0 [88.3-97.7] 0.008 — 86.5 [81.9-91.0]
+Hole repairs [95 % Cl] N = 90 N=98 N = 604 N = 497 N=619
+Any repairs 34 5.6 0.559 48.0 56.4 0.179 60.1
+No. of full repairs, mean [95 % Cl] 0.0 0.1 [0.0-0.2] 0.098 0.6 [0.5-0.8] 1.8 [1.4-2.2] <0.001 1.3 [1.1-1.6]
+No. of partial repairs, mean [95 % Cl] 0.0 [0.0-0.1] 0.1 [0.0-0.2) 0.635 0.7 [0.5—0.8] 1.5 [0.9-2.2] 0.015 1.5 [1.2-1.9]
+Proportionate hole index (pHl), median? N = 90 N= 98 N=718 N=535 N=718
+Overall 26 60 0.154 830 837 0.045 275
+Net condition (based on pHI category)
+Good (pHI < 64) 96.0 92.4 0.231 32.6 14.2 0.017 = 38.1
+Damaged (pHI 65-642) 3.1 5.0 22.8 28.0 36.5
+Too torn (pHI > 642) 0.8 2.5 447 57.8 254
+Serviceable (pHI 0-642) 99.2 97.5 0.196 55.4 42.2 0.034 746
+Too torn (pHI > 642) 0.8 2.5 447 57.8 254
+
+The endline results are presented for nets identified as Olyset in comparison and intervention district and nets identified as PermaNet for the intervention district only
+
+Nets still in package were excluded
+™ P values are shown for each comparison between districts separately
+
+4 Nets without holes were excluded
+
+----$$$$----$$$$----
+Helinski et al. Malar J (2015) 14:366
+
+Table 5 Odds ratios (OR) with their 95 % confidence inter-
+vals and P values for predictors used in the logistic regres-
+sion model for net condition (1: serviceable, 0: too torn)
+for the PermaNet brand
+
+Predictors Crude Adjusted
+OR (Cl) Pvalue OR (Cl) P value
+Heard any messages net care and repair (ref: no)
+Yes 1.50 [1.03-2.19] 0.036
+Signs of repair (ref: no)
+Yes 0.33 [0.24-0.47] <0.001 0.33 [0.22-0.49] <0.001
+Children under 5 years (ref: no)
+Yes 0.81 [0.46-142] 0.446
+Sleeping material (ref: Ground/reed mat)
+Foam mattress 1.84 [0.98-3.44] 0.168
+Frame finished 1.72 [0.89-3.34]
+LLIN hanging & tied up (ref: no)
+Yes 1.19 [0.73-1.95] 0.468
+Attitude (ref: poor/average)
+Positive 1.80 [1.10-2.96] 0.028 1.77 [1.03-3.05] 0.040
+Very positive = 2.05 [1.07-3.94] 2.11 [1.01-2.88] 0.046
+Net washing frequency (ref: <1 times)
+2-3 times 0.93 [0.62-140] 0.017
+>3 times 0.58 [0.40-0.85]
+Household universally covered (ref: no)
+Yes 1.29 [0.87-1.92] 0.189
+Presence of rats (ref: no)
+Yes 0.63 [0.30-1.32] 0.210
+Social economic status (ref: lowest)
+Second 2.08 [1.01-4.28] <0.001 = 2.70 [1.23-5.94} 0.015
+Third 2.38 [1.28-4.42] 2.61 [1.27-4.97] 0.010
+Fourth 3.68 [1.65-8.19] 3.11 [1.60-6.03] 0.002
+Highest 5.19 [2.69-9.99] 4.16 [2.11-8.18] | <0.001
+
+The crude predictors are presented, as well as the final adjusted model
+
+respondents classified as having a poor to average atti-
+tude (Fig. 5). Increasing washing frequency was nega-
+tively associated with net condition. In addition, nets
+that had any signs of repair were in significantly poorer
+condition compared to nets that had not been repaired.
+Some other predictors, i.e., the presence of children
+under the age of five in the household, the number of
+messages recalled, sleeping material used, universal
+coverage status of the household, and reported pres-
+ence of rodents did not have a significant impact on
+net condition. After adjusting for other variables, SES,
+repair status of the net and attitude were still signifi-
+cant in the final adjusted model for PermaNet (Table 5),
+with SES and attitude positively associated with net
+condition, while net repairs were negatively associated
+with net condition.
+
+Page 11 of 15
+
+90%
+80%
+70%
+60%
+50%
+40%
+30%
+20%
+10%
+
+0%
+
+% nets in serviceable condition
+
+poor/average attitude positive attitude very positive attitude
+
+Fig. 5 Percent of PermaNets in serviceable condition by attitude.
+
+Results are for endline survey and for intervention district only
+Ne S
+
+When a multivariate model was run for Olyset nets,
+net repairs were also more commonly seen for nets in
+‘too torn’ condition (P < 0.001). Additionally, presence
+of rodents was negatively associated with net condition
+(P = 0.005), and nets that were used over reed mats or
+sleeping spaces on the ground were significantly more
+often classified as ‘too torn’ than nets used over bed
+frames or foam mattresses (P < 0.003), while nets that
+were hanging folded or tied up over a sleeping space were
+less often classified as ‘too torn’ compared to nets that
+were not (P = 0.019). SES, attitude and washing frequency
+were not significant. In this model, net condition was no
+longer significantly different between districts (P = 0.060).
+
+Discussion
+The main objective of the study was to assess whether the
+BCC programme could positively impact on net durabil-
+ity. While the BCC programme was successful in reach-
+ing a large proportion of households in the intervention
+district, results show that durability of Olyset nets was
+similar in the intervention and comparison areas at end-
+line. However, the uneven distribution of net brands and
+overall poor durability of Olyset nets make it difficult to
+draw conclusions on whether the lack of impact observed
+was due wholly to failure of the BCC programme. Fur-
+ther analysis within the intervention district (PermaNets)
+showed that the number of channels heard and num-
+ber of messages recalled were positively associated with
+respondents’ attitude towards net care and repair, and
+that, in turn, nets belonging to respondents with a more
+positive attitude were in significantly better condition.
+However, repairs made to nets did not improve their con-
+dition. The findings indicate that BCC may play a role in
+improved net condition by improving attitudes towards
+care and repair.
+
+The BCC intervention was a multi-channel activity
+that used mass media messaging, interpersonal commu-
+nication, and school and community events as its main
+
+----$$$$----$$$$----
+Helinski et al. Malar J (2015) 14:366
+
+channels. Respondents in the intervention area reported
+a significantly increased exposure to net care and repair
+messages compared to baseline levels, but this trend was
+also observed to a lesser, but still significant degree in the
+comparison district. This is likely due to mass media of
+the ongoing national LLIN distribution campaign that
+was taking place countrywide. Indeed, at least one mes-
+sage from the national campaign was remembered by
+around one-fifth of respondents in the intervention
+and comparison districts, indicating a similar reach in
+both districts. In addition, some messaging from the
+BCC intervention in the intervention district may have
+reached the comparison district. During the design
+phase, intervention district representatives specifically
+requested that activities take place in Teso and English as
+they were the dominant languages in their district. The
+addition of English may have made it easier for messages
+to reach the comparison district, although a specific slo-
+gan from the BCC intervention was only recalled by 1 %
+of respondents in the comparison district.
+
+The BCC campaign stressed the importance of han-
+dling nets with care, only washing nets when dirty, and
+the benefits these actions would give (less malaria, better
+sleep, saving money). In addition, substantial emphasis
+was placed on the inspection of nets and early repair of
+holes. The intervention led to an overall improved knowl-
+edge of respondents in the intervention district. In addi-
+tion, the attitude of respondents towards net care and
+repair was better in the intervention district, although
+no baseline levels were available. In both districts, but
+to a greater degree in the intervention area, a positive
+relationship between the dose, i.e, number of chan-
+nels respondents had been exposed to, and attitude was
+observed. This dose-response relationship, as observed
+in a similar study in Nigeria [18], provides an indication
+that a plausible causal relationship between exposure and
+attitudes is present.
+
+Better attitudes, in turn, were positively associated
+with more PermaNets being in serviceable condition at
+endline in the intervention district when controlling for
+other factors, and a similar positive effect of attitude on
+net condition was found in a similar study performed in
+Nigeria [18]. The same was not observed for the Olyset
+nets, which were in general in poor condition in both dis-
+tricts, and their lifespan, with around half of all surveyed
+nets found in too torn condition approximately 2 years
+post-distribution, followed a two-year net survival curve
+[21]. Poor durability of Olyset nets was observed in
+other studies [7, 22—24], and the manufacturer has since
+changed the knitting pattern of the product (Nick Brown,
+personal communication). Given that the intervention-
+area Olysets showed no improvement over Olysets in the
+comparison district, it seems likely that while behaviour
+
+Page 12 of 15
+
+change interventions can improve net care and repair
+behaviours and improve net condition, there is a limit in
+its ability to prevent deterioration when the physical con-
+struction of LLINs is suboptimal.
+
+Repair was a large focus in the BCC intervention as
+it was hypothesized to have a significant impact on the
+pHI. The proportion of nets with observed repairs was
+similar between districts, with approximately 50 % of all
+nets showing signs of repair, although more repairs per
+net were achieved in the intervention district. However,
+this increased repair behaviour did not contribute to bet-
+ter net condition, and when including other predictors in
+the model, there was no significant difference in the per-
+cent of nets classified as serviceable for the Olyset brand
+between both districts. In fact, repaired nets were in sig-
+nificantly worse condition than non-repaired nets for all
+brands assessed, which was also observed in the Nigeria
+study [18]. This suggests that repairs were not made early
+or thoroughly enough to move a net into a less-damaged
+pHI category. The findings reported here mirror those
+in the Gambia, where an increase in net repairs follow-
+ing a BCC intervention was also observed. However, nets
+remained badly torn and very few households succeeded
+in repairing all of the holes in their net [17]. It is possible
+that repairs may have been initiated too late, once the net
+condition had already deteriorated so significantly that
+it was beyond repair, and additional studies are required
+to understand whether early repairs can make a signifi-
+cant impact. On the other hand, attitudes towards repair
+specifically were an integral component of the overall
+attitude score that significantly contributed to improved
+net condition. It is reasonable from this data that repair
+messages influence overall attitudes, and that therefore,
+while repair behaviour is not sufficient to improve net
+condition, repair messages still play an important role in
+establishing and strengthening the attitudes that improve
+the standing of a net in a household to a highly valued
+item that should be well-cared for. Qualitative data col-
+lected from the area and from another study in Nigeria
+identified a number of motivators for net care and repair,
+including caring for one’s family, avoiding mosquito bites,
+saving money, and maintaining the positive opinion of
+others by keeping a clean and intact net [4, 19]. Repair
+messages should, therefore, not be ignored when design-
+ing BCC activities to improve net integrity.
+
+Looking at the PermaNets in the study, the other fac-
+tors that impacted on net condition included socioeco-
+nomic status of the household, with wealthier households
+having nets in better condition. More frequent washing
+(more than three times in the previous 3 months) was
+associated with poorer net condition. For Olyset nets it
+was observed that nets that were used over reed mats or
+for sleeping places located on the ground were less likely
+
+----$$$$----$$$$----
+Helinski et al. Malar J (2015) 14:366
+
+to be in serviceable condition than nets observed over
+foam mattresses or bed frames, likely due to the fabric
+integrity issues of this group of nets. In addition, pres-
+ence of rodents negatively impacted on Olyset condi-
+tion. Presence of rodents was negatively associated with
+net condition in some parts of Nigeria [25]. The different
+predictors that were observed for each net brand sug-
+gest that factors which may contribute towards a service-
+able or too torn net condition are dependent on physical
+integrity; weaker nets may be more susceptible to some
+factors earlier in their lifespan compared to stronger nets.
+A similar study in Nigeria also observed that 100 denier
+polyester nets were more likely to be in serviceable condi-
+tion in wealthier quintiles, and if the net was tied up dur-
+ing the day, but that neither washing frequency, presence
+of rodents, nor education level of the head of household
+had a significant effect on net condition, in a multivari-
+ate regression model [18]. While some of the predictors
+observed to influence net condition may be more eas-
+ily addressed by household owners themselves, such as
+washing frequencies, households are less able to reduce
+their rodent populations, or easily improve their bedding
+materials. This is particularly the case for the poorest
+quintile, whose nets were more likely to be too torn than
+were the higher quintiles. Understanding the behavioural
+actions that people with a more positive attitude towards
+net care and repair take should be investigated further.
+Net use was overall high in this survey. Although net
+coverage of at least one net for every household remained
+high, the majority of households no longer had enough
+nets to cover all of its residents 20-21 months post-dis-
+tribution. Although the two districts, alongside the other
+two that received nets in September 2012, did not receive
+any additional nets from the LLIN mass campaign in
+2013/2014, results suggest that especially districts that
+received Olyset nets require replacing nets in the imme-
+diate future through either campaigns or continuous dis-
+tribution to achieve high levels of net ownership.
+Although the use of this multiple-channel BCC inter-
+vention was beneficial in improving attitudes around net
+care and repair, more research about the combination of
+channels that is most significant would be useful. Such
+research should also segment participants by vulnerabil-
+ity to net damage. Unlike many HIV and family planning
+messages, net care is not sensitive and can be openly dis-
+cussed in large fora. For this reason, care messages may be
+easily added to radio and news programmes and to large
+community events and achieve high reach. However, the
+poorest households—who are also more likely to have nets
+in poor condition, as well as less educated, less literate, less
+likely to access services and also sleeping on mats—are less
+likely to be reached by radio, and may benefit from targeted
+interpersonal interventions. Community health workers,
+
+Page 13 of 15
+
+who are already tasked with identifying and reaching
+the poorest households, can include net care messages
+in their work. Instead of having a stand-alone campaign,
+programme planners may be able to leverage existing pro-
+grammes. Net care messages can be included as part of net
+use messaging in other BCC campaigns, community case
+management programmes and in continuous net distri-
+bution programmes where nets are distributed by health
+workers, school teachers or community-based individuals.
+Other programmes may also be able to convince educa-
+tion officials to incorporate net care and repair into school
+curricula. Although this study evaluated a BCC inter-
+vention (specifically, a combination of mass media and
+community/school activities), other approaches to bring
+about change in behaviour, such as community-directed
+approaches, core groups/support groups or positive devi-
+ance, may also be effective in improving net care behav-
+iour. Introducing net care messages may in fact, help make
+net use messages feel “fresh” to communities with years of
+exposure to net use messaging.
+
+Strengths and limitations
+
+This is one of few studies documenting the impact of
+a BCC intervention on household behaviour and net
+condition over time. The study was hampered by the
+unanticipated uneven distribution of net brands in the
+intervention and control districts, and the overall poor
+durability of Olyset nets, which complicated the analyses
+and interpretation of study findings. Different net brands
+were used because the nets for the campaign distribution
+in those districts did not arrive in time. As a result, nets
+were pulled from the stock that was in country at the time.
+
+There is some indication that the success of the BCC
+intervention was limited by its late start, 9 months after
+the nets had been distributed. Given the rate of decay it
+is likely that nets had already acquired holes and some
+might have already been beyond repair during these ini-
+tial months. Indeed, nets in the comparison district had
+been predominantly lost from household 6-12 months
+post-distribution, and the main reason indicated was that
+net was too old/torn.
+
+This study rested on the premise that a net in service-
+able condition is more protective against malaria. More
+research on the relationship between pHI and malaria
+prevention is needed to fully understand the contribution
+of net care and repair behaviours to malaria prevention.
+
+Conclusions
+
+The evaluation showed that the BCC programme resulted
+in improved knowledge and attitudes of respondents,
+which impacted positively on net condition. This was
+likely the result of overall better care for the nets. Repairs
+themselves were not sufficient to improve net condition,
+
+----$$$$----$$$$----
+Helinski et al. Malar J (2015) 14:366
+
+although repair attitudes were a critical component of the
+attitudes that positively affected net condition. Additional
+research is needed to understand whether early repairs
+could improve net condition. As such, BCC messages on
+net care and repair should be part of malaria control pro-
+grammes and can be integrated in existing services. This
+study also provided specific recommendations for such
+programmes as it lent insights on channel, audience and
+message selection. Due to the range of care behaviours that
+can be promoted, additional research on which attitudes
+and care behaviours are most associated with improved net
+condition would help BCC planners hone their campaigns.
+
+Authors’ contributions
+
+GN and MH conducted the analysis and drafted the manuscript. HK and AA
+drafted portions of the manuscript. AA, GH, LS, and KM designed the BCC
+intervention. AK contributed to the analysis plan and reviewed the manu-
+script. RS implemented the surveys and contributed to the manuscript. ML
+and MF contributed to the manuscript. All authors read and approved the
+final manuscript.
+
+Author details
+
+' Malaria Consortium, Kampala, Uganda. ? Johns Hopkins University Center
+for Communication Programs, Baltimore, MD, USA. ? Tropical Health LLP,
+Montagut, Spain. * Malaria Consortium, London, UK. ? Johns Hopkins Uni-
+versity Center for Communication Programs, Nairobi, Kenya. ° Johns Hopkins
+University Center for Communication Programs, Kampala, Uganda. ’ John
+Snow International, Kampala, Uganda. ® United States Agency for International
+Development, Washington DC, USA.
+
+Acknowledgements
+
+The authors wish to thank the Ministry of Health and the District Health and
+District Education authorities in the two districts in which the evaluation was
+conducted (Kaliro and Serere) for their support in the operational design and
+implementation of the programme and the evaluation surveys. Special thanks
+go to the village health teams, music groups, radio producers and school
+teachers in Serere district for volunteering their creativity and time to imple-
+menting the campaign, and the respondents of the household interviews. We
+thank Lawrence Barat for providing valuable feedback during preparation of
+the manuscript. This study is made possible by the generous support of the
+American people through USAID/PMI under the terms of Cooperative Agree-
+ment No. GHS-A-00-09-00014-00. The contents do not necessarily reflect the
+views of USAID/PMI or the United States Government.
+
+Compliance with ethical guidelines
+
+Competing interests
+The authors declare that they have no competing interests.
+
+Received: 14 April 2015 Accepted: 12 September 2015
+Published online: 22 September 2015
+
+References
+
+1. WHO. Global Malaria Programme. World malaria report. World Health
+Organization, Geneva. 2014. http://www.who.int/malaria/publications/
+world_malaria_report_2014/en/. Accessed 10 Feb 2015.
+
+2. WHO. Guidelines for monitoring the durability of long-lasting insec-
+ticidal mosquito nets under operational conditions. World Health
+Organization, Geneva. 2011. http://whqlibdoc.who.int/publica-
+tions/2011/9789241501705_eng.pdf. Accessed 10 Feb 2015.
+
+3. Fritzen C, Hunter G, Acosta A, Koenker H, Kilian A. Rodents as a threat to
+the durability of mosquito nets for malaria prevention: what is known
+and what is to be done? Networks Report. 2013. http://www.networks-
+malaria.org/sites/default/files/Rat%20Paper%20Report%20Format%20
+Aug82013%20%282%29.pdf. Accessed 10 Feb 2015.
+
+14.
+
+20.
+
+21,
+
+22.
+
+Page 14 of 15
+
+Hunter GC, Scandurra L, Acosta A, Koenker H, Obi E, Weber R.“We are
+supposed to take care of it”: a qualitative examination of care and repair
+behaviour of long-lasting, insecticide-treated nets in Nasarawa State,
+Nigeria. Malar J. 2014;13:320. doi:10.1186/1475-2875-1 3-320.
+
+Mutuku FM, Khambira M, Bisanzio D, Mungai P, Mwanzo |, Muchiri EM,
+
+et al. Physical condition and maintenance of mosquito bed nets in Kwale
+County, coastal Kenya. Malar J. 2013;12:46. doi:10.1186/1475-2875-12-46.
+Loll DK, Berthe S, Faye SL, Wone |, Arnold B, Koenker H, et al.“You need to
+take care of it like you take care of your soul”: perceptions and behaviours
+related to mosquito net damage, care, and repair in Senegal. Malar J.
+2014;13:322. doi:10.1186/1475-2875-1 3-322.
+
+Gnanguenon V, Azondekon R, Oke-Agbo F, Beach R, Akogbeto M.
+Durability assessment results suggest a serviceable life of two, rather
+than three, years for the current long-lasting insecticidal (mos-
+
+quito) net (LLIN) intervention in Benin. BMC Infect Dis. 2014;14:69.
+doi:10.1186/1471-2334-14-69.
+
+Batisso E, Habte T, Tesfaye G, Getachew D, Tekalegne A, Kilian A, et al. A
+stitch in time: a cross-sectional survey looking at long lasting insecticide-
+treated bed net ownership, utilization and attrition in SNNPR, Ethiopia.
+Malar J. 2012;11:183. doi:10.1186/1475-2875-11-183.
+
+Smith SC, Joshi UB, Grabowsky M, Selanikio J, Nobiya T, Aapore T. Evalu-
+ation of bednets after 38 months of household use in northwest Ghana.
+Am J Trop Med Hyg. 2007;77(6 Suppl):243-8.
+
+Kachur SP, Phillios-Howard PA, Odhacha AM, Ruebush TK, Oloo AJ, Nahlen
+BL. Maintenance and sustained use of insecticide-treated bednets and
+curtains 3 years after a controlled trial in western Kenya. Trop Med Int
+Health. 1999;4:728-35.
+
+. Bowen HL. Impact of a mass media campaign on bed net use in Cam-
+
+eroon. Malar J. 2013;12:36. doi:10.1186/1475-2875-12-36.
+
+Boulay M, Lynch M, Koenker H. Comparing two approaches for
+estimating the causal effect of behaviour-change communica-
+
+tion messages promoting insecticide-treated bed nets: an analysis
+
+of the 2010 Zambia malaria indicator survey. Malar J. 2014;13:342.
+doi:10.1186/1475-2875-13-342.
+
+Keating J, Hutchinson P, Miller JM, Bennett A, Larsen DA, Hamainza B,
+
+et al. A quasi-experimental evaluation of an interpersonal communica-
+tion intervention to increase insecticide-treated net use among children
+in Zambia. Malar J. 2012;11:313. doi:10.1186/1475-2875-1 1-313.
+
+Gies S, Coulibaly SO, Ouattara FT, Ky C, Brabin BJ, D'Alessandro U. A com-
+munity effectiveness trial of strategies promoting intermittent preventive
+treatment with sulphadoxine-pyrimethamine in pregnant women in
+rural Burkina Faso. Malar J. 2008;7:180. doi:10.1186/1475-2875-7-180.
+
+. Gies S, Coulibaly SO, Ky C, Ouattara FT, Brabin BJ, D'Alessandro U.
+
+Community-based promotional campaign to improve uptake of intermit-
+tent preventive antimalarial treatment in pregnancy in Burkina Faso. Am J
+Trop Med Hyg. 2009;80:460-9.
+
+Fuangchan A, Dhippayom T, Kongkaew C. Intervention to promote
+patients’ adherence to antimalarial medication: a systematic review. Am J
+Trop Med Hyg. 2014;90:1 1-9. doi:10.4269/ajtmh.1 2-0598.
+
+Panter-Brick C, Clarke SE, Lomas H, Pinder M, Lindsay SW. Culturally com-
+pelling strategies for behaviour change: a social ecology model and case
+study in malaria prevention. Soc Sci Med. 2006;62:2810-25. doi:10.1016/j.
+socscimed.2005.10.009.
+
+Koenker H, Kilian A, Hunter G, Acosta A, Scandurra L, Fagbemi B, et al. The
+impact of a behaviour change intervention on LLIN care and repair behav-
+iours and net condition in Nasarawa State, Nigeria. Malar J. 2015;14:18.
+Scandurra L, Acosta A, Koenker H, Kibuuka DM, Harvey S. “It is about how
+the net looks”: a qualitative study of perceptions and practices related to
+mosquito net care and repair in two districts in eastern Uganda. Malar J.
+2014;13:504. doi:10.1186/1475-2875-1 3-504.
+
+WHO. Guidelines for laboratory and field-testing of long-lasting insecti-
+cidal nets. World Health Organization, Geneva. 2013. http://apps.who.int/
+iris/bitstream/10665/80270/1/9789241505277_eng.pdf. Accessed 10 Feb
+2015.
+
+VCTEG. Estimating functional survival of long-lasting insecticidal nets
+from field data. 2013. http://www.who.int/malaria/mpac/mpac_sep13_
+vcteg_llin_survival_report.pdf. Accessed 10 Feb 2015.
+
+Fornadel C, Gimnig J, Dotson E, Chan A, de Leon G, Wirtz R. Physical
+durability of long-lasting insecticidal mosquito nets (LLINs) after use,
+sub-Saharan African nations 2008-2012. Durban: Multilateral Initiative for
+Malaria; 2013.
+
+
+----$$$$----$$$$----
+Helinski et al. Malar J (2015) 14:366 Page 15 of 15
+
+23. Hakizimana E, Cyubahiro B, Rukundo A, Kabayiza A, Mutabazi A, Beach 25. Kilian A, Koenker H, Obi E, Selby R, Fotheringham M, Lynch M. Field
+R, et al. Monitoring long-lasting insecticidal net (LLIN) durability to durability of the same type of long-lasting insecticidal net varies between
+validate net serviceable life assumptions, in Rwanda. Malar J. 2014;13:344. regions in Nigeria due to differences in household behaviour and living
+doi:10.1186/1475-2875-13-344,. conditions. Malar J. 2015;14:123. doi:10.1186/s12936-015-0640-4.
+
+24. Morgan J, Abilio AP, do rosario Pondja M, Marrenjo D, Luciano J, Fer-
+nandes G, et al. Physical durability of two types of long-lasting insecticidal
+nets (LLINs) 3 years after a mass LLIN distribution campaign in Mozam-
+bique, 2008-2011. Am J Trop Med Hyg. 2015;92:286-93. doi:10.4269/
+ajtmh.14-0023.
+
+Submit your next manuscript to BioMed Central
+and take full advantage of:
+
+¢ Convenient online submission
+
+¢ Thorough peer review
+
+¢ No space constraints or color figure charges
+
+¢ Immediate publication on acceptance
+
+¢ Inclusion in PubMed, CAS, Scopus and Google Scholar
+
+¢ Research which is freely available for redistribution
+
+Submit your manuscript at C) BioMed Central
+
+www.biomedcentral.com/submit
+
+
+----$$$$----$$$$----

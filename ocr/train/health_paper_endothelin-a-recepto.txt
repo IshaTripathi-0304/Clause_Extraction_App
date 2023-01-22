@@ -1,0 +1,268 @@
+Abstracts e69
+
+entered as independent predictors of aortic pulse wave velocity (PWV, a
+traditional index of arterial stiffness) into the stepwise regression
+analysis of sex, antihypertensive medication use, body mass index,
+blood test results, resting blood pressure, daily physical activity and
+diastolic blood pressure and HR during the exercise (17 = 0.634,
+P<0.001). In subgroup analyses according to average SBP during the
+exercises, aortic PWV was higher in the high SBP group than the low
+SBP group independent of resting SBP (P < 0.001). We concluded that
+SBP during resistance exercise is independently correlated with arterial
+stiffness. The following steps are to elucidate whether excessive
+blood pressure elevation during resistance exercise increases arterials
+stiffness by prospective study and to investigate its relationship to ET-1
+system.
+
+doi:10.1016/j.1fs.2014.01.031
+
+A study of endothelins and endothelin receptors in rheumatic
+mitral valves
+
+Tania M.A. Rodrigues’, Sydney C. Leao”, Maria R.M. Lima’,
+
+Dario G.M. Neto®, Rosilene C. Soares”, Ricardo Fakhouri‘,
+Anderson C. Marcal*, Michael R. Dashwood“
+
+“Group of Molecular Anatomy, CNPq, Federal University of Sergipe, Sao
+Cristovao, SE, Brazil
+
+Parasitic Biology Postgraduated Program, Morphology Department,
+Federal University of Sergipe, Sao Cristovao, SE, Brazil
+
+“Medicine Department, Federal University of Sergipe, Aracaju, SE, Brazil
+“Department of Clinical Biochemistry, Royal Free Hospital, London, UK
+E-mail address: tmarodrigues@infonet.com.br (T.M.A. Rodrigues)
+
+Introduction: Rheumatic fever represents a serious public health
+problem in Brazil, with thousands of new cases each year. It is an
+inflammatory and autoimmune disease, which occurs in response to
+infection by Streptococcus A group. The aim of this study was to
+evaluate the immunolabeling for ET-1,ET-A and ET-B receptors in
+rheumatic mitral valves. Methods: This study focused in quantitative
+immunoreactivity of ten mitral valves which were collected at a
+hospital in Aracaju, SE, Brazil. The quantitative analysis of the
+immunocytochemistry area of each receptor in relation to the total
+area of each slide was performed by Image] software. Statistical
+analysis was performed using measures of central tendency and
+standard deviation. In inferential analysis, we used the Pearson
+partial correlation (R), with significance level of <0.05. Results: In 10
+samples, immunohistochemical expression for ET-1 and for its
+receptors was observed in eight and seven samples, respectively. In
+quantitative analysis, it was observed that the average area with
+expression of ET-1 was 18.21 + 14.96%. For ETrA and ETrB, the mean
+expressed areas were respectively 15.06 + 13.13% and 9.20 + 11.09%.
+The correlation between the expression of both endothelin receptors
+was strongly positive (R: 0.74, p: 0.02), but the correlation between
+ET-1 and its receptors were negative for both ETrA (R: — 0.37, p: 0.25),
+and ETrB (R: —0.14, p: 0.39). Conclusion: The strong positive
+correlation between endothelin receptors (ETrA more demonstrated
+than ETrB) suggests that both have a role in the pathophysiology of
+rheumatic mitral stenosis.
+
+doi:10.1016/j.lfs.2014.01.032
+
+Complement C5a antagonism is associated with reduced
+big-endothelin level after experimental cardiac tamponade
+Daniel Erces*, Gabriella Varga*, Miklos Nogrady’, IIdiko Laszlo’,
+Andras T. Meszaros’, Jozsef Kaszaki*, Noriko Okada’,
+Hidechika Okada”, Mihaly Boros?
+
+“Institute of Surgical Research, University of Szeged, Hungary
+Department of Immunology, Nagoya City University, Nagoya, Japan
+E-mail address: erces.daniel@med.u-szeged.hu (D. Erces)
+
+Objective: Cardiac tamponade is a severe clinical syndrome
+most often caused by high-energy thoracic injuries. Following
+tamponade, the release of vasoconstrictive mediators contributes
+to circulatory redistribution, leading to peripheral macro- and
+microcirculatory complications including gastrointestinal hypoper-
+fusion. As a consequence of hypoxia the complement system is
+activated and anaphylatoxin C5a may be produced. Our aim was to
+investigate the modulator effects of complement C5a antagonist
+(C5aA) treatment on the endothelin system and the accompanying
+circulatory and inflammatory changes in a large animal model of
+experimental cardiac tamponade. Methods: In anaesthetized, venti-
+lated and thoracotomized minipigs (n = 7) tamponade was induced
+for 60 min by intrapericardial fluid administration, meanwhile the
+mean arterial pressure (MAP) was reduced to 40-45 mm Hg. Group
+2 was treated with C5aA (AcPepA, Nagoya, Japan) at the 45th min of
+tamponade (4mg/kg iv; n= 6), while group 3 (n= 6) served as
+sham-operated control. Macrohemodynamics were monitored for
+240 min, whole blood superoxide production, plasma HMGB-1 and
+big-endothelin (big-ET) levels, small intestinal myeloperoxidase
+(MPO) activity were measured. Average red blood cell velocity (a-RBCV)
+in the small intestinal mucosa was determined by intravital orthogonal
+polarization imaging (OPS) technique. Results: After tamponade plasma
+levels of big-ET were increased together with superoxide production,
+HMGB-1 levels and MPO activities. The C5aA treatment normalized
+the macrohemodynamics, and besides the a-RBCV was increased, SOX,
+HMGB-1, MPO and big-ET levels were reduced. Conclusion: These results
+demonstrate the possible connections between the activation of
+complement- and endothelin systems, and the potential for C5aA to
+decrease the potentially harmful inflammatory consequences of exper-
+imental cardiogenic shock. Grant supports: OTKA-K104656; TAMOP-
+4,2.2A-11/1/KONV-2012-0035; TAMOP-4.2.2.A-11/1/KONV-2012-0073;
+TET-JP-16/09.
+
+doi:10.1016/j.1fs.2014.01.033
+
+Endothelin A receptor blockade and long term outcome in
+patients with ST elevation acute coronary syndrome
+
+Raphael Wurm, Christopher Adlbrecht, Michael Humenberger,
+Bassam Redwan, Martin Andreas, Klaus Distelmaier, Irene M. Lang
+
+Medical University of Vienna, Austria
+E-mail address: raphael.wurm@meduniwien.ac.at (R. Wurm)
+
+Background: ST-elevation acute coronary syndrome (STE-ACS) is
+characterized by thrombotic coronary occlusion compromising blood
+flow at the epicardial and microvascular levels. Coronary thrombi are
+a source of large amounts of endothelin-1 (ET-1), a pro-fibrotic
+vasoconstrictor and a mediator of microvascular dysfunction and
+cardiac remodeling. Methods: Patients with posterior-wall STE-ACS
+were randomly assigned to intravenous BQ-123 or placebo as
+described elsewhere (n = 54). During a three-year follow-up period,
+patients were followed and kept on optimal medical treatment by an
+investigator who was blinded to the acute treatment allocation.
+Results: During the median follow-up period of 3.3 years (IQR 2.9-
+3.7), no deaths occurred. The reasons for rehospitalisation (n = 19)
+were unplanned coronary revascularization (n = 10, 52%), worsen-
+ing angina (n = 3, 17%), hypertensive urgency (n = 2, 11%), as well
+as stroke (n = 1), dyspnoea (n = 1), ventricular tachycardia (n = 1)
+and cerebrovascular disease (n = 1). We observed a longer event-
+free survival in patients randomized to receive BQ-123 compared
+
+----$$$$----$$$$----
+e70 Abstracts
+
+with patients randomized to placebo (3.8 years (95% Cl: 3.3-4.2) for
+BQ-123 versus 2.8 years (2.1-3.4) for placebo, p = 0.032, Figure 1).
+Conclusion: Short-term administration of BQ-123 in patients undergo-
+ing primary PCI for STE-ACS leads to a longer cardiovascular event-free
+survival.
+
+4] p=0.032
+1T l BQ-123
+
+= Placebo
+
+Event-free
+
+Time until hospitalization (years)
+
+doi:10.1016/j.lfs.2014.01.034
+
+Clinical features between heart failure and sleep disordered breathing
+Yoko Yamada, Hiroshi Wada, Kenichi Sakakura, Naoko Ikeda,
+Yoshitaka Sugawara, Junya Ako, Shin-ichi Momomura
+
+Division of Cardiovascular Medicine, Saitama Medical Center,
+Jichi Medical University, Japan
+E-mail address: yokoyatky@gmail.com (Y. Yamada)
+
+Introduction: Little has been known about clinical background of
+the patients with heart failure (HF) and sleep disordered breathing
+(SDB). The aim of this study was to elucidate the relationship
+between HF and SDB. Methods: 1121 patients admitted to our
+institute with the diagnosis of HF between 2006 and 2012 was
+enrolled. SDB was defined >5/h of apnea-hypopnea index (AHI).
+Obstructive sleep apnea (OSA) group and central sleep apnea (CSA)
+group were defined based on the data of type III sleep monitor
+(Morpheus). Results: Among 1121 patients 328 (29%) underwent
+screening of type III sleep monitor. In the 328 patients, 275 (84%)
+patients showed SDB. Among these 275 SDB patients, 135 (41%)
+were OSA, and 140 (43%) were CSA. AHI was significantly higher
+(OSA: 22.5 + 16.2, CSA: 29.8 + 14.9, P< 0.05) and ejection fraction
+(EF) was significantly lower (OSA: 40.1 + 17.1%, CSA: 33.5 + 14.1%,
+P<0.05) in CSA group between two groups. Among 140 CSA
+patients, 80 (57%) patients have heart failure with reduced ejection
+fraction (HFREF) and among 135 OSA patients, 60 (44%) patients
+have HFREF. Conclusions: SDB was highly associated with HF and the
+clinical features between OSA and CSA with HF were different. CSA
+patients were associated with lower EF and higher AHI than OSA
+patients. This study suggested that SDB was one of an important
+target of treatment HF and to treat HF according to these clinical
+subsets of SDB was clinically required in the future.
+
+doi:10.1016/j.lfs.2014.01.035
+
+Selective deletion of endothelin B receptors from vascular
+smooth muscle does not inhibit neointimal lesion formation
+Patrick W.F. Hadoke’, Eileen Miller’, Karolina Duthie*, Rhoda E. Kuc?,
+Anthony P. Davenport”, Elise E. Fransen van de Putte®,
+
+Sibylle Christen’, David J. Webb*
+
+“Centre for Cardiovascular Science, University of Edinburgh,
+Edinburgh, UK
+
+University of Cambridge, Cambridge, UK
+
+E-mail address: phadoke@staffmail.ed.ac.uk (P.W.F. Hadoke)
+
+Pharmacological inhibition and genetic deletion (Murakoshi et al.,
+2002; Kirkby et al., 2012) suggest that endothelin (ET) A-selective
+antagonists are preferable to mixed ETA/B antagonists for prevention of
+neointimal lesion formation. ETB receptors expressed in smooth muscle
+cells may, however, contribute to lesion development. It was proposed
+that ETB deletion from smooth muscle (SM) would reduce lesion
+formation following arterial injury. Methods: Mice bearing a floxed ETB
+gene or expressing cre-recombinase under the SM22 promoter were
+crossed to produce SM-selective ETB deletion. SMETB knockout mice
+were identified by genotyping and backcrossed to C57BI/6] (4-6
+generations). Functional confirmation of ET deletion was determined
+by exposing trachea, and mesenteric artery and vein, to sarafotoxin 6c
+in a myograph. Femoral injury was performed in adult, male SMETB
+knockout mice and littermate controls and arteries were harvested
+33 days later for structural analysis. Results: SMETB knockout reduced
+(~55%), but did not abolish, ETB-mediated contraction in trachea. In
+contrast, S6c-mediated contraction in mesenteric veins (130 + 46%
+KPSS, n = 4), and in mesenteric arteries cultured for 24h (72 + 24%
+KPSS, n = 4), was abolished by SMETB deletion (5.1 + 3.4% KPSS and
+0% KPSS, respectively). Femoral artery injury produced large, neointi-
+mal lesions (47.4 + 10.6%; n = 7) but SMETB knockout did not alter
+lesion size (42.2 + 4.5%; n = 9; P = 0.64). Conclusions: Stimulation of
+ETB receptors in SM does not influence neointimal lesion formation.
+This supports the suggestion that ETA-selective antagonists are
+preferable to non-selective antagonists for prevention of neointimal
+proliferation. The study was funded by the BHF (project grant and
+CoRE). Murakoshi et al. (2002) Circulation 106:15; Kirkby et al. (2012)
+Cardiovasc Res, 95, 19.
+
+doi:10.1016/j.lfs.2014.01.036
+
+P-116
+
+Neointimal lesion formation does not induce endothelin (ET)
+B-mediated contraction in murine femoral arteries
+
+Patrick W.F. Hadoke, Eileen Miller, Karolina Duthie,
+
+Raphael Castellan, Matteo Azzolini, Elise E. Fransen van de Putte,
+Sibylle Christen, David J. Webb
+
+Centre for Cardiovascular Science, University of Edinburgh, Edinburgh,
+UK
+E-mail address: phadoke@staffmail.ed.ac.uk (P.W.F. Hadoke)
+
+Incubation of arteries ex vivo induces ETB-mediated contraction
+(Adner et al., 1998), possibly via transcriptional mechanisms (Skovsted
+et al., 2012). ETB receptors are also expressed in neointimal lesions
+(Azuma et al., 1994). It was proposed that ETB-mediated contraction
+would be induced by neointimal lesion formation. Methods: Femoral
+arteries from adult, male C57BI/6J] mice (n = 6) were harvested 36 +/
+— 2 days after ligation. Isolated mesenteric and femoral veins and
+arteries from uninjured mice were cultured (DMEM; 37 °C; 5% CO3;
+5 days) before analysis in a myograph. Contractile function was as-
+sessed using phenylephrine (107 9-3 x 10-° M), endothelin-1 (107 '!-
+10-’M) and sarafotoxin 6c (107 '!-10~’M). Relaxant function
+was assessed using endothelium-dependent (acetylcholine; 107 °-3 x
+107° M) and independent (sodium nitroprusside; 107 °-3 x 107 °M)
+agents after contraction with phenylephrine. Results: Freshly isolated
+mesenteric veins contracted in response to S6c whereas mesenteric
+arteries and femoral veins did not. Some (4/10) femoral arteries
+produced small S6c-induced contractions (21.86 +/— 3.72% KPSS,
+
+----$$$$----$$$$----

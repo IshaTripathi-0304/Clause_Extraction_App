@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CRT</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="{% static 'css/show.css' %}">
+    </head>
+    <body>
+	<div id="header">All Contracts</div>
+
+	<table>
+		<caption>Contracts in DB</caption>
+		<tr>
+			<th>ID</th>
+			<th>Title</th>
+			<th>path</th>
+		</tr>
+	{% for item in res %}
+		<tr> 
+			 <td>{{ item.id }}</td>
+			 <td>{{ item.title }}</td>
+			 <td><a href='/media/{{ item.pdf }}' target="_blank">{{ item.pdf }}</a></td>
+			 
+		</tr>
+	{% endfor %}
+	</table>
+
+    </body>
+</html>

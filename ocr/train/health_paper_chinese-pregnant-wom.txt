@@ -1,0 +1,380 @@
+BJID 506 1-3
+
+BRAZ J INFECT DIS. 2015;xxXxX(XX):XXX-XXX
+
+The Brazilian Journal of
+
+INFECTIOUS DISEASES
+
+www.elsevier.com/locate/bjid
+
+ee
+hoe
+yet
+
+ny
+
+Letter to the Editor
+
+Chinese pregnant women in their third trimester
+are more susceptible to HEV infection
+
+To the Editor,
+
+HEV is one of the most important causes of acute clinical hep-
+atitis in adults with particularly high mortality in pregnant
+women in developing countries, such as China.‘ Although
+low seroprevalence of HEV infection in pregnant women was
+reported in Kunming City, Yunnan Province, China in 2011,”
+an outbreak of HEV occurred in the city in 2015 affecting both
+pregnant women and general population. In the present study,
+the prevalence of HEV was investigated in Kunming city by
+ELISA and RT-PCR methods. Results indicated that HEV infec-
+tion epidemic in Kunming city was associated with swine HEV,
+and pregnant women in their third trimester were more sus-
+ceptible to HEV infection.
+
+Serum samples of asymptomatic pregnant women (n=274,
+90 samples in the first, 92 samples in the second, and 92
+samples in the third trimesters of pregnancy) and general pop-
+ulation (n=114) were collected for HEV antibodies and HEV
+RNA detection from January to April 2015.
+
+IgM antibody was detected during the acute stage of HEV
+infection. Among samples of the pregnant women, 10 sera
+(10/274, 3.65%) were positive to HEV IgM, which was similar
+to the general population in 2015 (5/114, 4.39%), but higher
+than that in 2011 in the same city (4/293, 1.37%), and Shan-
+dong Province, China in 2011-2013 (2.6%).* Surprisingly, 90%
+of pregnant women positive for HEV IgM antibody (9/10)
+were in their third trimester of pregnancy, which was sig-
+nificantly higher than in other stages of pregnancy (Table 1).
+Furthermore, the activity of AST in HEV IgM positive pregnant
+women (40-20 IU/L) was higher than that in general population
+
+(<20IU/L). Results suggested that pregnant women in their
+third trimester of pregnancy were more susceptible to HEV
+infection and caused more severe liver lesions, which may
+partly explain the extremely high mortality rate in the third
+trimester.
+
+Among the serum samples, 8.76% (24/274) of pregnant
+women and 10.53% (12/114) of the general population were
+positive to HEV IgG antibody, which was similar to the rate
+found in 2011 in this city (30/293, 10.24%, p >0.05). The positiv-
+ity rates of anti-HEV IgG antibody in the first, second, and third
+trimesters of pregnancy were 8.89% (8/90), 11.96% (11/92), and
+5.43% (5/92), respectively (Fig. 1A). The highest rate of positive
+anti-HEV IgG antibody (11/24, 45.83%) was also in the second
+trimester of pregnancy, similar to that investigated in 2011 in
+the same city (Fig. 1A).
+
+One third of IgM positive people (5/15) were also positive to
+HEV RNA. The complete sequences of HEV, two strains isolated
+from pregnant women, and one strain from non-pregnant
+people of the general population were obtained by RT-nPCR
+according to our previous study.* Sequences were submitted to
+the GenBank database (KR872417 and KR872415 isolated from
+pregnant women). Phylogenetic analysis indicated that the
+three human HEV strains belong to HEV genotype 4, sharing
+99.3-99.8% homology with each other and 96.8-99.4% similar-
+ity to swine HEV strains isolated from 2009 to 2011 in this city
+(Fig. 1B). This result indicates that the source of HEV infection
+in Kunming city in 2015 may originate from the same strain,
+probably a swine strain.
+
+The high prevalence of HEV infection in Yunnan province
+may be associated with the traditional raw pork meat
+
+Table 1 - Seroprevalence of HEV in pregnant women in Kunming city.
+
+Stage Pregnant women Non-pregnant general population
+First Second Third
+IgM IgG IgM IgG IgM IgG IgM IgG
+
+2015 90 90 92 92 92 92 114 114
+
+0 8 1 11 9 5 5 12
+
+0 8.89% 1.09% 11.96% 9.78% 5.43% 4.39% 10.53%
+2011 80 30 78 185 135 78
+
+0 2 2 19 2 9
+
+0 6.67% 2.56% 10.27% 1.48% 11.54%
+
+Please cite this article in press as: Huang F, et al. Chinese pregnant women in their third trimester are more susceptible to HEV infection. Braz J
+
+Infect Dis. 2015. http://dx.doi.org/10.1016/j.bjid.2015.08.009
+
+33
+
+34
+
+35
+
+36
+
+37
+
+38
+
+39
+
+40
+
+41
+
+42
+
+43
+
+44
+
+45
+
+46
+
+47
+
+48
+
+49
+
+50
+
+51
+
+52
+
+53
+
+54
+
+55
+
+56
+
+57
+
+58
+
+59
+
+60
+
+61
+
+----$$$$----$$$$----
+62
+
+63
+
+64
+
+65
+
+66
+
+67
+
+68
+
+69
+
+70
+
+71
+
+72
+
+73
+
+74
+
+BJID 506 1-3
+
+2 BRAZ J INFECT DIS. 2015;xxXx(XX):XXX-XXX
+A B 72 JQ740781/Human/Nanjing/2009
+GU188851/Human/Wuhan/2009
+300 18 GU119961/Swine/Xinjiang/2009
+250 54 JN613156/Swine/Yunnan/2011
+KJ155502/Swine/Yunnan/2010
+200 31 fog & KR872415/Human/Yunnan/2015
+83 A 8/Human/Yunnan/2015
+150 99 90 ' & KR872417/Human/Yunnan/2015
+100 KF703731/Swine/Yunnan/2011
+87 99 § JN542514//Sus scrofa/Yunnan/201 1
+50 HQ828104/Yunnan/2011
+AB082545/Human/Japan/2009
+0 2015 2011 2015 2011 2015 2011 DQ431471/Swine/Changchun/2006
+; ; ; . ; 59 KC692453/Swine/Shandong/201 1
+First trimester Second trimester Third trimester 99
+
+m Number for lgG test MlgG positive Number for IgM test
+
+SlgM positive
+
+94
+
+AF117275/Human/Taiwan/2000
+AJ344171/Human/Beijing/2001
+49 GU119960/Swine/Xinjiang/2009
+AB108537/Human/Changchun/2000
+GU119960/Swine/Xinjiang/2009
+99 JF915746/Swine/Shanghai/2013
+59 EF570133/Swine/Shanghai/2007
+82 AB124818/Swine/France/2009
+99 p~ AJ344186/Human/Beijing/2001
+47 AJ344192/Human/Beijing/2001
+DQ279091/Swine/Heilongjiang/2007
+87 JN613152/Swine/Yunnan/2011
+GU560156/Yunnan/2011
+55 JX855794/Swine/Guangdong/2014
+JX855794/Swine/Guangdong/201 1
+90 GU206559/Swine/Beijing/2008
+99 AY596308/Swine/Xinjiang/2004
+66 AJ344181/Human/Beijing/2001
+KJ534657/Swine/Hebei/2013
+98 KM024042/Swine/Hebei/2014
+KM024042/Swine/Hebei/2013 J
+JN906975/Swine/France/2010 7
+Genotype 3
+99 AB089824/Human/Japan/2009 |
+M74506/Huamn/Mexican/1993 | Genotype 2
+NC001434/Human/Xinjiang/1991
+99 M80581/Human/Burma/1992
+
+Genotype 4
+
+Genotype 1
+
+0.05
+
+Fig. 1 - Prevalence of HEV infection in Kunming city and phylogenetic analysis. (A) Seroprevalence of HEV in pregnant
+women in Kunming city in 2011 and 2015. (B) Phylogenetic analysis based on nearly full-length (7067 bp, exclude 5’ UTR
+and 3’ poly (A)) nucleotide sequence of isolates in this study and other 37 references of four genotypes of HEV, using the
+neighbor-joining method. The tree was evaluated using the interior branch test method with Mega 4 software. The scale bar
+represents nucleotide substitutions per base. GenBank accession number, origin, and host are indicated. The isolates
+identified in this study are marked with a triangle. Strains isolated from Yunnan province are marked with red color. Isolate
+8 was deposited into GenBank database and is still being processed.
+
+consumption and swine-breeder liver in the same house. The
+third national viral hepatitis prevalence survey of China dur-
+ing 2005-2006 revealed that Yunnan had one of the highest
+seroprevalence of HEV in China.’ Consuming raw pig livers
+or raw pork meat have a high potential risk of HEV infection;
+about 78.9% of the swine in Kunming City tested positive to
+HEV IgG antibody” and raw pork meat is consumed frequently
+as a traditional food during the Spring Festival. Therefore,
+Hepatitis E should be considered in the differential diagno-
+sis during pregnancy in order to prevent the loss of mother or
+baby. Infection was highly associated with the prevalence of
+swine HEV infection in this region, underscoring the zoonotic
+transmission of HEV.
+
+Conflict of interest
+
+All authors declare to have no conflict of interest.
+
+Acknowledgements
+
+We thank all the patients who actively participated in this
+study. This study was supported by National Natural Science
+Foundation of China (31360619), Natural Science Foundation
+of Yunnan province in China (Grant 2011FZ068, 2013FB032
+and 2013FZ142), and China Postdoctoral Science Foundation
+(2014M562672 and 2015T81138).
+
+Please cite this article in press as: Huang F, et al. Chinese pregnant women in their third trimester are more susceptible to HEV infection. Braz J
+
+Infect Dis. 2015. http://dx.doi.org/10.1016/j.bjid.2015.08.009
+
+75
+
+76
+
+77
+
+78
+
+79
+
+80
+
+81
+
+----$$$$----$$$$----
+BJID 506 1-3
+
+BRAZ J INFECT DIS. 2015;xXxX(XX):XXX-XXX 3
+
+REFERENCES
+
+. Jia Z, Yi Y, Liv J, et al. Epidemiology of hepatitis E virus in
+
+China: results from the Third National Viral Hepatitis
+Prevalence Survey, 2005-2006. PLOS ONE. 2014;9:e110837.
+
+. Huang F, Ma T, LiL, Zeng W, Jing S. Low seroprevalence of
+
+hepatitis E virus infection in pregnant women in Yunnan,
+China. Braz J Infect Dis. 2013;17:716-7.
+
+. Cong W, Sui JC, Zhang XY, Qian AD, Chen J, Zhu XQ.
+
+Seroprevalence of hepatitis E virus among pregnant women
+and control subjects in China. J Med Virol. 2015;87:446-50.
+
+. Yu WMT, Zhao X, He Z, Yang C, Bi Y, Huang F. Complete
+
+genome sequence of Swine hepatitis e virus prevalent in
+Southwest China. Genome Announc. 2014;2, e00090-00014.
+
+. Li W, Shu X, Pu Y, BiJ, Yang G, Yin G. Seroprevalence and
+
+molecular detection of hepatitis E virus in Yunnan Province,
+China. Arch Virol. 2011;156:1989-95.
+
+Fen Huang*>*, Jue Wang”, Chenchen Yang”, Feiyan Long”, Q1
+Yunlong Li®, Li Lic, Shenrong Jing, Huixuan Wang?
+
+@ Kunming General Hospital of Chengdu Military Region, Kunming,
+
+PR China
+
+> Medical Faculty, Kunming University of Science and Technology,
+Kunming, PR China
+
+© Kunming Maternal and Child Health Hospital, Kunming, PR China
+
+* Corresponding author at: Medical Faculty, Kunming University
+of Science and Technology, Yunnan, China.
+E-mail address: huangfen6789@163.com (F. Huang).
+
+Received 31 July 2015
+
+Accepted 12 August 2015
+
+1413-8670/© 2015 Elsevier Editora Ltda. All rights reserved.
+http://dx.doi.org/10.1016/j.bjid.2015.08.009
+
+Please cite this article in press as: Huang F, et al. Chinese pregnant women in their third trimester are more susceptible to HEV infection. Braz J
+
+Infect Dis. 2015. http://dx.doi.org/10.1016/j.bjid.2015.08.009
+
+99
+
+100
+
+101
+
+102
+
+103
+
+104
+
+105
+
+----$$$$----$$$$----

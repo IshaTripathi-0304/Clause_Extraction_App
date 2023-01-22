@@ -1,0 +1,995 @@
+Tennvall et al. Health and Quality of Life Outcomes (2015) 13:111
+DOI 10.1186/s12955-015-0295-4
+
+RESEARCH ARTICLE
+
+HEALTH AND QUALITY
+OF LIFE OUTCOMES
+
+Health related quality of life in patients
+
+Open Access
+
+® CrossMark
+
+with actinic keratosis — an observational
+study of patients treated in dermatology
+specialist care in Denmark
+
+Gunnel Ragnarson Tennvall'”, J.M. Norlin’, |. Malmberg’, A.M. Erlendsson® and M. Haedersdal’
+
+Abstract
+
+Background: Actinic keratosis (AK) is a common skin condition that may progress to non-melanoma skin cancer
+(NMSC). The disease may influence Health Related Quality of Life (HRQoL), but studies of HROOL in patients with AK
+
+are limited.
+
+The purpose of the study was to analyze HROoL in patients with different severity levels of AK treated in dermatology
+specialist care using generic and disease-specific HROOL instruments and to analyze their relationship.
+
+Methods: AK patients who visited dermatological clinics in Denmark were included in an observational, cross-sectional,
+study in a multi-center setting. Dermatologists assessed AK severity and patients completed: Actinic Keratosis Quality of
+Life Questionnaire (AKQoL), Dermatology Life Quality Index (DLOI), and EQ-5D-5 L including EQ-VAS. Differences
+between categorical subgroups were tested with Wilcoxon rank-sum test. The relationship between instruments was
+
+analyzed with the Spearman correlation test.
+
+Results: A total of 312 patients were included in the analyses. Patients reported impairment in the disease specific HROoL
+instrument AKQoL (mean AKQoL 6.7, DLQI 2, EQ-5D-5 L 0.88, and EQ-VAS 79). HRQoL was least affected in patients with
+mild actinic disease, whereas patients with severe actinic damage suffered from further impaired HRQoL (mean AKQoL
+10.1 and DLQI 4.6). Correlations between DLO! and AKQoL were moderate, whereas the correlations between DLO! and
+
+EQ-5D-5 L and between AKOoL and EQ-5D-5 L were weak.
+
+Conclusions: Patients with severe actinic damage showed more impairment in HRQoL than those with mild disease.
+Correlations between instruments suggest that they are complementary as they measure different aspects of HRQoL and
+
+are used for different purposes.
+
+Keywords: Actinic keratosis, Health related quality of life, EQ-5D, DLOI, AKQoL
+
+Background
+
+Actinic keratosis (AK) is a common skin condition associ-
+ated with cumulative sun exposure. AK lesions possess
+the risk of progressing to squamous cell carcinoma (SCC)
+[1-3], which is a common form of non-melanoma skin
+cancer (NMSC). Whereas AK lesions may regress spon-
+taneously [4], persons who previously suffered from AK
+have an increased risk of developing new lesions [5]. The
+
+* Correspondence: grt@ihe.se
+
+"HE, The Swedish Institute for Health Economics, P.O. Box 2127, SE-220 02
+Lund, Sweden
+
+Full list of author information is available at the end of the article
+
+C BioMed Central
+
+prevalence of AK varies considerably and has been esti-
+mated to between 1.4 and 25 % of the population [5-9].
+In elderly people, in countries with higher ultra violet radi-
+ation, and in patients receiving immunosuppressive treat-
+ments, such as organ transplant recipients, the prevalence
+is higher [10].
+
+AKs typically present as red, scaly lesions on visible, sun-
+exposed skin areas, such as face scalp and dorsal hands,
+thus often causing cosmetic discomfort. In addition, AK-
+lesions may itch, bleed, and adhere to clothing and due to
+its pre-malignant nature patients may fear the risk of de-
+veloping skin cancer. The presence of AK-lesions may thus
+
+© 2015 Tennvall et al. This is an Open Access article distributed under the terms of the Creative Commons Attribution License
+(http://creativecommons.org/licenses/by/4.0) which permits unrestricted use, distribution, and reproduction in any medium,
+provided the original work is properly credited. The Creative Commons Public Domain Dedication waiver (http://
+
+creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated.
+
+----$$$$----$$$$----
+Tennvall et al. Health and Quality of Life Outcomes (2015) 13:111
+
+influence affected persons’ well-being because of cos-
+metic reasons, locally hampering symptoms, and also
+due to fear of developing skin cancer. Studies including
+patient reported outcome measures and health related
+quality of life (HRQoL) is increasingly used in clinical
+practice and in clinical trials in dermatology [11]. Informa-
+tion about HRQoL is requested both by clinicians and re-
+imbursement agencies [12, 13]. Information is limited on
+the potential impact of AKs, its accompanying symptoms
+and treatments, on patients’ HRQoL [14-17].
+
+There are several instruments available to investigate
+HRQoL in dermatology. Generic HRQoL instruments
+are used for a variety of diseases, which makes it possible
+to compare the burden of different medical conditions.
+The EuroQoL five-dimensional questionnaire (EQ-5D) is
+a generic preference-based instrument, which can be
+used to calculate quality-adjusted life years (QALYs).
+QALYs are important in health-economic evaluations
+and requested by reimbursement authorities [18]. It is
+recommended to use both generic and disease specific
+instruments in studies to capture different aspects of
+HRQoL [19-21]. The EuroQoL Visual Analogue Scale
+(EQ-VAS) is part of the EQ-5D questionnaire and it
+measures patient's overall self-rated health status.
+
+Dermatology-specific or disease-specific instruments in-
+clude aspects of the HRQoL that may not be captured by
+a generic instrument. Disease-specific instruments are
+more responsive to disease activity and treatment out-
+come and are therefore often used to reflect the patient
+perspective in clinical trials and observational research.
+
+The Dermatology Life Quality Index (DLQI) is widely
+used in dermatology, both in clinical practice and in
+research [22, 23] and it has recently been used in pa-
+tients with AK [24]. The questions in the DLQI focus on
+physical limitations, rather than psychological impact of
+skin diseases.
+
+Recently, the Actinic Keratosis Quality of Life Ques-
+tionnaire (AKQoL) was developed [14]. This question-
+naire reflects how sun-damaged skin affects HRQoL and
+has the primary focus on psychological aspects.
+
+The objective of the study was to analyze HRQoL in pa-
+tients with different severity levels of AK treated in derma-
+tology specialist care using generic and disease-specific
+HRQoL instruments and to analyze their relationship.
+
+Methods
+
+Study set-up
+
+This is an observational cross-sectional multi-center study
+with focus on clinical patient characteristics and patient
+reported outcome measures. Data was collected at three
+university hospital clinics and seven private dermatology
+clinics in three geographic regions (Zealand, Funen and
+Jutland) in Denmark. AK patients >18 years who visited
+
+Page 2 of 9
+
+the clinics during one specific week in May/June in 2012
+were included.
+
+Ethics, consent and permissions
+
+The study was carried out after obtaining approval from
+The Danish Data Protection Agency. All persons gave
+their informed consent prior to inclusion in the study.
+
+Data collection
+Patients were asked to complete three separate HRQoL
+questionnaires i) AKQoL, ii) DLQI and iii) EQ-5D with
+5 response levels (EQ-5D-5 L), including EQ-VAS.
+Information was collected about educational level,
+employment, civil status and the following chronic co-
+morbidities; asthma or chronic obstructive pulmonary
+disease; heart or vascular disease; diabetes; gastro-intestinal
+disease; cancer; joint disease (e.g. osteoarthritis, rheuma-
+toid arthritis); physical disability or other chronic disease.
+In order to characterize the severity of actinic damage,
+physicians collected information about previous and
+current AK lesions. Presence of AK was evaluated separ-
+ately in nine anatomical regions (scalp, ears, face, chest,
+trunk, arm, hand, leg and foot), and for each AK-affected
+region, the following was registered: lesion count, lesion
+thickness, presence of field-cancerization, clinical suspi-
+cion of NMSC and selected treatment(s). Lesion count
+was estimated and categorized as 1, 2—4, 5-20, or >20
+lesions per area. AK-thickness was graded from I-III ac-
+cording to Olsen et al. [25]. Field cancerization was classi-
+fied as mild, moderate or severe, based on the clinical
+presentation of surrounding skin and included mottled
+erythema and pigmentation, telangiectasia, sallowness,
+laxity, and dry skin texture, without fulfilling the definition
+of AK. In the present study, ‘Severe Actinic Damage’ was
+defined as an anatomical area with >5 lesions, dominated
+by grade II-III AKs with moderate to severe field canceri-
+zation. Consequently, ‘Mild actinic damage’ was defined as
+an anatomical area with a single grade I AK without field
+cancerization. Treatment and disease characteristics were
+the focus in a separate publication [26].
+
+Patient reported outcome measures of health related
+quality of life
+
+AKQoL is an AK specific HRQoL questionnaire including
+9 questions with one single global item and three sub-
+scales/domains: function, emotions and control [14]. The
+questionnaire is reflecting personal daily life, personal
+view of quality of life, social life, emotional life and control
+of life [14]. Each question is scored on a 4-point scale: A
+lot/all the time (scores 3), Quite a lot/often (scores 2),
+Some/sometimes (scores 1), Rarely/not at all (scores 0). In
+case only one question is incomplete, the missing value is
+designated a score of zero and the patient is included in
+the analysis [14]. A total score ranging from zero to a
+
+----$$$$----$$$$----
+Tennvall et al. Health and Quality of Life Outcomes (2015) 13:111
+
+maximum of 27 is calculated by summing the score of
+each question. The higher the score, the more severe is
+the HRQoL impairment. The AKQoL includes the three
+domains Function, Emotions, and Control, which are
+summarized into one single Global item.
+
+DLQI is a dermatology-specific instrument that relates
+to how the skin disease has affected the life of the
+patient over the past 7 days [23]. The questionnaire con-
+sists of 10 questions in 6 dimensions: 1) Symptoms and
+feelings, 2) Daily activities, 3) Leisure, 4) Work and school,
+5) Personal relationships, and 6) Treatment. Each question
+has 4 alternative answers: “not at all”, “a little”, “a lot” and
+“very much”, scored 0, 1, 2 and 3, respectively. The overall
+score aggregates the score of each question. DLQI ranges
+from 0 to 30, where a higher score represents more severe
+HRQoL impairment.
+
+EQ-5D is a generic HRQoL instrument. The question-
+naire includes five dimensions, mobility, self-care, usual
+activities, pain/discomfort, and anxiety/depression [27].
+The Danish version of the EQ-5D-5 L was used in the
+study. The EQ-5D-5 L questionnaire has the same struc-
+ture as the traditional three level questionnaire (EQ-5D-
+3 L), but with five response levels: no problems, slight
+problems, moderate problems, severe problems and un-
+able to/extreme problems. Each combination of responses
+is associated with utility values or relative weighting,
+which are often derived from previous population-based
+studies. Utility values are usually expressed on a scale ran-
+ging between O and 1, where a higher value represents
+better HRQoL but it may result in a value lower than zero
+indicating a health state considered worse than dead. The
+utility values make it possible to calculate QALYs, which
+are essential in health economic evaluations of health care
+interventions [18]. As utility values for the EQ-5D-5 L
+were not yet available at the time of analysis, a Danish
+value set, developed by the EuroQol group, was used to
+transform values from the EQ-5D-3 L to the EQ-5D-5 L
+version [28].
+
+In the EQ-VAS part, patients were asked to indicate
+their present health state on a vertical scale, numbered
+from 0 to 100, where 100 is “the best imaginable health
+state” and zero “the worst imaginable health state”.
+
+Data analysis and statistical methods
+
+Data analyses of background information and subgroup
+analyses of HRQoL outcomes were performed using de-
+scriptive statistical methods, using mean values, standard
+deviations (SD) and proportions.
+
+The AKQoL, DLQI, and EQ-5D-5 L values were ana-
+lyzed overall and for subgroups of patients depending on
+sex, age-groups (<60, 60-69, 70-79 and >80), current AK
+at study visit, clinically suspected NMSC, lesion/s in the
+face, current comorbidities, current AK treatment, im-
+munosuppressive treatment, and previous SCC or not. In
+
+Page 3 of 9
+
+addition, analyses of HRQoL in subgroups of patients with
+severe actinic damage or not was performed.
+
+Statistically significant differences between categorical
+subgroups were tested with Wilcoxon rank-sum test
+(Mann—Whitney U test). For age groups a Kruskal-Wallis
+test was used, which is an extension of the Wilcoxon
+rank-sum test to several groups. Non-parametric tests
+were chosen as the HRQoL outcomes were not normally
+distributed.
+
+Correlations between instruments were tested with the
+Spearman correlation test to investigate whether there
+was a relationship between them. The Spearman correl-
+ation test gives an absolute value between 0 and 1, where
+O indicates no correlation and 1 indicates perfect correl-
+ation. The relationship could be positive or negative. A
+high EQ-5D-5 L or EQ-VAS value means good HRQoL,
+whereas a high score on DLQI or AKQoL indicates low
+HRQoL. Correlations between EQ-5D-5 L or EQ-VAS
+and DLQI or AKQoL therefore have negative values.
+
+A multiple ordinary least squares (OLS) regression ana-
+lysis with EQ-5D-5 L as the dependent or outcome vari-
+able was performed in order to investigate how EQ-5D-5 L
+was affected by age, sex, comorbidities, severe actinic dam-
+age, and clinically suspected NMSC. Reference group was
+man, no comorbidities, no severe actinic damage, and no
+NMSC. Only patients with current AK lesions were in-
+cluded in regression analysis.
+
+A p-value lower than 0.05 was used as significance
+level in all statistical analyses. Statistical analyses were
+performed using Stata Statistical Software: Release 11.1.
+College Station, Texas, USA.
+
+Results
+
+Patient characteristics and background
+
+Patient characteristics are presented in Table 1. A total
+of 312 patients were enrolled in the study. The majority
+of patients, 89 %, (1 = 277), had current AK lesions at
+the study visit. The remaining 35 patients had attended
+control visits for previous AK. Of all patients, 80 % had
+a pre-history of AKs and 42 % suffered from recurrence
+of a specific AK lesion.
+
+Sixty-seven percent were retired, 16 % were working,
+6 % reported other activities and 11 % did not report em-
+ployment status. Comorbidities were reported in 66 % of
+patients. The most common comorbidity was heart or
+vascular disease (26 %), followed by joint disease (22 %)
+and cancer (21 %). Nine percent were treated with im-
+munosuppressive treatments.
+
+A summary of the results from the different HRQoL
+instruments is shown in Table 2.
+
+The actinic keratosis quality of life questionnaire
+The mean AKQolL score for the 286 patients who com-
+pleted the questionnaire was 6.7 (scale: 0-27). Patients
+
+----$$$$----$$$$----
+Tennvall et al. Health and Quality of Life Outcomes (2015) 13:111
+
+Table 1 Patient characteristics
+
+N Percent
+
+312 100
+Women 160 5]
+Age, mean (SD)* 71 (11.0)
+Immunosuppressive treatment 28 9
+Current AK lesion/s 277 89
+Previously known AK 25] 80
+Previous AK treatment 245 78
+Recurrent AK 130 42
+Previous SCC 58 19
+Previous BCC 135 43
+
+SCC Squamous Cell Carcinoma, BCC Basal Cell Carcinoma
+
+“One missing value
+
+Page 4 of 9
+
+with severe actinic damage had worse HRQoL (10.07)
+than patients with no severe actinic damage (6.3) (p<
+0.001).Women reported higher AKQoL scores (7.9), i.e.
+worse HRQoL, than men (5.3) (vy < 0.001). The scores also
+differed between age groups with patients younger than
+60 years of age reporting worse HRQoL (8.1) compared to
+older patients (5.0-7.3) (vy = 0.004). Patients with current
+AK reported better HRQoL (6.5) than patients without
+current AK (7.8) (p = 0.018).
+
+The distribution between the different response levels
+was similar in the different domains function, emotions
+and control (Fig. 1). About 50 % reported problems in
+each domain and in the single global item, 22 % reported
+impairment in HRQoL.
+
+Dermatology life quality index
+
+The mean value for the 290 patients who completed the
+DLQI questionnaire was 1.99 (scale: 0-30). Patients with
+severe actinic damage had higher DLQI scores (4.6), ice.
+
+Table 2 Overall mean (SD) AKQoL, DLOI, EQ-5D-5 L, and EQ-VAS values and in subgroups of patients
+
+AK-QoL DLQI EQ-5D-5 L EQ-VAS
+n Mean SD p-value on Mean SD p-value on Mean SD p-value n Mean SD p-value
+Total population 286° 67 48 290° 199 2.71 276° 0.884 0.140 284 793 189
+Sex Men 137 53 3.7 <0.001 138 173 246 0.121 132 0.901 0.127 0.060 136 813 17.9 0.086
+Women 149 7.9 5.3 152. 2.23 2.91 144 0.868 0.150 148 776 19.7
+Age groups" <60 38 81 5.55 0.004 39 231 240 0657 37 0.903 0.126 0.262 38. 776 229 0.070
+60-69 103 66 4,7 102. 2.27 3.36 98 0.895 0.134 102 819 167
+70-79 86 73 47 87 175 238 84 0.888 0.139 85 81.1 18.1
+280 58 50 40 61 1.70 2.04 56 0.850 0.157 58 737 202
+Current AK Yes 252 65 49 0.018 257 213 283 0.009 244 0881 0.140 0229 252 790 193 0.553
+No 34. 78 3.7 33. 0.91 1.04 32 =—0.907 0.141 32. 822 = 155
+Severe actinic damage® Yes 27 =: 10.07 56 <0001 27 £459 407 <0.001 26 0.844 0.139 0.068 27 = 70.2 = 22.3 0.012
+No 259 630 45 263 1.73 2.38 250 0.888 0.147 257 803 183
+Suspected NMSC' Yes 38s «6.0 5.2. 0.259 39 «264 407 0950 37 0856 0.160 0.343 39 718 226 0.030
+No 214 66 48 218 204 254 207 0.886 0.136 213 803 184
+Locations’ Face 178 65 47 0.640 182) 211 268 0.531 170 0.884 0.133 0.784 179 794 19.0 0.671
+Non- 74. 65 5.2 75 219 3.17 74 0.873 0.156 73, 780 20.1
+facial
+Comorbidities’ Yes 175 67 49 0.357 178 238 3.19 0.200 170 0.860 0.151 <0.001 175 749 20.1 <0.001
+No 77 6.1 47 79 157 1.64 74 0.930 0.097 77 88.1 134
+Current AK treatment Yes 125 7.0 5.6 0402 127 243 3.38 0.186 120 0.900 0.130 0.221 123. 78.2 203 0.609
+No 74 58 3.7 74 173 2.14 72 0.870 0.150 73, 812 = 165
+Immunosuppressive Yes 25 72 6.0 0.869 25 404 446 0.023 23 0.876 0.143 0.900 24 706 25.1 0.061
+treatment’
+No 227 64 47 232 1.93 252 221 0.881 0.140 226 80.1 183
+Previous SCC Yes 53 8.0 6.6 0.410 54 34 44 0016 51 0849 0153 0.038 52 708 214 <0.001
+No 233 64 42 236 17 2.0 225 0.892 0.136 213 813 179
+
+26 incomplete questionnaires, °22 incomplete questionnaires, ‘36 incomplete questionnaires, “One missing value, “Severe actinic damage defined as patients
+with multiple lesions, dominated by grade I--IIl AKs with moderate to severe field cancerization. ‘Analysis of “Suspected NMSC”, “Locations”, “Comorbidities” and
+“Immunosuppressive treatment” only included patients who had current AK lesion/s at the study visit and who had answered the respective questionnaire
+
+----$$$$----$$$$----
+Tennvall et al. Health and Quality of Life Outcomes (2015) 13:111
+
+Page 5 of 9
+
+@ Rarely/not at all
+
+= Some/sometimes
+
+® Quite a lot/often
+
+BA lot/all the time
+
+Function Emotions
+
+Control
+
+Single global item
+
+Fig. 1 The percentage of response levels in each domain of the AKQoL score. 26 questionnaires had more than one incomplete question. Six
+patients, out of the 286, had one missing value only in one of the domains and were included in the analysis
+
+worse HRQoL, than patients with milder AK (1.7) (p<
+0.001). Likewise, patients with current AK had higher
+DLQI (2.1) than patients with no current AK lesions
+(0.9) (p = 0.009). Patients with previous SCC had higher
+DLQI scores (3.4) than those without previous SCC (1.7)
+(p = 0.016) and patients treated with immunosuppressive
+treatments had higher DLQI scores (4) than patients
+who were not treated with such drugs (1.9) (p = 0.023).
+“Symptoms and feelings” was the DLQI dimension where
+most patients reported HRQoL impairment (37 %). The
+second most reported dimension related to the skin dis-
+ease was “Daily activities” (25 %) (Fig. 2).
+
+EQ-5D-5 L and EQ-VAS
+For the 276 patients who completed the EQ-5D-5 L ques-
+tionnaire, the mean value was 0.88 (scale: 0-1). Patients
+with comorbidities reported lower HRQoL (0.86) than
+those without comorbidities (0.93) (vy < 0.001). Likewise,
+patients with previous SCC had lower HRQoL (0.85) than
+those without previous SCC (0.89) (yp = 0.038). Patients re-
+ported most problems in the Pain/Discomfort dimension
+(38 %) (Fig. 3).
+
+The overall EQ-VAS value for 284 responding patients
+was 80. For patients with severe actinic damage the cor-
+responding value vas 70.
+
+m Not at all
+
+mA little
+
+mA lot
+
+m Very much
+
+Fig. 2 The percentage of response levels in each dimension of the DLQI score. n=290 22 incomplete questionnaires
+
+----$$$$----$$$$----
+Tennvall et al. Health and Quality of Life Outcomes (2015) 13:111
+
+Page 6 of 9
+
+@ No problems
+
+mw Slight problems
+
+m Moderate problems
+
+m@ Severe problems
+
+m Extreme problems
+
+Fig. 3 The percentage of response levels in each dimension of EQ-5D-5 L. * 36 incomplete questionnaires
+
+Correlations between instruments and regression analysis
+with EQ-5D-5 L as outcome
+
+The correlations between the HRQoL instruments are
+presented in Table 3. The analyses showed statistically
+significant correlations in all comparisons except be-
+tween EQ-5D-5 L and AKQoL and between EQ-VAS
+and AKQoL. The correlation between DLQI and AKQoL
+was strongest, 0.52 (p< 0.001). This indicates that DLQI
+and AKQoL partly measure the same aspects of HRQoL.
+The correlation between EQ-5D-5 L and DLQI was
+weaker, —0.36 (p < 0.001) but showing that there is a rela-
+tionship between a higher EQ-5D-5 L value and a lower
+DLQI value. A similar correlation pattern, but weaker, was
+shown between EQ-VAS and DLQI, —0.21 (<0.001).
+
+The regression analysis with EQ-5D-5 L as the dependent
+variable showed that HRQoL decreased significantly with
+increasing age (—0.002 per year; p = 0.007), being a woman
+(—0.039; p = 0.026) and comorbidity (—0.063; p = 0.001).
+
+Discussion
+
+This observational, multi-center, cross-sectional study,
+showed that AK, especially severe actinic damage, has a
+negative impact on HRQoL, as measured by the AK
+and dermatology specific HRQoL instruments. This is
+demonstrated in several of the dimensions or domains
+
+Table 3 Correlations between the HROoL instruments, EQ-5D-5 L,
+EQ-VAS, DLQI, and AKQoL, tested with Spearman correlation test
+
+HRQoL instruments Correlation p-value N
+
+EQ-5D-5 L - DLO! —0.36 <0.001 273
+EQ-5D-5 L - AKQoL —0.10 0.099 270
+EQ-VAS - DLQI —0,.21 <0.001 282
+EQ-VAS — AKQoL —0.01 0.859 278
+DLQI - AKQoL 0.52 <0.001 283
+
+in the different instruments and indicate that the dis-
+ease specific and dermatological instruments capture
+different aspects of HRQoL.
+
+To our knowledge, this is the first study where derma-
+tologists have assessed the overall severity level of the
+AK disease in patients, rather than the severity grade in
+particular lesions only. Furthermore, it is the first study,
+to assess HRQoL with both generic and disease specific
+instruments in patients with AK. Results from all instru-
+ments showed more impaired HRQoL in patients with
+severe actinic damage than in those who were defined as
+having mild disease. The difference was statistically sig-
+nificant for AKQoL and DLQI.
+
+The strength of this study is that patients can be con-
+sidered representative for a dermatological population as
+they were included from different dermatology clinics in
+different parts of Denmark. A weakness of the study is
+that the sample in some subgroup analyses was limited,
+and may therefore limit the possibility of statistically sig-
+nificant results.
+
+The only previously published study including the
+AKQoL questionnaire describes the development and
+validation of the questionnaire [14]. The mean AKQoL
+score in that study was 9.5, which is similar to the score
+of 10.07 reported in the present study for patients with
+severe actinic damage. The AKQoL questionnaire is fo-
+cused on the anxiety associated with sun damaged skin
+and the risk of developing a more serious disease. Contrary
+to what one would expect, patients with current AK lesions
+had lower impairment in AKQoL than patients with no
+current lesions. The reason for this may be that patients
+who previously have had lesions may still be worried about
+their skin as the risk of developing a new lesion is high [5].
+The AKQol may therefore not be sensitive to change in
+clinical outcomes. Further evaluation and validation of the
+
+----$$$$----$$$$----
+Tennvall et al. Health and Quality of Life Outcomes (2015) 13:111
+
+AKQoL questionnaire is needed before any recommenda-
+tions about the usefulness of the instrument can be made.
+
+DLQI is commonly used in dermatology studies [20,
+22, 29-35], but we found only two studies including
+AK patients [24, 36]. In the first study DLQI was 1.95
+for AK patients who received PDT with aminolevulinic
+acid and 1.38 for patients treated with imiquimod [36],
+in comparison to the mean value 1.99 for all patients
+and 4.59 for patients with severe actinic damage in the
+present study. In the second study DLQI varied from
+1.6 prior to photodynamic therapy to 7.3 post treat-
+ment but was then normalized [24]. DLQI values be-
+tween 2 and 5 could be interpreted as low effect on
+patient’s life while values from 6 to 10 could be interpreted
+as having moderate effect [23]. In our cross-sectional
+study, there was no statistically significant difference in
+DLQI among patients who were currently in treatment
+and patients who had completed the treatment. More re-
+search is needed about how different treatment options
+affect patients HRQoL. Previous studies of patients with
+NMSC showed mean DLQI values of 2.4 and 4.9 [31, 32].
+In observational studies of psoriasis and eczema DLQI
+ranged from 4.5 to 6.8 [20, 33, 34]. In a study of acne
+including a young population (mean age 22), the mean
+DLQI was 9.2 [35]. In comparison with other dermato-
+logical diseases such as NMSC, psoriasis and eczema,
+patients with severe actinic damage thus have similar
+HRQOoL, but better HRQoL than young persons with acne.
+
+EQ-5D has previously been used in a variety of studies
+of dermatologic conditions [20, 34, 35, 37-42], but we
+found no study of AK. The burden of disease varies
+between different skin conditions, with EQ-5D ranging
+from 0.43 in herpes zoster [40] to 0.84 in acne [35] and
+0.85 in the mildest form of atopic dermatitis [39]. For
+severe actinic damage the mean EQ-5D value of 0.84 is
+similar to both acne and mild atopic dermatitis. The
+mean value of 0.88 in the overall patient group is similar to
+the 0.89 in the general Danish population [43]. A recent lit-
+erature review of the use of EQ-5D in economic evaluations
+in dermatology included 20 studies identified between 2003
+and 2011. The authors suggested that although the EQ-5D
+is broad enough to allow comparison between different dis-
+eases, it may not be specific enough to capture important
+aspects of HRQoL in dermatology [44].
+
+One limitation of comparisons across results from dif-
+ferent studies is that the patient populations might not
+be completely comparable regarding characteristics such
+as age, sex and co-morbidity. In the general population,
+women tend to report lower HRQoL than men and eld-
+erly lower HRQoL than younger age groups [43, 45]. In
+dermatology-specific HRQoL, however, younger individ-
+uals have reported lower HRQoL than older age groups
+[20]. This tendency can also be observed in our results,
+especially in the AKQoL instrument where the difference
+
+Page 7 of 9
+
+in HRQoL between patients younger than 60 years of age
+and older patients was statistically significant.
+
+The correlation analyses suggest that the instruments
+EQ-5D-5 L, DLQI and AKQoL are complementary as
+they measure different aspects of the HRQoL. The mag-
+nitude of the correlation between DLQI and AKQoL,
+0.52, can be interpreted as moderate [46], while the cor-
+relations between the DLQI and EQ-5D-5 L, -0.36, and
+between DLQI and EQ-5D-5 L, -0.21, can be interpreted
+as weak [46]. This is lower than previous findings of corre-
+lations —0.51 to -0.55 between EQ-5D-5 L and DLQI in
+patients with psoriasis [20, 34, 41]. There was no or little
+correlation between EQ-5D-5 L and AKQoL, which was
+expected as the EQ-5D captures overall HRQoL, and in-
+cludes aspects beyond the impact of the skin.
+
+The role of EQ-5D in economic evaluations in derma-
+tology has been questioned as the EQ-5D is broad
+enough to allow comparison between different diseases,
+but it may not be specific enough to capture important
+aspects of HRQoL in dermatology [44]. Therefore, it is
+important to use both generic, dermatology- and disease
+specific HRQoL measure in dermatologic conditions such
+as AK.
+
+The generic EQ-5D is important for health economic
+evaluations and it is essential as long as it is preferred by
+reimbursement authorities and policy makers for compar-
+ing costs and benefits across medical conditions [12, 13].
+Moreover, generic instruments also measure comorbidi-
+ties that go beyond conditions of the skin.
+
+The DLQI is dermatology specific and is therefore
+more sensitive to detect changes in HRQoL related to
+clinical outcomes in dermatological conditions, which
+could be useful for regulatory authorities and for clini-
+cians to individualize interventions and provide optimal
+care for patients. Moreover, as it is one of the most
+commonly used instruments in dermatology, the DLQI
+is appropriate for comparison with other skin diseases.
+
+Whereas, the DLQI has been criticized of being too
+focused on physical limitations rather than the psycho-
+logical impact of the skin [47], the AKQoL is focused on
+emotions and worries related specifically to sun dam-
+aged skin. The AKQoL captures domains of the HRQoL
+which are of relevance for persons with AK as they may
+worry about lesions developing to SCC. Furthermore,
+since the AK population is relatively old, some questions
+in the DLQI such as how much the skin caused prob-
+lems in sports, work or school, and sexual relationships
+might be of less importance for an elderly population.
+
+Conclusions
+
+The EQ-5D-5 L, DLQI and AKQoL provide comple-
+mentary information and are all useful, as they capture
+different aspects of HRQoL. Whereas the EQ-5D is es-
+sential for economic evaluations, the DLQI is responsive
+
+----$$$$----$$$$----
+Tennvall et al. Health and Quality of Life Outcomes (2015) 13:111
+
+to change in relation to treatment and the AKQoL cap-
+tures important features of the HRQoL that are specific-
+ally related to sun damaged skin. Future research is
+needed to further evaluate the responsiveness to change
+of the DLQI in relation to treatment and the AKQoL
+needs to be validated in future clinical studies.
+
+The present study has shown that patients with severe
+actinic damage have impaired HRQoL, while patients with
+mild disease are less affected. HRQoL in patients with
+severe AK is similar to HRQoL in patients with psoriasis
+and eczema.
+
+Abbreviations
+
+AK: Actinic keratosis; AKQoL: Actinic keratosis quality of life questionnaire;
+
+BCC: Basal cell carcinoma; CRF: Case report form; DLOI: Dermatology life quality
+index; EQ-5D-5 L: EuroQol five dimensions five levels; EQ-VAS: EuroQoL visual
+analogue scale; HROoL: Health related quality of life; NMSC: Non-melanoma skin
+cancer, OLS: Ordinary least squares; PDT: Photodynamic therapy; QALY: Quality
+adjusted life years; SCC: Squamous cell carcinoma; SD: Standard deviation;
+
+VAS: Visual analogue scale.
+
+Competing interests
+
+Gunnel Ragnarson Tennvall and Jenny Norlin are employed at IHE and have
+no competing interest. Irena Malmberg is an employee of LEO Pharma AB.
+AM Erlendsson has received PhD Scholarship from LEO Pharma A/S.
+
+M Haedersdal received research grants from Almirall, Galderma International,
+Galderma Nordic and LEO Pharma.
+
+Authors’ contributions
+
+GRT and JN participated in the design and coordination of the study, performed
+statistical analysis, participated in the interpretation and analysis of data, and
+drafting and revising the manuscript. IM, AM and MH participated in the design
+of the study and was involved in drafting and revising the manuscript. All
+authors have read and approved the final manuscript.
+
+Acknowledgements
+
+The authors wish to thank the Danish dermatologists who contributed to
+the data-collection: Anne Danielsen, Birgitte Stausb@l-Gron, Bo Lasthein,
+Henrik Egekvist, Henrik Lorentzen, Henrik Thormann, Ida-Marie Stender, Niels
+Bech-Thomsen and Thomas Hohwy.
+
+Funding source
+This study was funded by LEO Pharma AB, Sweden.
+
+Author details
+
+HE, The Swedish Institute for Health Economics, P.O. Box 2127, SE-220 02
+Lund, Sweden. “LEO Pharma AB, Malmo, Sweden. *Department of
+Dermatology, Bispebjerg Hospital, University of Copenhagen,
+Copenhagen, Denmark.
+
+Received: 4 December 2014 Accepted: 26 June 2015
+Published online: 29 July 2015
+
+References
+
+1. Dodson JM, DeSpain J, Hewett JE, Clark DP. Malignant potential of actinic
+keratoses and the controversy over treatment. A patient-oriented perspective.
+Arch Dermatol. 1991;127:1029-31,
+
+2. Marks R, Rennie G, Selwood TS. Malignant transformation of solar keratoses
+to squamous cell carcinoma. Lancet. 1988;1:795-7.
+
+3. Glogau RG. The risk of progression to invasive disease. J Am Acad Dermatol.
+2000;42:23-4.
+
+4. Marks R, Foley P, Goodman G, Hage BH, Selwood TS. Spontaneous remission
+of solar keratoses: the case for conservative management. Br J Dermatol.
+1986;115:649-55.
+
+5.  Salasche SJ. Epidemiology of actinic keratoses and squamous cell carcinoma.
+J Am Acad Dermatol. 2000;42:4-7.
+
+6. Frost CA, Green AC. Epidemiology of solar keratoses. Br J Dermatol.
+1994°131:455-64.
+
+22.
+
+23.
+
+24.
+
+25,
+
+26.
+
+2/.
+
+28.
+
+29.
+
+30.
+
+Page 8 of 9
+
+Harvey |, Frankel S, Marks R, Shalom D, Nolan-Farrell M. Non-melanoma skin
+cancer and solar keratoses. |. Methods and descriptive results of the South
+Wales Skin Cancer Study. Br J Cancer. 1996;74:1302-7.
+
+Memon AA, Tomenson JA, Bothwell J, Friedmann PS. Prevalence of solar damage
+and actinic keratosis in a Merseyside population. Br J Dermatol. 2000;142:1 154-9.
+Naldi L, Chatenoud L, Piccitto R, Colombo P, Placchesi EB, La Vecchia C.
+Prevalence of actinic keratoses and associated factors in a representative
+sample of the Italian adult population: Results from the Prevalence of
+Actinic Keratoses Italian Study, 2003-2004. Arch Dermatol. 2006;142:722-6.
+Barr BB, Benton EC, McLaren K, Bunney MH, Smith IW, Blessing K, et al.
+Human papilloma virus infection and skin cancer in renal allograft
+recipients. Lancet. 1989;1:124—-9.
+
+Otuki MF, Reis RC, Cabrini D, Prudente AS, Horinouchi CD, Correr CJ. Patient-
+reported outcomes in psoriasis research and practice. Br J Dermatol.
+2011;165:1361-2.
+
+NICE: Guideline Development Methods. 8 Incorporating health economics
+in guidelines and assessing resource impact. 2014. http://www.nice.org.uk/
+niceMedia/pdf/GDM_Chapter8_0305.pdf Assessed 11 March 2014.
+
+TLV. General guidelines for economic evaluations from the Pharmaceutical
+Benefits Board (LFNAR 2003:2). http://www.tlv.se/Upload/English/Guidelines-
+for-economic-evaluations-LFNAR-2003-2,pdf2003.
+
+Esmann S, Vinding GR, Christensen KB, Jemec GB. Assessing the influence
+of actinic keratosis on patients’ quality of life: the AKQoL questionnaire.
+Br J Dermatol. 2013;168:277-83.
+
+Gibbons E, Casanas i Comabella C, Fitzpatrick R. A structured review of
+patient-reported outcome measures for patients with skin cancer, 2013.
+
+Br J Dermatol. 2013;168:1176-86.
+
+Lee K, Weinstock M. Prospective quality of life impact of actinic keratoses:
+observations from the veterans affairs topical tretinoin chemoprevention
+trial. Acta Derm Venereol. 2011;91:101-2.
+
+Weinstock MA, Lee KC, Chren MM, Marcolivio K. Quality of life in the actinic
+neoplasia syndrome: The VA Topical Tretinoin Chemoprevention (VATTC)
+Trial. J Am Acad Dermatol. 2009;61:207-15.
+
+Drummond MF, Sculpher M, Torrance G, O'Brian B, Stoddart G. Methods for
+the economic evaluation of health care programmes. New York: Oxford
+University Press; 2005.
+
+Brooks R. EuroQol: the current state of play. Health policy. 1996;37:53-72.
+Norlin JM, Steen Carlsson K, Persson U, Schmitt-Egenolf M. Analysis of three
+outcome measures in moderate to severe psoriasis: a registry-based study
+of 2450 patients. Br J Dermatol. 2012;166:797-802.
+
+Ragnarson Tennvall G, Hjortsberg C, Bjarnason A, Gniadecki R, Heikkila H,
+Jemec GB, et al. Treatment patterns, treatment satisfaction, severity of
+disease problems, and quality of life in patients with psoriasis in three
+Nordic countries. Acta Derm Venereol. 2013;93:442-5.
+
+Basra MK, Fenech R, Gatt RM, Salek MS, Finlay AY. The Dermatology Life
+Quality Index 1994-2007: a comprehensive review of validation data and
+clinical results. Br J Dermatol. 2008;159:997-1035.
+
+Finlay AY, Khan GK. Dermatology Life Quality Index (DLQI)-a simple
+practical measure for routine clinical use. Clin Exp Dermatol. 1994;19:210-6.
+Gholam P, Kroehl V, Enk AH. Dermatology life quality index and side effects
+after topical photodynamic therapy of actinic keratosis. Dermatology.
+2013;226:253-9.
+
+Olsen EA, Abernethy ML, Kulp-Shorten C, Callen JP, Glazer SD, Huntley A,
+et al. A double-blind, vehicle-controlled study evaluating masoprocol cream
+in the treatment of actinic keratoses on the head and neck. J Am Acad
+Dermatol. 1991;24:738-43.
+
+Erlendsson AM, Egekvist H, Lorentzen HF, Philipsen PA, Stausbdl-Gron B, Stender
+M, et al. Actinic Keratosis: Disease characteristics and treatment patterns in
+Danish dermatology clinics - a cross-sectional study. Int J Dermatol. in press
+EuroQol group. EuroQol-a new facility for the measurement of health-
+related quality of life. The EuroQol Group. Health Policy. 1990;16:199-208.
+van Hout B, Janssen MF, Feng YS, Kohlmann T, Busschbach J, Golicki D,
+
+et al. Interim scoring for the EQ-5D-5 L: mapping the EQ-5D-5 L to
+EQ-5D-3 L value sets. Value Health. 2012;15:708-15.
+
+Both H, Essink-Bot ML, Busschbach J, Nijsten T. Critical review of generic and
+dermatology-specific health-related quality of life instruments. J Invest
+Dermatol. 2007;127:2726-39.
+
+Bronsard V, Paul C, Prey S, Puzenat E, Gourraud PA, Aractingi S, et al. What
+are the best outcome measures for assessing quality of life in plaque type
+psoriasis? A systematic review of the literature. J Eur Acad Dermatol
+Venereol. 2010;24 Suppl 2:17-22.
+
+
+----$$$$----$$$$----
+Tennvall et al. Health and Quality of Life Outcomes (2015) 13:111 Page 9 of 9
+
+31. Rhee JS, Matthews BA, Neuburg M, Smith TL, Burzynski M, Nattinger AB.
+Skin cancer and quality of life: assessment with the Dermatology Life
+Quality Index. Dermatol Surg. 2004;30:525-9.
+
+32. Steinbauer J, Koller M, Kohl E, Karrer S, Landthaler M, Szeimies RM. Quality of
+life in health care of non-melanoma skin cancer - results of a pilot study.
+
+J Dtsch Dermatol Ges. 2011;9:129-35.
+
+33. Badia X, Mascaro JM, Lozano R. Measuring health-related quality of life in
+patients with mild to moderate eczema and psoriasis: clinical validity,
+reliability and sensitivity to change of the DLQI. The Cavide Research Group.
+Br J Dermatol. 1999;141:698-702.
+
+34. Hjortsberg C, Bergman A, Bjarnason A, Heikkila H, Hjelmgren J, Svensson A,
+et al. Are treatment satisfaction, quality of life, and self-assessed disease
+severity relevant parameters for patient registries? Experiences from Finnish
+and Swedish patients with psoriasis. Acta Derm Venereol. 2011;91:409-14.
+
+35. Klassen AF, Newton JN, Mallon E. Measuring quality of life in people referred
+for specialist care of acne: comparing generic and disease-specific measures.
+
+J Am Acad Dermatol. 2000;43:229-33.
+
+36. Hadley J, Tristani-Firouzi P, Hull C, Florell S, Cotter M, Hadley M. Results of
+an investigator-initiated single-blind split-face comparison of
+photodynamic therapy and 5 % imiquimod cream for the treatment of
+actinic keratoses. Dermatol Surg. 2012;38:722-7.
+
+37. Ghatnekar O, Ljungberg A, Wirestrand LE, Svensson A. Costs and quality of
+life for psoriatic patients at different degrees of severity in southern Sweden
+- a cross-sectional study. Eur J Dermatol. 2012;22:238-45.,
+
+38. Moberg C, Alderling M, Meding B. Hand eczema and quality of life: a
+population-based study. Br J Dermatol. 2009;161:397-403.
+
+39. Poole CD, Chambers C, Sidhu MK, Currie CJ. Health-related utility among
+adults with atopic dermatitis treated with 0.1 % tacrolimus ointment as
+maintenance therapy over the long term: findings from the Protopic
+CONTROL study. Br J Dermatol. 2009;161:1335-40.
+
+40. Scott FT, Johnson RW, Leedham-Green M, Davies E, Edmunds WJ, Breuer J.
+The burden of Herpes Zoster: a prospective population based study. Vaccine.
+2006;24:1308-14.
+
+41. Shikiar R, Willian MK, Okun MM, Thompson CS, Revicki DA. The validity and
+responsiveness of three quality of life measures in the assessment of
+psoriasis patients: results of a phase Il study. Health Qual Life Outcomes.
+2006;4:71.
+
+42. Weiss SC, Rehmus W, Kimball AB. An assessment of the cost-utility of therapy
+
+for psoriasis. Ther Clin Risk Manag. 2006;2:325-8.
+
+43. Sorensen J, Davidsen M, Gudex C, Pedersen KM, Bronnum-Hansen H. Danish
+
+EQ-5D population norms. Scand J Public Health. 2009;37:467-74.
+
+44. Pereira FR, Basra MK, Finlay AY, Salek MS. The role of the EQ-5D in the
+economic evaluation of dermatological conditions and therapies.
+Dermatology. 2012;225:45-53.
+
+45. Burstrom K, Johannesson M, Diderichsen F. Swedish population health-related
+
+quality of life results using the EQ-5D. Qual Life Res. 2001;10:621-35.
+
+46. Swinscow TDV, Campbell MJ. Statistics at square one. 10th ed. London: BMJ
+
+Books; 2002.
+
+47. Nijsten T. Dermatology life quality index: time to move forward. J Invest
+Dermatol. 2012;132:11-3.
+
+Submit your next manuscript to BioMed Central
+and take full advantage of:
+
+¢ Convenient online submission
+
+¢ Thorough peer review
+
+¢ No space constraints or color figure charges
+
+e Immediate publication on acceptance
+
+e Inclusion in PubMed, CAS, Scopus and Google Scholar
+
+e Research which is freely available for redistribution
+
+Submit your manuscript at C =
+www.biomedcentral.com/submit BioMed Central
+
+
+----$$$$----$$$$----

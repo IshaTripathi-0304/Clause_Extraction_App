@@ -1,0 +1,1044 @@
+Hindawi Publishing Corporation
+
+Journal of Applied Mathematics
+
+Volume 2014, Article ID 934250, 11 pages
+http://dx.doi.org/10.1155/2014/934250
+
+Research Article
+
+Mathematical Model of Movement of the Observation
+and Tracking Head of an Unmanned Aerial Vehicle Performing
+Ground Target Search and Tracking
+
+Izabela Krzysztofik and Zbigniew Koruba
+
+Department of Applied Computer Science and Armament Engineering, Faculty of Mechatronics and Machine Design,
+Kielce University of Technology, 7 Tysigclecia PP Street, 25-314 Kielce, Poland
+
+Correspondence should be addressed to Izabela Krzysztofik; pssik@tu.kielce.pl
+
+Received 24 April 2014; Revised 31 July 2014; Accepted 2 August 2014; Published 8 September 2014
+
+Academic Editor: Zheping Yan
+
+Copyright © 2014 I. Krzysztofik and Z. Koruba. This is an open access article distributed under the Creative Commons Attribution
+License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly
+
+cited.
+
+The paper presents the kinematics of mutual movement of an unmanned aerial vehicle (UAV) and a ground target. The controlled
+observation and tracking head (OTH) is a device responsible for observing the ground, searching for a ground target, and tracking
+it. The preprogrammed movement of the UAV on the circle with the simultaneous movement of the head axis on Archimedes spiral
+during searching for a ground target, both fixed (bunkers, rocket missiles launching positions, etc.) and movable (tanks, infantry
+fighting vehicles, etc.), is considered. Dynamics of OTH during the performance of the above mentioned activities is examined.
+
+Some research results are presented in a graphical form.
+
+1. Introduction
+
+Due to the advantages of unmanned aerial vehicles (UAV)
+in relation to manned aircrafts, the multitask UAVs have
+become the basic equipment of a modern army [1]. They
+can carry out various tasks, such as aerial and radiolocation
+reconnaissance, observation of the battlefield, radioelectronic
+fight, adjustment of the artillery fire, target identification,
+laser indication of the target, assessment of the effects of
+striking other types of weapons, and imitation of air targets.
+UAVs can also have a wide civilian application, for example,
+observation and control of pipelines, electric tractions and
+road traffic. Because of that, more than 250 UAV models are
+developed and manufactured all over the world [2]. Many
+scientific institutions are engaged in developing and identi-
+fying models of dynamics and flight control of UAVs. For
+instance, papers [3, 4] present the comprehensive research
+on modelling the dynamics of flight of K100 UAV and
+Thunder Tiger Raptor 50 V2 Helicopter, respectively. Mathe-
+matical models of UAV with 6 degrees of freedom (6-DoF)
+
+introduced on the basis of the Newton’s rules of dynamics
+were presented, whereas [5] presents the methodology of
+modelling the dynamics of UAV flight with the use of neural
+networks. Paper [6] presents the mathematical model and the
+experimental research on SUAVI. That vehicle can take off
+and land vertically. The model was carried out with the use of
+the Newton-Euler formalism. Moreover, the controllers for
+controlling the height and stabilizing the vehicle's location
+have been developed. Paper [7] describes the problem of flight
+dynamics of the UAV formation with the use of models with
+3 and 6 degrees of freedom.
+
+An operation of UAV during the completion of a task is
+a complex process requiring comprehensive technical means
+and systems. The control system of UAV is one of the most
+important systems. Its task is to measure, evaluate, and
+control flight parameters, as well as properly control the
+flight and observation systems. Thanks to the use of complex
+microprocessor systems, the comprehensive automation of
+the mentioned processes is possible. Formerly, during the
+completion of a mission it was necessary to maintain bilateral
+
+----$$$$----$$$$----
+Scanning of
+ground surface
+
+Journal of Applied Mathematics
+
+UAV
+
+Observation and
+tracking head (OTH)
+
+Target observation
+line (TOL)
+
+FiGure 1: General view of the process of scanning the ground surface from UAV deck.
+
+communications with the ground control point. In modern
+UAVs, autonomy plays an important role during detecting
+and tracking a ground target.
+
+Paper [8] presents the model of the UAV autopilot and its
+sensors in the Matlab-Simulink environment for simulation
+research. Papers [9-11] pertain to planning and optimizing
+the trajectory of movement of the vehicle. The aspects of
+designing PID controllers for the systems of UAV flight
+control have been discussed in papers [12, 13].
+
+From the quoted review of the literature it appears that the
+research mainly concentrates on UAV dynamics and control,
+without the consideration of the model of movement of the
+observation and tracking head (OTH) which is one of the
+most significant elements of the unmanned aerial vehicle.
+OTH is used for automatic searching for and tracking of
+targets intended for destruction [14]. This paper presents the
+mathematical model of kinematics of the movement of UAV,
+the ground target, and the dynamics of the controlled head
+located on the UAV deck. It needs to be emphasized that the
+problem of modelling, examining the dynamics, and control
+of such heads in the conditions of interferences from its base
+(deck of the manoeuvring UAV) is still topical. The paper
+examines this type of OTH with the built-in television and
+thermographic cameras and the laser illuminator.
+
+2. Model of Movement Kinematics of
+UAV, OTH and Ground Target
+
+General view of the process of searching for a target on the
+surface of the ground by OTH from UAV deck is shown in
+Figure 1, whereas the operation algorithm of OTH during
+scanning the ground surface and tracking a target detected
+on it is shown in Figure 2.
+
+During the search for a ground target from UAV deck,
+the axis of OTH should perform the desired movements and
+circle strictly defined lines on the ground with the use of
+its extension. The optical system of OTH, having a certain
+viewing angle, may in this way encounter a light or infrared
+signal emitted by the moving object. Therefore, one should
+choose the kinematic parameters of mutual movement of
+UAV deck and OTH in such a way that the likelihood of
+detecting a target was the highest [15]. After locating a target,
+OTH goes to the tracking mode; that is, from that moment
+its axis has a specific location in space being pointed at the
+target.
+
+Figure 3 shows the kinematics of mutual movement of
+the head axis and UAV during searching for a target on
+the ground surface. Individual coordinate systems have the
+following meaning:
+
+Ox, ¥g%q—Earth-fixed reference system,
+
+Cx,V,2a—coordinate system connected with target
+observation line (TOL),
+
+Cx.¥-Z,-—movable coordinate system connected with
+UAV velocity vector.
+
+The velocity of changing vector R in time, during search-
+ing for and tracking a target, is as follows:
+
+dt - (1)
++ [H (ty, t,) + I (t,, te) , (V. — V,) >
+
+where R is vector of the mutual distance of points C and
+H (during scanning the space) or points C and T (during
+
+----$$$$----$$$$----
+Journal of Applied Mathematics
+
+KS
+7a
+| Sir Sy
+
+Unmanned aerial
+vehicle (UAV)
+
+Control system
+
+Observation and
+tracking head
+
+(OTH)
+
+Pre-programmed
+
+control
+
+Tracking
+
+control
+
+t t
+M Min
+
+ex?
+
+Target observation line
+(TOL)
+
+|
+|
+
+Vin
+
+Pre-programmed
+
+Wars Qnp movement
+Ct Generator No Is target
+2
+(searching detected
+of target)
+Tracking
+€,0 movement Yes
+
+Generator
+(tracking
+
+of target)
+
+FiGuRE 2: Diagram of operation of OTH mounted on UAV deck.
+
+tracking); V., V,, V, are vectors of the velocity of movement
+of the centre of mass of UAV, of points H and T, respec-
+tively; II(t,, tz), (tg, t,), W(t,, t.) are functions of rectangular
+impulse; t, is the moment the scanning the ground is started;
+tz is the moment a target is detected; t, is the moment the
+tracking the target is started; t, is the moment the scanning
+process and tracking the target is finished.
+
+We project the left side of (1) on the axes of the coordinate
+
+system Cx,y,Z, (Figure 3) connected with vector R. In the
+result we get
+
+. i, j, k
+dR dR» | ° “ %
+dt — dt lat |Wrxa WRrya Rea
+R 0 0 (2)
+>dR + _do de
+= laa + aka COS E k Ro
+
+where Wrxa> ORya> ORza Ae Components of angular velocity of
+TOL and o, ¢€ are angles of deflection and inclination of vector
+
+as
+
+R.
+
+Next, we project the right side of (1) (ie., velocities V., V,
+and V,) on the axes of the system Cx, y,z, and get
+
+dR
+dt =I (t,, ta) , (Vixca — Vaxa)
+
++ [I] (ta. t,) +11 (t,,t.) , (Visca -
+do
+
+R— cose = II (t,,tg) + (Veya — Ving
+dt ( y Ly ) (3)
+
++ [H (ty, t,) + I (t,, t.) , (Viva — Viva) >
+
+de
+
+Ra = II (t,, ta) ° (Vina 7 Vuza)
+
++ [H (tg, t,) + I (t,, te) , (Vera 7 Viza) .
+
+Individual components of velocity vectors V,, V;, and V,
+in the system Cx, y,Z, are as follows:
+
+Veg = V.[cosecosy,cos(o- x,)+sinesiny.], (4a)
+Veya — V. COS Y sin (o — Xe) > (4b)
+Via = V,[sinecosy,cos(o - x.) -—cosesiny.], (4c)
+
+----$$$$----$$$$----
+T Target path
+
+Path of point H
+Yg
+
+FiGuRE 3: Kinematics of mutual movement of the head axis and UAV
+during scanning the ground surface.
+
+Vina = Vp [cosecos y, cos(o — y,) +sinesiny,], (5a)
+Vaya = — Vy COS yy, Sin (O — Xp); (5b)
+
+Viza = V, [Sinecos y, cos(o — y,) —cosesiny,], (5c)
+
+Vina = V, [cosecos y,cos(o — y,) + sinesiny,], (6a)
+Vina = —V, cosy, sin(o — x;), (6b)
+Vira = V; [sinecos y, cos(o — x,) —cosesiny,], (6c)
+
+where x,, y, are UAV flight angles, y,, y, are angles of
+deflection and inclination of velocity vector of point H, and
+Xp Y, are angles of deflection and inclination of velocity vector
+of point T.
+
+For the simplification of reasoning, we assume that the
+movement of UAV, during searching and tracking, is done on
+a horizontal plane at a set altitude H., whereas the target and
+point H move in the ground plane. Then, we can assume that
+Yn = 0. (7)
+
+Yc = 9, % = 9,
+
+We mark that
+
+r = Rcose (8)
+
+Journal of Applied Mathematics
+
+The derivative of that expression in relation to time is as
+follows:
+
+dr = AR ose REE sin €. (9)
+
+dt dt dt
+
+Let us substitute (4a)-(6c) into (3). Next, taking into
+account (7)—(9), (3) will have the following form:
+
+ui = II (t,, ty) [V. cos (o - x2) - V, cos(o - x;,)]
+
++ II (tg, t;) ie cos (o — x) — V, cos (o - xX)
+
++ II (t,,t,) ie cos (o — x.) —V,cos(o- x) ,
+
+(10)
+do _ I (t,,t,) V.sin(o — x2) — V;, sin (o - x;,)
+dt r
+V,.sin (ao — 4) _V, sin(o-
+n (t,, t,) ( Xc ) t ( xX)
+r
+10 (t,,t.) V, sin (o a Xe) 7 V, sin (o 7 Xi)
+r
+(11)
+
+where r is mutual distance of points C and H (during
+scanning) or C and T (during tracking); x? is angle of
+deflection of UAV velocity vector during scanning the ground
+by the head; y“ is angle of deflection of UAV velocity vector
+during the passage from preprogrammed flight to tracking
+flight; and x! is angle of deflection of UAV velocity vector
+during the flight tracking the detected target.
+
+We demand that, at the moment of detecting the target,
+UAV automatically is starting the passage to the flight
+tracking the detected target; that is, it is moving at a set
+constant distance from the target rg = R.9 cos € = const (in a
+horizontal plane at a constant altitude H.).
+
+If the mutual distance r of points C and T is different from
+r-q then the angle of deflection of UAV velocity vector x, = yi
+changes in accordance with the relationship:
+
+dy! . do
+Ae =a,-sign(r.o— 1) a (12)
+where a, is the set constant of proportional navigation.
+After the fulfillment of the condition r = fr. the
+
+programme of angle change y. can be determined from (10):
+
+y. = 0 —arccos EF cos (a — 0) , (13)
+
+c
+
+----$$$$----$$$$----
+Journal of Applied Mathematics
+
+The path of UAV flight during scanning and tracking is as
+follows :
+
+Te = I1(t,st4) V-c05(0, ~ x3) +1 (tests) Veco (0, ~ x!)
++ II (t,,t,) V. cos (0. - x.)
+(14a)
+do. ae s Ve, d
+dt. =I (t., ta) re sin (8. 7 x2) +I (ty, t,) re sin (6. — Xe )
+Ve,
++ II (t,,t,) 7 sin (0. 7 x.) ;
+(14b)
+-. = 7, cos 6,
+(15)
+Tey = 1, sin,
+
+where r, is vector of location of UAV mass centre (point C)
+and @. is angle of deflection of vector r,.
+Path of movement of point H is as follows:
+
+aR,
+
+a IL (t,; ta) Vi, cos (8, — Xn) > (16a)
+
+on = I (t,,tg) V, sin (9, — Xn): (16b)
+Ryx = R,, COS O15
+
+(17)
+
+Rny = R, sin O15
+
+where R,, is vector of location of point H and @, is angle of
+deflection of vector R,,.
+Path of movement of the target is as follows:
+
+dR
+7. = I (tg,t,) V, cos (0, — x) 5 (18a)
+dé
+Tr = II (tg, t,) V; sin (8, — x) (18b)
+R,, = R, cos @,,
+(19)
+
+Ry = R, sin G,
+
+where R, is vector of location of point T and @, is angle of
+deflection of vector R,.
+
+Desired angles 9,,, yw, and angular velocities 9,,, yy, of
+deflection of OTH axis can be determined from the following
+relationships:
+
+H, (dr,,/dt
+Spy = arctg—, Ah, _ He (dr, /dt) rift)
+
+c dt FH? + (r,)° )
+(20)
+r H,.(dr,,/dt
+Why = arc tqg—, Any = He (ary/dt)
+Hea a)
+
+5
+where
+r, = 1 COSO, ry =rsino;
+dr, _ dr cosa aad sin 0;
+dt dt dt (21)
+ary a sino + puad cos oO
+dt dt dt
+
+Values (20) are used for determining the preprogrammed
+controls influencing the head.
+
+2.1. Scanning the Ground Surface during UAV Flight on a
+Circle. We assume that during scanning the set area of the
+ground, UAV flight is at a constant altitude H, in a horizontal
+plane on the circle of the set radius r. with constant velocity
+V.. (Figure 3).
+Then the preprogrammed UAV flight can be determined
+from the following relationships:
+Vi = @.° Te Xo = wet. (22)
+At the same time, we control the head axis in such a way
+that it drawn on the surface of the ground a curve in the shape
+of Archimedean spiral with angular velocity
+
+_ 27V),
+Ph )
+
+Velocity V; is to be chosen in such a way that OTH
+mounted on UAV deck could in the set time t, scan densely
+enough the set surface of the area in the shape of a circle of
+the radius R,.
+
+If the angle of vision of the head's optical system amounts
+to ¢;, then lens coverage embraces the surface similar in shape
+to a circle of the radius:
+
+1
+Pr = 5 Hebn: (24)
+
+After detecting a target at the moment t,, UAV passes into
+the tracking flight according to the relationship (12), while
+the target is lit with a laser beam for the period of time t,.
+Hence, the total time of the process of detecting, tracking, and
+lighting the target amounts to t, = ty + ty.
+
+3. The Model of Dynamics of the Controlled
+Observation and Tracking Head
+
+A spatial model of dynamics of the head presented in Figure 4
+was adopted for the paper. OTH comprises two basic parts:
+external frame and internal frame with camera. Movement
+of the head is determined with the use of two angles: angle of
+head deflection y,, and angle of head inclination 9, [16].
+
+The following coordinate systems, shown in Figure 5,
+have been introduced:
+
+Cx4VqZq—the movable system connected with the
+UAV deck,
+
+----$$$$----$$$$----
+External
+
+Internal frame
+
+with camera
+
+FiGure 4: General view of the observation and tracking head.
+
+Xh
+
+Figure 5: Transformations of the coordinate systems.
+
+Op,Xh1Vn1Zh1—the movable system connected with
+the external frame of the head,
+
+O,,X;,¥,Z,—the movable system connected with
+internal the frame of the head (including camera).
+
+Components of angular velocity of the external frame of
+the head are
+
+Wy, = P. COSWy +, SiN Wp, (25a)
+Wy, = Pe Sin Wy, + 4; COS Wp (25b)
+Ww, = Wy + r (25c)
+
+where p.,q.,7, are components of angular velocity of UAV.
+
+Journal of Applied Mathematics
+
+Components of angular velocity of the internal frame of
+the head are
+
+Wy, = Wy, COST, — Ww, sin Dp, (26a)
+Wy = Wy, + Qn (26b)
+W,, =W, SIND, + W,, COS Dp. (26c)
+
+Components of linear velocity of displacement of mass
+centre of the external frame of the head are
+
+Veen = V. COS Wp; (27a)
+Von =-V.siny,, (27b)
+Venn = 0 (27c)
+
+Components of linear velocity of displacement of mass
+centre of the internal frame of the head are
+
+Vy, = Vy,, COSM, + 1,@,,, sin 9, (28a)
+Vy =Vy, +), (w, +a, ), (28b)
+V,, = Vx, sin 9 — ty, (w, cos 0), + Wy, ) , (28c)
+
+Using the second order Lagrange equations, the following
+equations of the head movement have been derived:
+
+d d d
+Jz, een — Ji, it (w,, sin 9,,) + J, i (w,, cos 9,,)
+
++ Maly LV, (1 + COS 9.) 7 Cas 7 Jy, ) Oxy, yyy
+
+= Jp,Ox, Wy, cos 0), + Jy, @y,@ = Jz,@z,y,, sin 9,
+
+Xh1
+
++ Mil, ae sind, —V,w, sin 9,
+
+hl
+
+-V,, Wy, (1 + cos 9),)]
+
++m, 1, LV. (w,,. + W,, ) + Vy», sin 9,,|
+
+Xh1
+_ g
+_ Mx + Mx. 7 Mex
+
+d d
+
+Jy, dt 7 Minly, FAG + x, 7 Je,) Ox, %z,
+
+— Mal), [V,,,@ — Vien, | = M,, + M? -
+
+Xh
+
+(29)
+
+where w,, 9, are angles of location of OTH axis in space;
+m,, is the mass of internal frame with camera; |, is the
+distance of mass centre of internal frame (camera) from the
+centre of movement; J xt Ya? J,,, are moments of inertia of
+external frame; J xy? J Yn Jz, are moments of inertia of internal
+frame (with camera); M.,,M,,, are moments of controlling
+forces influencing, respectively, external and internal frame;
+
+M2, Mg are moments of the force of gravity influencing
+
+----$$$$----$$$$----
+Journal of Applied Mathematics
+
+respectively: external and internal frame; M9. = 0; Mg =
+m,,gl;, cos 9,; and M,.,,M,;, are moments of friction forces
+in the bearings of, respectively, external and internal frame.
+
+We assume viscous friction:
+
+M aex — NexWy Main — Nin Vp (30)
+
+where 7,, is friction coefficient in suspension bearing of
+external frame and y,,, is friction coefficient in suspension
+bearing of internal frame.
+
+Control moments M
+as follows [17-19]:
+
+M,,, of the head will be presented
+
+ex?
+
+Mex =I (t,, tq) : Mi (t) +I (t,, t.) : Mex (t) > ( )
+31
+Min =I (t,, ty) , MP (t) + I (t,, t.) , Min, (t),
+where M?, M? are preprogrammed control moments and
+Mo M,, are tracking control moments.
+Preprogrammed control moments M?, M?,, which set
+the head axis into the required motion, are determined from
+the following relationships:
+
+Me. (t)= (to, tq) : [Kes (Wi, 7 Wir) T hex (Wy, 7 Wr) ?
+Mp, (t) = T1 (tos ta) - [Kin (9h — Sir) + hin (Sp — Sine) |
+
+where k
+and h,,,
+system.
+Angles 9,,,Y,- and their derivatives will be determined
+from the relationships (20).
+At the moment when the target will appear in the head
+coverage, that is,
+
+ex Kin are gain coefficients of the OTH control system
+h,,, are attenuation coefficients of the OTH control
+
+IR, - R,, S Pp (33)
+
+head control passes to the tracking mode.
+Then, tracking control moments have the following form:
+
+Mx (t) =I (t,, t.) , [kex (Wy, 7 c) + hex (Wr, 7 é)] >
+M:. (t) = I (t,, t.) , Kin (9, 7 e) + hin (9, — é)] .
+
+Angles o, € will be determined from the relationships (3).
+Coefficients k,,,kj,> Nex» hj, ave chosen in an optimum
+way due to the minimum deviation between the real and set
+path [15].
+
+It should be emphasized that the mathematical model
+of movement of the controlled observation and tracking
+head described with (29) allows for conducting a number of
+simulation tests of searching for and tracking a ground target
+from the UAV deck. Thanks to that, one can know about the
+areas of stability and permissible controls with the influence
+of kinematic excitations from the UAV deck.
+
+(34)
+
+4, Results of Computer Simulations
+
+The presented algorithms of control of the movement of
+OTH performing the search and tracking of a ground target
+
+from the UAV deck have been tested on the example of a
+hypothetical UAV system. The following parameters were
+adopted:
+
+movement parameters of UAV
+A. = 1500 m,
+
+r. = 500m, V.=75m/s; (35)
+
+movement parameters of the head
+
+t,= 10s, t; = 20s,
+(36)
+R,=500m, — gy, = 1 deg;
+movement parameters of the target
+V, = 25 m/s, XY, =o, -t,
+(37)
+w, = 0.025 rad/s;
+mass parameters of the head
+Mm, = 3.375kg, ‘J, = 0.22 kgm’,
+Jy, =0.114kgm*, J, = 0.117kgm’,
+(38)
+
+J,, =0.061kgm*, ‘J, = 0.035 kgm’,
+
+J, = 0.029 kgm’;
+
+the distance of mass centre of internal frame from the
+centre of movement
+
+|, = 0.002 m; (39)
+
+friction coefficients in suspension bearings of the
+head
+
+Nex = Yin = 0.01 Nms/rad. (40)
+
+Kinematic excitations of the base (UAV) were adopted in the
+following form:
+
+P. = Po sin(y-t), q. = 4.) cos (v-t),
+
+r= To sin(y-t), Peo = Ico = Teo = 0-5 rad/s, (41)
+
+y = 5rad/s.
+For nonoptimum control, regulator coefficients amounted to
+
+k= -5.0, hy =-1.5,
+
+ex
+
+(42)
+kin = —5.0, hin = —1.5,
+
+For optimum control, regulator coefficients amounted to
+
+ke. =-20.0, hy =—5.0,
+(43)
+
+kin = —20.0, hn = —5.0.
+Figure 6 presents the results of computer simulation of
+movement kinematics of UAV as well as the head axis during
+
+----$$$$----$$$$----
+1500
+\ UAV flight path
+1000 TT = a
+g
+XN 500
+0 _.-* Target interception" 7
+1000 Scan lines: ex .
+— ( aN 1000
+500 HHS 500
+yp
+(2) )
+—500 —500 x (>
+
+FiGurRE 6: Path of movement of UAV, head axis, and the target during
+searching for and tracking the target.
+
+—200 0 200 400 600 800
+
+x (m)
+
+00
+—400 1000
+
+FiGurE 7: Path of movement of point H and the target on the surface
+of the ground.
+
+Vip Ware Mn Snr (deg)
+
+0 5 10 15 20 25 30
+t (s)
+
+Figure 8: Time-dependent real 9,, y,, and desired 9,,, y;,. angles
+specifying the location of the head axis for nonoptimum controls
+with the influence of disturbances.
+
+Journal of Applied Mathematics
+
+Wip Why (deg)
+
+—5 0 5 10 15 20 25 30 35
+9,3 Dn, (deg)
+
+FiGurE 9: Real and desired trajectory of movement of the head axis
+for nonoptimum controls with the influence of disturbances.
+
+M,,,>M, (Nm)
+
+0 5 10 15 20 25 30
+t (s)
+
+Ficure 10: Time-dependent control moments M,, and M.,,. for
+
+nonoptimum parameters of the regulator with the influence of
+disturbances.
+
+searching the surface of the ground and tracking (laser
+lighting) a ground target.
+
+Figure 7 presents the trajectory of movement of point H
+during scanning for and the movement of the target on the
+surface of the ground.
+
+Figures 8-10 present the desired and the real angles
+of deflection and inclination of the head axis, as well as
+control moments for the case when the head is influenced by
+kinematic excitations from UAV deck and the parameters of
+the regulator are not optimum.
+
+Figures 11,12, and 13 present the desired and the real
+angles of deflection and inclination of the head axis, as well as
+control moments for the case when the head is not influenced
+by kinematic excitations from UAV deck and the parameters
+of the regulator are optimum.
+
+----$$$$----$$$$----
+Journal of Applied Mathematics
+
+40
+
+Wp Var On Qnr (deg)
+
+t (s)
+
+Figure 11: Time-dependent real 9,, y,, and desired 9,,, w,, angles
+specifying the location of the head axis for optimum controls
+without the influence of disturbances.
+
+Wir War (deg)
+
+—5 0 5 10 15 20 25 30 35
+9,3 Dn, (deg)
+
+Figure 12: Real and desired trajectory of movement of the head axis
+for optimum controls without the influence of disturbances.
+
+Figures 14-16 present the desired and the real angles
+of deflection and inclination of the head axis, as well as
+control moments for the case when the head is influenced by
+kinematic excitations from UAV deck and the parameters of
+the regulator are optimum.
+
+Kinematic excitations from UAV deck adversely affect the
+operation of the head. It can particularly be seen in Figures 11
+and 14. In case of the nonoptimum choice of the parameters
+of the regulator, the deviations of the head axis from the set
+location are particularly visible (Figures 8 and 9). Smaller
+values of deviations can of course be achieved for optimum
+head controls (Figures 14 and 15). Control moments take
+small values.
+
+From the presented theoretical analysis and the simula-
+tion research of the process of scanning by OTH from UAV
+
+Min ? M.x (Nm)
+
+0 5 10 15 20 25 30
+t (s)
+Ficure 13: Time-dependent control moments M,, and M,, for
+
+optimum parameters of the regulator without the influence of
+disturbances.
+
+40
+
+30
+
+20
+
+Whe Wh 9n> Dnr (deg)
+
+t (s)
+
+Figure 14: Time-dependent real 9,, y,, and desired 9,,, wy, angles
+specifying the location of the head axis for optimum controls with
+the influence of disturbances.
+
+deck of the surface of the ground and then tracking the
+detected ground target, it can be inferred that
+
+(i) it is possible to search for a target on the area of any
+size, which is only limited to the durability and range
+of UAV flight;
+
+(ii) scanning is sufficiently precise;
+
+(iii) the programme of scanning the surface of the ground
+is simple;
+
+(iv) there occur relatively small values of OTH axis angle
+deviations from the nominal position;
+
+(v) full autonomy of UAV during the mission of searching
+and laser lighting of the detected ground target
+secures the point of control against detection and
+destruction by an enemy;
+
+----$$$$----$$$$----
+10
+
+Wip Why (deg)
+
+—5 0 5 10 15 20 25 30 35
+9n5 Sn, (deg)
+
+Figure 15: Real and desired trajectory of movement of the head axis
+for optimum controls with the influence of disturbances.
+
+0.8
+0.6
+0.4
+0.2
+
+"Tl
+
+Mii :
+
+al
+
+Min» Mex (Nan)
+
+—0.4
+
+0 5 10 15 20 25 30
+t (s)
+FiGureE 16: Time-dependent control moments M,, and M.,,. for
+
+optimum parameters of the regulator without the influence of
+disturbances.
+
+(vi) the interference of an operator in controlling UAV
+may only be limited to cases of the vehicle's total com-
+ing off from the set path or the loss of the target from
+OTH lens coverage (due to gusts of wind, explosions
+of missiles, etc.). Hence, the possibility of automatic
+sending of information about such occurrences to the
+control point and the possible taking of control over
+UAV flight by the operator should be introduced.
+
+5. Conclusion
+
+The considerations presented in this paper will allow us
+to conduct the research on the dynamics of OTH when
+manoeuvring UAV on which this device is mounted. It may
+enable the construction engineers to choose such parameters
+of OTH so that the transient processes occurring in the
+conditions of kinematic influence of UAV deck and at the
+
+Journal of Applied Mathematics
+
+moment of passing from scanning to tracking mode were
+minimized and disappeared in the shortest possible time.
+
+Conflict of Interests
+
+The authors declare that there is no conflict of interests
+regarding the publication of this paper.
+
+Acknowledgment
+
+The work reported herein was undertaken as part of a
+research project supported by the National Centre for
+Research and Development over the period 2011-2014.
+
+References
+
+[1] R. Austin, Unmanned Aircraft Systems: UAVS Design, Devel-
+opment and Deployment, John Wiley & Sons, Chichester, UK,
+2010.
+
+[2] FE Kamrani and R. Ayani, UAV Path Planning in Search Opera-
+tions, Aerial Vehicles, InTech, 2009, edited by T. M. Lam.
+
+[3] X. Q. Chen, Q. Ou, D. R. Wong et al., “Flight dynamics
+modelling and experimental validation for unmanned aerial
+vehicles,’ in Mobile Robots-State of the Art in Land, Sea, Air, and
+Collaborative Missions, X. Q. Chen, Ed., InTech, 2009.
+
+[4] S. Bhandari, R. Colgren, P. Lederbogen, and S. Kowalchuk,
+“Six-DoF dynamic modeling and flight testing of a UAV
+helicopter,” in Proceedings of the AIAA Modeling and Simulation
+Technologies Conference, pp. 992-1008, San Francisco, Calif,
+USA, August 2005.
+
+[5] J. Manerowski and D. Rykaczewski, “Modelling of UAV flight
+dynamics using perceptron artificial neural networks,’ Journal
+of Theoretical and Applied Mechanics, vol. 43, no. 2, pp. 297-307,
+2005.
+
+[6] K. T. Oner, E. Cetinsoy, E. Sirimoglu et al., “Mathematical
+modeling and vertical flight control of a tilt-wing UAV,’ Turkish
+Journal of Electrical Engineering and Computer Sciences, vol. 20,
+no. 1, pp. 149-157, 2012.
+
+[7] T.-V. Chelaru, V. Pana, and A. Chelaru, “Flight dynamics for
+UAV formations,’ in Proceedings of the 10th WSEAS Interna-
+
+tional Conference on Automation & Information, pp. 287-292,
+2009.
+
+[8] P. Kanovsky, L. Smrcek, and C. Goodchild, “Simulation of UAV
+Systems,’ Acta Polytechnica, vol. 45, no. 4, pp. 109-113, 2005.
+
+[9] H. Ergezer and K. Leblebicioglu, “Planning unmanned aerial
+vehicles path for maximum information collection using evo-
+lutionary algorithms,’ in Proceedings of the 18th IFAC World
+Congress, pp. 5591-5596, Milano, Italy, 201.
+
+[10] C. Sabo and K. Cohen, “Fuzzy logic unmanned air vehicle
+motion planning,” Advances in Fuzzy Systems, vol. 2012, Article
+ID 989051, 14 pages, 2012.
+
+[11] H. Chen, K. Chang, and C. S. Agate, “Tracking with UAV using
+tangent-plus-lyapunov vector field guidance,’ in Proceedings
+of the 12th International Conference on Information Fusion
+(FUSION '09), pp. 363-372, Seattle, Wash, USA, July 2009.
+
+[12] K. Turkoglu, U. Ozdemir, M. Nikbay et al., “PID parameter
+optimization of an UAV longitudinal flight control system,” Pro-
+
+ceedings of World Academy of Science: Engineering & Technology,
+vol. 2, no. 9, pp. 24-29, 2008.
+
+----$$$$----$$$$----
+Journal of Applied Mathematics
+
+[13] B. Kada and Y. Ghazzawi, “Robust PID controller design for an
+UAV flight control system,” in Proceedings of the World Congress
+on Engineering and Computer Science (WCECS °11), vol. 2, San
+Francisco, Calif, USA, October 2011.
+
+[14] I. Moir and A. Seabridge, Military Avionics Systems, John Wiley
+& Sons, Chichester, UK, 2007.
+
+[15] J. Awrejcewicz and Z. Koruba, Classical Mechanics: Applied
+Mechanics and Mechatronics, vol. 30, Springer, New York, NY,
+USA, 2012.
+
+[16] I. Krzysztofik, “The dynamics of the controlled observation
+and tracking head located on a moving vehicle,’ Solid State
+Phenomena, vol. 180, pp. 313-322, 2012.
+
+[17] Z. Koruba, “Optimal control of the searching and tracking
+head (Sth) for self propelled anti aircraft vehicle,” Solid State
+Phenomena, vol. 180, pp. 27-38, 2012.
+
+[18] R. Langton, Stability and Control of Aircraft Systems, John Wiley
+& Sons, Chichester, UK, 2007.
+
+[19] J. E. Takosoglu, P. A. Laski, and S. Blasiak, “A fuzzy logic
+controller for the positioning control of an electro-pneumatic
+servo-drive, Proceedings of the Institution of Mechanical Engi-
+neers I: Journal of Systems and Control Engineering, vol. 226, no.
+10, pp. 1335-1343, 2012.
+
+1]
+
+----$$$$----$$$$----
+Copyright of Journal of Applied Mathematics is the property of Hindawi Publishing
+Corporation and its content may not be copied or emailed to multiple sites or posted to a
+listserv without the copyright holder's express written permission. However, users may print,
+download, or email articles for individual use.
+
+----$$$$----$$$$----

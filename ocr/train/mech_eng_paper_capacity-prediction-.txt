@@ -1,0 +1,1283 @@
+Hindawi Publishing Corporation
+Mathematical Problems in Engineering
+Volume 2014, Article ID 490280, 11 pages
+http://dx.doi.org/10.1155/2014/490280
+
+Research Article
+
+Capacity Prediction Model Based on Limited Priority
+Gap-Acceptance Theory at Multilane Roundabouts
+
+Zhaowei Qu, Yuzhou Duan, Xianmin Song, Hongyu Hu, Huanfeng Liu, and Kehan Guan
+
+College of Transportation, Jilin University, Changchun 130022, China
+
+Correspondence should be addressed to Xianmin Song; songxianmin0708@163.com
+
+Received 9 July 2014; Accepted 25 July 2014; Published 26 August 2014
+
+Academic Editor: Wuhong Wang
+
+Copyright © 2014 Zhaowei Qu et al. This is an open access article distributed under the Creative Commons Attribution License,
+which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.
+
+Capacity is an important design parameter for roundabouts, and it is the premise of computing their delay and queue. Roundabout
+capacity has been studied for decades, and empirical regression model and gap-acceptance model are the two main methods to
+predict it. Based on gap-acceptance theory, by considering the effect of limited priority, especially the relationship between limited
+priority factor and critical gap, a modified model was built to predict the roundabout capacity. We then compare the results between
+Raff’s method and maximum likelihood estimation (MLE) method, and the MLE method was used to predict the critical gaps.
+Finally, the predicted capacities from different models were compared, with the observed capacity by field surveys, which verifies
+
+the performance of the proposed model.
+
+1. Introduction
+
+Roundabouts are popular in recent years, according to
+statistics; there are over 2000 roundabouts in the US and
+Canada as of April 2010 [1]. And more and more scholars
+have paid their attention to roundabouts from different views,
+such as capacity, safety, and performance. Capacity is the
+maximum possible throughput of the traffic facility [2], and it
+is a determinant parameter for other performance measures,
+such as delay and queue. Thus, there are a lot of researches on
+this, especially on capacity model [3-8].
+
+The entry capacity is the maximum throughput of the
+entry vehicles under specific geometric and traffic conditions.
+Until now, there have been lots of capacity models, which
+could fall into two categories: empirical regression model
+and gap-acceptance model [9]. According to previous anal-
+ysis, the former has good applicability in locality but poor
+transferability, and its establishment needs mass data. Al-
+Madani [10] established an empirical model during heavy
+demand conditions, which considered eight factors such as
+number of entry lanes and radius of central island, whilst
+the latter has a systematic and theoretical basis, but usually
+oversimplifies the field conditions, and is dependent on some
+assumptions (e.g., the headway distribution of the major
+road). Kimber [11] analyzed the gap-acceptance model in
+
+major-minor priority junction and summarized the merits
+and drawbacks of this method. Chung et al. [12] compared the
+capacity model in SR45 and SIDRA, which were both based
+on gap-acceptance theory. Considering the pseudo-conflicts,
+Fortuijn [13] revised the conflict volumes by introducing
+some proportion of exiting vehicles and derived a new gap-
+acceptance model for turbo-roundabout. By modifying Raft’s
+method, Guo and Lin [14] updated the capacity model on the
+basis of gap-acceptance theory.
+
+In gap-acceptance theory, critical gap is one of the most
+important parameters, which impacts the predictive accuracy
+directly. And numbers of researchers have discussed the
+estimation methods and critical values from different aspects.
+Considering the punch size of the follow-up vehicles, Khatib
+[15] built a regression model for the critical gap by field
+data at multilane roundabouts. Flannery and Datta [16] used
+log-normal distribution to depict the gap-acceptance process
+and discussed the different distribution patterns. Besides, the
+probability method was used in the critical gap estimation
+at roundabout, and move-up times were collected according
+to the dominant entry lane and subdominant entry lane
+[3]. Some studies showed that the number of lanes has an
+influence on the performance [17-19]. Hainen [20] obtained
+the critical headway of roundabouts by means of wireless
+magnetometers. Abrams et al. [21] collected the spatial and
+
+----$$$$----$$$$----
+Minor
+
+(a) TWSC intersection
+
+Mathematical Problems in Engineering
+
+(b) Modern roundabout
+
+FiGuRE 1: Gap-acceptance process in the different type of intersections.
+
+temporal headway and estimated the critical gap from these
+two aspects. Moreover, others considered the effect of the
+influence factors on critical gap. Considering the percentages
+of trucks, Lee [22] adjusted the critical gap and follow-
+up time by distinguishing different vehicles type, which is
+more accurate. Then an investigation was made as four-year
+period, it was found that the critical gap reduced because
+of higher driver familiarity [23]. Polus [24] put forward the
+critical gap model that considered the effect of waiting time at
+roundabouts and improved the entry capacity model. Xu and
+Tian [25, 26] found that the circulating flow rate and speed
+are the main factors influenced by the critical gap and follow-
+up time. And by data collecting at roundabouts, the result
+showed that the critical gap of the left-turning lane is larger
+than the right-turning lane's.
+
+Under high flow conditions, some minor vehicles may
+force their way into the major streams; meanwhile the major
+vehicles would slow, which was named limited priority by
+Troutbeck [27]. And Troutbeck and Kako found that the
+limited priority merge has a significant effect on the entry
+capacity at two-lane roundabouts [28]. The limited priority
+term was derived. Ma et al. [29] also studied the limited
+priority merge in the major-minor intersections.
+
+Although the studies on roundabouts overseas are quite
+a lot, it is still in its infancy in China. In recent years, more
+and more domestic scholars have studied the roundabouts,
+but the research was limited in a small range, that is, signal
+timing at roundabouts, and the operational characteristics at
+roundabouts. Wang et al. [30-32] discussed the capacity of
+roundabouts and provided some reference for future studies.
+Considering the limited priority in capacity prediction at
+modern multilane roundabouts and through analyzing the
+relation between limited priority factor and critical gap,
+the comprehensive effects of the two on capacity would be
+obtained. The headway distribution of the circulating lanes
+will be discussed by considering the limited priority. Then,
+combining the number of the circulating lanes, a new capacity
+model could be derived.
+
+This paper is designed as follows. Section 2 introduces
+the gap-acceptance theory in the unsignalized intersections
+and the limited priority under high volume conditions. Then
+the relation analysis between the limited priority term and
+critical gap at roundabouts is discussed in Section 3. And the
+headway distribution of the circulating lanes is also discussed;
+then the capacity model is derived based on gap-acceptance
+theory. Following the estimation methods to the critical gap
+are compared in Section 4. Then the proposed model is
+compared with some classical capacity model and discussed
+with the field observations in Section 5. Finally, Section 6
+gives the conclusions and points out the future works.
+
+2. Applicability Analysis of Fundamental
+Theories on Multilane Roundabouts
+
+This part mainly depicts two theories at roundabout, that
+is, gap-acceptance theory and limited priority theory. Com-
+bined with the operational characteristics of the multilane
+roundabouts, an applicability analysis was conducted to
+verify the suitability of the two theories.
+
+2.1. Gap-Acceptance Theory at Roundabouts. Gap-acceptance
+theory was originally applied to traditional unsignalized
+intersections. Generally, there are major road and minor road
+for the two-way stop-controlled (TWSC) or two-way yield-
+controlled (TWYC) intersections. And the vehicles from the
+minor road enter the intersection during the gaps formed
+by the major streams. Because there are “give-way” rules at
+the roundabouts, it is analogous to the TWSC intersections.
+But the geometries of the roundabouts are different from
+traditional intersections, so it may have some difference in
+entry process, shown as in Figure 1.
+
+As shown in Figure l(a), the vehicles in the minor road
+need to cross over the major flows. But, in Figure 1(b), the
+entry vehicles only need to converge into the circulating
+streams, which is similar to the convergence behavior on the
+ramp. Assuming that the mean speed of vehicles at TWSC
+
+----$$$$----$$$$----
+Mathematical Problems in Engineering
+
+Limited priority (%)
+
+452 513 568
+
+Circulating volumes (veh/15 min/3-lane)
+
+615639 685 749
+
+FiGurRE 2: Limited priority percentage under different traffic status.
+
+intersection is v, and the distance between stop line and
+conflict line is S,, thus, the cross time is (S, + L)/v, (L is the
+vehicle length). For the same analysis to modern roundabout,
+the entry time is (S, + L)/v, (S, is the distance between stop
+line and merging point at roundabout, and v, is mean entry
+speed of vehicles at roundabout). Clearly, the difference in
+geometry leads to the different travel distance. Meanwhile,
+the entry speed from the stop line is different. Thus, the entry
+time of the two types of intersections is different. Of course,
+there will be inserting behaviors if there are two or more
+circulating lanes. Thus, at a micro level, the critical gap may
+have some differences, and it shows the necessity to calibrate
+parameters by field observations additionally.
+
+2.2. Limited Priority at Roundabouts. Troutbeck proposed
+that the minor-stream vehicles forced the major-stream
+vehicles to slow in the high volumes, and it will occur in the
+roundabout by filed observations [28]. The results showed
+that the ratio of forced gap was more than 9% under high
+volumes and less than 3% under low ones. Because the drivers
+in different countries have different driving behaviors, a field
+survey is made in Changchun, China, consequently. The data
+were collected at a three-lane roundabout in Changchun
+city during peak hours. There are three circulating lanes
+in the roundabout, and the condition during survey period
+was normal. Fifteen-minute data sets were extracted for
+this analysis. If the circulating vehicles decelerate before the
+conflict area, there is a limited priority event. Summing up
+the statistic results, the percentages of the limited priority in
+different traffic status are obtained, as shown in Figure 2.
+
+As can be seen from Figure 2, when circulating flow rate
+reach a certain degree, the percentage of limited priority
+will rise with the circulating volumes increasing. And from
+the field observation, it is found that there exist some
+adventurous drivers in Changchun city, which often forced
+the circulating vehicles to slow, even if the circulating flow
+rate is low. Although this verifies the existence of limited
+priority phenomenon, a comprehensive influence coefficient
+needs to be established, which can change with the varied
+conditions. To prove this phenomenon further, the speed and
+
+headway before and after merging were surveyed; the differ-
+ence distribution could be obtained as shown in Figure 3. It
+is noted that the data were collected in one lane, and one is
+obtained in the upstream of the circulating lane; another is
+obtained in the merging area.
+
+From Figure 3, it can be seen that the speed and headway
+between the upstream and merging area both have some
+changes. In Figure 3(a), the most of the speed difference
+centers on zero, and some are located on the right side.
+Similarly, the headway also has the same effect; however, it
+has left truncation. Both of them reflected that some vehicles
+in circulating lane slow before the merging area.
+
+Above all, by analyzing and observing the multilane
+roundabout, applicability of limited priority gap-acceptance
+theory is verified.
+
+3. Capacity Modeling
+
+Considering the limited priority at multilane roundabouts,
+some parameters were analyzed in this part. Then combined
+with limited priority gap-acceptance theory, a modified
+model is derived.
+
+3.1. Relation Analysis. From the above, it is known that
+the limited priority phenomenon existed in the round-
+abouts. By field observations, the limited priority percentage
+was obtained, but it did not suit accurate calculation and
+lacked portability for other roundabouts. Assuming that the
+upstream of the major stream obeys Cowan's M3 distribution,
+the model of limited priority term (C) was derived by
+Troutbeck [27], as shown in (1). From this, C is mainly
+determined by three parameters, that is, critical gap (t.),
+follow-up time (t), and the minimum headway (r). He also
+pointed that the limited priority will occur when the critical
+gap is less than the sum of follow-up time and the minimum
+headway. Among them, t ; and t are usually measured during
+the saturation periods, or the continuous queue occurs at the
+entry approach. But the critical gaps could not be measured
+directly, which is usually estimated with some estimation
+methods. And another parameter in (1) is A, which depicts
+the intensity of proportion of free vehicles on the traffic flow
+in Cowan’s M3 model, also named decay constant. In order
+to obtain the interrelations among these parameters, assume
+that the t, and t are constant; then analyze the relations of
+other parameters based on (1), and we obtained the changes
+of C with A and t,. The result was shown as in Figure 4:
+
+C= 1] - ety
+© [tee 2 (t,-tp — 1) eM] ' (1)
+
+where A is decay constant, usually equal to aq/(1 — tq), and
+a is the proportion of free vehicles.
+
+In Figure 4, the tendency of C is varied with A and t.. On
+the one hand, when tf. is relatively large (of course, it will not
+exceed the sum of t , and T), the decrease of C is not obvious.
+With the reduction of the t., the decrease tendency is more
+sharp. The smaller the t., the sharper the tendency. On the
+other hand, when A do not change, C will rise with the t,
+depressed.
+
+----$$$$----$$$$----
+0.25
+
+0 2 4 6 8 10
+
+Speed difference (km/h)
+—— Upstream-merging
+
+(a) Speed difference distribution
+
+Mathematical Problems in Engineering
+
+-14 -12 -1 -08 -06 -0.4 -0.2 0 0.2
+Headway difference (s)
+
+—— Upstream-merging
+
+(b) Headway difference distribution
+
+Figure 3: The difference distribution of speed and headway.
+
+“0.2 0.25 0.3 0.35 0.4 0.45 0.5
+AX (veh/s)
+-+- t. = 2.8 > t,. = 3.6
++ t, = 3.0 a. t. = 4.0
++e t, =3.4 -o- t, =4.4
+
+FiGure 4: Limited factor varies with A and t..
+
+With the limited priority factor, a corresponding capacity
+model of single lane was also put forward [27], as shown in
+the following:
+
+Cap = ———__, (2)
+
+where Cap is capacity of single lane.
+
+As can be seen from (2), there is a positive correlation
+between Cap and C and a negative correlation between Cap
+and t., whereas C varies from 0 to 1, which reduces the
+original capacity. According to common sense, the capacity
+will raise considering the limited priority. In addition, C is a
+function of t., as shown in (1). To obtain the comprehensive
+relations among these parameters, combined with the results
+of Figure 4, we studied the entry capacity with the changes of
+t.; the result was shown in Figure 5. It can be seen that, in the
+
+Entry capacity (q (veh/h))
+
+1000 1200 1400 1600 1800
+
+0 200 400 600 800
+Conflict volumes (veh/h)
+
+©- t,=2.8 -s7- t, = 3.6
+oo t. = 3.0 -A- t. = 4.0
+: ak. : t. = 3.4 oe t. = 4.4
+
+FiGure 5: Entry capacity varies with the critical gap.
+
+same conflicting volume, the entry capacity will reduce with
+the t, increasing. To analyze it further, if the limited priority is
+considered, the critical gap will reduce because of the forcing
+stream; thus even if the C is less than 1, the result of capacity
+will still increase. This result is consistent with the realities;
+thus Troutbeck’s model was used in this paper.
+
+3.2. Headway Distribution of Circulating Lanes. Headway dis-
+tribution is as an important assumption in the gap-acceptance
+theory. Applying the different headway distribution models,
+the different prediction capacity will be obtained. Generally,
+the negative exponential distribution, the shifted-negative-
+exponential distribution, and Cowan's M3 distribution are
+the most popular models in traffic analysis. But the first
+two are applicable to free flows, and the last one is mainly
+applicable to the dichotomy flows. Though Cowan M4
+distribution is more accurate, some proposed that the more
+
+----$$$$----$$$$----
+Mathematical Problems in Engineering
+
+SCS fF Lf Sf
+Ww A N © © »
+
+Cumulative probability density
+So
+NN
+
+SS
+pe NY WwW
+
+0 5 10 15 20 25
+
+Headway of circulating flows (s)
+
+— Site A — SiteD
+--- SiteB --- Site E
+-—-= SiteC sees Site F
+
+FIGURE 6: Cumulative probability density at the roundabout.
+
+realistic headway distributions are not significantly more
+accurate. Luttinen [40] dissected the properties of Cowan's
+M3 distribution and detailed the estimation method to the
+parameters. Besides, Cowan's M3 distribution model has been
+proved a good performance at roundabouts. Hagring et al.
+[41] divided two types of Cowan's M3 distribution, M31 and
+M32, and found that M32 was closer to the real capacity
+of two-lane roundabouts. Giuffre et al. [42] compared the
+performance between turbo-roundabout and double-lane
+roundabout, assuming that the headway of circulating lanes
+obeyed Cowan's M3 distribution. Xiang et al. [31] assumed
+the two flows as an equivalent flow and derived the approach
+capacity treating the vehicles of the left lane and right lane,
+respectively.
+
+In this paper, considering the effect of limited priority,
+the circulating vehicles will decelerate, and the parameters
+of headway distribution may change. In order to obtain
+accurate headway distribution, an investigation was made
+to the multilane roundabouts in the high flows, and the
+cumulative probability curves are shown in Figure 6. The
+six different sites were selected, and all located at before the
+merging area.
+
+If the circulating vehicles slow to cooperate on the
+forcing vehicles, the headway of circulating streams near the
+merging area will also change. Combined with the merging
+opportunity in the limited priority [27], Troutbeck derived
+the modified gap distribution model before the merging area,
+as shown in the following:
+
+F(t)=1l-aCe*“”, tr. (3)
+
+There are many models to describe the proportion of
+free vehicles (@) [40, 43, 44], as shown in Table 1. And it is
+determined mainly by the circulating volume (q,) and the
+minimum headway (rT). To show them more straightforward,
+Figure 7 is obtained as follows. From this figure, it can be seen
+that different models have different performance. When the
+traffic volume is 500 pcu/h, the difference between Plank and
+
+SS Ff
+ana nN © ©
+
+So
+nS
+
+0.3, A&C single-lane
+0.2 roundabout
+
+proportion of free vehicles (a)
+
+The
+Oo
+—
+
+0 200 400 600 800 1000 1200 1400 1600
+Traffic volumes (pcu/h)
+
+-©- Tanner (1962) [33] --k- Akcelik and Chung (A&C)
++e Akcelik (1998) [34] (single lane) (1994) [37]
+—-¥z-- Sullivan (1997) [35] -<{- A&C (double lane) (1994) [37]
+
+—e— Brilon (1988) [36] «:x:: Plank (1982) [38]
+~©- Hagring (1998) [39]
+
+FiGuRE 7: Comparisons of the different models of proportion of free
+vehicles.
+
+S 2S
+co to
+
+@ 0.7
+
+So 2S
+wm oO
+
+S
+nS
+
+Decay constant (pcu/s
+
+So 2S
+Wo w&
+
+0 200 400 600 800 1000 1200 1400 1600
+Traffic volumes (pcu/h)
+
+-E]- Tanner (1962) [33] —*- Akcelik and Chung (A&C)
+<>» Akcelik (1998) [34] (single lane) (1994) [37]
+~+-- Sullivan (1997) [35] + A&C (double lane) (1994) [37]
+-<:- Brilon (1988) [36] --*:- Plank (1982) [38]
+
+—©- Hagring (1998) [39]
+
+FiGure 8: Comparisons of the different models of decay constant.
+
+Brilon’s result could reach 0.462, and it will make the capacity
+larger in difference.
+
+In Cowan’ M3 distribution, the decay constant (A) is
+also an important parameter, indicating the intensity of
+proportion of free vehicles on the trafic flow. And it is
+generally expressed as aq,/(1—-tTq,). If different models of
+a are used, the A will also change. The variation of the A
+with the traffic flows is shown in Figure 8. Then, combined
+with Figures 7 and 8, Troutbeck’s model was selected in the
+following research.
+
+By field observation, the modified Cowan M3 distribution
+could be used to fit the headway distribution before the
+merging area. Comparing with Cowans M3 distribution,
+the curve of modified model is closer to the empirical
+
+----$$$$----$$$$----
+6 Mathematical Problems in Engineering
+TABLE 1: Different models of proportion of free vehicles.
+
+Proposer Model Note
+
+Tanner (1962) [33] a=1-Tq.
+
+Akcelik (1998) [34]
+Sullivan (1997) [35]
+Brilon (1988) [36]
+Akcelik and Chung (1994) [37] a =e Pe
+Plank (1982) [38]
+Hagring (1998) [39]
+
+a =e Ak
+
+Cumulative distribution function
+
+Headway (s)
+o Field data
+— Cowan's model
+-~-— Modified Cowan’s model
+
+FIGURE 9: Comparisons of the different distribution models.
+
+distribution curve, as shown in Figure 9. And from this, we
+can see that the modified model is better in the shorter
+headway than the original one.
+
+In this part, the modified headway distribution was
+proved a better goodness of fit to the merging headway in high
+flow. Based on this equation, the derivation of capacity model
+of multilane approach is proposed next.
+
+3.3. Model Derivation. From the above analysis, the impact of
+the limited priority on multilane roundabouts is expressed.
+Combined with the actual situation of multilane round-
+abouts, the derivation of capacity model is introduced in the
+following.
+
+Assumptions
+(1) The circulating flows obey the modification of
+Cowan's M3 model above.
+
+(2) The drivers of entry approach have homogeneity and
+consistency.
+
+(3) The lane-changing behavior is prohibited in the cir-
+culating areas.
+
+(4) The circulating vehicles in different lanes are indepen-
+dent of each other and obey the same distribution.
+
+« = 0.75(1 -7q,)
+a = 0.8 — 0.0005 (<:)
+nN
+
+Q. < 1600 veh/h/lane
+
+A€ [6,9]
+b = 2.5, T = 2 (lane = 1), t = 1.2 (lane = 2)
+
+a = 1~1°q: (3 - 274.)
+a = 0.910 — 1.1564,
+
+In addition, the entry vehicles may be influenced by
+the exiting vehicles in the same leg at some roundabouts
+[4]. However, it only occurs in some certain situations; for
+example, the diameter of central island is small or the splitter
+island is too narrow. And field surveys showed that the
+vehicles would use the indicators when entered in or exited
+out from roundabouts in Changchun city, coupled with the
+larger island diameter; thus, the impact of exiting vehicles
+to entry capacity could be negligible in this research. Based
+on the above assumptions, the derivation process is listed as
+follows.
+
+As per the extended process of Tanner’s formula by
+Hagring at unsignalized intersection [39], H(h) indicates the
+headway distribution, and L(/) indicates the lag distribution.
+And the capital letter denotes the cumulative distribution
+function; the lowercase letter denotes the probability density
+function. H; is the headway distribution of lane i, and H
+represents the headway distribution of n lanes. Similarly, L;
+is the lag distribution of lane i, and L represents the lag
+distribution of n lanes. And the headway distribution of lane
+i is expressed as (3), so the derivation process is following.
+
+As per Haight [45], the lag density function of circulating
+lane i is
+
+I; (t) = q;(1- Hj (0). (4)
+Combining (3) and (4), one can obtain that
+L(t) =qa,cje""™, t> 7. (5)
+
+Thus one can obtain the lag distribution function of
+circulating lane i:
+
+qiajCje
+Xr, °
+
+1
+
+L, (t) =1- t > T;. (6)
+
+The relationship of lag distribution function between the
+whole circulating lanes and a single lane is [39]
+
+t>T
+
+1-L()=[[Q-L,@), : (7)
+
+1
+
+Then combining (6) and (7), one can obtain the distribu-
+tion of n-lane:
+
+L(t)=1- ys ew.
+
+1 1
+
+{ > T;. (8)
+
+----$$$$----$$$$----
+Mathematical Problems in Engineering
+
+Thus, the lag density function of n-lane is
+
+I(t) = yas Te™, t>% (9)
+
+i
+
+Using the relationship of lag density function and the
+headway distribution headway once again, that is, combining
+(9) and (4), one can obtain that
+
+AX; a:C; A. (t_t.
+H(t) =1- mt ral ove ‘LJe*@?, t=. (10)
+
+Using (7), (8), and (10), one can obtain that
+
+1-H) = ST] 0-10), t>m. (IN)
+
+ii j
+
+As per Hagring, if every lane has one certain value, f =
+(t,,t,,...,t,,). And the distribution function can be expressed
+as
+
+> Didi pq UGC TT A t)-2)
+H(t SGT Ten ses
+To simplify, define Nn = (>; A; / di qi II; (qja;C;/A,); let tj
+and t ¢; denote the critical gap and the follow-up time of lane i.
+
+For an n-lane road, the probability of k vehicles crossing all
+lanes is [39]
+
+p(k) = H (toy + kt pysteg + kt pps. esten + Kt fn)
+
+-H (ta +(k-Dtpyteat(k-Vty--sten (13)
++(k-1)tp).
+Combining (12) and (13), one can obtain that
+p(k) =n,e 2A? (oP? Ajit — eo kX; Ato), (14)
+
+According to the discrete theory [39], the general formula
+of capacity is
+
+CAP = q) kp(k). (15)
+k=1
+
+Combining (14) and (15), one obtains that
+
+— Yj Aj bgt)
+
+aigjC; e oii G
+
+CAP = ) AX,| | —~** « ———_.. 16
+d a h; 1 — eo reel tp (16)
+
+Equation (16) is the general capacity model of multilane
+roundabouts, considering the limited priority.
+
+3.4. Model Analysis. When i = 1, we can obtain the capacity
+of single-lane roundabout; that is,
+
+agC (1 - eM)
+
+ty 7)
+
+CAP = ——
+—e
+
+By comparison, (17) is the same as Troutbeckss.
+
+When i = 2, assuming that there are different critical gaps
+and follow-up times, and equal minimum time (T), so we can
+obtain that:
+
+0G, uC C, eta M2ta-)
+
+17°2
+
+Loe itp tAaty) (18)
+
+Generally, for the same lane in the approach, we can
+assume that there is an equal critical gap and follow-up time;
+then (18) can be simplified into
+(Ay +Az) 05g) QC Cy @ MMe)
+
+wa 1A; Te Oa
+
+(19)
+
+Similarly, for i = 3, with the same critical gap and follow-
+up time and minimum headway, one can obtain
+
+3 on Y} Aj (t.-7)
+
+3
+, 2 1 A; L—e ditty
+
+(20)
+
+For an entry lane, if there is no constraint, the vehicles
+may enter in any circulating lane; thus, the entry capacity
+could be calculated as follows [46]:
+
+n . .
+am = dy y=
+" (21)
+Im
+Di Xn
+where m represent the lane at the approach, i is the lane
+
+number which the entry vehicle needs to cross, and x’, is the
+degree of saturation of stream i in the lane m.
+
+CAP,, =
+
+Dd)
+
+4, Critical Gap Estimation
+
+In the gap-acceptance theory, the critical gap is the most
+key parameter, whose accuracy directly affects the entry
+capacity, which also could be seen in (16). Until now there
+are over thirty kinds of estimation methods, and we should
+select an appropriate estimation method against the multilane
+roundabout.
+
+The maximum likelihood method was employed for esti-
+mating critical gap at TWSC intersections [47]. And for two
+major streams, Hagring [48] put forward a derivation process
+for the critical gap. Brilon et al. compared nine estimation
+methods for the critical gap and put forward four criteria
+of the reasonable prediction method. By comparisons, the
+maximum likelihood method and Hewitt’s method are the
+best. In addition, Raff’s method is used widely and easily, but
+it is sensitive to trafic volumes [49].
+
+Combining with the above analysis, the maximum like-
+lihood estimation (MLE) method and Raff’s method are
+compared by field survey. In Raff’s method, the mean critical
+headway is the intercept of the F,(t) and 1— F(t), where F,(t)
+is the cumulative distribution function (CDF) of accepted
+headway, and F,(t) is the CDF of rejected headway. Based
+on the assumption that one driver's critical gap is larger than
+
+----$$$$----$$$$----
+Cumulative distribution function
+
+Headways (s)
+
+—*— CDF of acceptances
+—A~— 1-CDF of rejections
+
+FiGure 10: Mean critical gap estimated by Raff’s method.
+
+TABLE 2: Comparison of the two estimation methods.
+
+Method Mean critical gap
+
+Near lane Far lane
+MLE method
+Right lane 4.581 —
+Left lane 4,852 4.680
+Raff’s method
+Right lane 4.415 —
+Left lane 4,718 4,572
+
+his maximum rejected gap and smaller than his accepted gap,
+the MLE method was used to estimate. Assuming the drivers’
+critical gap obeys the log-normal distribution, Troutbeck [50]
+proposed a procedure for estimating the mean and standard
+variance of critical gap, shown as in the following:
+
+2 2
+t. = elt 10.00 > s° = t? G _ 1) > (22)
+
+where 4 is the mean of distribution of logarithms of drivers’
+critical gap, o” is the variance of distribution of logarithms of
+drivers’ critical gap, and s is the standard variance of drivers’
+critical gap.
+
+The survey site is a two-lane roundabout in Changchun
+city, and the critical gap of right lane and left lane was
+estimated, respectively. Define the two circulating lanes as
+near lane and far lane, respectively; the former is adjacent to
+the entry lane, and the latter is near the central island. In the
+two entry lanes, the vehicles from the left lane may enter both
+circulating lanes, but the vehicles from the right lane only
+can enter the near lane. ‘The result of right lane using Raft’s
+method is shown as in Figure 10, and the similar method
+could be conducted to other lanes. Besides, the MLE method
+is also applied to the same lane, and the results were obtained
+as in Table 2.
+
+From Table 2, it can be seen that the results of two meth-
+ods are similar, and the big difference is 3.8%. Considering
+that Raff’s method is sensitive to traffic volume, however, the
+
+Mathematical Problems in Engineering
+
+MLE method is robust and, because of this, MLE method was
+selected for estimating the critical gap in the following.
+
+5. Model Comparisons
+
+By field survey at the multilane roundabout in Changchun
+city and by comparisons with three classical capacity models,
+the practicability of the proposed model was validated.
+
+5.1. Analysis of Three Classical Models. Three existing capacity
+models were selected to compare with the proposed model.
+The first is Wu's capacity model, which is recorded in German
+Highway Capacity Manual (HBS) 2000 [2]. The second is
+the recommended model provided in the Highway Capacity
+Manual (HCM) 2010, which is drafted by FHWA [51]. And
+the third is Swiss model, which considers the effects of exiting
+flow and other influences [9]. The first and the third one could
+dispose one to three lanes, both circulating lane and entry
+lane. For the second one, the entry capacity of left lane is used
+in this paper due to the multilane being merely discussed, and
+it is aimed at two lanes. Combined with the above analysis,
+only one entry lanes capacity aiming at different number of
+circulating lane is discussed. The different models are shown
+as (23) to (24), respectively. Consider the following:
+
+T-q.\"" 1
+qe =n,(1-—£) = - exp (-q - (tp - 7)
+n t
+nel (23)
+
+a1 = 1130e°°75 * 10 *)q.
+e, >
+
+where q, is the entry capacity, q. is the conflict flow rate of
+the circulatory lane, n, is the number of entry lanes, n, is the
+number of circulatory lanes, and t) = t,-t,/2, and q,, is the
+capacity of left entry lane.
+
+The Swiss model also depicted the entry capacity with two
+or three circulating lanes as follows:
+
+de = (1500 - : 4) -B, (24)
+
+where q, = y:q, + 4+ 4q,, in which q, is exiting flow;
+however, according to analysis above, it could be negligible
+in Changchun city, so the item could be simplified to y*q., y:
+[0.6, 0.8] for two circulating lanes (default = 0.66) and [0.5,
+0.6] for three circulating lanes (default = 0.55), : [0.9, 1.1]
+for single entry lane (default = 1.0).
+
+5.2. Comparisons of Capacity Models with Field Data. By
+video camera, two sites were observed in Changchun city; one
+has two circulating lanes, and another has three circulating
+lanes. Ignoring the different movement from one lane, the
+innermost entry lane was selected, from which the vehicles all
+enter into the innermost of the circulating carriageway. The
+follow-up times were extracted in one-minute intervals, when
+the persistent queue occurred. Besides, the critical gaps were
+estimated by MLE method. Applying the parameters into the
+above capacity models, the results are shown in Figure 11.
+
+As can be seen from Figure 11(a), the proposed model
+has good consistency with Wu's model, which both have
+
+----$$$$----$$$$----
+Mathematical Problems in Engineering
+
+TABLE 3: Comparisons of different models with field data.
+
+Type RE Proposed model Wu's model HCM 2010 model Swiss model
+Max 6.50% 10.22% 19.26% 59.53%
+Two circulating lanes Min 2.19% 0.03% 7.82% 36.00%
+Average 3.94% 4.51% 13.66% 47.28%
+Max 26.19% 21.16% — 110.45%
+Three circulating lanes Min 4.03% 0.78% — 75.48%
+Average 16.24% 10.86% — 94.79%
+
+Entry capacity (pcu/1-lane/h)
+
+200 400 600 800 1000 1200 1400 1600 1800 2000
+
+Circulating volume (pcu/2-lane/h)
+
+—©-— Swiss model
+O. Field data
+
+—a Proposed model
+—*-— Wu's model
+—=7 HCM 2010 model
+
+(a) Two circulating lanes
+
+Entry capacity (pcu/1-lane/h)
+
+500 1000 1500 2000 2500
+
+Circulating volume (pcu/3-lane/h)
+
+—©— Swiss model
+©. Field data
+
+-—=+ Proposed model
+—*- Wu's model
+
+(b) Three circulating lanes
+
+FiGurE ll: Comparison of the capacity models.
+
+goodness of fit with field data. However, the Swiss model
+overestimated the entry capacity for two circulating lanes; the
+model of HCM 2010 boasts the opposite. In Figure 11(b), there
+is the same tendency with Figure l(a). However, it could
+be seen that the proposed model vastly overestimated the
+capacity during low circulating volume.
+
+Relative error (RE) method has been widely used in
+transportation analysis [52-57]. In this study, to compare the
+
+capacity models with the field data, we also apply this method,
+mathematically represented by
+
+Coredict 7 Creld (25)
+
+RE = x 100%,
+
+Creld
+
+where Cy.14 is the entry capacity by field observation and
+Cyredict 18 the predicted entry capacity.
+
+The maximum value, the minimum value, and the average
+value of RE are computed on the conditions of two and three
+circulating lanes; the results were listed in Table 3. The results
+showed that the proposed model and Wu's model have better
+prediction effects than other models. And the prediction to
+the two circulating lanes is better than the three lanes.
+
+6. Conclusions
+
+Considering the limited priority at multilane roundabouts
+and based on Troutbeck’s research on this at the unsignalized
+intersection, the relation between limited priority factor and
+critical gap was discussed. Then, by improving the headway
+distribution of circulating streams after merging, the modi-
+fied entry capacity model aiming at n-lane was derived based
+on gap-acceptance theory at multilane roundabout. By simply
+analyzing and comparing different estimation methods, the
+MLE method was selected to estimate the critical gap of entry
+lane in this study. Finally, three classical capacity models
+and the proposed model were compared with the filed data,
+that is, two-lane roundabout and three-lane roundabout,
+respectively. By comparisons with the RE of different models,
+Wu's model and the proposed model show better prediction
+performance.
+
+In the case study, the vehicles from one entry lane
+all entered a definite circulating lane, and mixed purpose
+vehicles should be considered in the future research. Further-
+more, O-D flows may affect the entry capacity [58], and the
+roundabout capacity on the whole may be more appropriate
+for application in engineering.
+
+Conflict of Interests
+
+The authors declare that there is no conflict of interests
+regarding the publication of this paper.
+
+----$$$$----$$$$----
+10
+
+Acknowledgments
+
+This research was funded by the National Natural Science
+Foundation of China (nos. 51278520, 51108208, and
+51278220), the Postdoctoral Science Foundation Funded
+Project of China (no. 2013T60330), the Fundamental
+Research Fund for the Central Universities of China (no.
+201103146), and the Science and Technology Development
+Project of Jilin Province (no. 20130522121JH).
+
+References
+
+[1] A. Pochowski and E. J. Myers, “An analytical review of statewide
+roundabout programs and policies,’ Civil and Environmental
+Engineering, no. 2182, pp. 121-128, 2010.
+
+[2] N. Wu, “A universal procedure for capacity determination at
+
+unsignalized (priority-controlled) intersections,’ Transporta-
+tion Research B: Methodological, vol. 35, no. 6, pp. 593-623, 2001.
+
+[3] H.R. Al-Masaeid, “Capacity and performance of roundabouts,”
+Canadian Journal of Civil Engineering, vol. 26, no. 5, pp. 597-
+605, 1999.
+
+[4] O. Hagring, “Derivation of capacity equation for roundabout
+
+entry with mixed circulating and exiting flows,” Transportation
+Research Record, vol. 1776, no. 1, pp. 91-99, 2001.
+
+[5] S. Tanyel, T. Baran, and M. Ozuysal, “Determining the capacity
+of single-lane roundabouts in Izmir, Turkey,’ Journal of Trans-
+portation Engineering, vol. 131, no. 12, pp. 953-956, 2005.
+
+[6] S. Tanyel, T. Baran, and M. Ozuysal, “Applicability of various
+capacity models for single-lane roundabouts in Izmir, Turkey,”
+Journal of Transportation Engineering, vol. 133, no. 12, pp. 647-
+653, 2007.
+
+[7] J. Dahl, “Capacity estimation for roundabouts with high truck
+volume using gap acceptance theory,’ Masters Abstracts Interna-
+tional (Japan Association for Earthquake Engineering), vol. 50,
+no. 4, 2011.
+
+[8] X. Qu, L. Ren, S. Wang, and E. Oh, “Estimation of entry capacity
+for single-lane modern roundabouts: case study in Queensland,
+Australia,’ Journal of Transportation Engineering, vol. 140, no. 7,
+Article ID 05014002, 2014.
+
+[9] M. Blogg, E. Wemple, E. Myers et al., Appendixes to NCHRP
+Report 572: Roundabouts in the United States, Transportation
+Research Board, Washington, DC, USA, 2006.
+
+[10] H. M. N. Al-Madani, “Capacity of large dual and triple-
+lanes roundabouts during heavy demand conditions,” Arabian
+Journal for Science and Engineering, vol. 38, no. 3, pp. 491-505,
+2013.
+
+[11] R. M. Kimber, “Gap-acceptance and empiricism in capacity
+prediction,’ Transportation Science, vol. 23, no. 2, pp. 100-111,
+1989.
+
+[12] E. Chung, W. Young, and R. Akcelik, “Comparison of round-
+about capacity and delay estimates from analytical and simu-
+lation models,’ in Proceedings of the Australian Road Research
+Board, vol. 16, p. 369, Australian Road Research Board Itd, 1993.
+
+[13] L. G. H. Fortuijn, “Turbo roundabouts: estimation of capacity,”
+Transportation Research Record: Journal of the Transportation
+Research Board, vol. 2130, no. 1, pp. 83-92, 2009.
+
+[14] R. Guo and B. Lin, “Gap acceptance at priority-controlled
+intersections, Journal of Transportation Engineering, vol. 137,
+no. 4, pp. 269-276, 2011.
+
+[15] Z. K. Khatib, “Critical gap and follow-up time at multilane
+roundabout case study,’ in Proceedings of the 83th Annual
+
+Mathematical Problems in Engineering
+
+Meeting of the Transportation Research Board, Washington, DC,
+USA, 2004.
+
+[16] A. Flannery and T. Datta, “Operational performance measures
+of American roundabouts,” Transportation Research Record, vol.
+1572, pp. 68-75, 1997.
+
+[17] Y. Bie, Z. Liu, D. Ma, and D. Wang, “Calibration of platoon
+dispersion parameter considering the impact of the number of
+lanes,” Journal of Transportation Engineering, vol. 139, no. 2, pp.
+200-207, 2013.
+
+[18] Y. Bie, D. Wang, and X. Qu, “Modelling correlation degree
+between two adjacent signalised intersections for dynamic
+subarea partition,’ [ET Intelligent Transport Systems, vol. 7, no.
+1, pp. 28-35, 2013.
+
+[19] Y. Bie, D. Wang, and H. Qi, “Prediction model of bus arrival
+time at signalized intersection using GPS data,’ Journal of
+Transportation Engineering, vol. 138, no. 1, pp. 12-20, 2012.
+
+[20] A. M. Hainen, “Roundabout critical headway measurement
+based on high-resolution event-based data from wireless mag-
+netometers,’ in Proceedings of the Transportation Research Board
+92th Annual Meeting, Washington, DC, USA, 2013.
+
+[21] D. S. Abrams, C. D. Itzpatrick, Y. Tang, and M. A. Knodler, “A
+spatial and temporal analysis of driver gap acceptance behavior
+at modern roundabouts,’ in Proceedings of the Transportation
+Research Board 92nd Annual Meeting, Washington, DC, USA,
+2013.
+
+[22] C. Lee, “Prediction of capacity for roundabouts based on per-
+centages of trucks in entry and circulating flows,’ in Proceedings
+of the Transportation Research Board 92th Annual Meeting,
+Washington, DC, USA, 2013.
+
+[23] S. Mensah, S. Eshragh, and A. Faghri, “A critical gap analysis of
+modern roundabouts,’ in Proceedings of the 89th Annual Meet-
+ing of the Trans portation Research Board, 2010, Washington,
+DC, USA.
+
+[24] A. Polus, “The effect of waiting times on critical gaps and an
+improved entry-capacity model at roundabouts,” in Proceedings
+of the 81st Annual Meeting of the Transportation Research Board,
+Washington, DC, USA, 2002.
+
+[25] EF Xu and Z. Z. Tian, “Driver behavior and gap-acceptance
+characteristics at roundabouts in California,’ Transportation
+Research Record, vol. 2071, no. 1, pp. 117-124, 2008.
+
+[26] E Xu, Driver Behavior and Gap Acceptance Studies at Round-
+abouts, University of Nevada, Reno, Nev, USA, 2007.
+
+[27] R. Troutbeck, “Capacity of limited-priority merge,’ Transporta-
+tion Research Record, vol. 1678, no. 1, pp. 269-276, 1999.
+
+[28] R. J. Troutbeck and S. Kako, “Limited priority merge at
+unsignalized intersections,’ Transportation Research A: Policy
+and Practice, vol. 33, no. 3-4, pp. 291-304, 1999.
+
+[29] D. E Ma, X. L. Ma, S. Jin et al., “Estimation of major stream
+delays with a limited priority merge,’ Canadian Journal of Civil
+Engineering, vol. 40, no. 12, pp. 1227-1233, 2013.
+
+[30] W. Wang and J. Q. Xu, “The study of new method of analyzing
+the roundabout capacity-the application of the queuing theory
+inn the roundabout analysis,’ Journal of Nanjing Institute of
+Technology, vol. 17, no. 1, pp. 119-128, 1987 (Chinese).
+
+[31] Q. J. Xiang, W. Wang, B. Chen et al., “A study of the model
+construction for roundabout’s capacity,’ China Journal of Hig
+hway and Transport, vol. 12, no. 4, pp. 69-72, 1999 (Chinese).
+
+[32] R. J. Guo, Study on capacity of roundabouts based on gap
+acceptance theory [Ph.D thesis], Beijing Jiaotong University,
+Beijing, China, 2013, (Chinese).
+
+----$$$$----$$$$----
+Mathematical Problems in Engineering
+
+[33] J. C. Tanner, “A theoretical analysis of delays at an uncontrolled
+intersection, Biometrika, vol. 49, no. 1-2, pp. 163-170, 1962.
+
+[34] R. Akcelik, “Roundabouts: capacity and performance analysis,”
+ARRB Research Report ARR 321, ARRB Transport Research,
+Vermont, Australia, 1998.
+
+[35] D. P. Sullivan and R. J. Troutbeck, “An exponential relationship
+for the proportion of free vehicles on arterial roads,’ Transporta-
+tion Research Part A: Policy and Practice, vol. 31, no. 1, pp. 21-33,
+
+1997,
+
+[36] W. Brilon, “Recent developments in calculation methods for
+unsignalized intersections in west germany,’ in Intersections
+without Traffic Signals, pp. 111-153, Springer, Berlin, Germany,
+1988.
+
+[37] R. Akcelik and E. Chung, “Calibration of the bunched exponen-
+tial headways,’ Road and Transport Research, vol. 3, no. 1, pp.
+42-59, 1994.
+
+[38] A. W. Plank, “Capacity of a priority intersection-two approach-
+es, Traffic Engineering and Control, vol. 23, no. 2, pp. 88-92,
+1982.
+
+[39] O. Hagring, “A further generalization of Tanner's formula,’
+Transportation Research B: Methodological, vol. 32, no. 6, pp.
+423-429, 1998.
+
+[40] R. T. Luttinen, “Properties of Cowan's M3 headway distribu-
+tion,’ Transportation Research Record, vol. 1678, no. 1, pp. 189-
+196, 1999.
+
+[41] O. Hagring, N. M. Rouphail, and H. A. Sorensen, “Comparison
+of capacity models for two-lane roundabouts,” Transportation
+Research Record: Journal of the Transportation Research Board,
+vol. 1852, no. 1, pp. 14-123, 2003.
+
+[42] O. Giuffre, A. Grana, and S. Marino, “Turbo-roundabouts vs
+roundabouts performance level,’ Procedia-Social and Behav-
+ioral Sciences, vol. 53, pp. 590-600, 2012.
+
+[43] S. Tanyel and N. Yayla, “A discussion on the parameters of
+Cowan M3 distribution for Turkey,’ Transportation Research A:
+Policy and Practice, vol. 37, no. 2, pp. 129-143, 2003.
+
+[44] L. Vasconcelos, A. B. Silva, A. Seco, and J. Silva, “Estimating
+the parameters of Cowan's M3 headway distribution for round-
+about capacity analyses,’ The Baltic Journal of Road and Bridge
+Engineering, vol. 7, no. 4, pp. 261-268, 2012.
+
+[45] E A. Haight, Mathematical Theories of Traffic Flow, Academic
+Press, New York, NY, USA, 1963.
+
+[46] Z. Qu, Y. Duan, H. Hu, and X. Song, “Capacity and delay
+estimation for roundabouts using conflict theory,’ The Scientific
+World Journal, vol. 2014, Article ID 710938, 12 pages, 2014.
+
+[47] Z. Tian, M. Vandehey, B. W. Robinson et al., “Implementing the
+maximum likelihood methodology to measure a driver's critical
+gap, Transportation Research A: Policy and Practice, vol. 33, no.
+3-4, pp. 187-197, 1999.
+
+[48] O. Hagring, “Estimation of critical gaps in two major streams,”
+Transportation Research Part B: Methodological, vol. 34, no. 4,
+pp. 293-313, 2000.
+
+[49] W. Brilon, R. Koenig, and R. J. Troutbeck, “Useful estimation
+procedures for critical gaps,’ Transportation Research Part A:
+Policy and Practice, vol. 33, no. 3, pp. 161-186, 1999.
+
+[50] R. J. Troutbeck, Estimating the Critical Acceptance Gap from
+Traffic Movements, Physical Infrastructure Centre, Queensland
+University of Technology, 1992.
+
+[51] Transportation Research Board, Highway Capacity Manual,
+National Research Council, Washington, DC, USA, 2010.
+
+[52] X. Quand Q. Meng, “A note on hotspot identification for urban
+expressways, Safety Science, vol. 66, pp. 87-91, 2014.
+
+1]
+
+[53] X. Qu, E. Oh, J. Weng, and S. Jin, “Bus travel time reliability
+analysis: a case study,’ Proceedings of the ICE-Transport, vol. 167,
+no. 3, pp. 178-184, 2014.
+
+[54] X. Qu, Y. Yang, Z. Liu, S. Jin, and J. Weng, “Potential crash risks
+of expressway on-ramps and off-ramps: a case study in Beijing,
+China,’ Safety Science, vol. 70, pp. 58-62, 2014.
+
+[55] S. Jin, X. Qu, and D. Wang, “Assessment of expressway traffic
+safety using gaussian mixture model based on time to collision,’
+International Journal of Computational Intelligence Systems, vol.
+4, no. 6, pp. 1122-1130, 2011.
+
+[56] S. Wang, Q. Meng, and Z. Sun, “Container routing in liner ship-
+ping,’ Transportation Research E: Logistics and Transportation
+Review, vol. 49, no. 1, pp. 1-7, 2013.
+
+[57] J. Weng, Q. Meng, and X. Qu, “Vessel collision frequency
+estimation in the Singapore Strait,’ Journal of Navigation, vol.
+65, no. 2, pp. 207-221, 2012.
+
+[58] O. Hagring, “Effects of OD flows on roundabout entry capacity,’
+
+in Proceedings of the 4th International Symposium on Highway
+Capacity, 2000.
+
+----$$$$----$$$$----
+Copyright of Mathematical Problems in Engineering is the property of Hindawi Publishing
+Corporation and its content may not be copied or emailed to multiple sites or posted to a
+listserv without the copyright holder's express written permission. However, users may print,
+download, or email articles for individual use.
+
+----$$$$----$$$$----

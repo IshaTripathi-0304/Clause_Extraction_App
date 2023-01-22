@@ -1,0 +1,467 @@
+Vy
+VERSITA
+
+Inter J Nav Archit Oc Engng (2012) 4:477~487
+http://dx.doi.org/10.2478/IJNAOE-2013-0112
+
+Endplate effect on aerodynamic characteristics of three-
+dimensional wings in close free surface proximity
+
+Jae Hwan Jung', Mi Jeong Kim', Hyun Sik Yoon’, Pham Anh Hung!
+Ho Hwan Chun! and Dong Woo Park’
+
+Department of Naval Architecture and Ocean Engineering, Pusan National University, Busan, Korea
+?Global Core Research Center for Ships and Offshore Plants, Pusan National University, Busan, Korea
+’Maritime Research Institute, Hyundai Heavy Industries Co. Ltd, Ulsan, Korea
+
+ABSTRACT: We investigated the aerodynamic characteristics of a three-dimensional (3D) wing with an endplate in
+the vicinity of the free surface by solving incompressible Navier-Stokes equations with the turbulence closure model.
+The endplate causes a blockage effect on the flow, and an additional viscous effect especially near the endplate. These
+combined effects of the endplate significantly reduce the magnitudes of the velocities under the lower surface of the
+wing, thereby enhancing aerodynamic performance in terms of the force coefficients. The maximum lift-to-drag ratio of
+a wing with an endplate is increased 46% compared to that of wing without an endplate at the lowest clearance. The tip
+vortex of a wing-with-endplate (WWE) moved laterally to a greater extent than that of a wing-without-endplate (WOE).
+This causes a decrease in the induced drag, resulting in a reduction in the total drag.
+
+KEY WORDS: Wing in ground; Endplate; Tip vortex; Lift; Drag.
+
+INTRODUCTION
+
+The aerodynamic characteristics of a wing-in-ground (WIG) effect craft are of special interest because of the wide appli-
+cations of the craft during the landing and take-off of airplanes, and for high speed water vehicles. When a wing with small
+angles of attack operates near the ground, favorable aerodynamic characteristics can be achieved as revealed by early resear-
+chers Raymond (1921) and Reid (1927). The lift increases due to a high-pressure air cushion under the wing, and the drag
+decreases due to the reduction of the downwash velocity (Recant, 1939; Serebrisky and Biachuev, 1946). Consequently, the lift-
+to-drag ratio increases such that the flight range of a WIG vehicle is wider than that of a conventional airplane for a given ener-
+gy consumption.
+
+Owing to these advantages of WIG vehicles, for several decades, various studies have been performed for 2D and 3D
+steady/unsteady numerical analysis of WIG by Nuhait and Mook (1989), Mizutani and Suzuki (1993), Hsiun and Chen (1995;
+1996), Han et al. (2005), Moon et al. (2005) experimental studies by Fink and Lastinger (1996), Kim et al. (1997), Zerihan and
+Zhang (2000), Ahmed and Goonaratne (2002), Zhang et al. (2002); the development of a WIG craft by Shin et al. (1997), Chun
+et al. (1997) the stability analysis by Chun and Chang (2002).
+
+Recently, Ahmed and Sharma (2005) summarized well the experimental investigations into this phenomenon. These studies
+analyzed the dependence of forces acting on different wing configurations on ground clearance. They also examined the WIG
+effect on aerodynamic characteristics by experimentally examining the flow around a symmetrical airfoil, NACA 0015, at
+
+Corresponding author: Hyun-Sik Yoon
+e-mail: /esmodel@pusan.ac.kr
+
+----$$$$----$$$$----
+478 Inter J Nav Archit Oc Engng (2012) 4:477~487
+
+angles of attack from 0° to 10° for clearance varying from the minimum possible value to one chord length. The studies showed
+that high values of pressure coefficients (Cp ) occur on the lower surface with decreasing ground clearance, leading to high lift
+when the wing is close to the ground. The results suggest that the pressure distribution on the upper surface does not change
+significantly regardless of the variation of the ground clearance at higher incident angles.
+
+The other investigative tools used to examine WIG aerodynamic characteristics are the theoretical and numerical methods.
+However, most theoretical and numerical studies have focused on inviscid flow by using the panel method or lifting surface
+model. In contrast to inviscid flow, Hsiun and Chen (1995; 1996) numerically considered steady 2D WIG effects in laminar
+viscous flow. They concluded that an airfoil with a larger camber and smaller thickness gave a higher lift-to-drag ratio.
+
+Moon et al. (2005) numerically investigated 3D cambered wing of NACA 4406 with a 2° angle of attack in ground effect
+for an aero-levitation electric vehicle at a Reynolds number of 2 x 10° based on the chord length. They solved 3D income-
+pressible Navier-Stokes equations using the turbulence closure model, and focused on the flow structure according to the confi-
+guration of the main and vertical wings by which the high lift-to-drag ratio changes.
+
+Kim et al. (2006) numerically investigated 2D turbulent flow simulations on the low Mach number - high Reynolds number
+flow about the NACA 4412 airfoil are carried out as the airfoil approaches a ground. It has turned out that angle of attack
+between 2° and 8° is recommended for the airfoil to utilize the benefit of ground effect. For the large angle of attack, the incre-
+ment of lift due to the ground effect is faded away and negative aerodynamic effect such as destabilizing aspect in static longi-
+tudinal stability occurs and the separation point moves to forward as the airfoil approaches a ground.
+
+Recently, authors and coworkers (Jung et al., 2012) numerically investigated the aerodynamic characteristics of 2D wings in
+the vicinity of the ground by solving 2D steady incompressible Navier-Stokes equations with the turbulence closure model. In
+addition, they studied the effects of Reynolds number, and showed that the lift-to-drag ratio increases linearly with an increasing
+Reynolds number.
+
+Although numerous researchers using computational methods have examined the WIG problem, very few computational
+studies have considered 3D viscous flow and the effect of an endplate on the wingtip over the free surface. Thus, we numeri-
+cally investigated the aerodynamic characteristics of a 3D wing in the vicinity of the free surface, and the effect of the endplate
+on the wingtip, by solving incompressible Navier-Stokes equations with the turbulence closure model.
+
+COMPUTATIONAL DETAILS
+
+The commercial CFD package, Fluent (2009), is employed for all numerical predictions. The present 3D WIG problem is
+governed by the Navier-Stokes equations and the continuity equation. Once the Reynolds averaging approach for turbulence
+modeling is applied, the Navier-Stokes equations can be written in Cartesian tensor form as
+
+Ou _ (1)
+Ox;
+O O Op O Ou; Ou; 0 —
+—( pu; ) + —| pu,u , )=-—— + —] uw) —+ + —]| + —|-puju', ) + pg; (2)
+al? i) Ox; (2 i i) Ox; Ox ce Ox; ax, | pu i) PSi
+
+where x; are Cartesian coordinates, u; are the corresponding velocity components, pis the pressure, p is the density, ww
+is the viscosity, and F; is the external body force (e.g. gravity). Also, — puju, in Eq. (2) is the Reynolds stress term, which
+has been closed by using the SST k—@ model, because of its improved predictive capabilities compared to the standard
+k—@ model, and because of its ability to resolve more accurately and more reliably for a wider class of flow such as the
+adverse pressure gradient flows and flow around the airfoils. This model ensures that both the near-wall and far-field zones are
+appropriately solved because an additional cross-diffusion term in the q@ equation was included.
+
+In this study, the volume of fluid (VOF) method is employed to capture the free surface. Most commercial CFD codes use a
+variation of the VOF approach. In each cell, the volume fraction (Q; ) of the o th fluid is introduced because this method is
+
+----$$$$----$$$$----
+Inter J Nav Archit Oc Engng (2012) 4:477~487 479
+
+designed for two or more immiscible fluids. In each cell, the sum of volume fractions of all phases is unity ( >) Qs =1). A cell
+o=1
+
+with a Qs value (scalar quantity) of 0 is void and a value of 1 represents a full cell. The cell contains a free surface ifthe Os
+
+value is between 0 and 1. At each time step, a transport equation is solved to find the distribution of the fluid. At each time step,
+
+the distribution of the fluid is found by solving the following transport equation:
+
+O O
+Ot Ox:
+
+1
+
+=( (3)
+
+A single momentum equation is solved throughout the domain, and the resulting velocity field is shared among the phases
+(Hirt and Nichols, 1981). Convection and diffusion terms are discretized using the second order upwind scheme and the second
+order accurate central differencing scheme, respectively. For unsteady flow calculations, time derivative terms are discretized
+using the first order accurate backward implicit scheme. The velocity-pressure coupling and overall solution procedure are
+based on a SIMPLE-type segregated algorithm adapted to an unstructured grid. Further details of the implementation can be
+found in the Fluent (2009) manuals.
+
+Fig. 1 shows a physical model of the 3-D WIG problem, the computational domain, and the coordinate system. A no-slip
+boundary condition was imposed on the surface of the wing, and a symmetry condition was applied to the far-field boundary.
+Uniform flow with free-stream velocity (U,,) and low turbulence intensity, and a convective condition, were applied to the
+inflow and outflow boundaries, respectively.
+
+The NACA4406 airfoil under the condition of @ = 4° was selected for the 3-D WIG analysis. The chord length of the
+wing is represented by C. An aspect ratio of AR = 2 anda Reynolds number (Re =U,,C/v) of 2 x 10° were used.
+
+Fig. 1 Physical model of 3-D WIG problem, the computational domain, and the coordinate system.
+
+A free surface was imposed to realize real operational conditions. The normalized clearance between the trailing edge and
+free surface by the chord length is defined as h/C’. The effect of an endplate on 3-D WIG behavior was investigated for four
+different clearances h/C by comparing the bare wing: h/C=0.05, h/C=0.1, h/C=0.2 and h/C=0.3 for
+a=4° and Re=2~x 10°. The height of the endplate was fixed at 4/C=0.025, which was measured from the trailing
+edge of the wing. However, the thickness of the endplate was neglected to simplify the physical model.
+
+The size of the computational domain was —-7C <x<1l0C and —2C <z<SC for the streamwise and transverse
+directions, respectively. In the vertical direction, the water and air domains are -HC < y<-h and -h<y<7C. The
+dependency of the domain size was tested for the WOE case at h/C=0.1 for various values of H and S. Table 1 shows
+C,, Cp,and f (C;,/Cp ) for different values of H and S. Consequently, these values do not strongly depend on H
+and S, which suggests that H=5 and S=6 are reasonable for the computational domain size of the 3-D WIG problem in
+
+terms of computational efficiency.
+
+----$$$$----$$$$----
+480 Inter J Nav Archit Oc Engng (2012) 4:477~487
+
+Table 1 Dependency of body forces on — domain size.
+
+5) ouster 0387349 75.5307
+5 0.015404 0.395742 25.69012
+0.015539 0.398841 25.66746
+
+0.015541 0.398969 25.67189
+— 6 0.015404 0.395742 25.69012
+0.015315 0.391894 25.58887
+
+Fig. 2 shows a typical grid distribution near the 3-D wing and a calm free surface. To consider the variation of the gap ratio,
+
+the number of grid points used in the y direction was tuned to maintain dense resolution near the wing, the free surface, and in
+the gap spacing. The grids were distributed non-uniformly near these regions, especially in the gap and the wake regions, to
+capture accurately the separating shear layers on both the wing and the ground. The total number of grids was 2.1 x 10°. The
+minimum vertical grid spacing on the wing was about 10 4*C , corresponding to y* ~ 2 ~ 4 asa wall unit, which is similar to
+the spacing used by Moon et al. (2005) at the same Reynolds number (2 x 10° ) used in this study.
+
+Validation of the proposed computational method was performed for two 2-D wings, NACA0006 and NACA4406, at
+a=2°and h/C=0.1. Fig. 3 shows the distribution of the mean pressure coefficient (Cp ) on the wing surfaces compared to
+the results of Moon et al. (2005). The predicted Cp distributions are in very good agreement with those of Moon et al. (2005).
+
+Fig. 2 Typical grid distribution near the 3-D wing, and the calm free surface for h/C=0.1.
+
+NACA 0006 Present
+
+NACA 0006 Moon et al. (2005)
+
+NACA 4406 Present
+
+NACA 4406 Moon et al. (2005)
+pper surface
+
+Lower surface
+
+0) 0.25 0.5 0.75 l
+WC
+
+Fig. 3 Distributions of mean pressure coefficient on the surface of NACA0006 and
+NACA4406 for a@=2° and h/C=0.1.
+
+----$$$$----$$$$----
+Inter J Nav Archit Oc Engng (2012) 4:477~487 48]
+
+For the other verification, a 3-D problem was considered by following the computational conditions used by Moon et al.
+(2005) for 3-D flow around an isolated NACA0012 of AR=6 at a@=5° and Re=5.3x 10°. The total velocity profile
+across the vortex core at x/C=5 of our computation is compared to that of Moon et al. (2005) in Fig. 4. This comparison
+shows good agreement, and ensures that the grid system is adequate to simulate the wake region.
+
+Present
+© Moon et ai. (2005)
+
+i 1.5
+u/ UL,
+
+Fig. 4 Total velocity profile across the vortex core at x/C=5 in wake.
+
+RESULTS
+
+Fig. 5 shows the lift (C; ) and drag (Cp ) coefficients and the lift-to-drag ratio f asa function of h/C fora WOE and
+WWE. Fig. 5(a) shows that the maximum value of C; occurred at the lowest value of h/C (h/C=0.05) among the
+
+Fig. 5 Forces along the clearance WOE and WWE. (a) Lift coefficient Cy, . (b) Drag coefficient Cp . (c) Lift-to-drag ratio f
+
+----$$$$----$$$$----
+482 Inter J Nav Archit Oc Engng (2012) 4:477~487
+
+clearances considered in this study for either the WOE or the WWE case. At this clearance, the C, value of WWE is larger
+than that of WOE. As //C increased, the C, value of both wings decreased, although the rate of decrease was reduced.
+When //C is 0.2, WOE and WWE have about the same value of C, . The drag coefficient of WWE is smaller than that of
+WOE in the //C range considered in this study, as shown in Fig. 5(b). In the case of WWE, the increasing rate of Cp is
+distinct for lower //C ratios. In general, for both wings, as //C increased, the variation in Cp was minimal.
+
+To investigate the aerodynamic performance of WOE and WWE, the f asa function of clearance is shown in Fig. 5(c).
+The behavior of / versus clearance can be estimated from Cp and Cy; as shown in Figs. 5(a) and (b), respectively. The
+highest f value appears at the lowest 1/C of 0.05, independent of the endplate. The maximum f value of WWE
+increased by 46% compared to that of WOE. The difference in f between WOE and WWE decreased with increasing h/C,
+resulting in both wings producing approximately the same value of f at the largest value of h/C=0.03.
+
+Fig. 6 shows the contours of Cp on the lower and upper surfaces for WOE and WWE at two different clearances of
+h/C=0.05 and h/C=0.2. At h/C=0.05, where the difference in aerodynamic performance between WOE and WWE
+is the largest as shown in Figs. 5(a-c), the case of WWE presents larger absolute values of negative and positive Cp on the
+suction side (upper) surface and the pressure side (lower) surface than in the case of WOE. This can be clarified by comparing
+
+(d) WWE at h/C=0.2.
+
+Fig. 6 Mean pressure coefficient distribution on upper (left column) and lower (right column) surfaces for
+(a) WOE, (b) WWE at A/C =0.05, (c) WOE, and (d) WWE at h/C=0.2.
+
+----$$$$----$$$$----
+Inter J Nav Archit Oc Engng (2012) 4:477~487 483
+
+Fig. 6(a) for WOE with Fig. 6(b) for WWE. Especially for the lower surface, the endplate enhanced the air cushion by blockage
+of the flow between the endplates. As a result, the Cp increases 14% and 124% near the leading edge and the trailing edge,
+respectively, compared to the WOE case. Also, the endplate contributes to extending the high Cp toward the wingtip.
+
+As h/C increased to 0.2, the pressure distribution on both surfaces of WOE was very similar to that of WWE as shown in
+Figs. 6(c) and (d), respectively, since the endplate effect weakened with increasing //C . This validates the finding that the
+difference in the force coefficients between WOE and WWE is negligible at large values of h/C , as shown in Fig. 5.
+
+Fig. 7 shows the variation of Cp on the airfoil surface at the location of 75% wing span for WOE and WWE at three
+different clearances: h/C=0.05, h/C=0.1 and h/C=0.2. Fig. 7 shows that the effect of the endplate is significant at
+low clearance, which is validated by the pressure contour distribution shown in Figs. 6(a) and (b) for WOE and WWE,
+respectively. In particular, Cp over the pressure side (lower surface) of 4/C=0.05 is much larger than the values of Cp
+of other Cases, resulting in the largest C; .
+
+In order to observe the effect of the endplate on the magnitude of the velocity, which 1s directly related to the pressure
+variation, the u and w velocity contours at 75% of the wing span are shown in Fig. 8. These velocity contours correspond to the
+profiles of the Cp on the wing’s surface as shown in Fig. 7. Since the dependence of the normal velocity v on the endplate
+compared to u and w is relatively weak, the v velocity is not considered here for brevity.
+
+; al =~ — ale f= = Gp = Ge = Gp = Ge = O- 25.
+A Oe ee arte, ; —"s
+
+- WOE -h/C=0.05 ——t— WWE - h/C=0.05
+- WOE -h/C=0.1  —*— WWE - h/C=0.1
+- WOE -h/C=0.2 ——@— WHE - h/C=0.2
+
+0 0.25 0.5 0.75 I
+
+Fig. 7 Mean pressure coefficient distribution at 75% of wingspan.
+
+We suggest that the endplate causes the blockage effect on the flow and the additional viscous effect, especially near the
+endplate. This combined effect of the endplate significantly reduces the magnitude of the u and w velocity components under
+the lower surface of the wing, thereby enhancing aerodynamic performance in terms of the force coefficients as confirmed by
+Figs. 5~7. The largest combined effect of the endplate occurred at the lowest clearance value of h/C =0.05, which can be
+illustrated by comparing each velocity of WOE to that of WWE in Figs. 8(a) and (b).
+
+As h/C increases, the magnitude of both velocity components increases due to the weakness of the wing-in-ground effect.
+In addition, the effect of the endplate decreases with increasing h/C. Thus, at 4/C=0.2, WOE and WWE have about the
+same u and w_ velocity magnitude values, as shown in Figs. 8(c) and (d).
+
+The formation of the tip vortex for WOE and WWE is plotted in Fig. 9 by using the streamlines in the y—z plane at
+h/C=0.05. At x =—0.75 near the leading edge, WOE formed small two vortices on the side and upper surfaces by flow
+separated from the edges of the wing tip, as shown in Fig. 9(a). In contrast to WOE, WWE formed a relatively larger vortex
+near the tip of the endplate by flow separation. The primary vortex of the wing tip for WOE evolved along the downstream
+direction up to the trailing edge, as attached to the wing tip, as shown in Figs. 9(a)~(c). However, in the case of WWE, the
+primary vortex originated from the endplate tip and moved more laterally in comparison to that of WOE. WWE formed the
+secondary vortex earlier over the free surface because the large primary vortex initiated from the endplate tip formed an
+accelerated gap flow that separated from the free surface. Farther downstream, the vortices of both wings increased in size and
+slightly deformed the free surface, as shown in Fig. 9(d).
+
+----$$$$----$$$$----
+484
+
+0.5
+
+=, 0.25
+
+0 —
+-1.25 -1 -0.75 -0.5 -0.25 0
+
+0.5
+
+>, 0.25
+
+0
+-1,25 -1 -0.75 -0.5 -0.25 0
+x
+
+Inter J Nav Archit Oc Engng (2012) 4:477~487
+
+0.5
+
+=, 0.25
+
+0
+-1.25 - 0.75  -05 — -0.25 0 0.25
+x
+(b)
+> 0.25 5
+0 =
+-1.25 -1 0.75 O05  -0.25 0 0.25
++
+(Cc)
+0.5
+>, 0.25
+0
+-1.25 -1 0.75 O05 — -0.25 0 0.25
+¢
+(d)
+
+Fig. 8 Contours of (a) u and(b) w velocities at h/C=0.05,and(c) u and(d) w_ velocities
+at h/C=0.2 for WOE (left column) and WWE (right column) at 75% of wingspan.
+
+(b)
+
+----$$$$----$$$$----
+Inter J Nav Archit Oc Engng (2012) 4:477~487 485
+
+(d)
+Fig. 9 Streamlines in y—z plane at h/C=0.05 for WOE (left column) and WWE (right column)
+at different streamwise locations of (a) x = —0.75,(b) x =-0.25,(c) x=0,and(d) x=1.
+
+Fig. 10 depicts the trajectories of vortices by extracting the center of each vortex shown in Fig. 9. The endplate of WWE
+generates the primary vortex (V1) and secondary vortex (V2) from almost the leading edge. However, the V2 of WOE forms
+from the trailing edge, which dissipates earlier than that of WWE. The V1 of WWE moves more laterally between the leading
+and trailing edges. This large lateral movement of the V1 of WWE ensures sufficient spacing near the trailing edge to develop
+the tertiary vortex (V3), which forms from the endplate edge.
+
+Fig. 10 Trajectories of tip vortices in x-—z plane for (a) WOE (left column) and
+(b) WWE (right column) at 4/C=0.05.
+
+----$$$$----$$$$----
+486 Inter J Nav Archit Oc Engng (2012) 4:477~487
+
+CONCLUSIONS
+
+We numerically investigated the effect of an endplate on the 3-D WIG problem using the assumptions of steady income-
+pressible viscous flow. The NACA4406 airfoil with AR=2 at a@=4° was considered for Re=2 x 10°. A free surface
+was imposed to realize the real operational conditions. Four different clearances (/1/C ) for a fixed height of the endplate were
+considered in order to analyze the gap effect.
+
+The endplate causes a blockage effect on the flow and an additional viscous effect, especially near the endplate. This
+combined effect of the endplate significantly reduces the magnitudes of the velocities under the lower surface of the wing. The
+largest combined effect of the endplate occurred at the lowest clearance. The endplate enhances the air cushion under the lower
+surface due to blockage of the flow between the endplates. As a result, the Cp increased by 14% and 124% near the leading
+edge and the trailing edge, respectively, compared to the case of WOE. Thus, f revealed that the aerodynamic performance
+of WOE and WWE was maximum at the lowest value, 4/C=0.05, independent of the endplate. The maximum f of
+WWE increased 46% from that of WOE. The difference in the value of f between WOE and WWE became small with
+increasing h/C.
+
+The endplate considerably modifies the formation of tip vortices. The tip vortex of WWE moved more laterally that of
+WOE that caused a decrease in the induced drag, thus leading to a reduction in the total drag.
+
+ACKNOWLEDGMENTS
+
+This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korea Government
+(MEST) through GCRC-SOP (No. 2011-0030662) and the National Research Foundation of Korea (NRF) grant funded by the
+Korea Government (MEST) (No. 2010-0025618).
+
+REFERENCES
+
+Ahmed, N.A. and Goonaratne, J., 2002. Lift augmentation of a low-aspect-ratio thick wing in ground effect. Journal of
+Aircraft, 39(2), pp.381-384.
+
+Ahmed, M.R. and Sharma, S.D., 2005. An investigation on the aerodynamics of a symmetrical airfoil in ground effect. Ex-
+perimental Thermal and Fluid Science, 29(6), pp.633-647.
+
+Chun, H.H., Chang, J.H., Paik, K.J. and Chang, S.I., 1997. Preliminary design of a 20 passenger PARWIG craft and
+construction of a 1/10 scale radio controlled model. Proceeding of International Conference on FAST Sea Transpor-
+tation. Sydney, Australia, 513-520.
+
+Chun, H.H. and Chang, C.H., 2002. Longitudinal stability and dynamic motions of a small passenger WIG craft. Ocean
+Engineering, 29(10), pp.1145-1162.
+
+Fink, P.M. and Lastinger, L.J., 1996. Aerodynamics characteristics of Low-Aspect-Ratio wings in close proximity to the
+ground. Report, TN D-926. USA, NASA.
+
+Fluent, 2009. Fluent user’s guide version 12.0.3. Lebanon , ANSYS Inc.
+
+Hirt, C.W. and Nichols, B.D., 1981. Volume of fluid (VOF) method for the dynamics of free boundaries. Journal of Com-
+putational Physics, 39, pp.201-225.
+
+Hsiun, C.M. and Chen, C.K., 1995. Numerical investigation of the thickness and camber effects on aerodynamic charac-
+teristics for two-dimensional airfoils with ground effect in viscous flow. Transactions of the Japan Society for Aeron-
+autical and Space Sciences, 38(119), pp.77-90.
+
+Hsiun, C.M. and Chen, C.K., 1996. Aerodynamic characteristics of a two-dimensional airfoil with ground effect. Journal of
+Aircraft, 33(2), pp.386- 392.
+
+Han, C., Cho, L. and Cho, J., 2005. Wake shapes behind wings in close formation flight near the ground. Journal of Me-
+chanical Science and Technology, 19(2), pp.674-68 1.
+
+Jung, J.H., Yoon, H.S., Chun, H.H., Hung, P.A. and Elsamni, O.A., 2012. Mean flow characteristics of two-dimensional
+wings in ground effect. /nternational Journal of Architecture and Ocean Engineering, 4(2). pp.151-161.
+
+Kim, S.K., Suh, S.B., Lee, D.H. and Kim, K.E., 1997. Wind tunnel test study on the wings of WIG ship. Journal of the
+Society of Naval Architects of Korea, 34(1), pp.60-67.
+
+----$$$$----$$$$----
+Inter J Nav Archit Oc Engng (2012) 4:477~487 487
+
+Kim, Y., Lee, J.E., Shin, M.S., Kang, K.J. and Kwon, J.H., 2006. Turbulent flow simulation on the ground effect about a 2-
+dimensional airfoil. Journal of computational fluids engineering, 11(4), pp.81-89.
+
+Mizutani, N. and Suzuki, K., 1993. Numerical analysis of 3-D WIG advancing over the still water surface. Journal of the
+Society of Naval Architects of Japan, 174, pp.35-46.
+
+Moon, Y.J., Oh, H.J. and Seo, J.H., 2005. Aerodynamic investigation of three-dimensional wings in ground effect for aero-
+levitation electric vehicle. Aerospace Science and Technology, 9(6), pp.485-494.
+
+Nuhait, A.O. and Mook, D.T., 1989. Numerical simulation of wings in steady and unsteady ground effects. Journal of Air-
+craft, 26(12), pp.1081-1089.
+
+Raymond, A.E., 1921. Ground influence on aerofoil. Report, NACA Technical Note 67. USA, Massachusetts Institute of
+Technology.
+
+Reid, E.G., 1927. A full-scale investigation of ground effect. Report, NACA Technical Report 265. USA, Langley Me-
+morial Aeronautical Laboratory.
+
+Recant, I.R., 1939. Wind-tunnel investigation of ground effect on wings with flap. Report, NACA Technical Note 705.
+USA, Langley Memorial Aeronautical Laboratory.
+
+Serebrisky, Y.M., Biachuev, S. A., 1946. Wind-tunnel investigation of the horizontal motion of a wing near the ground.
+Report, NACA Technical Note 1095. USA, Central Aero-Hydrodynamical Institute.
+
+Shin, M.S., Yang, S.I., Joo, Y.R., Kim, S.K., Bae, Y.S., Kim, J.H. and Chun, H.H., 1997. Wind tunnel test results for eight
+and twenty passenger class WIG effect ships. Proceeding of International Conference on FAST Sea Transportation.
+Sydney, Australia, 565-570.
+
+Zerihan, J. and Zhang, X., 2000. Aerodynamics of a single element wing in ground effect. Journal of Aircraft, 37(6), pp.
+1058-1064.
+
+Zhang, X., Zerihan, J., Ruhrmann, A. and Deviese, M., 2002. Tip vortices generated by a wing in ground effect. Procee-
+dings of the 11th International Symposium on Applications of Laser Techniques to Fluid Mechanics. Lisbon, Portugal.
+
+----$$$$----$$$$----

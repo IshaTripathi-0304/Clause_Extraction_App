@@ -1,0 +1,781 @@
+Chinese
+Journal of
+Aeronautics
+
+www.elsevier.com/locate/cja
+
+Available online at www.sciencedirect.com
+
+ScienceDirect
+
+Chinese Journal of Aeronautics 23(2010) 409-414
+
+et sat eae hy
+Tees fa
+
+Design and Optimization of 3D Radial Slot Grain Configuration
+
+Ali Kamran, Liang Guozhu*
+
+School of Astronautics, Beijing University of Aeronautics and Astronautics, Beijing 100191, China
+
+Received 20 August 2009; accepted 12 March 2010
+
+Abstract
+
+Upper stage solid rocket motors (SRMS) for launch vehicles require a highly efficient propulsion system. Grain design proves
+to be vital in terms of minimizing inert mass by adopting a high volumetric efficiency with minimum possible sliver. In this arti-
+cle, a methodology has been presented for designing three-dimensional (3D) grain configuration of radial slot for upper stage
+solid rocket motors. The design process involves parametric modeling of the geometry in computer aided design (CAD) software
+through dynamic variables that define the complex configuration. Grain burn back is achieved by making new surfaces at each
+web increment and calculating geometrical properties at each step. Geometrical calculations are based on volume and
+change-in-volume calculations. Equilibrium pressure method is used to calculate the internal ballistics. Genetic algorithm (GA) has
+been used as the optimizer because of its robustness and efficient capacity to explore the design space for global optimum solu-
+tion and eliminate the requirement of an initial guess. Average thrust maximization under design constraints is the objective function.
+
+Keywords: solid rocket motors; 3D grains; radial slot configuration; internal ballistics; computer aided design; heuristic optimiza-
+
+tion; genetic algorithm
+
+1. Introduction
+
+Grain design is to evolve burning surface area and
+develop the relationship with web burnt. Grain design
+proves to be vital in terms of minimizing inert mass by
+adopting a high volumetric efficiency with minimum
+possible sliver. Three-dimensional (3D) grains are
+complex in shape; hence their design methodology is
+also complicated. Different methods have been used to
+calculate the geometrical properties of grain burn back
+analysis ''*!, Analytical methods, though accurate but
+limited to specific geometries, have been used scarcely
+for 3D grain configurations.
+
+The most prominent analytical method is the gen-
+eralized coordinate grain calculation method which
+uses basic geometrical shapes to define the initial
+grain void**!, This method has long been used in in-
+dustry for grain design, though it is complex and may
+have small errors. The calculation step size for burn
+back analysis could prove to be critical and leads to
+oscillation in the burning area calculations. Ref.[6]
+presented an improved approach for removing pulsat-
+ing errors in grain design due to the web and axial in-
+crements. Refined numerical approach still encounters
+
+* Corresponding author. Tel.: +86-10-82339944.
+E-mail address: \gz@buaa.edu.cn
+
+1000-9361/$ - see front matter © 2010 Elsevier Ltd. All rights reserved.
+doi: 10.1016/S1000-9361(09)60235-1
+
+considerable errors. In these conventional methods, the
+accuracy of solution largely depends upon the web and
+axial increment chosen for volume calculation, and
+will indeed require certain approximation to limit com-
+putational time.
+
+Ref.[7] generated carpet plots for a large amount of
+data for star grain configurations. It presented optimi-
+zation for geometrical parameters of star grain while
+leaving number of star points and varying other geo-
+metrical parameters. The approach has severe limita-
+tions for the large number of design variables. Ref.[8]
+moved one step further and applied pattern search
+technique to the design and optimization of 3D grain
+configuration. The approach has limited applicability
+in modern era as solution quality is heavily dependent
+on starting solution. The approach has a tendency to
+fall prey to local optima similar to any gradient de-
+scent/ascent method and has extreme sensitivity to
+the starting solution.
+
+Ref.[9] presented design and optimization for fino-
+cyl grain using generalize coordinate method. Ref.[10]
+presented a hybrid optimization technique for finocyl
+grain configuration using the same method.
+
+The above discussion necessitates the requirement
+of adopting heuristic optimization technique not only
+to avoid local optima but also to eliminate the re-
+quirement of starting point. Introducing computer
+aided design (CAD) to the process will improve the
+accuracy of calculated geometrical properties.
+
+CAD based programs are available in industry and
+
+----$$$$----$$$$----
+-410- Ali Kamran et al. / Chinese Journal of Aeronautics 23(2010) 409-414 No.4
+
+have proved to be tremendously useful for the design
+process of solid rocket motor (SRM). Two softwares,
+PIBAL""" and ELEA!"”!, use CAD modeling for 2D
+and 3D grains design of SRM. The former uses a
+simplified ballistic model and the latter one can give a
+point to point burning rate taking account of local gas
+dynamics.
+
+The methodology adopted in this work is CAD
+modeling of the propellant grain. This approach creates
+a parametric model with dynamic variables to define
+the grain geometry. Surface offset simulates grain
+burning regression and evaluates subsequent volume at
+each step.
+
+Upper stage SRM of launch vehicles requires highly
+efficient propulsion system. An infinite number of pos-
+sibilities exist, therefore, the need arises for intelligent
+optimization approach which can control the design
+domains and configure an optimum design within set
+design limits and constraints.
+
+3D radial slot geometry is extremely complex. It has
+24 independent design variables that need to be opti-
+mized to attain the best possible solution. The large
+number of design variables complicates the optimiza-
+tion process. The present study employs genetic algo-
+rithm (GA) as the optimizer because of its robustness
+and efficient capacity to explore the design space for
+global optimum solution and eliminate the requirement
+of an initial guess. The aim is to find the optimal con-
+figuration while adhering to performance objectives
+and design constraints.
+
+2. Geometric Modeling and Regression
+
+The grain geometry is based on CAD software that
+has the capability of handling parametric modeling.
+Grain is modeled in parts to provide ease and ensure
+lesser chances of surface creation failure. A simple
+variable input is sufficient to create the geometry. CAD
+software is linked to MATLAB via Visual Basic.
+MATLAB sends variable array to CAD software ena-
+bling automatic creation of the grain geometry. CAD
+software evaluates the geometrical properties and
+sends to MATLAB for further calculations. Fig.1 pre-
+sents the flowchart of the design process.
+
+MATLAB
+
+CAD based grain ; .
+Design variables (X)
+
+geometry module
+
+Grain
+boundary
+
+Grain core
+
+Visual Basic
+
+Read: variables (X)
+update variables
+Satisfy: calculation to
+maximum web
+Slot
+
+Write: output
+
+Volume
+calculation
+
+Fig.1 Grain design process.
+
+Fig.2 shows a detailed description of the grain mod-
+eling. The following steps explain the construction of
+grain configuration:
+
+(1) Front and rear opening radii for chamber case,
+motor length, ellipsoid ratio, and diameter are the input
+parameters required to create the grain external bound-
+ary (see Fig.2(a)).
+
+(2) To construct the bore, front-end web along with
+different dimensions are the input variables to be pro-
+vided (see Fig.2(b)). The rear end can have large cy-
+lindrical cavity provision for nozzle submergence.
+
+(3) The input requirements to create slot are slot
+thickness, web above slot and axial distance from cer-
+tain references (see Figs.2(c) and (d)).
+
+- Ly -
+
+(a) Grain boundary
+
+|e oS 66 6 SS SS ES SS SS OS OS CC OS SS Ss ss oes > | Acme «
+
+SRD,
+
+(d) Radial twin slot rear end
+
+Cc D
+
+R=0.1 mm
+
+(e) Sharp edges treatment
+
+Fig.2 Grain modeling process.
+
+----$$$$----$$$$----
+No.4 Ali Kamran et al. / Chinese Journal of Aeronautics 23(2010) 409-414 “411 -
+
+(4) In case a slot is not required the slot web is in-
+creased to bore radius (see Figs.2(c) and (d)).
+
+(5) Two configurations can be designed: front/ rear
+slot configuration (see Fig.2(c)) and twin slot at the
+rear end (see Fig.2(d)).
+
+(6) Sharp corners are filleted to account for new sur-
+faces that are created during burning as shown in
+Fig.2(e). Lines AB and BC are connected using CAD
+function “Connect”, so that they remain connected
+during offsetting operation. Lines BC and CD are con-
+nected through a small fillet of radius 0.1 mm in the
+initial geometry. Offsetting process involves increasing
+the fillet radius by a value equal to web increment.
+
+Table 1 lists a description of 24 independent design
+variables for complex grain geometry.
+
+Table 1 Design variables for grain geometry
+
+Variable Description
+Ly Grain length
+Ly Front end web
+L3 Front cone length
+I4 Rear cone length
+Ls Rear cylinder length
+PF Motor front opening
+F> Grain radius
+P; Motor rear opening
+4 Grain front opening
+Fs Bore radius
+F¢ Rear cylinder radius
+ST, Front slot width
+ST> Rear slot width
+SD, Front slot distance
+SD, Rear slot distance
+SW, Front slot web
+SW> Rear slot web
+SR Slot width 1
+SR2 Slot width 2
+SRD, Slot distance |
+SRD» Slot distance 2
+SRW, Slot web 1
+SRW> Slot web 2
+m2 Ellipsoid ratio
+
+CAD software performs the following steps for con-
+structing the parametric geometric model after defining
+the variables for grain configuration:
+
+(1) Grain boundary is solid and constructed by re-
+volve protrusion with no burning surface.
+
+(2) Grain bore is constructed by revolve surface and
+all surfaces burning.
+
+(3) Boolean function is used to subtract the solid
+within grain bore.
+
+(4) Similar operation is performed for radial slots
+and all surfaces burning.
+
+(5) Surface offset function available in CAD soft-
+ware 1s used to simulate burning, by offsetting the sur-
+face by a web increment equal and orthogonal in all
+directions.
+
+(6) Boolean function is used at each web increment
+to subtract the solid within grain bore and slots to cal-
+culate new volume.
+
+(7) Offsetting and boolean operations are repeated
+
+till the web is completely burnt.
+
+Model verification is performed by calculating star
+grain burning area with the present method and ana-
+lytical method. Star grain analytical expressions are
+adopted from Ref.[13]. Fig.3 shows the comparison of
+burning area between the two methods. Modeling pre-
+sented in this article shows excellent performance
+compared with analytical method.
+
+6
+
+eo Present method
+
+5+ «Analytical method (oa
+qXnOD 0 OOD 9 HAND Ha coP?®
+ao
+‘- 4 ee Te %
+£ 36
+od \ b
+oy 2 9
+E , | 18.5 mm/ / ‘
+a ? ~979 1// 116mm
+- R=272 mM)43 12 7) =, 8,
+Ve 4,
+&
+I \ ~ “ *y
+\ .“R=22 mm
+8,
+8
+n Lo
+
+4
+0 50 100 150
+Web/mm
+
+Fig.3 Burning area comparison for model verification.
+
+The grain regression is achieved by equal web in-
+crement in all directions. The selection of web incre-
+ment is critical to grain regression. At each step new
+grain geometry is created automatically thereafter
+volume at each web increment is calculated. A de-
+creasing trend is obtained for volume of the grain.
+
+Burning surface area is calculated by
+
+Ab = “eae (1)
+Writ — We
+
+where & is the web step, V the volume of propellant,
+and w the web.
+Propellant mass is calculated by
+
+M, — PM x (2)
+
+where p, is the propellant density.
+
+3. Performance Prediction and Optimization
+Model
+
+The SRM performance is calculated using simplified
+ballistic model. Steady state chamber pressure p, is
+
+calculated by equating mass generated in chamber to
+mass ejected through nozzle throat !'*"'°!
+
+Pe _ (p,ac KO" (3)
+
+where K=A,/A,, A; is the area of throat, a the burn rate
+coefficient, n the pressure sensitivity index, and c* the
+characteristic velocity.
+
+Thrust is determined by
+F= Cr P oA, (4)
+
+Thrust coefficient is given by
+
+----$$$$----$$$$----
+-412 - Ali Kamran et al. / Chinese Journal of Aeronautics 23(2010) 409-414
+
+(y+) (7-1) (y-)/y
+c= 2e{2 1_{ Be fn
+© Vx-lytl P.
+
+Pe — Pamb é (5)
+Pe
+
+where 7 is the specific heat ratio, p. nozzle exit pres-
+sure, Damp ambient pressure and € nozzle area ratio.
+
+Requirements have been given for fixed length and
+outer diameter of the grain while remaining within
+constraints of burning time, propellant mass and nozzle
+parameters. Maximization of average thrust Fy,max(X)
+is the design objective, where_X is given as
+
+X= f (FF, Fy, Fy, Fs,F,ST,,8T),SD,, SD,
+SW,,SW,,L;,L5,L;,L,,L;,SR,,SR>,SRW,,
+SRW,,SRD,,SRD,)
+
+subject to constraints
+
+Bound for all variables is provided for efficient
+search in design space:
+
+Lower bound = min(X; )
+(i =1,2,---,23)
+
+Upper bound = max(X; )
+
+4. Optimization Method
+
+GA can handle both discrete and continuous vari-
+ables, making them well suited to major design prob-
+lems. GA is capable of examining historical data from
+previous design and attempts to look for patterns in the
+input parameters which produce favorable output. GA
+uses neither sensitivity derivatives nor a reasonable
+starting solution and yet proves to be a powerful opti-
+mization tool.
+
+GA employs three operators to propagate its popula-
+tion from one generation to another (a population of 30
+members for 20 generations is found sufficient in the
+present study). The first operator is the “Selection”
+operator that mimics the principle of “Survival of the
+
+Fittest’. Stochastic uniform option is used for selection.
+
+The second operator is the “Crossover” operator,
+which mimics mating in biological populations. The
+crossover operator propagates features of good surviv-
+ing designs from the current population into the future
+population, which will have better fitness value on
+average. Thirty percent of the population is used for
+matting on a single point basis. The last operator is
+“Mutation”, which promotes diversity in population
+characteristics. The mutation operator allows for global
+search of the design space and prevents the algorithm
+from getting trapped in local minima. A uniform muta-
+tion strategy is used with approximately a quarter of
+the population. Details on GA can be found in Refs.
+[17]-[20].
+
+No.4
+
+The optimization algorithm has been tested on
+
+widely stated benchmark functions’'!. The algorithm
+proves robust enough for engineering application.
+
+Fig.4 presents the flowchart of GA.
+
+Design variables (X)
+
+Population initialization: size=30
+
+Selection: stochastic uniform
+
+Crossover: single point, 30% population
+
+Mutation: uniform, 25% population
+
+Reproduction: elite count = 2
+
+Stopping criteria
+
+function evaluations: 600
+
+Yes
+
+Optimal solution (X*)
+
+Fig.4 Flowchart of genetic algorithm.
+
+Pseudo-code of the optimization is listed as follows:
+Optimization routine
+Initialize
+
+e Set population size
+e Set total number of generation
+e Set stopping criteria
+While (stopping criteria Not achieved)
+
+e Create public-board to store information
+e Generate population (random)
+
+For i= 1 to total generations
+For j = 1 to population size
+
+Call Visual Basic
+Arrange Input data for CAD
+
+Call CAD
+For k= 1 to web
+(a) Make grain geometry
+(b) Calculate physical properties
+(c) Write Output data
+
+End
+End
+Evaluate constraints
+Evaluate fitness
+
+CALL Crossover
+Check crossover rate
+
+----$$$$----$$$$----
+No.4 Ali Kamran et al. / Chinese Journal of Aeronautics 23(2010) 409-414 -413 -
+
+Create new off-springs
+
+CALL Mutation
+Mutate prescribed amount of individuals (random)
+
+Send information to public-board
+
+End
+End
+
+5. Optimization Results
+
+Hydroxy terminated polybutadine (HTPB) based
+propellant is selected for the grain configuration. Table
+2 lists propellant and nozzle parameters used in ballis-
+tic analysis, in which D, is the throat diameter, AP
+represents ammonium per chlorate, and Al represents
+aluminum.
+
+Front/ rear radial slot configuration is chosen as case
+study as shown in Fig.2(c). Table 3 presents the design
+constraints for grain configuration, in which 4, 1s burn-
+ing duration.
+
+The design variables and respective bounds for thir-
+teen variables in the optimization model are shown in
+Table 4.
+
+Table 2 Propellant and nozzle parameters
+
+Parameter Value
+D/mm 160
+E 16
+c /(m:s"') 1550
+py/(kg-m °) 1 750
+n 0.34
+amm-:s '-Pa™") 0.031 1
+Propellant HTPB/AP/AI
+
+Table 3 Design constraints for configuration
+
+Variable Value
+L,/mm 2 395
+F,/mm 700
+ty/s 7443
+Pmax/bar < 65
+m,/kg 5 000+100
+E 16
+
+Table 4 Bound for design variables
+
+Variable Lower bound Upper bound
+F,/mm 80 120
+F;/mm 220 280
+F/mm 330 400
+ST|/mm 25 50
+ST>/mm 25 50
+SD,/mm 100 200
+SD2/mm 80 200
+SW,/mm 150 280
+SW,/mm 150 250
+L,/mm 70 130
+L3/mm 80 120
+L4/mm 80 120
+Ls/mm 150 250
+
+Table 5 shows the optimum dimensions obtained
+from GA.
+
+Table 6 depicts the ballistic performance achieved.
+
+Fig.5 shows the optimum grain configuration and
+burning regression at different web steps.
+
+Table 5 Optimum design variables
+
+Variable Optimum value
+F,/mm 96.5
+F;/mm 266.4
+F/mm 352
+ST,|/mm 28.6
+ST>/mm 36.6
+SD,/mm 160.8
+SD2/mm 122.5
+SW/mm 268.5
+SW>/mm 196
+L,/mm 83.7
+L3/mm 98.3
+L4/mm 96
+Ls/mm 188
+
+Table 6 Ballistic performance
+
+Parameter Optimum value
+Fay/KN 176.6
+m,/kg 4 937
+ty/s 74.5
+Pmax/bar 61.6
+
+(a) Web=0 mm
+
+(b) Web=100 mm
+
+(c) Web=250 mm
+
+Fig.5 Grain configuration and burning regression.
+
+Fig.6 shows the burning area and volume with re-
+spect to web burnt. Fig.7 depicts pressure and thrust
+time history.
+
+----$$$$----$$$$----
+-414- Ali Kamran et al. / Chinese Journal of Aeronautics 23(2010) 409-414 No.4
+
+wo
+
+i]
+
+Volume/m
+
+Volume
+— Burning area
+
++
+Burning area/m
+
+to
+
+0 100 200 300 400
+
+Web/mm
+
+Fig.6 Volume/ burning area vs web trace.
+
+Thrust/kN
+
+Pressure
+— Thrust
+
+Pressure/bar
+
+0 10 20 30 40 50 60 70
+Time/s
+
+Fig.7 Pressure/ thrust vs time trace.
+
+Results reveal that the optimum grain configuration
+achieved with the proposed approach has provided
+promising results. The average thrust achieved is 176
+kN, which satisfies all strict constraints.
+
+6. Conclusions
+
+This research effort presents an automated approach
+for the design and optimization of 3D radial slot con-
+figurations. This approach integrates CAD software
+and optimization module, and based on geometrical
+data, ballistic performance 1s evaluated.
+
+CAD model allows different entities of the grain, to
+be modeled separately, which not only prevents surface
+creation failures but also allows for future modification
+of the model. Similar complex grain geometries can be
+created by using simple input parameters and then op-
+timized. The use of GA eliminates the problem of suit-
+able initial guess. This approach attains optimized
+design variables, adheres to design constraints and
+proves a noteworthy increase in capability of searching
+optimal solutions. A maximum of 600 function evalua-
+tion is enough to converge to a global optimum.
+
+References
+
+[1] Brooks W T. Solid propellant grain design and internal
+ballistics. NASA SP-8076, 1972.
+
+[2] William H M. Solid rocket motor performance analysis
+and prediction. NASA SP-8039, 1971.
+
+[3] Dunn S S, Coats D E. 3-D grain design and ballistic
+analysis using SPP97 code. AIAA-1997-3340, 1997.
+
+[4] Coats D E, Nickerson G R, Dang A L, et al. Solid per-
+formance program (SPP). AIAA-1987-1701, 1987.
+
+[5] Barron JG. Generalized coordinate grain design and
+internal ballistic evaluation program. AIAA-1968-
+
+490, 1968.
+
+[6] Zhou H S. Analysis and solution approach about pulsa-
+tion cause of calculation results of the general coordi-
+nate calculating method of the grain. Journal of Solid
+Rocket Technology 1994; 17(3): 11-19. [in Chinese]
+
+[7] Brooks W T. Ballistic optimization of the star grain
+configuration. Journal of Spacecraft and Rockets 1982;
+19(1): 54-59.
+
+[8] Sforzini R H. An automated approach to design of solid
+rockets utilizing a special internal ballistic model.
+AJAA-1980-1135, 1980.
+
+[9] Nisar K, Liang G Z. Design and optimization of three
+dimensional finocyl grain for solid rocket motor.
+AIAA-2008-4696, 2008.
+
+[10] Nisar K, Liang G Z, Zeeshan Q. A hybrid optimization
+approach for SRM finocyl grain design. Chinese Jour-
+nal of Aeronautics 2008; 21(6): 481-487.
+
+[11] Dauch F, Ribéreau D. A software for SRM grain design
+and internal ballistics evaluation, PIBAL. AIAA-2002-
+4299, 2002.
+
+[12] Saintout E, Ribereau D, Perrin P, et al. ELEA—a tool
+for 3D surface regression analysis in propellant grains.
+AIAA-1989-2782, 1989.
+
+[13] Ricciardi A. Complete geometric analysis of cylindrical
+burning star grains. AIAA-1989-2783, 1989.
+
+[14] Sutton G P, Biblarz O. Rocket propulsion elements. 7th
+ed. Hoboken: John Wiley & Sons Inc., 2001.
+
+[15] Davenas A. Solid rocket propulsion technology. New
+York: Elsevier Science & Technology, 1993.
+
+[16] Barrere M. Rocket propulsion. Amsterdam: Elsevier
+Publishing Company, 1960.
+
+[17] Goldberg D E. Genetic algorithms in search, optimiza-
+tion, and machine learning. Reading: Addison-Wesley,
+1989.
+
+[18] Coly D A. An introduction to genetic algorithms for
+scientists and engineers. Singapore: World Scientific,
+1999.
+
+[19] Anderson M B. Genetic algorithms in aerospace design:
+substantial progress, tremendous potential. RTO-EN-
+022, 1997.
+
+[20] Hassan R, Cohanim B, Weck O, et al. A comparison of
+particle swarm optimization and the genetic algorithm.
+AIAA-2005-1897, 2005.
+
+[21] Ahmed A-R H A. Studies on metaheuristics for con-
+tinuous global optimization problems. PhD thesis,
+Kyoto University, 2004.
+
+Biographies:
+
+Ali Kamran Born in 1975 at Karak, Pakistan, he received
+his B.E. mechanical degree in 1999 from University of En-
+gineering and Technology (UET) Peshawar, Pakistan. He
+received his M.S. degree in solid rocket propulsion from
+Being University of Aeronautics and Astronautics (BUAA),
+China in 2004. Currently he is a Ph.D. candidate in the same
+university. His research interest includes design and optimi-
+zation of space propulsion systems.
+E-mail:alkls|@yahoo.com
+
+Liang Guozhu Born in 1966, he is a professor in department
+of Space Propulsion, School of Astronautics, Beijing Univer-
+sity of Aeronautics and Astronautics. His research interests
+include propulsion theory and engineering of aeronautics and
+astronautics. His current research field is design and simulation
+of solid rocket motor and liquid rocket engine.
+
+E-mail: lgz@buaa.edu.cn
+
+----$$$$----$$$$----

@@ -1,0 +1,648 @@
+Vol. 16 No.4
+
+CHINESE JOURNAL OF AERONAUTICS
+
+November 2003
+
+Non-isothermal Mold Filling and Curing Simulation
+for Resin Transfer Molding
+
+CHEN Renciang’, GUI Bing”’, LI Ming-cheng', LIANG Zhi-yong”
+(1. College of Aeronautics & A stronautics, N aying Unwer sity of Aeronautics & Astronautics,
+
+Nanjing 210016, China)
+
+(2. Department of Mathmatics, N anjing Forest Unwer sity, N anjing
+
+210018, China)
+
+(3. College of Material & Engineering, Bey ng University of Aeronautics & A stronautics,
+
+Bejing 100083, China)
+
+Abstract: =A numerical model of 2. 5D non-isot hermal resin transfer molding simulation is devel-
+oped for thin part based on the control volume/ finite elem ent method. The nonamiform temperature
+distribution and the heat generation during the filling stage are modeled with the lumped temperature
+system and the species balance. Numerical algorithm of the simulation are studied. The molding sim-
+ulation for a part is performed to show the effectiveness of simulating filling time, temperature distri—
+bution and curing degree.
+
+Key words: resin transfer molding; finite-element analysis; mathematical model; numerical simula-
+tion
+
+Ye Fe BB A TAP at od A ese Te PE AE Gein Te. ROB, BOK, EH, Be. PRAT
+2S FR ( BE STH), 2003, 16(4): 247- 252.
+
+te BR: RY PBI AN APR CT Zs ET Ns Fe es A Sl) TEE PPO Hd A A
+WERE AY 2. 52 SESS iin 7 A AY, 1 Bi A es 2S SB ee A i DY Jo
+Boe HUA BS His Vink 2 AAT De EE Ee) Pe oe A dl FR, RE, eT eH
+BA}. iim FEAR Be Ht Hs oe Ta] BY SSCL He AR TIE, EE BAG OR Ze A A Be AY) 1 YB A i 7
+a SAY Ti HE HAL YS Tit BEE 1, Be pet Pa FE PE
+
+RE: HERA, AMR oct tr; BRA: BU
+
+MRP AS: A
+
+MF 4-5: 1000-9361 (2003) 04-0247-06 HAPS: V 211.3
+
+Resin Transfer Molding (RTM) has become
+an attractive method in which liquid reactant cures
+in a mold with fabric renforcement to produce a
+composite part. Interest in these technologies has
+erown dramatically, spurred by the military ‘s need
+for affordability and high performance and the auto
+industry’s emphasis on higher productivity and
+low er-v olume market niches.
+
+There are so many technical issues concerned
+
+[13] .
+. Because of the anisotrop-—
+
+with RTM processes
+ic nature of the reinforcement fibers, the flow pat-
+tern in the mold can be very complicated. Cure of
+
+resins utilizes heat to cause a crosslinking reaction.
+
+Received date: 2003-01-09; Revision received date: 2003-07-09
+Article URL: http: / www. hkx b. net, en/ eja/.2003/ 04/ 0247/
+
+The rate of the reaction is dependent on the tem-
+perature and extent of resin conversion. Heat gen-
+eration and transfer can result in a non-uniform
+temperature distribution in the mold.
+
+Owing to the interaction of different variables
+and the complexity of the process, mold and pro-
+cess design are currently conducted using trial and
+error. Experimental methods for optimization of
+mold and process design may be too time consum—
+ing and economically prohibitive. A compute nu-
+merical simulation model capable of predicting resin
+flow behavior, pressure gradient inside the mold,
+
+and curing process is needed to optimize injection
+
+----$$$$----$$$$----
+° 248 CHEN Renciang, GUI Bing, LI Ming-cheng, LIANG Zhi-yong CJA
+
+port positions, mjection pressure, filling time,
+temperature, and curing degree.
+
+A number of studies have developed non-
+isothermal flow models with a heat transfer mod-
+el”! These models are coupled by the fluid vis—
+cosity, which is the function of both temperature
+and cure conversion. However, most of them are
+concentrated on two-dimensional by simplifying
+the heat transfer form. In the actual case, the
+thermal effects are three-dimensional and require
+three-dimensional analysis. There are some studies
+on the nonasothermal RTM mold filling and cur-
+ing processing with true three-dimensional analy—
+
+. [1043 ;
+sis, the huge computation
+
+Unfortunately ,
+time limits its application. Moreover, three-dimen-
+sional model makes the numerical algorithm more
+complicated.
+
+In order to improve the two-dimensional mod-
+el and avoid the huge com putation time and numer-
+ical algorithm difficulty in the three-dimensional
+model, a 2. 5D simulation RTM non-sothermal
+model is proposed for thin part in this paper. The
+meaning of 2. 5D 1s that the flow is 2D while the
+heat transfer is 3D. In this 2. 5D model, the flow
+is determined by Darcy’s law and the heat transfer
+and resin reaction are developed based on the
+lumped tem perature system (i.e. local thermal e—
+quilibrium between resin and fiber). The control
+volume’ finite element method (CV/FEM) is used
+
+to solve the distributions of pressure, temperature
+
+and curing degree during the RTM processing.
+
+1 Simulation Scheme
+
+1.1 Governing equations
+
+In order to simulate the mold filling process of
+RTM, several assumptions must be made to sim-
+plify the problem. In general, the fiber reinforce—
+ment in the mold cavity is assumed to be rigid dur-
+ing the molding process. There is no exchange of
+mass between the solid and the fluid. The fluid is
+considered as incompressible and its viscosity is in—
+dependent of shear rate (i.e., the fluid is Newto-
+nian). Inertia effect is neglected because of the low
+
+resin tlow. “Surface ténston 1s’ rreelig ible as “com
+
+pared with the dominant viscous force.
+Under these assumptions, Darcy’s law for
+flow through porous media can be used as the mo-
+
+mentum equation.
+K
+v=- —* VP 1
+7 (1)
+
+where v is the velocity vector, VP is the pressure
+gradient, HL is the viscosity, and K is the perme—
+ability tensor. For the part with small thickness,
+
+the flow can be modeled as two-dimensional flow
+
+oP.
+
+Vx i K xx Kay Ox
+--+ (2)
+
+Vy H K yx Kyy. cP.
+
+oy
+
+where v«, vy are the flow velocity components and
+Ki (i, J=
+ability tensor defined in the two-dimensional Cart e—
+
+x» y) is the component of the perme-—
+
+sian coordinate system.
+For an incompressible fluid, the continuity e-
+
+quation 1s
+
+ox + oy = 0 ( 3)
+Eq. (2) and (3) are combined and integrated
+
+over a control volume to have
+
+oP
+(fire no A ‘| al 8 (4)
+LJ H Kyx KyJd| @P
+Oy
+where nx, ny are the components of the vector nor-
+mal to the surface of the integrated volume.
+
+In RTM process, if the temperature is as—
+sumed to be in local equilibrium at any specific time
+due to its slow filling speed (i. e., the temperature
+is the same for both resin fluid and fiber mat at
+each local position), the equations of energy and
+
+species balance can be ex pressed as
+
+oT
+
+PCy a+ PCy? VT = kv°T + PH m(5)
+
+a SS 70= m (6)
+
+where T 1s the temperature, Qis the resin conver—
+sion, m is the mass generation rate, Pis the fiber
+mat porosity and AH is the volumetric heat gener-
+ation per unit volume. The lumped thermal param-
+eters are defined as
+
+p= ( Pi Pe) /¢ Pros + Pwr)
+
+----$$$$----$$$$----
+November 2003
+
+Non-sothermal Mold Filling and Curing Simulation
+
+- 249 +
+
+for Resin Transfer Molding
+
+Cp = Cpr + crhwe
+
+k= (deki)/ (hews + krwr)
+
+o BR
+
+wt= 1- wr
+where P is the density, cpis the specific heat coeffi-
+cient and k is the thermal conductivity. The sub-
+scripts r and f denote resin and fiber respectively.
+1.2 Boundary conditions
+The boundary conditions for equation 4
+through 6 are as follows
+
+At the flow front
+
+P= 0
+po = (l- B Prevn( To - T)
+front
+D
+pi’ ® = = Fm
+
+where F is the resin volume fraction of a con—
+trol volume.
+At the inlet gate
+
+(a) For the constant pressure mold filling
+
+Pz= Po, T= Train, and X= O
+(b) For the constant flow rate mold filling
+oP
+L Kx Kay| | &
+Qaim mln: Rapes °
+
+Oy
+T = T resin, X= O
+At mold boundaries
+
+cP _ _
+Oo 0, T = Tal
+
+where Q is the volume injecting rate at the inlet
+gate, Tis the initial fiber temperature that is the
+same as the mold wall temperature Twal and Train is
+the initial resin temperature. At the flow front,
+the parameter F represents the status of each con-
+trol volume in the flow domain. F is zero for an
+em pty control volume, while it is | for an entirely
+filled control volume. For a partially filled control
+volume, F is equal to the volume fraction occupied
+by the resm. Pressure is assumed vanished at the
+flow front where the temperature and conversion
+follow the energy and mass balance of a control
+mass. For the case of specified injecting flow rate,
+
+a specified flow rate is assigned to the control vol—
+
+umes enclosing the inlet nodes. For the case of the
+specified injecting pressure, a specified pressure is
+assigned to the inlet nodes. For the outlets, the
+pressure depends on the filling condition. If the
+vacuum is used during mold filling, the outlet pres—
+sure is equal to the vacuum pressure; otherwise,
+the outlet pressure is zero.
+1.3 Computation schemes
+
+Eqs- (4) 46) are the governing formulations
+of non-sothermal mold processes. The solution of
+them requires the use of a numerical method to
+find the distribution of pressure, temperature and
+resin conversion within the filled domain. CV/
+FEM has many advantages in solving the moving
+
+boundary problems” an
+
+In the CV/FEM, the entire calculation do-
+main is first divided into a number of elements.
+The control volume is formed based on the nodes
+of the adjacent elements. Each element is divided
+into several sub-areas by the lines connecting the
+centroid of the element to the midpoint/ center of
+each side/ surface. A control volume is composed of
+several sub-area/ volumes, which have a common
+node at the center of the control volume. Fig. | is
+
+the typical control volume distribution.
+
+SEOCEK
+
+(a) Triangle (b)T riangle and quardrang le
+
+Fig. 1 Typical control volume distribution
+
+For 2.5 D non-sothermal case, the heat
+transfer must be solved in three dimensions. Thus
+the cavity should be discretised through the thick-
+ness, which involves sub-dividing each control vol-
+ume defined for the flow analysis into a number of
+layers. The energy balance is then carried out
+within each of these sub-domains. The layers
+through the thickness can be divided with collocate
+method
+
+Fig. 2 shows the diagram of computation
+schemes for 2. 5D non-isothermal RT M simulation
+
+based on CV/FEM. At the beginning of mold fill-
+
+ime. the|simulation program, essumes|that/the cony
+
+----$$$$----$$$$----
+° 250°
+
+Input FEM and Data
+
+Caleulate Pressure Distribution
+Calculate Velocity & Flow Rate
+Calculate Courant Number
+
+Calculate Heat Transter & Curing
+
+Subtime Step
+
+Output Results
+
+Fig.2 Thediagram of computation schemes
+
+trol volumes enclosing the inlet nodes are filled
+with fluid. Then, with the boundary conditions
+mentioned earlier and the assumed viscosity, the
+pressure calculation is conducted to determine the
+pressures of nodes that are currently filled with flu-
+id. After the pressure field is determined, the ve-
+locity field can be evaluated according to Darcy’s
+law. Then, the temperature and conversion can be
+solved by the same way as the pressure based on
+the current velocity field. The resulting tempera-
+tures and conversions are used to compute the up-—
+date viscosity. New values of viscosity are used to
+calculate the pressure field again, which leads to
+the same calculation procedure.
+
+The Courant Number in the above numerical
+scheme is used in the improvement of convergence
+and accuracy of the solution. The convergence
+problem comes from the convection terms in equa-
+tions (5) and (6).
+
+gence, the convection terms of the two equations
+
+In order to reduce the diver—
+
+are evaluated using the upwind scheme. The up-
+wind scheme adds a numerical diffusion term to the
+system and reduces the instability. However, it in-
+creases the truncation errors. The truncation er-
+rors may result in a meaningless solution even
+though the scheme is stable. They are sensitive to
+the flow velocity, mesh size and time step if the
+
+flow is convection dominant. A ‘sub-ttime step Is
+
+CHEN Renciang, GUI Bing, LI Ming-cheng, LIANG Zhi-yong CJA
+
+used in the numerical model to improve the com pu-
+tational accuracy of temperature and conversion
+with reasonable Courant Number'”. T his sub+ime
+technique can ensure the solutions to be as accurate
+as possible, although the truncation error is still
+very difficult to control because of the varying
+
+mesh sizes in the model.
+
+2 Case Study and Discussion
+
+A part in reference [9] is taken to demon-
+strate the use of the method described above. Fig-
+ure 3 shows the finite elements generated by PA-
+TRAN software at the mid-plane of the part. The
+geometry of the part mcludes a circular cut-out
+with resin injected through a 20 mm diameter inlet
+port- Table | and 2 list the material data and
+
+molding parameters for simulation.
+
+Fig. 3 Finite element mesh at the mid-plane of the
+part
+Table 1 Material data
+Resin Fiber
+P/ (kg* m- 3) 1120 2540
+cpl (J* (kg? K)~ ') 1400 840
+ki (W*(m*K)~!) 0. 13 0. 1/0. 01
+AH /(J* m= 3) 2. 5768 X 108
+p 0.7
+K/ m? 1.0X10°8
+
+Table 2 Molding parameters
+
+Injection rate ( constant) / (m3*s~ !) 6.510 >
+Cavity thickness/ mm 3
+Resin inlet temperature/K 310
+Initial perform temperature/ K 350
+Mold surface temperature/ K 370
+
+The reaction rate is
+
+f(T) = 300exp] - as (1- 0?
+
+The relationship among resin viscosity, tem-—
+
+perature and degree of conversion used is
+
+1.45 < 10°
+T
+
+u= 2.56 X 10 “exp
+
+----$$$$----$$$$----
+November 2003
+
+Non-sothermal Mold Filling and Curing Simulation
+
+for Resin Transfer Molding
+
+0.695 _
+EXP! 9 497 1. 502
+
+Fig. 4(a) shows the predicted flow pattern.
+In this figure, the initial radial flow quickly be-
+comes rectilinear until the cut-out is reached. Once
+the flow passes the cut-out the two flow fronts
+merge, after which the flow becomes rectilinear a-
+gain. The total fill time for this case is approxi—
+mately 3.8 seconds. Fig.5(b) is the flow patter in
+reference [9]. It can be found that the predicted
+flow pattern is in a good agreement with those in
+reference [ 9]. The difference in filling time comes
+from the fact that the model in reference [9] does
+not consider the in-plane heat conduction which af-
+
+fects the resin viscosity.
+
+— ete bol fo bo Ge Ge le ly
+ho Oa) > Bo Sa > BO OA
+
+Dee aeAae ~~ lo ~~
+
+oo
+fo tn ~ 7
+nS un &
+
+fa of Pe
+
+ty
+| —
+“
+=
+2
+La
+—
+
+0.0298 |
+
+(a) Predicted flow pattern and filling time
+
+(b) Flow pattern and filling time from reference [9]
+Fig. 4 Flow pattern and filling time
+Fig. 5(a) and 6(a) are the distributions of
+
+predicted tem perature and cure convection for the
+
+522 Ladd Ld Ld Codd La ad ad a a
+ot ee PO BO le a Co le a
+
+(a) Predicted temper aturé field
+
+(b) Temperature field in reference [9]
+
+Fig.5 Temperature field
+
+(a) Predicted conversion field
+
+(b) Conversion field in reference [ 9]
+
+Fig. 6 Flow pattern and filling time
+layer located between the mold surface and the
+mid-plane, For this particular case, the maximum
+degree of conversion is 0. 0752, occurring at the
+location furthest from the injection gate (where the
+resin has the greatest residence time). mid-plane.
+For this particular case, the maximum This value
+is significantly lower than the resin gel pomt of
+0. 487, which indicates that the heat transfer dur—
+ing the filling stage is caused mainly by the convec—
+tion. The temperature at each location decreases
+after the cold resin touches the hot fiber. After the
+resin moves forward, colder resin arrives which re-
+sultes in lower temperature, but still higher than
+
+that atthe injection port, at this location: Asa re—
+
+----$$$$----$$$$----
+° 252°
+
+sult, the temperature shows a gradual increase as
+the fillmg time increases in the whole fillmg do-
+mam.
+
+Fig. 5(b) and 6(b) are the temperature and
+conversion field at the same layer made by refer-
+ence | 9]. There is a good agreement between
+them. The difference between them also comes
+
+from the effect of in-plane heat conduction.
+
+3 Conclusion
+
+A 2.5 D non-sothermal RTM_ simulation
+model is developed for the thin part based on the
+CV/FEM. The lumped temperature system and
+the species balance are used in modeling the non-u-
+niform temperature distribution and the heat gen-
+eration during filling stage. The convergence and
+accuracy of numerical schemes are studied and sim-
+ulation for a part is performed. Compared with 2D
+model, 2.5D model do affect the flow pattern, fill-
+ing time, distributions of temperature and cure
+conversion in RTM process.
+
+To verify the process model, experimental
+work is needed. Results from the experimental
+
+study and the comparison with the numerical simu-
+
+lation are the future study in this area.
+
+References
+[ 1] Tucker C L. Heat transfer and reaction issues in liquid com—
+posite molding [ J]. Polymer Com posites J, 1996, 17(1):
+
+60- 72.
+
+[ 2] GutowskiT G- Advanced composite manufacturing | M |.
+Portland: John Wiley & Sons Inc, 1997. 395- 399.
+
+[ 3] Antoneli D, Farina A- Resin transfer molding: math emati-
+cal modeling and numerical simulations [ J]. Composites Part
+A J, 1999, 30( 12): 1367- 1385.
+
+[ 4] Lin, R J, Lee LJ, Liou M L. Non-sothermal mold tilling
+and curing simulation in thin cavities with prepkced fiber
+mats [J]. International Polymer Process J, 1991, 6( 4):
+356- 369.
+
+[ 5] LinR J, Lee LJ, Liou M L. Mold filling and curing anal-
+ysis in liquid composite molding [ J]. Polymer Composites J,
+1993, 14(1): 71- 81.
+
+[ 6] Trochu F, Gauvin R, Gao D M. Numerical analysis of the
+
+CHEN Renciang, GUI Bing, LI Ming-cheng, LIANG Zhi-yong CJA
+
+resin transfer molding process by the finite element method
+[ J]. Advances in Polymer Technology J, 1993, 12(4): 329
+- 342.
+
+[ 7] Bruschke M V, Advani S G- A numerical approach to mod-
+el non-sothermal viscous flow through fibrous media with
+free surface | J]. International Journal Numerical methods in
+Fluids J, 1994, 19(7): 575- 603.
+
+[ 8] Lee L J, Young W B, Lin R J. Molding filling and cure
+modeling of RTM and SRIM processes [ J].
+Structure J, 1994, 27(2): 109- 120.
+
+[ 9] Rudd CD, Long A C, Kendall K N, et al. Liquid mould-
+ing technologes[M]. Cambridge England: Woodhead Pub-
+lshing Limited, 1997. 286- 288.
+
+[10] Young W B. Three-dimensional non-sothermal mold filling
+simulations in resin transfer molding [ J]. Polymer Compos-—
+ites J, 1994, 15(2): 118- 127.
+
+[11] Chan A W. Morgan R J- Computer modeling of liquid com-
+
+Composite
+
+posite molding for 3-dimensional complex shaped structures
+[A]. In: Proceedings of 19" ASM/ESD Advanced Com-
+posites Conference [C]- Dearborn, 1994. 341- 345.
+[12] Kang MK, Lee W I. A flow front refinement technique for
+the numerical simulation of the resin transfer molding pro-
+cess [ J]. Composites Science and Technology J, 1999, 59
+(11): 1663- 1674.
+[13] Lim ST, Lee WI. An analysis of the three-dim ensional
+resin transfer Mold filling process [J]. Composites Science
+and Technology J, 2000, 60(7): 961- 975.
+[14] Dunn D. A chebyshev differentiation method [ J]. Computer
+Physics Communications J, 1996, 96( 1): 10- 16.
+Biographies:
+CHEN Reniang Born in 1963, he received B.S., M.S.
+and Ph. D. in aircraft design from Nanjing Aeronautical
+Institute in 1985,1988 and 1998. From 2000 to 2002, he
+w orked as post doctoral in the field of RTM simulation at
+Florida Composite Center for Advanced Technologies
+(FC°AT) of USA. Several scient ific papers have been pub-
+lished in various periodicals. Tel: (025) 4892141,
+4892152, E-mail: crlae@ nuaa. edu. en
+GUI Bin Born in 1958, she received M.S. in computa-
+tion mathematics from Nanjing Aeronautical Institute in
+1988. She is the associate professor in Nanjing Forest Uni-
+versity and the candidate Ph. D. student in computation
+mathematics at Nanjing University of Aeronautics & As-—
+tronautics- Tel: (025) 3735120
+LI Ming-cheng Born in 1957, he received M.S. in me-
+chanics from Nanjing Aeronautical Institute in 1988. He is
+the associate processor of mechanics in Nanjing University
+
+(025) 4892231,
+
+of Aeronautics & Astronautics Tel:
+
+4892152.
+
+----$$$$----$$$$----

@@ -1,0 +1,616 @@
+Available online at www.sciencedirect.com
+
+ScienceDirect
+
+ELSEVIER
+
+Procedia CIRP 10 (2013) 306 — 311 —
+www.elsevier.com/locate/procedia
+
+12th CIRP Conference on Computer Aided Tolerancing
+
+An ideal mating surface method used for tolerance analysis of
+mechanical system under loading
+
+Junkang Guo, Jun Hong*, Yong Wang, Zhaohui Yang
+
+State Key Laboratory for Manufacturing Systems Engineering, Xi’an Jiaotong University,
+8&8, West Xianning Road, Beilin District, Xi’an, 710054, China
+
+Abstract
+
+A method to substitute the actual mating surfaces into an ideal mating surfaces is proposed in this paper. A unit normal vector is
+used to express their position and orientation. To simulate the variation propagation in assemble process, an error accumulate model
+was built in the foundational coordinate system and can be solved by the homogeneous transformation matrix (HTM). Thus the
+accuracy prediction of mechanical system could be realized in the condition of rigid body. The ideal matting surfaces under loading
+could be calculated by finite element method. The parameters of the normal vectors would be varied due to the part deformation.
+By discretization of vector elements in tolerance zone, the actual element variation under loading can be calculated and the
+distribution and probability density function compared to the rigid body can be obtained. A grind dress was taken as an example to
+illustrate this method.
+
+© 2013 The Authors. Published by Elsevier B.V.
+Selection and peer-review under responsibility of Professor Xiangqian (Jane) Jiang
+
+Keywords: tolerance analysis, small displacement torsor, assembly process, part deformation
+
+the computational efficiency using Monte Carlo
+tolerance analysis complex assembly components.
+Zhang[4] established three levels statistical tolerance
+
+1. Introduction
+
+In machine tools and other high precision mechanical
+systems, the precision of parts significantly impacts on
+product performance. An effective model is needed to
+analyze system accuracy and determine the parts’
+accuracy considering a variety of requirements. However
+the traditional accuracy predicting methods have a
+tedious and error-prone calculation. More importantly, it
+separates the combined effect and interaction of
+dimensional tolerances and geometric tolerance in
+precision forming process. In recent years, many scholars
+had great achievement on the tolerance analysis of
+complex mechanical system. Alain[1] and Philippe[2]
+applied Jacobian matrix to establish the statistically
+tolerance analysis model. ZHOU[3] used _ several
+simulation generates pseudo-random number to improve
+
+* Corresponding author. Tel.: +86-29-83399517; fax: +86-29-83399528
+. E-mail address: jhong@mail.xjtu.edu.cn.
+
+ring structure, proposed one statistical tolerance design
+method. Anselmetti[5] discussed a variety of surface
+tolerance chain. Zhang[6] used polychromatic sets to
+describe the feature-based hierarchical tolerance
+information, reasoned constraint meta-level of the
+underlying framework. Shen[7] comparative studied the
+currently four analytical methods.
+
+This paper proposed the part model with dimensional
+tolerances and geometric tolerances information, from
+the changes range of ideal face. This paper extracted the
+unit normal vector of ideal surface, obtained the spatial
+location and distribution of the mechanical systems’
+ideal assembly plane by the homogeneous
+transformation matrix, then achieved the accuracy
+prediction of the whole mechanical system.
+
+2212-8271 © 2013 The Authors. Published by Elsevier B.V.
+Selection and peer-review under responsibility of Professor Xiangqian (Jane) Jiang
+doi: 10.1016/).procir.2013.08.047
+
+----$$$$----$$$$----
+Junkang Guo et al. / Procedia CIRP 10 (2013) 306 — 311
+
+2. Methodology
+2.1. Model of the ideal surfaces
+
+The ideal surfaces are the ideal planes of parts with
+assumed full contacting; they could produce the same
+effect of error propagation and accumulation as the
+actual surface. Ideal surface could use the geometric
+centre unit normal vector of the parts to represent the
+spatial position and _ orientation, includes angles
+(a, B,yv) and coordinates (x, y,z). For a single part, the
+Cartesian coordinate system could be established in one
+geometric centre of the ideal surface of parts. In this
+coordinate system, the unit normal vectors of the parts
+could be used to present the actual mating surfaces. Then
+the mathematical model of single part could be gotten
+for the accuracy prediction, including all geometry
+information.
+
+Fig. 1. The ideal surface of parts
+
+In Figure 1, P’ , B are the ideal surface
+corresponding, FP, is the ideal location of P, , the
+coordinate system origin located at the geometric center,
+V,, V, are the unit normal vectors of P’, P, . The
+unit normal vector of ideal surface representation is:
+
+D =[R3T] =[a,B,yix,y.2z)
+
+R is the rotation sub-matrix, including a , 6 and y
+parameter, T is the displacement sub-matrices, including
+x, y and z parameters.
+
+The variation range of unit normal vector parameters
+could express three-dimensional space change range
+constrained by tolerances. Firstly, the parameters of the
+unit normal vector could be gotten from surface design
+information conversion methods, and then the range of
+unit normal vector’s variation could be obtained
+according to the tolerance principle of requirements.
+
+\v a |
+|
+[Sf
+Pa 4
+4
+a 4
+Lee -/
+
+Fig. 2. The unit normal vector’s range controlled by flatness tolerance
+
+The plan 1 is the mating surface’s ideal location, 2 is
+one ideal surface within the control of flatness, 3 and 4
+are the variation range within the control of ideal
+flatness tolerance. V is the unit normal vector of 2, its
+sub-matrix form and the parameter variation are as
+follows:
+
+R=[Aa Ag 0]! (1)
+T=[0 0 Az] (2)
+2T 2T
+~ SAa <T (3)
+2T 2T
+~~~ $ 46 <— (4)
+-T<Az<T (5)
+l w
+“Ps Az+>x Aa +7 x AB ST (6)
+
+Aa and Af are the deflection angles that V around
+the axis x and the axis y, Az is the change value V’s
+starting point along the axis. 27 1s the value of flatness
+tolerance, / is the length, w is the width.
+
+2.2. Variation propagation of assembly processes
+
+The geometry error of feature during assembly will be
+converted to the unit normal vectors in the part
+coordinate systems, by using the homogeneous
+transformation matrix to embed the unit normal vectors
+in the assembly path. The error accumulation model in
+the assembly process could be gotten.
+
+In a single coordinate system, define the unit normal
+vector from the origin to point of position vector,
+convert it to a reference coordinate system:
+
+T’=R,T+Ty 7)
+
+T is the position vector in part coordinate system,
+T,, 18 the displacement matrix between the coordinate
+
+systems, R,, is the rotation matrix, M is_ the
+transformation matrix.
+[T’ 1] =M[T 1] (8)
+R,, T,
+M _ M M 9
+ae 9
+1 Yue Bu
+Ry =| Vv | Oy (10)
+—By Ay |
+Ty =[%w-YuoZu] (11)
+
+307
+
+----$$$$----$$$$----
+308
+
+a,,,B, andy,, are the deflection angle of the part,
+relative to reference coordinate system. x,,. y,, and
+z, are the values of the offsets along the X, Y and Z axis,
+relative to the reference coordinate system .
+
+C'=R,,C (12)
+
+(13)
+
+C is the direction cosine matrix,a . 6 andy are
+the angle of the unit normal vector in parts coordinate
+system.
+
+For the ideal mating surface method, the unit normal
+vectors of part’s ideal mating surface should be created.
+They could express the connection of unit normal vectors
+in different part coordinate systems.
+
+Shown in Figure 3, P, and P, are the ideal face,
+their unit normal vectors are D,,and D,,in O,. D
+
+C =[cosa ,cos 8, cosy I’
+
+FO
+
+and D,,are the unit normal vectors of P., in O, and
+
+O,. M,, 1s the transformation matrix.
+D,(Dyo)
+i
+
+Pry
+
+—
+
+Fig. 3. Unit normal vectors transformation
+
+[To 1] =M, [Ts iy (14)
+Cro = RyCey (15)
+
+M,, = [D.o I} -[Djo I] (16)
+
+In Figure 4, the mechanical system is assembled by m
+parts, M,, is the transformation matrix between part
+K-1 and K . D,, is the unit normal vector of
+functional surface of the end part M . D,,’ is the unit
+normal vector in the base coordinate system, can be
+calculated by the following formula:
+
+ae
+
+Fig. 4. Mechanical system assembly structure
+
+T,, 1] =T] Mx [t 1) (17)
+
+Junkang Guo et al. / Procedia CIRP. 10 (2013) 306 — 311
+
+C,, = [ [Rac (18)
+k=2
+
+2.3. Variation of ideal surface under loading
+
+When the working condition is considered, the
+position and orientation changes of the vectors of the
+ideal surface due to part deformation should be
+calculated.
+
+Firstly, the discrete elements of unit normal vector in
+variation zone could be picked out to simulate the
+geometry trend. The geometry model could be built
+according to these discrete elements. The actual feature
+changing under loading can be obtained account into
+FEM-based approaches. The mapping function between
+corresponding elements before and after loading is
+established by the independent variables of elements
+after loading. Then the probability density function after
+loading can be obtained by substitution of the mapping
+function into former probability density function, and
+this probability density function also expresses the error
+distribution after loading. This process is shown in Fig.
+
+we ww www www meee ww ww ewe eee eee ewww eee eeeens
+
+The variation zone of SDT
+
+Discretization of the variation
+zone to some elements value
+
+Building the corresponding
+geometry model of elements
+
+FEM simulation in working
+condition
+
+Converting feature variation
+into element value
+
+FEM simulation of the geometry
+model corresponding to the
+discrete elements
+
+beweccccccccccccccccccccccccccccccccccccs
+
+Building the mapping function
+between before and after
+loading
+
+Probability density function of
+the elements after loading
+
+Actual variation zone of ideal
+surface under loading
+
+Fig. 5. Process of simulation of variation of ideal surface under loading
+
+Substituting function into PDF
+before loading
+
+Solving the PDF after loading
+
+3. Result and Discussion
+3.1. Tolerance analysis based on the ideal surface model
+
+Taking grinding dresser’s feeding system as an
+example, the process of accuracy prediction will be
+illustrated by the ideal surface method. Shown in Figure
+6, the dresser is assembled by six parts. The location of
+part 6 reflects the final assembles precision in the base
+coordinate system.
+
+----$$$$----$$$$----
+Junkang Guo et al. / Procedia CIRP 10 (2013) 306 — 311 309
+
+Table 1. The tolerance of surfaces
+
+Mating surface Flatness /mm Mating surface verticality /mm Mating surface Parallelism/mm
+0.02 A 0.005 Bl 0.005
+B 0.02 N 0.005 Ll 0.005
+N 0.02 L 0.005 N1 0.005
+L 0.02 F 0.001 I 0.001
+E 0.005 G 0.001 F 0.001
+I 0.005
+TI Z m —0.01 < Az+ Aq x124+ AB x150< 0.01 (22)
+ia ~0.025 0.025
+2 3 < Aa <—— (23)
+24 24
+l —0.025 < Az < 0.025 (24)
+0.025 < Az + Aa x12 < 0.025 (25)
+
+Fig. 6. Dresser feeding system
+
+The structure and the relationship of various parts are
+shown in Figure 7 and 8. The surfaces’ shape and
+position tolerances are described as Table 1.
+
+| J
+4
+44
+aa
+-” or NZ
+NOM i?
+Li
+120 a 13.5
+
+Fig. 8. Slideway
+
+The ideal unit normal vector’s location coordinates is
+(0, -92.5,33), with the constraints as (19) to (25) to
+control the variation range of parameters.
+
+0.01 - 4 < 0.01 a9)
+24 24
+0.01 0.01
+
+< AB <—— 20
+300 p 300 (20)
+
+-0.01< Az < 0.01 (21)
+
+The actual assembly process is: firstly part 2 and 3
+join part 1, secondly parts 4 and part 5 join 6. Finally the
+whole assembly could be gotten. The coordinate system
+of part 1 is the mechanical system’s reference, the ideal
+surfaces of part 2 and part 3 will be converted to the base
+coordinate system, then the ideal surface 2 * is overall
+fitted from parts 1,2 and 3. The ideal surface 4 * could
+be gotten by the same method. Finally it is converted to
+the basic coordinate system of part 1.
+
+Fig. 9. Precision analysis structure of dresser
+
+3000 random error samples were selected from the
+variation range of unit normal vector in normal
+distribution to simulate numerical analysis the assembly
+precision. The contours of P position in the reference
+coordinate system could be gotten.
+
+The space coordinates of point P could be gotten
+after 3,000 times accuracy analysis simulation. The
+average value of position error is 57.1, and the variance
+is 46.8.
+
+----$$$$----$$$$----
+310
+
+Fig. 10. The location of working point
+3.2. Under working condition
+
+According to the method mentioned in 2.3, based on
+the simulation on nominal size of FEA model under
+loading, the corresponding tolerance zone and
+distribution variation could be analysed in the following
+processes.
+
+As showed in Fig. 11, taking the a element of unit
+normal vector in the A surface of base part as an
+example.
+
+Fig. 11. The variation of angle element a of A surface
+
+A rigid surface was modeled and moved close to the
+contact surface to generate a displacement constraint.
+The mapping curve between displacement and reaction
+force can be obtained by FEA approach. Conversely,
+according to the actual loading on the fitting surface
+corresponded to the displacement of the rigid surface,
+the variation of the corresponding element can also be
+calculated, and the multi-loading condition can be
+simulated in the same way.
+
+As shown in Fig. 12, the variation zone of angle
+element a of A surface is dispersed into some points.
+The relationship between the displacement of the rigid
+surface and the reaction force of the fitting surface is
+illustrated.
+
+Junkang Guo et al. / Procedia CIRP. 10 (2013) 306 — 311
+
+4
+
+3.5% 10
+—#—FEM simulation data
+3; =*-fitting curve
+> 2.5)
+®
+go 2
+&
+c
+S15}
+1S)
+Oo
+®o
+o 1
+0.5}
+0
+0 0.5 1 1.5 2
+Displacement / mm x 10°
+
+Fig. 12. The relationship between displacement and the reaction force
+
+Based on the displacement-reaction force curve, the
+actual fitting surface deformation under loading can be
+simulated. By fitting the nodes coordinate after
+deformation using ideal surface, the a element can be
+obtained.
+
+0
+
+=@= variation of a before and after loading
+
+-2000+
+
+-4000+
+
+a element under loading
+
+-6000+
+
+-8000 -6000 -4000 -2000 0
+a element without loading
+
+Fig. 13. Variation of a element before and after loading
+
+From the ideal surface fitting the deformation part,
+the corresponding function between a element without
+or under loading can be got. By substituting this function
+into probability density function without loading, the
+probability density distribution under loading can be
+solved.
+
+90
+
+80; 4
+Without loading
+
+70+
+
+Under loading
+60}; 4
+
+50;
+
+40}
+
+Fig. 14. The probability density distribution before and after loading
+
+----$$$$----$$$$----
+Junkang Guo et al. / Procedia CIRP 10 (2013) 306 — 311
+
+Based on the variation zone and distribution of unit
+normal vector of the ideal surface calculated in this
+method, the tolerance analysis of the assembly under
+loading would be more easily.
+
+The grinding dresser is taken as the example.
+Considering the normal work condition, the error
+samples are obtained according to the tolerance
+specification, and revised through FEM approach. The
+assembly accuracy is predicted by the variation
+propagation model. In this example, 3000 samples were
+picked to simulate the normal distribution of the
+geometry tolerance of each feature.
+
+Comparing the two figures in Fig. 15, the distribution
+and probability density function of the working point
+under loading is different to the former simulation
+without considering part deformation.
+
+(mm)
+
+The distribution of x coordinate of working point
+
+500 1000 1500 2000 2500 3000
+
+The probability density function of x coordinate of working point
+15 T + + T + +
+
+0.2 0.15 -0.1 0.05 0.4 015
+
+(mm)
+
+(mm) The distribution of x coordinate of working point (under loading)
+
+1 L 1 L
+1000 1500 2000 2500
+
+i
+0 500
+The probability density function of x coordinate of working point
+(under loading)
+
+3000
+
+on
+T
+
+0.2 -0.15 -0.1 -0.05 0 0.05 0.4
+
+Fig. 15. The distribution and probability function of working point
+without and under loading
+4. Conclusions
+
+(1) This paper proposed a part precisions model
+
+covered dimensional tolerances and geometric tolerances
+information.
+
+(2) The method of unit normal vector’s variation is
+proposed in the rigid condition. The variation range and
+
+311
+
+distribution of unit normal vector by the load is discussed.
+
+(3) The accumulation error model is established based
+on ideal mating surface method. It realizes the accuracy
+prediction of the mechanical system. The accuracy
+prediction could be calculated by selecting the samples.
+The samples could be gotten by the variation range and
+distribution of unit normal vector.
+
+(4) The distribution would be different as the part
+deformation under loading was considered. As the error
+variation is much less than the nominal dimension, it is
+not a significant difference.
+
+Acknowledgements
+
+The authors gratefully wish to acknowledge the
+supported by the State Key Program of National Natural
+Science of China under grant No.50935006 and the
+National Basic Research Program of China (973
+Program) under grant No. 2011CB706606.
+
+References
+
+[1] Desrochers A, Ghie W, Laperriere., 2003. Application of a Unified
+Jacobian-Torsor Model for Tolerance Analysis, Journal of
+Computing and Information Science in Engineering 3, p. 2-14.
+
+[2] Lafond P, Laperriere L., 1999. “Jacobian-based Modeling of
+Dispersion Affecting Pre-Defined Functional Requirements of
+Mechanical Assemblies.” Assembly and Task Planning, 1999.
+(ISATP '99). Porto, Portugal, p. 20-25.
+
+[3] Zhou Zhige, Hang Wenzhen, Zhang Li., 2000. Application of
+Number Theoretic Methods in Statistical Tolerance Analysis.
+Chinese Journal of Mechanical Engineering 36, p. 70-72.
+
+[4] Zhang Yu, Yang Musheng, Li Xiaopei., 2007. Quality oriented
+design approach of dimensional chain and statistical tolerance.
+Chinese journal of Mechanical Engineering 43, p. 1-6.
+
+[5] Anselmetti B, Mejbri H, Mawussi K.,2003. Coupling experimental
+design-digital simulation of junctions for the development of
+complex tolerance chains. Computers in Industry 50, p. 277-292.
+
+[6] Zhang Bo, Li Zongbin.,2005. Modeling of tolerance information
+and reasoning technique study using polychromatic sets. Chinese
+Journal of Mechanical Engineering 41, p. 111-116.
+
+[7] Shen Zhengshu, Gaurav Ameta, Jami J.Saha, et al., 2005. A
+Comparative Study of Tolerance Analysis Methods. Journal of
+Computing and Information Science in Engineering 5, p. 247.
+
+----$$$$----$$$$----

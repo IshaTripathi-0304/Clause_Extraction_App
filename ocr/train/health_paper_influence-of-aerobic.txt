@@ -1,0 +1,951 @@
+LSEVIER
+
+4-2
+
+journal homepage: www.elsevier.com/locate/jcte
+
+Journal of Clinical & Translational Endocrinology 1 (2014) 108—114
+
+Contents lists available at ScienceDirect
+
+Journal of
+CLINICAL and
+
+TRANSLATIONAL
+
+Journal of Clinical & Translational Endocrinology ENDOCRINOLOGY
+
+ce
+
+Research Paper
+
+Influence of aerobic exercise training on cardiovascular and (@ cossva
+endocrine-inflammatory biomarkers in hypertensive postmenopausal
+
+women™
+
+Aline P. Jarrete °, lane P. Novais*, Hygor A. Nunes °, Guilherme M. Puga®, Maria A. Delbin ”,
+
+Angelina Zanesco “*
+
+*Laboratory of Cardiovascular Physiology and Exercise Science, University of Sado Paulo State (UNESP), Av, 24 A, 1515, Rio Claro, SP CEP: 13506-900, Brazil
+> Department of Structural and Functional Biology, Biology Institute, UNICAMP, Campinas, SP, Brazil
+
+ARTICLE INFO
+
+Article history:
+
+Received 20 May 2014
+Received in revised form
+20 June 2014
+
+Accepted 7 July 2014
+
+Keywords:
+
+Cortisol
+
+Leptin
+
+Nitric oxide pathway
+Blood pressure
+Redox state
+
+Introduction
+
+ABSTRACT
+
+Given that few studies have examined the interaction between endocrine-inflammatory mediators and
+aerobic exercise training in hypertensive postmenopausal women, the aim of this study was to inves-
+tigate whether aerobic exercise training (AET) for twenty-four sessions would alter cortisol, leptin and
+interleukin-18 (IL-18) levels. To further analyze endothelium function in response to AET, we also
+examined redox state as well as NO/cGMP pathway in this population. Eighteen hypertensive post-
+menopausal women finished this study. AET program consisted of 24 sessions in treadmill, 3 times per
+week, duration of 30 up to 40 min for each session, for 8 weeks at intensity of 100% of the MLSS ac-
+cording to previous incremental test. Heart rate was monitored in all studied time (resting and during
+exercise sessions). After 48 h of the last exercise session, blood samples were collected for biochemical
+analyses (levels of cortisol, leptin, IL-1f, nitrite/nitrate (NOx), cGMP, malondialdehyde (MDA) and
+asymmetric dimethylarginine (ADMA); superoxide and catalase activity). We also measured systolic and
+diastolic blood pressure. A significant reduction in body mass was observed. As expected, systolic and
+diastolic blood pressure values were significantly reduced after AET in hypertensive women. We also
+found a marked increase in NOx” levels as well as cGMP concentration in trained women, approximately
+37.7 and 30.8%, respectively. No changes in cortisol, leptin, ADMA and IL-1B levels were observed after
+AET. Similarly, MDA levels and catalase activity were not affected by AET. In contrast, a marked increase
+in SOD activity was found (86.6%). In conclusion, our findings show that aerobic exercise training for
+twenty-four sessions promoted a significant reduction in blood pressure by activating NO/cGMP pathway
+as well as by promoting an up-regulation of SOD activity without changing in cortisol/leptin levels in
+postmenopausal hypertensive women.
+
+© 2014 The Authors. Published by Elsevier Inc. All rights reserved.
+
+phenomenon in postmenopausal women. Estrogen deficiency has
+been pointed out to play a major role, but its deficiency partially
+
+Epidemiological studies have shown that the incidence of car-
+diovascular diseases (CVD) in women increases dramatically after
+menopause [| 1,2|. However, the underlying mechanisms are not yet
+fully clarified. Several hypotheses have been proposed to explain this
+
+* This is an open access article under the CC BY-NC-ND license (http://
+creativecommons.org/licenses/by-nc-nd/3.0/).
+
+Conflict of interest: The authors declare no conflict of interest.
+
+Source of funding: Authors are grateful to Sao Paulo Research Foundation
+(FAPESP): 2001/17437-7 and Coordenacdo de Aperfeicoamento de Pessoal de Nivel
+Superior (CAPES) for financial support.
+
+* Corresponding author. Tel.: +55 19 3526 4324; fax: +55 19 3526 4321.
+
+E-mail addresses: azanesco@rc.unesp.br, lina.co@hotmail.com (A. Zanesco).
+
+explains the increased incidence of CVD since hormone replacement
+therapy did not prevent or mitigated cardiovascular events in this
+population [3,4]. Oxidative stress is another explanation, where
+increased production of the inflammatory mediators would lead to a
+massive production of reactive oxygen species, which in turn,
+resulting in endothelium dysfunction with decrease in nitric oxide
+(NO) production or its bioavailability to the cells [5]. However, some
+studies found a positive association between CVD and inflammatory
+mediators |6—8| whereas others failed to detect any association | 9}
+in climacteric phase. The hypothalamic-pituitary-adrenal axis has
+also been linked to the higher incidence of CVD in postmenopausal
+women | 10,11 |. Nevertheless, the number of studies examining the
+interaction between menopause status and glucocorticoids is scarce.
+
+2214-6237/$ — see front matter © 2014 The Authors. Published by Elsevier Inc. All rights reserved.
+
+http://dx.doi.org/10.1016/j.jcte.2014.07.004
+
+----$$$$----$$$$----
+A.P. Jarrete et al. / Journal of Clinical & Translational Endocrinology 1 (2014) 108—114 109
+
+Therefore, the higher incidence of CVD in postmenopausal women
+still a complex issue and further studies should be carried out to look
+at the insight mechanisms as well as to get more information in an
+attempt to prevent cardiovascular events in this population. On the
+other hand, a plethora of studies has shown that physically active
+subjects have more longevity with reduction of morbidity and
+mortality [12,13]. Given that few studies have examined the inter-
+action between endocrine-inflammatory mediators and aerobic ex-
+ercise training in hypertensive postmenopausal women, the aim of
+this study was to investigate whether aerobic exercise training for
+twenty-four sessions would alter cortisol, leptin and interleukin-18
+levels. To further analyze endothelium function in response to ex-
+ercise training, we also examined redox state as well as NO/cGMP
+pathway in this population.
+
+Methodology
+Study participants
+
+This study was approved by the Ethical Committee of Institute of
+Bioscience at the University of Sdo Paulo State (UNESP). All the vol-
+unteers were recruited through advertisements in the surrounding
+area of UNESP. A total of thirty-two volunteers were eligible to
+participate in the study. After all screening test, only eighteen women
+finished the study. Postmenopausal status was determined as the
+absence of menstruation for at least 1 year under natural or surgical
+causes were Classified as hypertensive according to previous medical
+diagnosis (systolic blood pressure: 140—159 mm Hg, diastolic blood
+pressure: 90—99 mm Hg or using anti-hypertensive). The inclusion
+criteria of this study were: to be hypertensive; body mass index
+<30 kg/m; sedentary (<150 min of moderate physical activity per
+week or <60 min of vigorous physical activity per week). The
+exclusion criteria were: smoking, taking hormone replacement
+therapy, diabetic, cardiovascular disease (stroke, heart failure); renal
+dysfunction; other condition that precludes the practice of physical
+exercise. Before starting the protocol, volunteers were informed
+about the procedures and risks of the study and signed a consent
+form in accordance with Ethical Committee of UNESP.
+
+Study protocol
+
+This clinical trial lasted 10 weeks and all parameters were
+evaluated at initial time and after 24 sessions of the aerobic ex-
+ercise training (AET). Initially, the anthropometric and cardio-
+vascular parameters were measured and volunteers were
+familiarized to the treadmill during 2—4 days, depending upon
+
+Before
+1 week
+
+1-9 sessions
+
+8 weeks
+
+10-18 sessions
+
+each participant. After familiarization, maximal lactate steady
+state (MLSS) was defined individually for prescription of AET in-
+tensity. Briefly, postmenopausal women performed two to five
+tests with fixed duration (30 min) and walking speed (5.5 km/h)
+on a treadmill (Movement RT 250 PRO) in accordance with pre-
+vious study [14]. The inclination of the ergometer was used to
+control the intensity that ranged between 1 and 15%. The intensity
+was adjusted in each test according to the aerobic capacity of the
+participant. Measurement blood lactate concentration was per-
+formed at rest, 10th and 30th min during incremental test. MLSS
+was determined when the difference of blood lactate concentra-
+tion between 10th and 30th min was not exceeded 1 mM [15].
+
+AET program consisted of 24 sessions in treadmill, 3 times per
+week, duration of 30 up to 40 min for each session, for 8 weeks. The
+intensity of the AET was 100% of the MLSS according to previous
+incremental test. Heart rate was monitored and AET was supervised
+by exercise physiologists in an environmental with temperature
+(= 25 °C) and humidity (40—60%) controlled. Figure 1 illustrates the
+experimental design.
+
+Anthropometric parameters
+
+Body weight and height was determined using a scale and sta-
+diometer (Toledo 2096 PP). Body mass index was calculated as the
+ratio body weight divided by the square of the height in meters.
+Waist circumference was measured at the midpoint between the
+last rib and iliac crest.
+
+Cardiovascular parameters
+
+Blood pressure (BP) — After 20 min of sitting position, three
+consecutives BP measurements using a semi-automatic equipment
+(Microlife MIB-P3BTOA). Resting BP was determined as the average
+of the measurements.
+
+Heart rate (HR) — HR was measured using a heart rate monitor
+(Polar FT1 TRQ) after 20 min of seated position. At the final of the
+resting period the value of HR was obtained.
+
+Blood samples
+
+Blood samples were collected after 12 h of overnight fast
+(between 7:00 and 8:00 am). Blood samples were collected from
+the antecubital vein using standard venipuncture methods.
+Samples were centrifuged (3000 rpm, 12 min) and the superna-
+tant (plasma and serum) were stored in aliquots at —80 °C for
+future analysis.
+
+19-24 sessions
+
+* Anthropometry
+
+# Cardiovascular (blood pressure and heart rate)
+
++ MLSS
+
+§ Blood collection
+
+Duration of aerobic session
+a—30 min
+b—35 min
+
+c—40 min
+
+Figure 1. Experimental design.
+
+----$$$$----$$$$----
+110 A.P. Jarrete et al. / Journal of Clinical & Translational Endocrinology 1 (2014) 108—114
+
+Table 1
+Effects of aerobic exercise training on anthropometrical parameters, lipid profile,
+glycemia and MLSS in hypertensive postmenopausal women.
+
+Parameters (n = 18) Initial Final
+
+Age (yrs) 58.3 + 1.2 —
+
+Time after menopause (yrs) 10.3 + 2.1 —
+
+BMI 27.3 40.5 26.9 + 0.5*
+WC 94.44 1.6 93.4 + 1.5*
+TC (mg/dL) 195.4 + 6.4 194.1 + 5.5
+LDL-c (mg/dL) 124.7 + 6.4 124.2 + 5.0
+HDL-c (mg/dL) 46.9 + 1.7 49.1+1.5
+VLDL-c (mg/dL) 23.8 + 1.9 20.6 + 1.5
+TG (mg/dL) 113.8 + 10 103.1 + 7.8
+Glycemia (mg/dL) 87.2 + 2.2 90.3 + 2.1
+Rest HR 67.3 + 2.7 64.7 + 2.2*
+MLSS exercise HR 152 + 4.7 151+ 5.1
+MLSS threshold 5.5+0.4 7.3 + 0.5*
+
+BMI = body mass index (kg/m*); WC = waist circumference (cm); TC = total
+cholesterol; LDL = low density lipoprotein; HDL = high-density lipoprotein;
+VLDL = very low-density lipoprotein; TG = triglycerides. HR = heart rate (bpm);
+MLSS = maximal lactate steady state; Data are mean + SEM.
+
+*P < 0.05 compared with initial time.
+
+Biochemical analyses
+
+Lipid profile and glycemia — Serum concentrations of total
+cholesterol, low-density lipoprotein-cholesterol, very low-density
+lipoprotein cholesterol, high-density lipoprotein cholesterol, tri-
+glycerides and glycemia were determined using automated standard
+method (Cobas Mira Plus).
+
+Cortisol — Serum concentrations of cortisol were measured by
+the chemiluminescence (ADVIA Centaur®). This is a competitive
+immunoassay that uses direct chemiluminescent technology.
+
+Leptin — Serum leptin concentrations were measured by ELISA
+using a commercial available kit (SPI Bio, Montigny-le-Bretonneux,
+France) according to the manufacturer’s instructions.
+
+Interleukin-16 (IL-18) and guanosine cyclic monophosphate
+(cGMP) — Plasma concentrations of IL-18 and cGMP were measured
+by ELISA using a commercial available kit (R&D Systems, Mine-
+apolis, MN, USA) according to the manufacturer’s instructions.
+
+Asymmetric dimethylarginine (ADMA) — Plasma concentrations of
+ADMA were measured by ELISA using a commercial available kit
+(Immunodiagnostik AG, Bensheim, Germany) according to the man-
+ufacturer’s instructions.
+
+Nitrite/Nitrate (NO, ) — Plasma concentrations of NOx were
+measured to evaluate NO production by commercial available kit
+(Cayman Chemical, Ann Arbor, MI, USA) according to the manufac-
+turer’s instructions. Before starting this assay samples were ultra-
+filtered through micro filter (Microcon Centrifugal Filter Units,
+10 kDa, Millipore, Bedford, MA).
+
+Superoxide dismutase (SOD), catalase and malondialdehyde (MDA) —
+All these markers were measured by ELISA using a commercial avail-
+able kit (Cayman Chemical, Ann Arbor, MI, USA) according to the
+manufacturer’s instructions. SOD’s assay detects radicals superoxide
+generated by xanthine oxidase and hypoxanthine, revealing the plas-
+matic activity of this enzyme. Catalase’s assay is based on the reaction
+of the enzyme with methanol in an optimal H202 concentration. Serum
+levels of MDA were determined to evaluate lipid peroxidation | 16].
+
+Statistical analysis
+
+Data are presented as mean + standard error mean. Normality of
+the data was verified by the Kolmogorov—Smirnov’s test. A paired
+Student’s t-test was used to analyze the effect of AET on the car-
+diometabolic and endocrine parameters. For all analyses, P < 0.05
+was considered statistically significant.
+
+Results
+
+Body mass index values were significantly reduced in hyperten-
+sive postmenopausal women after 24 sessions of AET approximately
+1.5% as compared to initial time. However, no changes were found in
+waist circumference, lipid profile and glycemia. On the other hand,
+the intensity of physical exercise employed in our study was effective
+to promote a significant increase in MLSS after AET, approximately
+32.7%. Data are summarized in Table 1. Regarding antihypertensive
+therapy, 67% of the participants were on renin-angiotensin inhibitors
+or AT1 receptor blockers whereas six volunteers were on diuretics or
+beta-adrenergic receptor blocker therapy (33%). Regarding hypo-
+lipidemic compound, 50% of the volunteers were on therapy previ-
+ously to the study.
+
+As expected, AET was effective in lowering arterial blood pres-
+sure in trained HT women, approximately —3.8% and —5.9% for
+systolic and diastolic blood pressure, respectively (Figure 2, panels
+A and B). Resting heart rate values were also decreased after 24
+
+A 125
+
+_
+Le)
+o
+
+SBP (mmHg)
+=
+
+Before After
+
+A= -5.9%
+as |
+
+~
+on
+
+DBP (mmHg)
+3
++
+
+65
+Before After
+
+HR (bpm)
+
+Before After
+
+Figure 2. Effects of aerobic exercise training on systolic blood pressure (SBP, panel A),
+diastolic blood pressure (DBP, panel B) and resting heart rate (HR, panel C) in post-
+menopausal hypertensive women (n = 18). *P < 0.05 paired t test between initial and
+final time of the study.
+
+----$$$$----$$$$----
+A.P. Jarrete et al. / Journal of Clinical & Translational Endocrinology 1 (2014) 108—114 111
+
+A= +37.7%
+
+Before After
+
+Le)
+00
+
+A= +30.8%
+
+cGMP (pmol/mL)
+
+Before After
+
+0,53
+
+S
+on
+pay
+
+HT
+
+ADMA (umol/L)
+i=)
+S
+
+0,47
+
+0,45 t t ;
+Before After
+
+Figure 3. Effects of aerobic exercise training on NOx (panel A), cGMP (panel B) and
+ADMA (panel C) levels in postmenopausal hypertensive women (n = 18). *P < 0.05
+paired t test between initial and final time of the study.
+
+sessions of aerobic physical exercise (Table 1 and Figure 2C). Given
+that it is well established that the health beneficial effect of the ex-
+ercise training is related to activation of NO/cGMP signaling pathway,
+we have evaluated these biomarkers before and after twenty-four
+sessions of aerobic physical exercise. We found a marked increase
+in NOx” levels, which reflect NO production, as well as cGMP con-
+centration in trained women, approximately 37.7 and 30.8%,
+respectively (Figure 3, panels A and B). Interestingly, we found no
+changes in ADMA levels (Figure 3C).
+
+Furthermore, we also analyzed the redox state by measuring SOD
+and catalase activities and MDA concentration. Our findings show
+that AET promoted a profound increase in SOD activity, approxi-
+mately 86.6% (Figure 4A). No changes were found catalase activity
+and MDA concentration (Figure 4, panels B and C).
+
+Regarding endocrine-inflammatory mediators, we found no ef-
+fects of the AET on cortisol, leptin and IL-1 levels in postmenopausal
+hypertensive women (Figure 5, panels A, B and C, respectively).
+Interestingly, we found a positive relationship between systolic blood
+
+pressure values and cortisol levels at initial time of the study
+(17 = 0.2422, P < 0.0448, n = 17, Figure GA) whereas this correlation
+was abrogated after AET (P > 0.05, Figure 6B).
+
+Discussion
+
+A number of studies have shown that cardiovascular diseases can
+be prevented by regular physical exercise either in human or in
+laboratory animals, which is strongly associated with an increase in
+NO bioavailability {17—19]. Regarding postmenopausal women,
+recent study found that aerobic exercise training even in a low in-
+tensity promoted reductions in blood pressure showing how
+changing in the lifestyle is favorable for this particular population in
+preventing cardiovascular events [20]. However, no mechanist
+
+A 35
+A= +86.6%
+a |
+25
+*
+
+20
+
+SOD (U/mL)
+
+15
+
+Before After
+
+ey)
+
+Catalase (nmol/min/mL)
+
+Before After
+
+=
+=
+< HT
+a
+=
+
+1 5 T T 1
+Before After
+
+Figure 4. Effects of aerobic exercise training on SOD (panel A), catalase (panel B) ac-
+tivity and MDA concentration (panel C) in postmenopausal hypertensive women
+(n = 18). *P < 0.05 paired t test between initial and final time of the study.
+
+----$$$$----$$$$----
+—
+—
+NO
+
+>
+&
+oO
+
+Cortisol (nmol/L)
+& aA @
+oO oO oO
+
+&
+Oo
+
+Before After
+
+Nh
+NO
+
+Leptin (ng/mL)
+ND No
+os fe)
+
+20
+Before After
+
+C 0,6
+
+i=)
+on
+
+—m—HT
+
+IL-18 (pg/mL)
+oS
+>
+
+i=)
+Ww
+
+Before After
+
+Figure 5. Effects of aerobic exercise training on cortisol (panel A), leptin (panel B) and
+IL-18 levels (panel C) in postmenopausal hypertensive women (n = 18). *P < 0.05
+paired t test between initial and final time of the study.
+
+events have been reported. Thus, one of the objectives of our study is
+to examine different pathways that regulate blood pressure in
+response to exercise training in hypertensive postmenopausal
+women. We found that twenty-four sessions of aerobic physical
+exercise was effective in reducing BMI as well as to improve the
+physical capacity of all volunteers. Additionally, the reductions of
+systolic and diastolic blood pressure were positively associated with
+an improvement of NO/cGMP pathway as well as an up-regulation of
+SOD activity. Taken together, these findings show that aerobic ex-
+ercise training promoted an improvement of endothelium function
+in hypertensive postmenopausal women. Indeed, previous studies
+from our group have systematically demonstrated the beneficial
+effects of the exercise training on cardiovascular system by increased
+production of NO and/or its bioavailability in postmenopausal
+women |21—24]. To further examine the association between NO
+
+A.P. Jarrete et al. / Journal of Clinical & Translational Endocrinology 1 (2014) 108—114
+
+inhibition and hypertension in postmenopausal women, we looked
+at ADMA levels since evidences have linked increased ADMA levels
+in patients with angina, arterial hypertension and immune
+dysfunction mainly in elderly and postmenopausal women |25—27].
+We found no changes in ADMA levels in trained women excluding
+the contribution of this endothelial pathway on the beneficial effects
+of exercise training in blood pressure regulation. In contrast, two
+recent studies from the same group showed a decrease in plasma
+ADMA in healthy postmenopausal women in response to aerobic
+exercise training as well as an inverse relationship between aerobic
+fitness and levels of ADMA [28,29]. However, these studies did not
+measure NO production, and blood pressure values were not
+modified by exercise training. Thus, more studies should be carried
+out to check the contribution of the endogenous inhibition of NO
+availability on arterial hypertension as well as the effects of exercise
+training on ADMA/NOS pathway.
+
+Increased oxidative stress has been pointed out to play an
+important in the pathogenesis of arterial hypertension in men |30|
+as well as in postmenopausal women [5,31]. Although evidences
+have demonstrated that trained [32] or physically active healthy
+postmenopausal women [33] showed a decreased in circulating
+concentrations of MDA as compared to sedentary one, no blood
+pressure measurements were performed in these studies. Thus, the
+data do not clarify the high incidence of arterial hypertension in
+postmenopausal women or explain the insight mechanisms in the
+phenomenon. In our study, we found no changes in MDA levels in
+response to exercise training in hypertensive postmenopausal
+women excluding the contribution of this biomarker in the bene-
+ficial effects of physical exercise on blood pressure regulation. We
+also found no changes in the pro-inflammatory mediators, IL-18
+and leptin, in response to exercise training. It has been reported the
+influence of estrogen on pro- and anti-inflammatory pathway in
+different cells types [34]. Indeed, in whole human blood cultures,
+the addition of different concentration of estrogen decreases
+secretion of several pro-inflammatory mediators, mainly IL-1 [35].
+Additionally, it has been demonstrated an increase in inflammatory
+mediators in experimental model of menopause [36]. Interestingly,
+a previous study showed that IL-1 levels increase in the early stage
+of the menopause (less than five years) and return to the normal
+levels in the late stage, with values similar to premenopause phase
+[8|. Thus, it is not clear whether estrogen deficiency could lead to an
+inflammatory state in postmenopausal women. Furthermore, the
+range of concentration of IL-1B levels in women is very wide
+varying between 0.30 and 0.081 pg/mL depending on the repro-
+ductive phase or not as well as the time after menopause [37].
+Regarding leptin levels and postmenopausal women, the interac-
+tion is even more complex [38]. An increase [39], no variation |40|
+and a decrease [41,42] in circulating leptin levels were detected
+after menopause. Previous studies reported that postmenopausal
+women under caloric restriction [43] or on tibolone therapy |42|
+showed a significant reduction in leptin levels. In our study, exer-
+cise training did not affect leptin levels even though there was a
+slight reduction in the BMI (1.5%). Indeed, previous studies have
+shown that changes in leptin levels are detected only when physical
+training is associated with caloric restriction in postmenopausal
+women [44,45].
+
+A number of studies have shown the importance of cortisol, the
+major glucocorticoid hormone produced in human, in elevating
+blood pressure |46—48]. Several signaling pathways seem to be
+involved in the mechanisms by which cortisol produces arterial hy-
+pertension including sodium/volume homeostasis, activation of the
+renin-angiotensin system, and increased sympathetic drive |49—52].
+Additionally, it has been reported that cortisol impairs NO production
+measured by NOx” levels attributing thus, the cortisol-induced hy-
+pertension to the NO deficiency in both human and experimental
+
+----$$$$----$$$$----
+A.P. Jarrete et al. / Journal of Clinical & Translational Endocrinology 1 (2014) 108—114 113
+
+>
+
+1000 ;
+r? = 0.242
+
+7 oo P= 0.044
+ie)
+£
+= 600 e
+= @
+4 ee
+5 400 $ 2°
+
+@
+; =,
+
+200
+
+80 90 100 110 120 130 140 150
+SBP (mmHg)
+
+Le)
+—_—
+So
+So
+o
+
+r? = 0.007
+=) P=0.741
+= 800
+E
+= 600 - ,. ee
+fe) e e e
+8 400 e ° e
+
+e e
+200
+
+80 90 100 110 120 130 140 150
+
+SBP (mmHg)
+
+Figure 6. Correlation between systolic blood pressure values and cortisol levels at initial time (panel A) and after twenty-four sessions (panel B) of physical exercise in post-
+
+menopausal hypertensive women.
+
+model [53,54]. However, most of the studies have examined the
+interaction between cortisol and arterial hypertension in male sub-
+jects [55] and no one examined the effects of exercise training on
+endocrine-inflammatory mediators in hypertensive postmenopausal
+women. In our study, we found no effects of the exercise training in
+the cortisol concentration in hypertensive postmenopausal women.
+Thus, it is clear that the beneficial effects of exercise training on blood
+pressure were related to an improvement of NO/cGMP pathway
+without changing in serum cortisol levels. This is confirmed by the
+lack of positive correlation between cortisol and blood pressure after
+twenty-four sessions of exercise. Collectively, our findings show that
+the endocrine-inflammatory mediators: cortisol, leptin and IL-1 did
+not contribute to the beneficial effects of the exercise training on
+blood pressure in hypertensive postmenopausal women. Further-
+more, our study confirms that aerobic exercise training for twenty-
+four sessions promoted a reduction in blood pressure by activating
+NO/cGMP pathway as well as by promoting an up-regulation of SOD
+in this particular population.
+
+References
+
+[1] Simkin-Silverman LR, Wing RR, Hansen DH, Klem ML, Pasagian-Macaulay AP,
+Meilahn EN, et al. Prevention of cardiovascular risk factor elevations in healthy
+premenopausal women. Prev Med 1995;24:509—17.
+
+[2] Simkin-Silverman LR, Wing RR, Boraz MA, Kuller LH. Lifestyle intervention can
+prevent weight gain during menopause: results from a 5-year randomized
+clinical trial. Ann Behav Med 2003;26:212—20.
+
+[3] Shelley JM, Green A, Smith AM, Dudley E, Dennerstein L, Hopper J, et al.
+Relationship of endogenous sex hormones to lipids and blood pressure in mid-
+aged women. Ann Epidemiol 1998;8:39—45.
+
+[4] Maranon R, Reckelhoff JF. Sex and gender differences in control of blood
+pressure. Clin Sci (Lond) 2013;125:311-—8.
+
+[5] Reckelhoff JF. Gender differences in the regulation of blood pressure. Hyper-
+tension 2001;37:1199—208.
+
+[6] Cioffi M, Esposito K, Vietri MT, Gazzerro P, D’Auria A, Ardovino I, et al. Cyto-
+kine pattern in postmenopause. Maturitas 2002;4:187—92.
+
+[7] Yasui T, Uemura H, Tomita J, Miyatani Y, Yamada M, Kuwahara A, et al. As-
+sociation of interleukin-8 with hot flashes in premenopausal, perimenopausal,
+and postmenopausal women and bilateral oophorectomized women. J Clin
+Endocrinol Metab 2006;91:4805—8.
+
+[8] Yasui T, Maegawa M, Tomita J, Miyatani Y, Yamada M, Uemura H, et al.
+Changes in serum cytokine concentrations during the menopausal transition.
+Maturitas 2007;56:396—403.
+
+[9] Rolland YM, Perry 3rd HM, Patrick P, Banks WA, Morley JE. Leptin and adi-
+ponectin levels in middle-aged postmenopausal women: associations with
+lifestyle habits, hormones, and inflammatory markers — a cross-sectional
+study. Metabolism 2006;55:1630—6.
+
+[10] Puterman E, O’Donovan A, Adler NE, Tomiyama AJ, Kemeny M, Wolkowitz OM,
+et al. Physical activity moderates effects of stressor-induced rumination on
+cortisol reactivity. Psychosom Med 2011;73:604—11.
+
+[11] Li S, Liu W, Wang L, Huang R, Chen Q, Wu Y, et al. Effects of menopause on
+hepatic 11f$-hydroxysteroid dehydrogenase type 1 activity and adrenal
+sensitivity to adrenocorticotropin in healthy non-obese women. Gynecol
+Endocrinol 2011;27:794—9.
+
+[12] Artero EG, Espafia-Romero V, Lee DC, Sui X, Church TS, Lavie CJ, et al. Ideal
+cardiovascular health and mortality: Aerobics Center Longitudinal Study.
+Mayo Clin Proc 2012;87:944—52.
+
+[13] Swift DL, Lavie CJ, Johannsen NM, Arena R, Earnest CP, O’Keefe JH, et al.
+Physical activity, cardiorespiratory fitness, and exercise training in primary
+and secondary coronary prevention. Circ J 2013;77:281—92.
+
+[14] Beneke R. Anaerobic threshold, individual anaerobic threshold, and maximal
+lactate steady state in rowing. Med Sci Sports Exerc 1995;27:863-—7.
+
+[15] Beneke R. Methodological aspects of maximal lactate steady state-
+implications for performance testing. Eur J Appl Physiol 2003;89:95—9.
+
+[16] Yagi K. Simple assay for the level of total lipid peroxides in serum or plasma.
+Methods Mol Biol 1998;108:101—6.
+
+[17] Zanesco A, Antunes E. Effects of exercise training on the cardiovascular sys-
+tem: pharmacological approaches. Pharmacol Ther 2007;114:307—17.
+
+[18] Delbin MA, Davel AP, Couto GK, de Aratjo GG, Rossoni LV, Antunes E, et al.
+Interaction between advanced glycation end products formation and vascular
+responses in femoral and coronary arteries from exercised diabetic rats. PLoS
+One 2012;7:e53318.
+
+[19] Schuler G, Adams V, Goto Y. Role of exercise in the prevention of cardiovas-
+cular disease: results, mechanisms, and new perspectives. Eur Heart J
+2013;34:1790—9.
+
+[20] Swift DL, Earnest CP, Blair SN, Church TS. The effect of different doses of
+aerobic exercise training on endothelial function in postmenopausal women
+with elevated blood pressure: results from the DREW study. Br J Sports Med
+2012;46:753-—8.
+
+[21] Zanesco A, Zaros PR. Physical exercise and menopause. Rev Bras Ginecol
+Obstet 2009;31:254—61.
+
+[22] Zaros PR, Pires CE, Bacci Jr M, Moraes C, Zanesco A. Effect of 6-months of
+physical exercise on the nitrate/nitrite levels in hypertensive postmenopausal
+women. BMC Womens Health 2009;19:9—17.
+
+[23] Sponton CH, Rezende TM, Mallagrino PA, Franco-Penteado CF, Bezerra MA,
+Zanesco A. Women with TT genotype for eNOS gene are more responsive in
+lowering blood pressure in response to exercise. Eur J Cardiovasc Prev Rehabil
+2010;17:676—81.
+
+[24] Esposti RD, Sponton CH, Malagrino PA, Carvalho FC, Peres E, Puga GM, et al.
+Influence of eNOS gene polymorphism on cardiometabolic parameters in
+response to physical training in postmenopausal women. Braz J Med Biol Res
+2011;44:855—63.
+
+[25] Leiper J, Vallance P. Biological significance of endogenous methylarginines
+that inhibit nitric oxide synthases. Cardiovasc Res 1999;43:542-8.
+
+[26] Hori T, Matsubara T, Ishibashi T, Ozaki K, Tsuchida K, Mezaki T, et al.
+Significance of asymmetric dimethylarginine (ADMA) concentrations during
+coronary circulation in patients with vasospastic angina. Circ J 2003;67:
+305-11.
+
+[27] Schulze F, Maas R, Freese R, Schwedhelm E, Silberhorn E, B6ger RH. Deter-
+mination of a reference value for N(G), N(G)-dimethyl-L-arginine in 500
+subjects. Eur J Clin Invest 2005;35:622—6.
+
+[28] Tanahashi K, Akazawa N, Miyaki A, Choi Y, Ra SG, Matsubara T, et al. Aerobic
+exercise training decreases plasma asymmetric dimethylarginine concentra-
+tions with increase in arterial compliance in postmenopausal women. Am J
+Hypertens 2014;27:415—21.
+
+[29] Tanahashi K, Akazawa N, Miyaki A, Choi Y, Ra SG, Matsubara T, et al. Plasma
+ADMA concentrations associate with aerobic fitness in postmenopausal
+women. Life Sci 2014;108:30—3. pii: SO024-3205(14) 00474—3.
+
+[30] Rodrigo R, Prat H, Passalacqua W, Araya J, Guichard C, Bachler JP. Relationship
+between oxidative stress and essential hypertension. Hypertens Res 2007;30:
+1159-67.
+
+[31] Signorelli SS, Neri S, Sciacchitano S, Pino LD, Costa MP, Marchese G, et al.
+Behaviour of some indicators of oxidative stress in postmenopausal and fertile
+women. Maturitas 2006;53:77—82.
+
+[32] Karolkiewicz J, Michalak E, Pospieszna B, Deskur-Smielecka E, Nowak A,
+Pilaczynska-Szczesniak £, et al. Response of oxidative stress markers and
+antioxidant parameters to an 8-week aerobic physical activity program in
+healthy postmenopausal women. Arch Gerontol Geriatr 2009;49:e67—71.
+
+[33] Bartfay W, Bartfay E. A case-control study examining the effects of active
+versus sedentary lifestyles on measures of body iron burden and oxidative
+stress in postmenopausal women. Biol Res Nurs 2014;16:38—45.
+
+----$$$$----$$$$----
+114
+
+[34]
+[35]
+
+[36]
+
+[37]
+
+[38]
+
+[39]
+
+[40]
+
+[41]
+
+[42]
+
+[43]
+
+[44]
+
+A.P. Jarrete et al. / Journal of Clinical & Translational Endocrinology 1 (2014) 108—114
+
+Straub RH. The complex role of estrogens in inflammation. Endocr Rev
+2007;28:521—74.
+
+Rogers A, Eastell R. The effect of 17beta-estradiol on production of cytokines in
+cultures of peripheral blood. Bone 2001 ;29:30—4.
+
+Hamilton KL, Lin L, Wang Y, Knowlton AA. Effect of ovariectomy on cardiac
+gene expression: inflammation and changes in SOCS gene expression. Physiol
+Genomics 2008;32:254—63.
+
+Beavers KM, Jonnalagadda SS, Messina MJ. Soy consumption, adhesion mol-
+ecules, and pro-inflammatory cytokines: a brief review of the literature. Nutr
+Rev 2009;67:213—21.
+
+Springer AM, Foster-Schubert K, Morton GJ, Schur EA. Is there evidence that
+estrogen therapy promotes weight maintenance via effects on leptin?
+Menopause 2014;21:424—32.
+
+Baranowska B, Radzikowska M, Wasilewska-Dziubinska E, Roguski K,
+Polonowski A. Relationship among leptin, neuropeptide Y, and galanin in
+young women and in postmenopausal women. Menopause 2000;7:149—55.
+Kristensen K, Pedersen SB, Richelsen B. Interactions between sex steroid
+hormones and leptin in women. Studies in vivo and in vitro. Int J Obes Relat
+Metab Disord 2000;24:1438—44.
+
+Rosenbaum M, Nicolson M, Hirsch J, Heymsfield SB, Gallagher D, Chu F, et al.
+Effects of gender, body composition, and menopause on plasma concentra-
+tions of leptin. J Clin Endocrinol Metab 1996;81:3424—7.
+
+Dedeoglu EN, Erenus M, Yortik P. Effects of hormone therapy and tibolone on
+body composition and serum leptin levels in postmenopausal women. Fertil
+Steril 2009;91:425—31.
+
+Deibert P, K6nig D, Vitolins MZ, Landmann U, Frey I, Zahradnik HP, et al. Effect
+of a weight loss intervention on anthropometric measures and metabolic risk
+factors in pre- versus postmenopausal women. Nutr J 2007;6:31.
+
+Ryan AS, Pratley RE, Elahi D, Goldberg AP. Changes in plasma leptin and in-
+sulin action with resistive training in postmenopausal women. Int J Obes Relat
+Metab Disord 2000;24:27—32.
+
+[45]
+
+[46]
+[47]
+[48]
+
+[49]
+
+[50]
+
+[51]
+
+[52]
+
+[53]
+
+[54]
+
+[55]
+
+Figueroa A, Vicil F, Sanchez-Gonzalez MA, Wong A, Ormsbee MJ,
+Hooshmand §, et al. Effects of diet and/or low-intensity resistance exercise
+training on arterial stiffness, adiposity, and lean mass in obese post-
+menopausal women. Am J Hypertens 2013;26:416—23.
+
+Mantero F, Boscaro M. Glucocorticoid-dependent hypertension. J Steroid
+Biochem Mol Biol 1992;43:409—13.
+
+Mitchell BM, Webb RC. Impaired vasodilation and nitric oxide synthase ac-
+tivity in glucocorticoid-induced hypertension. Biol Res Nurs 2002;4:16—21.
+Whitworth JA, Williamson PM, Mangos G, Kelly JJ. Cardiovascular conse-
+quences of cortisol excess. Vasc Health Risk Manag 2005;1:291—9.
+
+Tam SH, Kelly JJ, Williamson PM, Whitworth JA. Reflex sympathetic function
+in cortisol-induced hypertension in humans. Clin Exp Hypertens 1997;19:
+479—93.
+
+Kelly JJ, Mangos G, Williamson PM, Whitworth JA. Cortisol and hypertension.
+Clin Exp Pharmacol Physiol Suppl 1998;25:S51—6.
+
+Wen C, Fraser T, Li M, Turner SW, Whitworth JA. Haemodynamic mechanisms
+of corticotropin (ACTH)-induced hypertension in the rat. J Hypertens
+1999;17(12 Pt 1):1715—23.
+
+Whitworth JA, Schyvens CG, Zhang Y, Andrews MC, Mangos G], Kelly JJ. The
+nitric oxide system in glucocorticoid-induced hypertension. J Hypertens
+2002;20:1035—43.
+
+Kelly JJ, Tam SH, Williamson PM, Whitworth JA. Decreased threshold for the
+nitric oxide donor glyceryl trinitrate in cortisol-induced hypertension in
+humans. Clin Exp Pharmacol Physiol 2007;34:1317—8.
+
+Ong SL, Whitworth JA. How do glucocorticoids cause hypertension: role of
+nitric oxide deficiency, oxidative stress, and eicosanoids. Endocrinol Metab
+Clin North Am 2011;40:393—407.
+
+Williamson PM, Kohlhagen JL, Mangos GJ, Whitworth JA, Kelly JJ. Acute effects
+of hydrocortisone on plasma nitrate/nitrite activity and forearm vasodilator
+responsiveness in normal human subjects. Clin Exp Pharmacol Physiol 2005
+Mar;32:162—6.
+
+----$$$$----$$$$----

@@ -1,0 +1,448 @@
+Available online at www.sciencedirect.com
+
+ScienceDirect Procedia
+
+Technology
+
+es
+
+AE SS
+ELSEVIER Procedia Technology 12 (2014) 411 —419
+
+The 7" International Conference Interdisciplinary in Engineering (INTER-ENG 2013)
+
+Influence of plane-parallel finishing trajectories to the roughness
+obtained by milling of spherical surfaces
+
+Paul Chetan*, Vasile Bolos, Alexandru Pozdirca
+
+Petru Maior University of Targu Mures, Nicolae Iorga Street, No. 1, Targu Mures 540088, Romania
+
+Abstract
+
+The purpose of the present paper is to determine a mathematical model in order to evaluate theoretically the roughness of a
+spherical surface finished with a torodial end mill. The parameters that influence the theoretical value of the roughness are: (1)
+technological parameters (cutting speed, feed per tooth, radial feed) or (11) geometrical (the geometry of the semi-product, the
+geometry of the cutting tool). The calculus to determine the roughness value is a difficult task taking into consideration the
+complexity of the mathematical relations; the paper presents a graphic method using a CAD application (AutoCAD) and a
+programming environment (AutoLISP).
+
+© 2013 The Authors. Published by Elsevier Ltd.
+Selection and peer-review under responsibility of the Petru Maior University of Tirgu Mures.
+
+Keywords: Roughness; milling; toric end-mill; mold; surface.
+
+1. The Premises of the Mathematical Model
+
+The optical block of a motor vehicle is commonly-known as the headlight; it serves to light up the road in
+conditions of low visibility and it comes under road lighting regulations. The main components of the optical block
+are (Figure 1): (1) cover; (i1) reflector; (111) the transparent optical part.
+
+* Corresponding author. Tel.: +40-744-917-188; fax: +40-265-262-275.
+E-mail address: paul.chetan@ing.upm.ro
+
+2212-0173 © 2013 The Authors. Published by Elsevier Ltd.
+Selection and peer-review under responsibility of the Petru Maior University of Tirgu Mures.
+doi:10.1016/j.protcy.2013.12.507
+
+
+----$$$$----$$$$----
+412 Paul Chetan et al. / Procedia Technology 12 (2014) 411 — 419
+
+HOUSING REFLECTOR
+
+Fig. 1. The main components of the optical block [Tri.o.m. S.p.a.]
+
+In addition to these, there is also the light source, the vertical control system of the light spot, the wire harness
+and the necessary contacts, fasteners. The three main components are manufactured by plastic injection.The
+aesthetical and functional requirements for the headlights affect the complexity of the injection molds proper to
+these components. The emergence of CNC processing machines and of the computer aided design and
+manufacturing applications revolutionized the engineering of plastic injection molds, this NC-CAD-CAM trio
+giving free hand to the auto designers. The quality of lighting is decided by the quality level of the mold cores
+surfaces, though despite the technological progress, the manual polishing perfection is still to be achieved. The
+present paper deals with aspects regarding the quality of the mold cores and offers technological recommendations,
+taking into account cost and productivity issues.
+
+The active interior surface of the reflector and implicitly the forming surface of the injection mold’s core is a
+sculptural surface that cannot be expressed by mathematical relations. In order to define equations for determining
+the theoretical roughness of a mill-generated surface, it is required an approximation of this forming surface with a
+pitch surface (plane, cylinder, cone, sphere, torus), respectively with a spherical surface (Figure 2). The spherical
+section defines the portion between two parallel planes intercepting a sphere.
+
+The mathematical approach accounts using a 3 axis processing centre, setting vertically the milling tool axis. The
+accounted finishing paths are plane-parallel and radial. The following index presents the inputs in the mathematical
+evaluation of the theoretical micro asperities’ heights:
+
+TORODIAL END MILL
+
+f SPHERICAL AREA
+
+CORE OF THE MOLD
+
+Fig. 2. Theoretical surface for roughness prediction
+
+Nomenclature
+
+H theoretical height of the irregularities
+
+
+----$$$$----$$$$----
+Paul Chetan et al. / Procedia Technology 12 (2014) 411 — 419
+
+main approach angle
+secondary approach angle
+angular speed
+
+cutting speed
+
+feed per tooth
+
+radial feed
+
+teeth number
+
+diameter of the milling tool
+corner radius of the milling tool
+radius of workpiece
+
+position parameter
+
+incremental parameter
+
+2. The Mathematical Model
+
+Consider a reference system XjYoZo attached to the core of the mold and a reference system X, YZ, attached to
+the torodial end mill. The torodial end mill is revolving around its axis with a rotative speed n and shifts on
+trajectories in the form of circular contour lines, sweeping the entire forming surface (Figure 3). The torodial end
+mill can move on a contour line by cut-up milling or cut-down milling.
+
+TOROIDAL ENDMILL
+
+NN ZI TOOLPATH TRAJECTORIES
+
+Fig. 3. Case of plane-parallel paths
+
+Both Z axes —of the cutting tool and of the workpiece — are positioned in such way to have the same direction as
+the Z axis of the CNC machine and its positive sense. As the workpiece is of revolution, the direction and the sense
+of the X and Y axes are taken randomly.
+
+The bit edge that generates the torus of the cutting tool’s active area, is defined by the parameters R1 and R2 and
+v (Figure 3). The equation of the bit edge, of the circular curve described by point P in figure 3 can be written in a
+parametric form, using the following expression:
+
+X,= 0
+
+Y, = R, + R2sinv (1)
+Z, = R2sinv
+
+where v passes through the range v € t ; “|.
+
+413
+
+
+----$$$$----$$$$----
+414 Paul Chetan et al. / Procedia Technology 12 (2014) 411 — 419
+
+121 Z2
+Ri
+| Zo
+_ R> _Rs
+| bY / (R1+Rs)sinO
+c - - ° a fe Yi Ya
+a aN
+wy \
+| f \
+oes Oo ee Yo !
+rey —
+R1i+(R2+Rs)cosO
+
+Fig. 4. Positioning the horizontal plane
+
+The directory path on which the cutting tool is moving is a circular trajectory obtained by intersecting the
+spherical area with the horizontal plane —positioned by the parameter 0 (Figure 4). Considering the tangency of the
+bit edge to the spherical area between the position angle v of the point P and the angle 0 that defines the position of
+the horizontal plane, we define the relation:
+
+Q=7-v (2)
+
+As such, the vector that defines the position of point P is written as:
+
+0
+R, + R, cos 6
+R, cos @
+1
+
+(3)
+
+1
+
+According to figure 5, the cutting tool executes a roto-translation movement along the circular directory path
+(starting from the initial moment t0) and a point P on the bit edge will describe a curled epicycloid.
+
+The theoretical roughness of this mill-generated surface is the distance between the directory path and the
+interior intersection point of the curled epicycloid. More bit edges generate more curled epicycloids that intersect
+themselves, influencing directly the roughness value, meaning that more teeth the mill cutter has, higher the quality
+of the surface will be.
+
+Tool’s bit
+edge
+
+Yo
+
+‘
+\,
+\
+%
+N
+
+4 ?
+Se
+s
+
+Fig. 5. Curled epicycloid generated by the trajectory of a point of the bit edge
+
+----$$$$----$$$$----
+Paul Chetan et al. / Procedia Technology 12 (2014) 411 — 419 415
+
+Next, a proposition for a mathematical model to determine the equations for these curled epicycloid curves and to
+determine the theoretical roughness of the mill-generated surface, depending on the technological parameters, on the
+cutting tool’s parameters and on the geometry of the finished product. As a mathematical instrument, it was used the
+coordinate transformation method.
+
+Fig. 6. Defining the secondary system
+
+In order to write easier the curves’ equations, it was used a secondary reference system, which executes a
+translation motion along the equidistant circle to the directory path, and a rotary motion chose in such a manner that
+the Y axis is oriented towards the origin of the base system attached to the workpiece (Figure 6). Angle y forms
+between the two reference systems, the secondary system and the one attached to the milling tool. The angle can
+have a positive value corresponding to cut-up milling or a negative value corresponding to cut-down milling.
+
+As such, the position vector of point P on the bit edge — in connection to the reference system XOYOZO attached
+to the workpiece — is described with the following relation:
+
+To = Mor * Ma ° 14 (4)
+
+The transition matrix from the mobile system to the secondary one takes the following form:
+
+cosw sinw 0 0O
+—sinW cosw 0 0
+M,,= 5
+ot 0 0 10 ©)
+0 0 0 1
+The transition matrix from the secondary system to the base reference system takes the following form:
+cosu. —sinu O  (R,+(R.+R,)cos@)sinu
+My» = sinu. cosu OO —(R,+(R,+R,) cos @)cosu (6)
+0 0 1 (R, + R,) sind
+0 0 0 1
+The following expressions are obtained after the calculus:
+Xo = —X, cos sinu — x, sinWcosu+t (R, + (R, + R,) cos @)sinu
+Vo = X, cos Wcosu—x,sinwsinu — (R, + (R, + R,) cos @)cosu (7)
+
+Zo = (R2 + R,) sin @
+
+Using trigonometric relations, we obtain the expression for the curled epicycloids curve:
+
+----$$$$----$$$$----
+416 Paul Chetan et al. / Procedia Technology 12 (2014) 411 — 419
+
+Xo = —X,sin(u+ ww) + (R, + (R, + R,) cos @) sinu
+Vo = X, cos(u +) — (R, + (R, + R,) cos 8) cosu (8)
+Zp = (R2 + R;) sind
+
+The final expression must contain the parameters defined at the beginning, such as cutting speed (V.), feed per
+tooth, the cutting tool’s number of teeth, the diameter of the milling tool, corner radius and workpiece radius. 0 is
+the position parameter for the horizontal plane and time ¢ is the incremental parameter. The rotative speed depends
+on the cutting speed and on the effective diameter (defined by the position of point P in Figure 4), according to the
+relation:
+
+n= otc _ [rot/min] (9)
+
+7 2*(Ry+R2 Sinv)*1
+
+By defining the angular speed we obtain:
+
+1000*V,
+
+w = 2nn = —————
+(R1+R2 sinv)
+
+[rad/min] (10)
+
+Or
+
+@ = eee _ [rot/sec] (11)
+
+~~ 60*(R1+Rp sinv)
+
+The tool’s feed along the directory curve becomes:
+
+1000*V,
+2*60* (R1+R2 sinv)*
+
+Vp =f, *Z* [mm/sec] (12)
+
+The angle positioning the bit edge is described by the following relation:
+180
+p=wxt= wx——*t [deg] (13)
+
+Introducing into the relation we obtain:
+
+3000*V ot
+
+y=+—_—_—__ [deg] (14)
+
+~~ 70*(Ry+R2 sinv)
+The covered distance is expressed as:
+s=t*Vp=ux*(R, +(R,+R,)cos@) [mm] (15)
+
+Expressing the angle u in degrees we obtain:
+
+_ 3000*V.*f7*Zz4t
+u= 2*m**(Ry+Rz2 sin v)*(R1+(R2+Rs) cos 8) [deg] (1 6)
+Introducing into the relation:
+g@="-y (17)
+
+2
+
+We obtain the expressions for the parameters u and W:
+
+----$$$$----$$$$----
+Paul Chetan et al. / Procedia Technology 12 (2014) 411 — 419 417
+
+_ 3000*V¢x fe*z*t
+u= 2*12*(R1+Rz cos 0)*(R1+(R2+R,) cos 0) [deg] (18)
+y= 4 30008Vext [deg] (19)
+
+~~ 710*(R1+R2 cos 8)
+
+Introducing these parameters in relation no. 8 we obtain the requested parametric equations — the curled
+epicycloids described by the bit edge during the processing of the spherical area.
+
+3. Evaluation of the mathematical results
+
+The determination of the intersection points for the curled epicycloids curves according to the relations above is
+an extremely difficult problem, with complicate relations. A more approachable solution is to use graphic methods.
+This kind of curves can be easily generated with the help of a CAD environment and of a programming language.
+This vectorial construction can load up any necessary information, including the required roughness.
+
+Next, a calculus application for plotting the curled epicycloids curves, generated by finishing a spherical area
+with plane-parallel trajectories. As CAD environment we used AutoCAD and as a programming language
+AutoLISP.
+
+Considering the next inputs:
+
+Cutting speed Vc = 180 [m/min]
+Feed per tooth fz = 0.05 [mm/rot]
+Teeth number Z = 2
+
+Diameter of the milling tool D=6 [mm]
+Corner radius of the tool R2=2 [mm]
+Radius of workpiece Rs = 50 [mm]
+
+The LISP’s routine plots two curled epicycloid curves (Figure 7) displayed red and green, proper to the curves
+described by the two bit edges of the tool. These curves are generated in the plane positioned by the 8 parameter on
+a circle (displayed blue).
+
+Y¥=0.06492634 Z2=0.00000
+8.668216613 Y=0.06492481 2=0.0000000
+
+Angle in KY Plane = 0
+U.000203513, Delta Y = -0.00000153, Delta 2
+
+Fig. 7. Determination of the theoretical roughness
+
+Taking into consideration the plane positioned by the 8 parameter and containing the tool’s trajectory (Figure 6),
+we obtain the following values for roughness:
+
+----$$$$----$$$$----
+418
+
+Paul Chetan et al. / Procedia Technology 12 (2014) 411 — 419
+
+Table 1. Determined values for the theoretical roughness
+
+Angle 0 Length of the measured segment Ra [um]
+0 0,00009948 0,09948
+10 0,00010054 0,10054
+20 0,00010368 0,10368
+30 0,00011283 0,11283
+40 0,00011743 0,11743
+50 0,00012959 0,12959
+60 0,00015075 0,15075
+70 0,00017089 0,17089
+80 0,00020514 0,20514
+
+4. Conclusions
+
+The numerical and theoretical study presented above reached the following conclusions:
+
+e The active interior surface of a reflector is a sculptural surface that cannot be expressed by mathematical
+relations;
+
+e Creating a mathematical model to determine the theoretical roughness obtained by milling sculptural surfaces
+requires an approximation for this surface, using a pitch surface through a spherical section;
+
+e The calculus to determine the value of roughness represents a difficult problem due to the complexity of the
+mathematical relations. The recommendation 1s for the use of graphic methods, a CAD environment along
+with a programming language (in this case AutoCAD and AutoLISP);
+
+e The curves described by the intersection point between the bit edge and the workpiece’s spherical area are
+curled epicycloids;
+
+e Plane-parallel finishing trajectories generate a surface with a theoretical variable roughness, better as the
+surface is tilted.
+
+References
+
+[1]
+[2]
+[3]
+[4]
+[5]
+[6]
+[7]
+[8]
+[9]
+
+Chetan P, Soaita D. Tehnici CAD-CAM pentru prelucrarea suprafetelor ascunse (CAD-CAM techniques for hidden surface processing).
+Scientific Bulletin of the “Petru Maior” University, Vol.XV-XVI, 2002-2003: 25-31.
+
+Chetan P, Bolos V. Considerations regarding technical conditions imposed to the execution of headlamps used in automotive industry,
+Annals of MTeM for 2009 & Proceedings of the 9th International MTeM Conference.
+
+Chetan P. Studies regarding the parametrical influences of a cam process on mould’s core surface, Metalurgia International, vol. XV,
+Special Issue no. 7, 2010.
+
+Chetan P, Bolos V. The influence of the tool path regarding the roughness resulted from the milling process of the complex surfaces, Annals
+of MTeM for 2011 & Proceedings of the 10th International MTeM Conference.
+
+Chetan P, Bolos V. Research on roughness resulted through milling of the surfaces with cbn tools, Proceedings of the Sth Inter-Eng
+Conference, Tirgu Mures, Romania, 2011: 193-196.
+
+Chetan P, Bolos V. Influence of heat treatment on quality of milled surface, Proceedings of the 6th Inter-Eng Conference, Tirgu Mures,
+Romiéania, 2012: 38-41.
+
+Chetan P, Bolos V. Modeling of undetached chip shape on finishing processing toolpath Scientific Bulletin of the ,,Petru Maior’” University
+of Tirgu Mures Vol. 10 (XXVII) no. 1, 2013: 5-9.
+
+Cosma M. Geometric Method of Undeformed Chip Study in Ball Nose End Milling, Scientific Buletin, Serie C, Vol. XX, North University
+of Baia Mare, 2006: 49-54.
+
+Cosma M. Horizontal Path Strategy for 3D-CAD Analysis of chip Area in 3Axes Ball Nose End Milling, 7th International Multidisciplinary
+Conference North University of Baia Mare, Scientific Buletin Serie C, Vol. XXI, 2007: 115-120.
+
+[10] Toh CK. Surface topography analysis in hign speed finish milling inclined hardened steel, Precision Engineering, Volume 28, Issue 4, 2004:
+
+386-398.
+
+----$$$$----$$$$----
+Paul Chetan et al. / Procedia Technology 12 (2014) 411 — 419 419
+
+[11] Toh CK. The use of ultrasonic cavitation peening to improve micro-burr-free surfaces, Int J Adv Manuf Technol (2007) 31: 688-693.
+
+[12] Toh CK. Cutter path orientations when high-speed finish milling inclined hardened steel - Int J Adv Manuf Technol (2006) 27: 473-480.
+
+[13] Toh CK. A study of the effects of cutter path strategies and orientation in milling, Journal of Materials Processing Technology, Volume 152,
+Issue 3, 2004: 346-356.
+
+----$$$$----$$$$----

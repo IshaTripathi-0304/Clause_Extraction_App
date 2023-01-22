@@ -1,0 +1,478 @@
+Physiology & Behavior 119 (2013) 156-160
+
+Contents lists available at SciVerse ScienceDirect
+
+Ph¥siology
+4 Tf . i
+Behavior
+
+Physiology & Behavior ay,
+
+journal homepage: www.elsevier.com/locate/phb
+
+Actigraphy monitoring of symptoms in patients with Parkinson's disease cess
+
+Weidong Pan *”, Shin Kwak”, Fuzhong Li‘, Chunlan Wu“, Yiyun Chen %,
+Yoshiharu Yamamoto “, Dingfang Cai **
+
+* Department of Neurology, Shuguang Hospital Affiliated with Shanghai University of TCM, 185 Pu-An Road, Shanghai 200021, China
+
+> Department of Neurology, Graduate School of Medicine, The University of Tokyo, 7-3-1 Hongo, Bunkyo-ku, Tokyo 113-8655, Japan
+
+© The Oregon Research Institute, 1715 Franklin Blvd., Eugene, OR 97403, USA
+
+¢ Educational Physiology Laboratory, Graduate School of Education, The University of Tokyo, 7-3-1 Hongo, Bunkyo-ku, Tokyo 113-0033, Japan
+© Laboratory of Neurology, Institute of Integrative Medicine, Zhongshan Hospital, Fudan University, 180 Fenglin Road, Shanghai 200032, China
+
+HIGHLIGHTS
+
+* Little is known about activity-related disease symptoms in patients with Parkinson's disease (PD).
+¢ We examined the relationships between physical activity and severity in PD symptoms.
+
+¢ We conducted maxima values of power-law exponent of physical activity during awake-time.
+
+* Change in physical activity was related to increased severity in disease symptoms.
+
+* Actigraphy may be used to monitor daily severity of activity-related PD symptoms.
+
+ARTICLE INFO ABSTRACT
+Article history: Although the Unified Parkinson's Disease Rating Scale (UPDRS) is the “gold-standard” tool in assessing the
+Received 4 October 2012 severity of symptoms in patients with Parkinson's disease (PD), not all activity-related disease symptoms
+
+Received in revised form 9 May 2013
+
+can be accurately captured by the well-established clinical rating scale. Using an alternative approach, this
+Accepted 30 May 2013
+
+study examined the level of physical activity measured by actigraphy over time and whether change in phys-
+ical activity was associated with disease severity assessed by UPDRS.
+
+Keywords: 4: . . . . . . .
+
+Actigrapby We used a longitudinal design in which physical activity and disease severity were assessed repeatedly during a
+Parkinson's disease 4-month interval, over a 3-year observational period, in a sample of 61 patients with idiopathic PD and a control
+Power-law exponent group of 32 neurologically intact individuals. Physical activity data during awake-time were analyzed using the
+
+power-law exponent (PLE) method. Correlational relationships between changes in maxima values of PLE and
+scores of total UPDRS, UPDRS—part II (Activities of Daily Living), and UPDRS—part III (Motor Examination) in
+patients with PD were examined. Results show an increase in maxima values of PLE and the UPDRS total score in
+PD patients and that there is a positive association between changes in maxima values and total UPDRS score
+(r = 0.746, p = 0.032), UPDRS—part II score (r = 0.687, p = 0.027), and UPDRS—part III score (r = 0.893,
+p = 0.018). There was no significant change in the level of physical activity over time for the controls.
+Findings from this study indicate that change in physical activity, as captured by actigraphy, is associated
+with increased severity in patients’ clinical symptoms of PD over time. Thus, these data suggest that, when
+used in conjunction with the conventional UPDRS measure, an actigraphic measure of physical activity
+may provide clinicians an adjunct measurement approach to monitor patients’ activity-based disease pro-
+gression or responses to treatment in outpatient clinic settings.
+
+© 2013 The Authors. Published by Elsevier Inc. All rights reserved.
+
+1. Introduction
+* This is an open-access article distributed under the terms of the Creative Commons
+
+Attribution-NonCommercial-No Derivative Works License, which permits non- Parki 's di PD) j d . di h
+commercial use, distribution, and reproduction in any medium, provided the original arkinson's disease (PD) is a neurodegenerative disease that
+
+author and source are credited. affects millions of people worldwide. Patients with PD experience var-
+
+* Corresponding author at: Laboratory of Neurology Institute of Integrative Medicine, ious movement-related abnormalities that significantly impact their
+
+Zhongshan Hospital, Fudan University, 180 Fenglin Rd., Shanghai 200032, China. Tel.: + 86 independence and quality of life. Currently the Unified Parkinson's
+21 64041990x7344. : : : : “ ”
+
+E-mail address: dingfangcai@163.com (D. Cai), Disease Rating Scale (UPDRS) [1] is considered a ‘gold standard Tefer-
+
+1 Present address: Center for Disease Biology and Integrative Medicine, Graduate ence scale in assessing various dimensions of disease severity in pa-
+
+School of Medicine, The University of Tokyo. tients with PD. However, daily fluctuation in disease symptoms may
+
+0031-9384/$ - see front matter © 2013 The Authors. Published by Elsevier Inc. All rights reserved.
+http://dx.doi.org/10.1016/j.physbeh.2013.05.044
+
+----$$$$----$$$$----
+W. Pan et al. / Physiology & Behavior 119 (2013) 156-160 157
+
+not be fully captured or understood via the sole use of this clinical rat-
+ing scale. Patients' symptoms of disease may well be masked by their
+dopaminergic medications and/or disease stages/severity [2]. In the
+treatment of patients with PD, the severity of symptoms is conven-
+tionally assessed using the UPDRS based on neurological examination,
+the patient's diary, or the caregiver's reports. These methods, howev-
+er, lack quantitative aspects, thereby making them inadequate for the
+precise assessment of drug efficacy [3]. However, none of these studies
+have been successful in developing reliable analytical methods that
+quantitatively represent the disease progression in patients with PD
+[4-6]. Therefore, from a clinical standpoint, additional adjunct clinical
+tools that can provide an objective yet concomitant evaluation of
+activity-related disease symptoms manifested in daily life and during
+disease progression are warranted.
+
+Research has shown that actigraphy-based observations can be use-
+ful and effective in objectively assessing activity-related disease symp-
+toms such as tremor and motor fluctuations in patients with PD [3-7].
+In our own previous work, we have shown that, by analyzing the
+power-law exponent (PLE; alpha) for local maxima and minima of se-
+verities in the activity time series [5,8,9], variation in physical activity
+captured by actigraphy was significantly correlated with the progres-
+sion of PD symptoms. Our work suggests that actigraphic data, when
+analyzed by the PLE method, may provide clinically useful and objective
+information regarding PD patients’ disease severity.
+
+There have been, however, limited accelerometer-based studies that
+examine patterns of daily physical activity among independently living
+adults and how variation in movement-related activities may be corre-
+lated with change in clinically identified symptoms of severity over
+time. Addressing these issues could be clinically important in providing
+a comprehensive evaluation of patients’ disease status on a range of
+symptoms. Their severity information can be subsequently used by
+clinicians in aiding their clinical decisions about patients’ treatment
+options and/or evaluation of their responses to intervention modalities.
+
+The purpose of this study, therefore, was to examine whether daily
+physical activity among independently living adults’ physical activity
+would be associated with clinically rated symptoms over time in pa-
+tients with PD. On the basis of our prior work [5,8-11], we hypothesized
+that variation in actigraphic recordings of patients’ kinematics of move-
+ment disorder symptoms during awake-time would be correlated with
+PD symptoms assessed by UPDRS over time.
+
+2. Materials and methods
+2.1. Study design
+
+We used a longitudinal design in which study participants were
+contacted and assessed with the planned study outcome measures
+every 4th month over a period of 3 years.
+
+2.2. Participants
+
+A total of 61 outpatients with idiopathic PD and 32 control
+participants were recruited from the department of Neurology of
+Shuguang Hospital Affiliated with Shanghai University of TCM.
+Eligibility criteria for patients with PD included individuals who were
+(a) at least 40 years of age, (b) diagnosed on two of the cardinal symp-
+toms (bradykinesia, tremor, rigidity, or postural instability) assessed
+by the UPDRS [1], (c) on dopaminergic medications (i.e., levodopa),
+(d) showing no sign of mental deficit (e.g, dementia) and major
+depressive disorder, and (e) not affected by unstable cardiovascular
+disease or extrapyramidal syndromes due to other central nervous
+diseases identified by the investigators. Inclusion criteria for the control
+participants included neurologically intact and healthy community-
+dwelling adults. The study protocol was approved by the Ethics
+Committee of Shuguang Hospital Affiliated with Shanghai University
+
+of TCM according to the principles outlined in the Declaration of Helsinki.
+An informed consent was obtained from each participant.
+
+2.3. Control of medications
+
+Patients’ anti-Parkinson drugs were administered per the interna-
+tional medication guidelines [12] and monitored throughout the
+study period. Patients were instructed to adjust their medications
+for at least 14 days (mean + SD, 30.6 + 15.7) until their symptoms
+of PD approached a steady state.
+
+2.4. Outcome assessment
+
+The study included two outcome measures: (a) the UPDRS [1]
+and (b) actigraphy. Each is detailed below. Measures were taken at
+4-month intervals across a 3-year period.
+
+The UPDRS with two subsections (part II—Activities of Daily Living
+[ADL] and part III—Motor Examination [Motor]) was used. Items
+contained in UPDRS were rated on a 5-point (0-4) scale, with higher
+scores indicating severity of the disease. The UPDRS assessment for
+patients with PD was made during an “on” medication status by a
+neurologist. All assessments were conducted before actigraphy re-
+cordings (described below).
+
+Patients with PD and the controls were given an actigraphy
+(MicroMini-Motionlogger®, Ambulatory Monitoring, Inc.) in which
+they were instructed to wear the device on their dominant wrist for
+24h per day during a 7-day period. Zero-crossing activity counts
+[11,12] were recorded every minute to register and quantify partici-
+pants’ physical activity.
+
+Once the actigraphy was returned, the wrist activity data recorded
+during awake-time were then transmitted to the program software
+provided by the manufacturer, and the data were aggregated into
+1-minute epochs for analysis using the Action-W (version 2, Ambula-
+tory Monitors Inc.). The power-law (scaling) exponent (a), obtained
+as the slope of a straight line fit in the double-logarithmic plot of
+time scales vs. magnitudes of fluctuation, was used to emphasize
+the level of such correlation [9]. As Ohashi et al. [9] demonstrated,
+physical activity data have different power-law exponents in periods
+with higher and lower activity levels, corresponding to qualitatively
+different physiological states. The actual procedures we used are as
+follows: First, a daytime physical activity time series was integrated,
+as in DFA, and wavelets with different time scales (S) were slid
+along the time series and correlated with the data to obtain the wave-
+let coefficients (W(S)) at each point. We used the third derivative of
+the Gaussian function as the so-called “mother wavelet”:
+
+w(t) = t(3—t?)e
+
+where t is time. This is equivalent to using the Gaussian second deriv-
+ative (so-called “Mexican hat”) wavelet to examine the raw signals,
+though the integration approach automatically removes the local
+
+Table 1
+Demographic and clinical profiles of the study population at baseline.
+
+Baseline 3-Year follow-up
+Age (years) 61.2 + 7.9
+Sex (male/female) 32/24
+Duration (years) 6.8 + 5.7
+Hoehn & Yahr 2.8 + 14 3.3 + 1.2
+Levodopa/DCI (mg/day) 416.8 + 209.7 482.4 + 174.6
+Pramipexole (mg/day) 1.63 + 0.78 2.35 + 1.17
+Entacapone (mg/day) 169.74 + 76.68 185.73 + 56.35
+Selegiline hydrochloride (mg/day) 8.22 + 3.53 11.98 + 6.87
+Adamantanamine (mg/day) 57.31 + 36.7 79.66 + 34.86
+Artane hydrochloride (mg/day) 2.86 + 2.37 3.93 + 2.61
+
+----$$$$----$$$$----
+158 W. Pan et al. / Physiology & Behavior 119 (2013) 156-160
+
+mean and the local linear trend, as in DFA. By changing the scale of different time scales. The transient increases (low-high-low activity
+the wavelet, this “hat-shaped” template dilates or contracts in time, patterns) yield local maxima of the wavelet coefficients at their
+probing transient increases or decreases in activity records in time points, while the decreases (high-low-high activity patterns)
+
+= ppupprs #@% Ppa Ctra
+
+oO maxima
+(1101) SUddN
+
+Duration(M)
+
+B C
+
+e Pa Ctra 0.12
+
+# PD UPDRS 10 r= 0.746 oe
+os) > > 0.9 ; Pele
+Zoos) ff pds SE ee
+= 0.04 f-----}------- 4------- f---- 0% & Ah!
+4 5 4 0.03 :
+
+ob ----g------$------ Be 5 8
+0.04 0 13 26 3.9 52 65 7.9
+12 24 36 A UPDRS scores/y (Total)
+Duration(M)
+
+D 0.12 E 0.12
+
+r = 0.687 3 -=0.839
+> 0.9 po > 0.9 ies
+E att 3 ie
+2 0.06 AG Z 0.06 fal
+= et ; : 8 =I gk if g
+3 we ee 3 oe 8°
+5 0.03 a“ 5 0.03
+
+0 1.3 2.6 3.9 5.2 0 1.6 3.2 4.8 6.4
+
+A UPDRS scores/y (Part IT) A UPDRS scores/y (Part III)
+F 2k
+HB baseline -——
+1.5 [__] 3-year follow-up 50
+nek
+a |
+1.2 ] x 40 a
+a
+E : y
+= 0.9 x 30 H
+= -— n
+: :
+0.6 20 ©
+0.3 10
+0 0
+PLE UPDRS II UPDRS HI UPDRS Total
+
+Fig. 1. Changes in UPDRS scores and power-law exponent (PLE) values in patients with PD and controls during 3-year follow-up and the relationship between UPDRS scores and PLE
+values (A-E). UPDRS indicates Unified Parkinson's Disease Rating Scale and PLE value indicates power-law exponent «@ (F). A, compared with baseline of UPDRS scores (A, p < 0.05;
+AA, p < 0.01); #, compared with baseline of PLE (#, p < 0.05; ##, p < 0.01); *, compared with baseline (*, p < 0.05; **, p < 0.01).
+
+----$$$$----$$$$----
+W. Pan et al. / Physiology & Behavior 119 (2013) 156-160 159
+
+yield local minima of the wavelet coefficients. Second, the squared
+wavelet coefficients at the local maxima or minima were averaged for
+all the available days. As the coefficient gives the magnitude of local
+fluctuations matching the shape of y(t) with different time scales, the
+squared W(S) was used, again as in DFA. Finally, the power-law expo-
+nent (a) was obtained separately for local maxima and minima as the
+slope of a straight line fit in the double-logarithmic plot of S vs. W(S)?.
+In this study, the range of S corresponding to 8 to 35 min, where accept-
+able linear relationships between log S and log W(S)? were observed for
+all the records, was used [2,10,11]. This range is also approximately the
+same as that used in Ohashi et al., and this method yields the same
+a-values as does DFA, but separately for periods with higher and
+lower activity levels. In other words, a lower value for local maxima or
+minima of activity recordings reflects more frequent switching behavior
+from low to high or high to low physical activity, respectively, and the
+switching behavior from lower to higher activity levels is considered
+to be related to akinesia in patients with PD.
+
+In patients with PD, the PLE a-values for local maxima did not
+differ between the arms with tremor and those without tremor, but
+were significantly lower in both of the patient groups than in the control
+arms, indicating that, although the presence of tremor greatly influenced
+the actigraphic counts, the presence of tremor did not yield false positive
+results in the PLE for maxima [2]. In this study, we analyzed the local
+maxima for the awake-time of each record in the series of time windows
+observed.
+
+2.5. Statistical analysis
+
+A repeated-measures analysis of variance (ANOVA) was performed
+to evaluate longitudinal changes from baseline to 3-year follow-up in
+UPDRS total score, UPDRS part IT—ADL score, UPDRS part III—Motor
+score, and PLE alpha values. Pearson's bivariate correlations were
+analyzed to examine the relationship between changes in the UPDRS
+total score and subscale scores and changes in the PLE alpha values.
+The alpha (a) level for significance was set at p < 0.05. Analysis of the
+data was carried out using SPSS (Version 17.0), and the resulting data
+are presented in mean + stand deviation.
+
+3. Results
+
+In all, five patients with PD withdrew from the study, three because
+of medical complications and two because of loss to follow-up. Fifty-six
+patients with PD and all control subjects completed the study. Patients’
+demographic and clinical profiles at baseline are presented in Table 1.
+
+At the end of 3-year follow-up, there was a significant increase, from
+baseline, in patient's UPDRS total score, subscales scores (part II—ADL,
+part III—Motor, data not shown), and PLE alpha values observed during
+awake-time (Fig. 1A), with 5 points per year in UPDRS score and
+0.04 points per year in the PLE maxima alpha values, respectively. The
+average alpha values of local maxima, however, were not changed
+over time in the control participants (Fig. 1B). Changes in UPDRS total
+score and its subscale scores (UPDRS part II—ADL, UPDRS part III—
+Motor) were found to be significantly correlated with changes in local
+maxima alpha values over time; 0.746 (p = 0.032) (Fig. 1C), 0.687
+(p = 0.027) (Fig. 1D), and 0.839 (p = 0.018) (Fig. 1E), respectively.
+
+4. Discussion
+
+This is the first study that uses an actigraphic recording approach
+to physical activity over time to evaluate the development of symp-
+tom severity in patients with PD. Through the PLE analytic method,
+we found that there was a significant increase in patient's wrist activ-
+ity during awake-time and that the increase was associated with the
+clinically rated PD severity over time.
+
+Previous studies have reported that lower PLE values for local
+maxima of activity were related to more frequent switching behavior
+
+from low to high physical activity [2,10,11]. However, these studies
+have significant limitations, such as small sample sizes and limited
+follow-ups. By using a longitudinal design with repeated measures
+and a larger sample size, this study extends the previous analyses by
+showing a higher auto-correlation pattern of physical activity over
+time compared with the healthy controls. The increase in the local
+maxima PLE values may thus indicate the sensitivity of actigraphy in
+capturing symptoms of movement disorders seen in PD patients. Our
+correlational analyses further show that changes in these movement
+symptoms were related to changes in UPDRS part II and III scores,
+which reflect severity in day-to-day activities and motor severity.
+
+Although there has been an increasing use of actigraphy to quanti-
+tatively evaluate symptoms of PD, such as tremor and sleep disorders
+[4-7] and other chronic disease conditions [13-16], few studies have
+undertaken evaluation of PD severity by actigraphy [7]. Thus, this
+study contributes to a deeper understanding of actigraphy and moni-
+toring of symptoms of PD. Our study, however, has limitations. For ex-
+ample, our data do not capture symptoms of patients underlying
+Parkinsonism during their wearing-off period of medications or alter-
+ation between periods “on” and “off’ medications. Our local maxima
+of PLE activity data may simply reflect the overall trend and/or
+patterns of changes in movement activities over time rather than
+short-term moment-to-moment motor fluctuations (medication off
+time) and dyskinesia (drug-induced involuntary movements) experi-
+enced during on- and off-medication periods. Accordingly, future ef-
+forts are needed to evaluate the relationship between wrist activity
+and levodopa-induced motor complications.
+
+5. Conclusion
+
+In conclusion, we show that actigraphy can be used as an ambulatory
+device to monitor symptoms associated with PD over time and that
+changes in physical activity are associated with increased fluctuations
+in patients’ clinical symptoms of PD over time. Our findings suggest
+that, when used in conjunction with the conventional UPDRS measure,
+actigraphy may be useful for clinicians to monitor and track patients’
+activity-based disease progression or responses to treatment in outpa-
+tient clinic settings.
+
+Acknowledgments
+
+This study was sponsored by the Shanghai Pujiang Program of
+the Science and Technology Commission of Shanghai Municipality
+(O9PJ1409300), and the Three-Year Developmental Plan Project for
+Traditional Chinese Medicine (major research) of the Shanghai
+Municipal Health Bureau (ZYSNXD-CC-ZDYJ028).
+
+References
+
+[1] Goetz CG, Poewe W, Rascol O, et al. Movement disorder society task force on rating
+scales for Parkinson's disease. UPDRS: status and recommendations. Mov Disord
+2003; 18:738-50.
+
+[2] Pan W, Ohashi K, Yamamoto Y, Kwak S. Power-law temporal autocorrelation of
+activity reflects severity of parkinsonism. Mov Disord 2007;22(9):1308-13.
+
+[3] Katayama S. Actigraph analysis of diurnal motor fluctuations during dopamine
+agonist therapy. Eur Neurol 2001;46(Suppl. 1):11-7.
+
+[4] van Someren EJ, van Gool WA, Vonk BF, et al. Ambulatory monitoring of tremor
+and other movements before and after thalamotomy: a new quantitative technique.
+J Neurol Sci 1993;117:16-23.
+
+[5] van Someren EJ, Vonk BF, Thijssen WA, et al. A new actigraph for long-term
+registration of the duration and intensity of tremor and movement. IEEE Trans
+Biomed Eng 1998;45:386-95.
+
+[6] Van Someren E], Pticek MD, Speelman JD, et al. New actigraph for long-term tremor
+recording. Mov Disord 2006;21 :1136-43.
+
+[7] Perez Lloret S, Rossi M, Cardinali DP, Merello M. Actigraphic evaluation of motor fluctu-
+ations in patients with Parkinson's disease. Int J Neurosci 2010 Feb;120(2):137-43.
+
+[8] Pan W, Soma R, Kwak S, Yamamoto Y. Improvement of motor functions by noisy
+vestibular stimulation in central neurodegenerative disorders. J Neurol 2008;255(11):
+1657-61.
+
+[9] Ohashi kK, Nunes Amaral LA, Natelson BH, Yamamoto Y. Asymmetrical singularities in
+real-world signals. Phys Rev E Stat Nonlin Soft Matter Phys 2003;68(6 Pt 2):065204.
+
+----$$$$----$$$$----
+160 W. Pan et al. / Physiology & Behavior 119 (2013) 156-160
+
+[10] Pan W, Kwak S, Liu Y, et al. Traditional Chinese medicine improves nocturnal
+activity in Parkinson's disease. Park Dis 2011;2011:789506.
+
+[11] Pan W, Liu Y, Fang Z, Zhu X, Kwak S, Yamamoto Y. A compound belonging to
+traditional Chinese medicine improves nocturnal activity in Parkinson's disease.
+Sleep Med 2011;12(3):307-8.
+
+[12] Voelker R. Parkinson disease guidelines aid diagnosis, management. JAMA
+2006;295(18):2126-8.
+
+[13] Jean-Louis G, Kripke DF, Cole RJ, Assmus JD, Langer RD. Sleep detection with an
+accelerometer actigraph: comparisons with polysomnography. Physiol Behav
+2001;72(1-2):21-8.
+
+[14] Jean-Louis G, Mendlowicz MV, Gillin JC, Rapaport MH, Kelsoe JR, Zizi F, et al. Sleep
+estimation from wrist activity in patients with major depression. Physiol Behav
+2000;70(1-2):49-53.
+
+[15] Comella CL, Morrissey M, Janko K. Nocturnal activity with nighttime pergolide
+in Parkinson disease: a controlled study using actigraphy. Neurology 2005;64(8):
+1450-1.
+
+[16] Yamamoto Y, Struzik ZR, Soma R, Ohashi K, Kwak S. Noisy vestibular stimulation
+improves autonomic and motor responsiveness in central neurodegenerative
+disorders. Ann Neurol 2005;58(2):175-81.
+
+----$$$$----$$$$----

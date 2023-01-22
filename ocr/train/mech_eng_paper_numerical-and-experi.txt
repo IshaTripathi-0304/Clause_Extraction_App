@@ -1,0 +1,853 @@
+Case Studies in Thermal Engineering 4 (2014) 99-112
+
+Contents lists available at ScienceDirect
+
+THERMAL
+ENGINEERING
+
+aes Case Studies in Thermal Engineering
+£8 BS.
+ELSEVIER journal homepage: www.elsevier.com/locate/csite
+
+Numerical and experimental analysis for exhaust heat ® cov
+exchangers
+in automobile thermoelectric generators
+
+Shengqiang Bai*, Hongliang Lu”, Ting Wu®, Xianglin Yin*, Xun Shi‘
+Lidong Chen ‘
+
+* CAS Key Laboratory of Energy Conversion Materials, Shanghai Institute of Ceramics, Chinese Academy of Sciences, Shanghai 200050,
+China
+
+> Shanghai Institute of Special Equipment Inspection and Technical Research, Shanghai 200333, China
+
+© State Key Laboratory of High Performance Ceramics and Superfine Microstructure, Shanghai Institute of Ceramics, Chinese Academy of
+Sciences,
+
+1295 Dingxi Road, Shanghai 200050, China
+
+ARTICLE INFO ABSTRACT
+
+Article history: Ideal heat exchangers recover as much heat as possible from an engine exhaust at the cost
+Received 10 June 2014 of an acceptable pressure drop. They provide primary heat for a thermoelectric generator
+Accepted 9 July 2014 (TEG), and their capacity and efficiency is dependent on the material, shape, and type of
+Available online 27 July 2014 the heat exchanger. Six different exhaust heat exchangers were designed within the same
+Keywords: shell, and their computational fluid dynamics (CFD) models were developed to compare
+CFD heat transfer and pressure drop in typical driving cycles for a vehicle with a 1.2 L gasoline
+Energy recovery engine. The result showed that the serial plate structure enhanced heat transfer by 7
+Thermoelectric generator baffles and transferred the maximum heat of 1737 W. It also produced a maximum
+
+Automobile exhaust
+
+Heat transfer pressure drop of 9.7 kPa in a suburban driving cycle. The numerical results for the pipe
+
+structure and an empty cavity were verified by experiments. Under the maximum power
+output condition, only the inclined plate and empty cavity structure undergoes a pressure
+drop less than 80 kPa, and the largest pressure drop exceeds 190 kPa. In this case, a
+mechanism with a differential pressure switch is essential to bypass part of the exhaust.
+© 2014 Published by Elsevier Ltd. This is an open access article under the CC BY-NC-ND
+
+license (http://creativecommons.org/licenses/by-nc-nd/3.0/).
+
+1. Introduction
+
+Statistics released by the Ministry of Public Security found that there were more than 240 million vehicles operated in
+China in the end of 2012; and the annual consumption of vehicle fuel broke 269 million tons according to The 2012 Foreign
+Oil and Gas Industry Development Report by China Petroleum Economic Institute of Technology. For vehicles with internal
+combustion engine, approximately 40% of the fuel's chemical energy is wasted as exhaust gas [1], the amount of waste heat
+in terms of the 2012's fuel consumption is extraordinarily large at 107.6 million tons of vehicle fuel. If only a part or even a
+
+* Corresponding author. Tel.: +86 21 69987153; fax: +86 21 69987781.
+E-mail address: bsq@mail.sic.ac.cn (S. Bai).
+
+http://dx.doi.org/10.1016/j.csite.2014.07.003
+2214-157X/© 2014 Published by Elsevier Ltd. This is an open access article under the CC BY-NC-ND license
+(http://creativecommons.org/licenses/by-nc-nd/3.0/).
+
+----$$$$----$$$$----
+100 S. Bai et al. / Case Studies in Thermal Engineering 4 (2014) 99-112
+
+Nomenclature velocity
+total
+
+fuel consumption rate, g/(kW h)
+
+enthalpy, kJ/kg Greek letters
+
+intake efficiency factor
+
+mass of required air when 1 kg gas combusts a surplus factor of air more than complete
+completely, kg/kg combustion
+
+an optional volumetric heat source, W/m? A thermal conductivity of the solid
+
+effective engine power, kW density
+
+the vicious work, W stress tensor
+the solid velocity, if specified, m/s
+
+work due to external momentum sources, W
+
+Subscripts
+
+m moment
+
+minor amount of the large waste heat could be recovered and converted into electricity, a great sum of heat would be saved
+and the system efficiency of the vehicle would increase substantially.
+
+Various thermodynamic cycles have been proposed and studied for low-grade waste heat recovery. An absorption
+cooling cycle in hybrid and electric vehicles transfers waste heat from the battery pack and exhaust gases into the boiler of
+ejector for cabin cooling [2]. The organic Rankine cycle system possesses the capability to convert low grade heat sources
+into electricity [3]. An open steam power cycle (open Rankine cycle) has a greater waste heat recovery efficiency than other
+Rankine steam cycles [4]. A combined thermoelectric generator and organic Rankine cycle was proposed to increase the
+system performance of exhaust heat recovery [5]. Usually, the disadvantage of these cycles is the secondary fluid circuit
+composed of a pump, an evaporator, an expander and a condenser; the circuit increases vehicle weight and mechanical
+complexity and reduces available volume. Based on the Seebeck effect, the thermoelectric generator system takes the
+advantage of no moving parts, silent operation, and very reliable, therefore better suited waste heat recovery from
+automobile exhausts than the above cycles [6].
+
+With the development of advanced thermoelectric materials, the direct energy conversion of waste heat into electric
+power has become a popular research topic |7] and one of the biggest challenges for this application in automobile is the
+exhaust heat exchanger: it must meet requirements for an efficient TE generator and, at the same time, not impede the
+operation of the vehicle. According to fuel consumption data for one vehicle [8] and related measurement methods [9], an
+automobile exhaust system is low in the time-averaged mass flow rate: 14.4 g/s for a vehicle with a 1.2 L gasoline engine
+under a suburban driving cycle and less than 1.2 kJ/(kg °C) in specific heat. The low mass flow rate and limited allowable
+pressure drop of an automobile exhaust gas represent a double challenge to a design of the exhaust heat exchanger of
+energy recovery system.
+
+The material, the shape and type of an exhaust heat exchanger have been studied previously. Two shapes of exhaust heat
+exchangers are generally used for an automobile exhaust TEGs: box and cylinder shells with internal fins. Early in the 1988,
+Birkholz et al. [10] proposed a 300 mm x 300 mm x 500 mm rectangular structure with internal fins made of the Hastelloy X
+alloy for the Porsche 944 engine. The box's height was high enough to prevent engine power deterioration. Bass et al. | 11|
+designed a hexagonal cylinder that was 470 mm in length and 220 mm in diameter with a center hollow displacement conic
+heat-diffuser. Ikoma et al. developed a 160 mm x 40 mm x 455 mm rectangular box using SUS304 stainless steel [12]. Fins with
+different area ratios (0.92,1.21,1.65,1.99) were set inside the inner shell, parallel to the gas flow, to transfer more heat [13,14].
+Thacher et al. [15] used a rectangular 1018 carbon steel compact heat exchanger with offset strip fins for a 1999 GMC Sierra pick-
+up truck. Crane et al. [16] employed a cylindrical design with internal folded fins made of stainless steel-clad copper. As for the
+exhaust heat exchanger optimization and theoretical analyses, CFD simulations and geometry improvements were conducted to
+enhance turbulence and heat transfer. Crane et al. [17] used hot water as a heat source and air as a heat sink to simulate an
+exhaust thermoelectric generator. Martinez et al. [18,19] calculated the thermal resistance and pressure drop for a heat
+exchanger and used computational fluid dynamics to optimize the thermoelectric generator for a domestic gas boiler. Ming Pan
+[20] conducted thermal and hydraulic calculations on the intensification combinations. Gou [21] studied the dynamic
+characteristics of heat reservoir and heat sink for thermoelectric generators. Sun [22] conducted optimal design considering
+the fluctuation of industrial waste heat. Such numerous types of materials, structure parameters and operating conditions
+involved in the energy transformation and transfer process make it difficult to evaluate which type of the heat exchanger is the
+best or most fit for automobile exhaust TEG. CFD is a powerful tool that is capable of comparing several heat exchangers under
+the same boundary conditions [23,24]. One or multiple candidates may be found to further optimize a specific automobile type
+under a specific driving cycle, and this is one important approach to studying automobile exhaust TEGs.
+
+----$$$$----$$$$----
+S. Bai et al. / Case Studies in Thermal Engineering 4 (2014) 99-112 101
+
+Fig. 1. Six internal structures. (a) Empty cavity, (b) inclined plate, (c) parallel plate structure, (d) separate plate with holes, (e) serial plate structure and (f)
+pipe structure.
+
+----$$$$----$$$$----
+102 S. Bai et al. / Case Studies in Thermal Engineering 4 (2014) 99-112
+
+The present work reviews existing exhaust heat exchangers and proposes several internal structures: an inclined plate, a
+parallel plate structure, a separate plate with holes, a serial plate structure, and a novel pipe structure. CFD models were
+developed with solid domains, liquid domains and fluid solid interfaces to compare the heat transfer and pressure drop for
+the 6 structures under the same working conditions. The numerical results suggest that the serial plate structure offers the
+highest heat transfer, while its pressure drop is excessively large under the maximum power output condition.
+
+2. Simulation analyses
+2.1. Six internal structures of exhaust heat exchangers
+
+For the purpose of comparison, 6 structures were made with the same dimensions, with a shell of 280 mm x
+110 mm x 30 mm with the inlet and outlet of 40 mm in diameter for 5 of the structures. The pipe structure was reduced to
+26 mm in diameter because the shell body was 30 mm thick. At both ends of the box, there were gradual enlargements and
+contractions of approximately 90 mm in length to buffer and distribute exhaust flow. Each exhaust exchanger had a
+different internal structure: an inclined plate, a parallel plate structure, a separate plate with holes, a serial plate structure,
+and a novel pipe structure, as shown in Fig. 1.
+
+To reduce mesh quantity and promote the robustness and precision, only half of the whole body was used, and the model
+was obtained using a symmetrical plane. The number of mesh elements increased with complexity. An empty cavity
+structure had the fewest elements with 436,087, and the separate plate with holes structure had the most elements with
+745,390, 71% more than the former due to its 5 complex thin fins with different holes.
+
+The quality and quantity of a mesh for a certain physical body determines the robustness, accuracy and scale of the
+simulation computation. Skewness is one of the primary quality measures for a mesh. A value of skewness in the range of
+0.25-0.5 indicates that the corresponding mesh quality is good. The mesh quality for the 6 structures was in the range given
+in Table 1. The pipe structure, with the skewness 0.3193, had the worst mesh quality.
+
+2.2. Simulation operating condition
+
+The exhaust mass flow, exhaust temperature and hot side temperature of thermoelectric generators are three key
+variables, and they depend on the automotive configuration, operation conditions and available thermoelectric materials.
+
+2.2.1. Exhaust mass flow rate
+
+The mass flow rate of the exhaust gas is the most important parameter for determining the capacity of an automotive
+exhaust thermoelectric generator, and it depends on operating conditions and engine configuration. The tested passenger
+car was configured with a 1.2 L gasoline engine, as shown in Table 2.
+
+The field test fuel consumption data for the tested vehicle are provided in Table 3 by the Ministry of Industry and
+Information Technology of the People's Republic of China according to the ruled measurement methods by GB/T 19233-
+2008. The corresponding time-averaged exhaust mass flow rate was obtained by Eq. (1) [25].
+
+Qn = Pebe(Loaj+ 1) (1)
+
+Table 1
+Mesh of each scheme.
+
+Scheme Empty cavity Inclined plate Parallel plate Separate plate with holes Serial plate Pipe structure
+Nodes 133,549 136,411 139,290 226,954 142,281 246,085
+Elements 436,087 439,420 445,264 745,390 452,802 671,203
+Skewness 0.2613 0.2697 0.2796 0.2907 0.2832 0.3193
+
+Table 2
+
+Vehicle configuration.
+
+Engine type P-TEC, LMU
+Transmission MT-5
+Displacement (cm?) 1206
+Cylinders 4
+
+Valves 16
+Maximum power (kW/rpm) 63/6000
+Maximum torque (N m/rpm) 108/4000
+
+Injection system Electric-controlled injection
+
+----$$$$----$$$$----
+S. Bai et al. / Case Studies in Thermal Engineering 4 (2014) 99-112 103
+
+Table 3
+Fuel consumption.
+
+Driving cycle Fuel consumption (L/100 km) Time-averaged exhaust mass flow rate (g/s)
+Urban 6.7 5.7
+Suburban 5.1 14.4
+Overall 5.7 8.53
+Maximum power output - 80.14
+Table 4
+
+Operating condition.
+
+Driving cycle Mass flow rate of exhaust (g/s) Hot side temperature of generator (K) Exhaust temperature (K)
+Urban 5.7 423.15 573.15
+Suburban 14.4 473.15 673.15
+Maximum power output 80.1 423.15 873.15
+
+2.2.2. Exhaust state
+
+Exhaust is a mixture of multiple compositions and is thermodynamically similar to air. Exhaust is approximately 300-
+500 kPa in pressure and 500-700 °C in temperature when discharged from the engine cylinder |26]. After passing through
+the catalytic converter and several connecting pipes, the pressure drop nears the atmospheric pressure and the temperature
+decreases to 300-600 °C because of local and frictional losses and heat leaks. The initial state of the exhaust gas at the inlet
+is important as a heat source for two reasons: first, it determines the maximum available heat in reference to the
+atmosphere state; second, it determines the upper temperature limit to which the TE material is exposed and which it must
+survive.
+
+2.2.3. Hot side temperature of a thermoelectric generator
+
+The hot side of the thermoelectric generator absorbs heat from the shell and transfers it to the cold side. Its upper
+temperature limit is subjected to the maximum continued temperature the thermoelectric material can be exposed to, for
+instance, 150-250 °C is acceptable for BizTe3. According to the range of the above variables, three typical operation
+conditions were considered in Table 4: urban and suburban driving cycles and maximum power output.
+
+2.3. Theory and boundary configuration
+
+The total computing domain includes a fluid portion and a solid portion. The temperature field and flow field of interest
+are obtained by solving a set of mathematical equations with respect to computational fluid and solid domains. Within the
+fluid domains, the equations of mass, momentum and energy conservation (Eqs. (2)-(4)) are solved to model fluid flow, heat
+and mass transfer. Only the equation of heat transfer is solved for solid domains (Eq. (5)).
+
+The continuity equation is
+
+Pio. _
+opt Y (PU) =0 (2)
+
+The momentum equation is
+
+10”) v(puu) = ~Vp+Vrt+Smu (3)
+
+The energy equation is
+a(phtot) _ op
+
+ot ot
+
+The conservation of energy equation in solid domain is
+
++ V(pUhtot) = VIAVT) + V(Ut) +USy t+ Se (4)
+
+100 V(pUsh) = V(AVT) +S¢ (5)
+
+Under the given exhaust pressure and temperature, the speed of sound is 515 m/s, much greater than the real flow
+velocity, meaning that the fluid model is uncompressible. The viscous model depends on the flow type: laminar flow or
+
+----$$$$----$$$$----
+104 S. Bai et al. / Case Studies in Thermal Engineering 4 (2014) 99-112
+
+turbulent flow. For the inlet pipe and box cavity, the critical flow velocities are 0.92 m/s and 0.42 m/s, respectively, both of
+which are much lower than the real velocity. The k-epsilon turbulence model was employed to simulate the exhaust, as it is
+the industry standard model for many commercial CFD models. This model has been proven to be stable and numerically
+robust. The fluid material for the exhaust uses a calorically perfect ideal gas because the two are near to one another
+thermodynamically, and the solid material for shell employs steel.
+
+A general connection technology for the fluid-solid interface was used to connect non-matching grids of the solid
+domain and fluid domain, such as the exhaust with a shell and the exhaust with a pipe. The fluid-solid interface was also
+modified to compute heat transfer from the exhaust to the shell after the energy equation was applied to the exhaust
+domain and the shell domain.
+
+3. Result and discussion
+
+In this section, 6 structures are compared regarding heat transfer and pressure drop under urban driving, suburban
+driving and maximum power output. Their temperature fields and the flow fields were analyzed under the suburban
+driving cycle.
+
+3.1. Performance comparison under typical operating conditions
+
+The amount of heat extracted from the exhaust was equal to the enthalpy difference of the exhaust at the inlet and the
+outlet multiplied by the mass flow rate under the given boundary condition. The 6 structures differed in the heat transfer
+rate (Figs. 2 and 3) and can be ordered by the decreasing heat transfer as follows: serial plate structure, separate plate with
+holes, parallel plate structure, pipe structure, inclined plate structure and empty cavity. This order was the same under all 3
+of the typical driving cycles. The serial plate structure had the maximum heat transfer rate of 597 W, 1737 W and 14971 W,
+which were 3.55, 3.73 and 2.96 times the empty cavity structure for the urban driving cycle, the suburban driving cycle and
+the maximum power output, respectively. For each structure, the heat transfer rate increased from 100% under an urban
+cycle to approximately 280% under a suburban cycle and to approximately 2400% under the maximum power output as the
+exhaust mass flow rate rose to 250% and to 1400%.
+
+In response to the heat transfer rate, the pressure drop due to the heat exchanger at the exhaust side was the static pressure
+difference of the exhaust at the inlet and outlet. The pressure drops for the 6 structures also differed from one another (Figs. 2
+
+a
+5000 EJ] Urban driving cycle Suburban driving cycle
+1600
+\
+800 ~ \\ \\
+\\ \ \\
+\ \ \
+400 \ \ E\\\
+Bal \\ \\\ \
+0 SEEN \\ WY et AY R Beare
+Inclined Parallel Separate Serial Pipe
+plate plate plate plate — structure
+Structure configuration
+12000 =] Urban driving cycle WN Suburban driving cycle
+= 10000
+&
+S" 8000
+as)
+o
+5 6000
+5
+& 4000
+2000
+0 — E==NW A are \ faa \
+Empty Inclined Parallel Separate Serialplate Pipe
+
+cavity plate plate plate structure
+
+Structure configuration
+
+Fig. 2. Performance comparison under urban and suburban driving cycles. (a) Heat transfer rate and (b) pressure drop.
+
+----$$$$----$$$$----
+Heat (W)
+
+oO
+
+Pressure drop (Pa)
+
+S. Bai et al. / Case Studies in Thermal Engineering 4 (2014) 99-112 105
+
+16000
+
+& Maximum power output
+
+12000
+
+8000
+
+4000
+
+Empty Inclined Parallel Separate Serial plate Pipe
+cavity plate plate plate structure
+
+Structure configuration
+
+250000
+
+200000
+
+150000
+
+100000
+
+50000
+
+—— = =
+Empty Inclined Parallel Separate Serial plate Pipe
+cavity plate plate plate structure
+
+Structure configuration
+
+Fig. 3. Performance comparison under maximum power output. (a) Heat transfer rate and (b) pressure drop.
+
+a
+
+[K]
+
+6.733e+002
+6.539e+002
+6.344e+002
+6.150e+002
+5.956e+002
+5.762e+002
+5.568e+002
+5.374e+002
+5.179e+002
+4.985e+002
+4.791¢e+002
+
+2.945e+001
+2.651e+001
+2.356e+001
+2.062e+001
+1.767e+001
+1.473e+001
+1.178e+001
+8.836e+000
+5.891e+000
+2.945e+000
+0.000e+000
+
+[m s4-1]
+
+Fig. 4. Physical distribution in an empty cavity. (a) Temperature field and (b) velocity field.
+
+----$$$$----$$$$----
+106
+
+[K]
+
+6.732e+002
+6,550e+002
+6.368e+002
+6.186e+002
+6.004e+002
+5.821e+002
+5.639e+002
+5.457e+002
+5.275e+002
+5.092e+002
+4.910e+002
+
+2.899e+001
+2.609e+001
+2.319e€+001
+2.030e+001
+1.740e+001
+1.450e+001
+1.160e+001
+8.698e+000
+5.799e+000
+2.899e+000
+0.000e+000
+
+[m s*=1]
+
+S. Bai et al. / Case Studies in Thermal Engineering 4 (2014) 99-112
+
+Fig. 5. Physical distribution for a shell with inclined plates. (a) Temperature field and (b) velocity field.
+
+a
+
+(K]
+
+6.732e+002
+6.562e+002
+6.391e+002
+6.220e+002
+6.050e+002
+5.879e+002
+5.708e+002
+5.538e+002
+5.367e+002
+5.196e+002
+5.025e+002
+
+6.286e+001
+5.658e+001
+5.029e+001
+4.400e+001
+3.772e+001
+3.143e+001
+2.514e+001
+1.886e+001
+1.257e+001
+6.286e+000
+0.000e+000
+
+[m s*-1]
+
+Fig. 6. Physical distribution of a shell with parallel plates. (a) Temperature field and (b) velocity field.
+
+----$$$$----$$$$----
+S. Bai et al. / Case Studies in Thermal Engineering 4 (2014) 99-112 107
+
+se)
+
+6.732e+002
+6.556e+002
+6.380e+002
+
+6.203e+002
+6.027e+002
+5.851e+00
+5.674e+00
+5.498e+002
+5.322e+002
+
+5.145e+002
+4.969e+002
+
+7.103e+001
+6.393e+001
+5.682e+001
+
+4.972¢e+001
+4.262¢e+001
+3.551e+001
+2.841¢6+001
+2.131e+001
+1.421e+001
+
+7.103e+000
+
+0.000e+000
+[m s4-1]
+
+Fig. 7. Physical distribution of a shell with separate plates with holes. (a) Temperature field and (b) velocity field.
+
+6.732e+002
+6.566e+002
+
+6.400e+002
+6.234e+002
+6.067e+002
+5.901e+002
+5.735e+002
+
+5.569e+002
+5.403e+002
+5.236e+002
+5.0700+002
+[K]
+1.076e+002
+9.687e+001
+8.610e+001
+7.534e+001
+6.458e+001
+5.381e+001
+4.305e+001
+3.229€+001
+2.1530+001
+
+1.076e+001
+
+0.000e+000
+[m s*-1]
+
+Fig. 8. Physical distribution of a shell with a series of plates. (a) Temperature field and (b) velocity field.
+
+----$$$$----$$$$----
+108 S. Bai et al. / Case Studies in Thermal Engineering 4 (2014) 99-112
+
+and 3). Under all 3 of the typical operating conditions, the structures’ decreasing order of the pressure drop was the same as
+for the heat transfer: serial plate structure, pipe structure, separate plate with holes, parallel plate structure, inclined plate
+structure and empty cavity. The serial plate structure had maximum pressure drops of 1.3 kPa, 9.7 kPa and 190.7 kPa, which
+are 532, 305 and 99 times of empty cavity structure under an urban driving cycle, suburban driving cycle and maximum power
+output, respectively. This result corresponds to the maximum heat transfer rate among the six structures.
+
+There are two important points to note: first, under the maximum power output condition, if the pressure drops for the
+serial plate structure, pipe structure, separate plate with holes and parallel plate structure are all greater than 80 kPa, the
+automobile engine may fail to function or even shutdown if the bypass mechanism is not available. This high pressure drop
+was also verified by the experiment conducted by Lagrandeur et al. reporting approximately 60 kPa of backpressure through
+the BMW X6 exhaust component |27]. Therefore, a bypass mechanism with a differential pressure switch is necessary for
+the engine's stability and reliability. Second, the pipe structure was an exception, as it had the 2nd largest pressure drop but
+the 4th largest heat transfer rate. In other words, this structure extracted a lower heat per unit pressure drop than the other
+structures. Third, a larger heat transfer rate usually corresponds to a larger pressure drop for agiven heat exchanger; it
+provides an upper limit at which to maintain turbulence for increased heat flow until a desirable pressure drop is reached.
+
+6.734e+002
+6.548e+002
+6.363e+002
+6.177e+002
+9.991e+002
+5.806e+00
+9.620e+002
+5.434e+002
+9.248e+002
+5.063e+002
+4.877e+002
+
+[K]
+
+1.296e+002
+1.167e+002
+1.037e+002
+9.074e+001
+7.777et+001
+§.481e+001
+5.185e+001
+3.889e+001
+2.592e+001
+1.296e+001
+
+0.000e+000
+[m s*-1]
+
+Fig. 9. Physical distribution of a shell with a pipe structure. (a) Temperature field and (b) velocity field.
+
+
+----$$$$----$$$$----
+S. Bai et al. / Case Studies in Thermal Engineering 4 (2014) 99-112 109
+3.2. Temperature field and velocity field analysis
+
+A different thermal performance and aerodynamics originated from the temperature field and the velocity field of heat
+exchangers. It was necessary to analyze the physical field of the 6 structures under the same suburban driving cycle.
+A symmetrical plane along the thickness of the shell was generated to obtain the temperature field and the velocity field of
+the exhaust.
+
+For the empty cavity, the exhaust expanded gradually at the inlet because it entered the body and left the shell wall with
+almost the same main flow area, as shown in Fig. 4. In the absence of any structure or fin, some eddies with low temperature
+and low velocity appeared in the upper side of the empty cavity the most of the hot exhaust left directly from the structure.
+Only a small amount of heat, 466 W, was transferred to the wall, and the pressure drop was as small as 32 Pa. Compared
+with the empty cavity, the presence of an inclined fin, as shown in Fig. 5, destroyed the large eddy and allowed the hot
+exhaust to disperse and collide with walls. Consequently, the heat transfer increased by approximately 67% to 779 W, while
+the pressure drop increased to 96 Pa.
+
+To further enhance the turbulence and heat transfer, the parallel plate structure, separate plate with holes, and serial
+plate structure were proposed together. Figs. 6-9 show that the different internal structures all increased heat transfer;
+
+3500
+Exp:ti=60 C
+Exp:ti=150 C
+. Exp:ti=200 C
+2500 . Exp:ti=250 C
+Exp:ti=300 C
+2000 Exp:ti=350 C
+= Exp:ti=400 C
+Oo CFD:ti=60 Cc
+1500 7" = CFD:ti=100 C
+- > * " CFD:ti=150 C
+— CFD:ti=200 C
+1000 - — CFD:ti=250 C
+— CFD:ti=300 C
+500 - — CFD:ti=350 C
+- * CFD:ti=400 C
+0
+100 160 180 200
+Mass flow rate [kg/h]
+3500
+Exp:ti=60 C
+Exp:ti=100 C
+3000 . Exp:ti=150 C
+Exp:ti=200 C
+Exp:ti=250 C
+Aa 2500 é Exp:ti=300 C
+2 Exp:ti=350 C
+a= Exp:ti=400 C
+® 2000 ,
+=| CFD:ti=60 C
+2 - = 7 " CFD:ti=100 C
+& 41500 "=" * CFD:ti=150 C
+— CFD:ti=200 C
+- — CFD:ti=250 C
+1000 — CFD:ti=300 C
+- — CFD:ti=350 C
+- - CFD:ti=400 C
+500
+
+100 180 200 220 240
+Mass flow rate (kg/h)
+
+Fig. 10. Numerical and experimental results for the pipe structure. (a) Heat and (b) pressure drop.
+
+----$$$$----$$$$----
+110 S. Bai et al. / Case Studies in Thermal Engineering 4 (2014) 99-112
+
+Exp:ti=60 C
+
+2500 Exp:ti=100 C
+
+Exp:ti=150 C
+
+Exp:ti=200 C
+
+Exp:ti=250 C
+
+Exp:ti=300 C
+
+Exp:ti=350 C
+
+Exp:ti=400 C
+
+= 1500 CFD:ti=60 C
+‘S)
+
+2000
+
+~ 7 7 " CFD:ti=100 C
+"7 7 * CFD:ti=150 C
+™ CFD:ti=200 C
+~ 7 CFD:ti=250 C
+— CFD:ti=300 C
+- = CFD:ti=350 C
+500 " * CFD:ti=400 C
+
+0
+100 120 140 160 180 200 220 240 260
+Mass flow rate [kg/h]
+
+1200
+
+Exp:ti=60 C
+Exp:ti=100 C
+1000 Exp:ti=150 C
+Exp:ti=200 C
+Exp:ti=250 C
+Exp:ti=300 C
+Exp:ti=350 C
+Exp:ti=400 C
+
+800
+
+CFD:ti=60 C
+600 - 7 - = = -CFD:ti=100C
+7 ee - - - -CFD:ti=150C
+
+Pressure drop (Pa)
+
+— - -CFD:ti=250C
+400 CFD:t
+—= ™ CFD:ti=300C
+—= " = CFD:ti=350C
+= "= = CFD:ti=400C
+
+200
+100 120 140 160 180 200 220 240 260
+
+Mass flow rate [kg/h]
+
+Fig. 11. Numerical and experimental results for the empty cavity. (a) Heat and (b) pressure drop.
+
+meanwhile, the exhaust released heat and gradually became cooler. Several specific areas between two adjacent baffles, at
+nearly equal temperatures, were provided as hot sources for thermoelectric modules, which are important for the
+thermoelectric generator. The serial plate structure forced exhaust to flow back and forth using 7 baffles, enhanced the heat
+transfer with the shell wall and had the maximum heat transfer rate at 1737 W, which was 35% and 26% greater than the
+parallel plate structure and the separate plate with holes, respectively. The serial plate structure also had a maximum
+pressure drop of 9.6 kPa among the three, 200% and 115% more than parallel and separate plate structures, respectively.
+
+As for the pipe structure, the exhaust flowed out of the main inlet at the outlet side of the body and diffused until the end
+area of the main outlet opposite to the outlet of the inlet. There, it reflected and flowed into the two outlet pipes, as shown
+in Fig. 9. The temperature field was relatively uniform as a whole; however, it released the heat of 805 W, just 46.3% of the
+serial plate total, while its pressure drop was 6.5 kPa, 66.8% of that of the serial plate. The sudden enlargements and
+contractions of the inlet or outlets produced a larger pressure drop than in other structures.
+
+----$$$$----$$$$----
+S. Bai et al. / Case Studies in Thermal Engineering 4 (2014) 99-112 111
+
+4. Comparison of the CFD simulation with experimental results
+
+To validate the CFD models, two heat exchangers were fabricated with the same shell dimensions of
+670 mm x 360 mm x 81 mm: One was pipe structure and the other was empty cavity as in the Fig. 1, but a gradual
+transition from the inlet and the outlet to the body of the heat exchanger was modified into a direct connection.
+
+The experimental setup included K-type thermocouples, a stainless V-cone flow meter with temperature and pressure
+compensation, a differential pressure transmitter, the pressure transducer and an industrial heat fan to provide hot air that
+simulated an automobile exhaust. The differential pressure transmitter was set to test the fluid's pressure drop through the
+exhaust heat exchanger. Hot air at 60-400 °C and a different velocity other than the typical driving cycles was fed into the
+heat exchangers. The heat exchanger was exposed to the ambient of 22 °C, and the heat extracted from the hot air was equal
+to the mass flow rate multiplied by the enthalpy difference from the inlet to the outlet. Experiment details were given in
+[28].
+
+The boundary conditions in CFD were the same as in the experiment: inlet temperature and inlet mass flow rate, but the
+coefficient of convective heat transfer was set to 15 W/(m72 °C) in consideration of a radiant heat transfer. In Figs. 10 and 11
+the numerical and experimental results are shown at 48 operating points with different temperatures and pressures. For the
+empty cavity, the averaged relative error was 6.96% between the numerical and experimental pressure drop, and it was
+31.57% between the numerical and experimental heat transferred. While for the pipe structure, the numerical result
+overestimated the experimental result, the averaged relative error was 20.95% for the pressure drop and 49.8% for the heat
+transferred. Obviously, the relative error was small for the low inlet temperature and small mass flow rate; it rose with the
+increasing inlet temperature and mass flow rate.
+
+5. Conclusion
+
+CFD models with a solid domain, liquid domain and fluid-solid interfaces were developed for 6 exhaust heat exchangers
+to simulate the temperature field and the velocity field. Under 3 typical driving cycles, the descending order of pressure drop
+for 5 of the structures is the same as that for the descending magnitude of the heat transfer rate: serial plate structure,
+separate plate with holes, parallel plate structure, inclined plate structure and empty cavity. Among the 6 heat exchangers,
+the pipe structure has the 2nd greatest pressure drop and the 4th greatest heat transfer rate.
+
+The serial plate structure forced the exhaust to flow back and forth by 7 baffles, enhanced the heat transfer with the shell
+wall and had the maximum heat transfer rate of all the structures, at 1737 W. This rate was 35% and 26% greater than the
+parallel plate structure and the separate plate with holes, respectively. The serial plate also had a maximum pressure drop of
+9.7 kPa, 200% and 115% more than the parallel and separate plates, respectively. The pipe structure released the heat of
+805 W, 46.3% of the serial plate, with a pressure drop of 6.5 kPa, 66.8% of the serial plate. Under the maximum power output
+condition, only the inclined plate and the empty cavity structure had pressure drops less than 80 kPa. The largest pressure
+drop exceeded 190 kPa. The bypass mechanism with a differential pressure switch is necessary for the engine's stability and
+reliability in such cases.
+
+Acknowledgments
+
+The authors would like to thank Prof. Ctirad Uher (University of Michigan) for language polish. This work was supported
+by the National Basic Research Program of China, No. 2013CB632504, the International S&T Cooperation Program of China,
+No. 2011DFB60150, and the National Natural Science Foundation of China, No. 51102260.
+
+References
+
+[1] Yu C, Chau KT. Energy Convers Manag 2009;50:1506-12.
+[2] Javani N, Dincer I, Naterer GF. Energy 2012;46:109-16.
+[3] Wang D, Ling X, Peng H, Liu L, Tao L. Energy 2013;50:343-52.
+[4] Fu J, Liu J, Ren C, Wang L, Deng B, Xu Z. Energy 2012;44:544-54.
+[5] Shu G, Zhao J, Tian H, Liang X, Wei H. Energy 2012;45:806-16.
+[6] Yang J. In: IEEE proceedings of the 24th international conference on thermoelectrics; 2005 ISBN 0-7803-9552-2, ISSN 1094-2734, p. 170.
+[7] Bell Lon E. Science 2008;321(12):1457-61.
+[8] <http://chinaafc.miit.gov.cn/n2050/index.html).
+[9] GB/T 19233-2008 Measurement methods of fuel consumption for light-duty vehicles.
+[10] Birkholz U, Grob E, Stohre U, Voss K. In: Rao KR, editor. Proceedings of the 7th international conference on thermoelectric energy conversion.
+Arlington, TX: University of Texas at Arlington; 1988. p. 124-8.
+[11] Bass J, Elsner NB, Leavitt A. In: Mathiprakisam B, editor. Proceedings of 13th international conference on thermoelectrics (AIP Conf. Proc., New York);
+1995. (p. 295-8.).
+[12] Kobayashi M, Ikoma K, Furuya K, Shinohara K, Takao H, Imanishi Y, et al. In: Fleurial J-P, editor. Proceedings of the 15th international conference on
+thermoelectric; 1996. (p. 373-7.).
+[13] Ikoma K, Munekiyo M, Furuya K, Izumi T, Shinohara K. In: Koumoto K, editor. Proceedings of the 17th international conference on thermoelectric;
+1998. (p. 464-7.).
+[14] Ikoma K, Munekiyo M, Furuya K, Kobayashi M, Kouatsu H, Shinohara K. J Jpn Inst Met 1999;63:1457.
+[15] Thacher EF, Helenbrook BT, Karri MA, Richter CJ. J Automob Eng 2007;221:95-107.
+
+----$$$$----$$$$----
+112 S. Bai et al. / Case Studies in Thermal Engineering 4 (2014) 99-112
+
+[16] Crane DT, Lagrandeur JW. J Electron Mater 2010;39:2142-8.
+
+[17] Crane DT, Jackson GS. Energy Convers Manag 2004;45:1565-82.
+
+[18] Martinez A, Vian JG, Astrain D, Rodriguez A, Berrio I. J Electron Mater 2010;39:1463-8.
+
+[19] Rodriguez A, Vian JG, Astrain D, Martinez A. Energy Convers Manag 2009;50:1236-43.
+
+[20] Pan M, Jamaliniya S, Smith R, Bulatov I, Gough M, Higley T, et al. Energy 2013;57:208-21.
+
+[21] Gou X, Yang S, Xiao H, Ou Q. Energy 2013;52:201-9.
+
+[22] Sun ZX, Gao L, Wang JF, Dai YP. Energy 2012;44:1035-43.
+
+[23] Aslam Bhutta MM, Bashir MH, Kham AR, Ahmad KN, Khan S. Appl Therm Eng 2012;32:1-12.
+
+[24] Giangaspero G, Sciubba E. Energy 2013;58:52-65.
+
+[25] Wang L, Li H, Wan X, Ding H, Jin Z. Energy Eng 2004;3:5-7.
+
+[26] Braess HH, Seiffer U. Handbook of automotive engineering (English version) 2005 (USA: SAE International).
+
+[27] Vehicle technologies office: 2009 advanced combustion R&D annual progress report, (http://energy.gov/eere/vehicles/vehicle-technologies-office-an
+nual-progress-reports), p. 260-3.
+
+[28] Lu H, Wu T, Bai S, Xu K, Huang Y, Gao W, et al. Energy 2013;54:372-7.
+
+----$$$$----$$$$----

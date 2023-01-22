@@ -1,0 +1,1132 @@
+Chinese Journal of Aeronautics 24 (2011) 81-89
+
+Contents lists available at ScienceDirect
+
+Chinese Journal of Aeronautics
+
+ee 4
+J ee
+SS % oA
+Fes
+
+= ay journal homepage: www.elsevier.com/locate/cja
+SEVIER
+
+o>
+
+Control-oriented Modeling for Air-breathing Hypersonic Vehicle Using
+Parameterized Configuration Approach
+
+LI Huifeng”, LIN Ping, XU Dajun
+
+School of Astronautics, Beijing University of Aeronautics and Astronautics, Beijing 100191, China
+
+Received 21 April 2010; revised 12 June 2010; accepted 30 August 2010
+
+Abstract
+
+This article presents a parameterized configuration modeling approach to develop a 6 degrees of freedom (DOF) rigid-body
+model for air-breathing hypersonic vehicle (AHV). The modeling process involves the parameterized configuration design, 1n-
+viscous hypersonic aerodynamic force calculation and scramjet engine modeling. The parameters are designed for air-
+frame-propulsion integration configuration, the aerodynamic force calculation is based on engineering experimental methods,
+and the engine model is acquired from gas dynamics and quasi-one dimensional combustor calculations. Multivariate fitting 1s
+used to obtain analytical equations for aerodynamic force and thrust. Furthermore, the fitting accuracy is evaluated by relative
+error (RE). Trim results show that the model can be applied to the investigation of control method for AHV during the cruise
+phase. The modeling process integrates several disciplines such as configuration design, aerodynamic calculation, scramjet mod-
+eling and control method. Therefore the modeling method makes it possible to conduct AHV aerodynamics/propulsion/control
+integration design.
+
+Keywords: flight dynamics; hypersonic; AHV model; parameterized configuration design; aerodynamics/propulsion integration
+
+1. Introduction
+
+With a large altitude-velocity flight envelope,
+wild-varying disturbances and complicated environ-
+ment, the near space hypersonic vehicle becomes
+strong coupling, fast time-varying, highly nonlinear
+and great uncertain. Integration of attitude control,
+engine thrust regulation and guidance control are re-
+quired'"!, Therefore, the development of reasonable
+air-breathing hypersonic vehicle (AHV) model is in-
+evitable.
+
+Two models are widely used for hypersonic control
+research. One is winged-cone model developed by
+NASA Langley Research Center and opened to public
+
+* Corresponding author. Tel.: +86-10-82339276.
+
+E-mail address: \ihuifeng@buaa.edu.cn
+
+Foundation item: Aeronautical Science Foundation of China
+(2008ZA51002)
+
+1000-9361/$ - see front matter © 2011 Elsevier Ltd. All rights reserved.
+doi: 10.1016/S1000-9361(11)60010-1
+
+in 1990 (that is generic hypersonic vehicle (GHV)
+model). This model aims to develop a manned, hori-
+zontal takeoff and landing, single-stage-to-orbit
+(SSTO), air-breathing launch vehicle. It covers a large
+operational range from subsonic to hypersonic, and the
+aerodynamic data is sophisticated from both wind
+tunnel tests and aerodynamic preliminary analysis sys-
+tem (APAS). This mathematical model is applied to
+reducing the vehicle trim drag force, developing the
+guidance and control strategies and evaluating the ve-
+hicle performances!**,
+
+The other one is air-breathing hypersonic flight ve-
+hicle (AHFV), which is a two-dimensional vertical
+model based on gas dynamics and computational fluid
+dynamics (CFD). AHFV is used by Multidisciplinary
+Flight Dynamics and Control Laboratory at California
+State University, Los Angeles (CSULA), to research
+aerodynamics/propulsion coupling effect and control
+methodology, also known as CSULA-GHV model!®*!,
+The widely used 3 degrees of freedom (DOF) (plus
+flexibility) nonlinear model for the longitudinal dy-
+
+----$$$$----$$$$----
+- 82: LI Huifeng et al. / Chinese Journal of Aeronautics 24(2011) 81-89 No.1
+
+namics of a generic scramjet hypersonic vehicle is also
+utilized by Bolender, et al.!'°""!,
+
+However, the winged-cone model does not have
+aerodynamics/propulsion integration configuration,
+which is a general characteristic for hypersonic wave
+rider. Only the effect of hypersonic velocity is re-
+flected in the dynamic equations. Although the 6 DOF
+model has been developed, it is usually reduced to
+longitudinal model for control algorithms study. The
+CSULA-GHV model emphasizes the aerodynam-
+ics/propulsion integration design, but the model is lim-
+ited in vertical plane which is mainly used for scramjet
+modeling research and only simple control method is
+discussed.
+
+Besides, with fixed configuration, existing models
+cannot reflect interaction between aerodynamic profile
+and propulsion performance, so they cannot be used to
+conduct research on aerodynamics/propulsion/control
+integration. Therefore, we present a method to develop
+6 DOF rigid-body model for AHV using parameterized
+configuration approach. Trim calculation results show
+that AHV model can be applied to the control algo-
+rithm research for AHV during the cruise phase. The
+modeling process integrates several disciplines such as
+configuration design, aerodynamic calculation, scram-
+jet modeling and control method. Therefore the mod-
+eling method makes it possible to conduct AHV aero-
+dynamics/propulsion/control integration design. In
+addition, some advanced control actuator (vector con-
+trol, direct force control and variable centroid control,
+etc.) can also be introduced into the modeling process,
+so it is flexible to explore and verify varieties of con-
+trol methods for AHV.
+
+The modeling procedure for AHV is as follow. After
+selecting the general parameters and flight conditions
+for target vehicle, the aircraft aerodynamic profile and
+engine shape are obtained through parameterized de-
+
+sign. Then, the aerodynamics/propulsion data is calcu-
+lated by inviscous hypersonic aerodynamic force cal-
+culation and the quasi-one dimensional combustor
+calculation. Finally, the model is verified by trim cal-
+culation.
+
+2. Parameterized Configuration Design
+
+For AHV, the magnitude of thrust is at the same or-
+der with drag force. In order to reduce the drag and
+obtain the thrust as large as possible, the highly inte-
+grated aerodynamics/propulsion system is required.
+With integrated design, the incoming flow can be
+pre-compressed by the forebody before getting into the
+engine inlet. The afterbody plays a role as an “outside
+nozzle” to enable further expansion of burned propel-
+lants. The high temperature gas stream pressed on the
+undersurface of the afterbody causes further lift which
+has great impact on aerodynamic performance of
+AHV!?!,
+
+Parameterized configuration approach determines
+the geometric configuration of AHV by setting a series
+of parameters. Table 1 lists some parameters. With
+these parameters, the PLOT3D format data file 1s gen-
+erated by self-developed geometric configuration pro-
+gram. AHV 3D profile is shown in Fig.1. Configura-
+tion modification can be achieved easily through reset-
+ting corresponding parameters in the program. For the
+models from CFD software, it 1s inevitable to re-mesh
+the vehicle and flow field. The presented method could
+avoid these troubles which brings a great convenience
+at the conceptual stage of AHV design. What’s more,
+this allows us to utilize the multidisciplinary design
+optimization (MDO) methods which can combine
+AHV aerodynamics and propulsion design to get the
+best overall performance.
+
+Table 1 Configuration parameters of AHV (partly)
+
+System Variable symbol Value
+L_body 4.27m
+W_body 0.584 2m
+Airframe H_upsurface 0.2m
+W_engine 0.4m
+y_engine —-0.4m
+deltal_forebody 5°
+delta2_forebody 10°
+xl_forebody 0.2
+Airframe/Engine x2_forebody 0.4
+integration x nozzle 0.75
+delta_outernozzle 11°
+xl_ engine 0.35
+x2_ engine 0.8
+L_wingroot 0.94 m
+L_wingtip 0.558 9m
+Wings L_wingspan 0.33 m
+theta_sweepback 45°
+
+c_wingthickness 0.02
+
+Meaning
+Body length
+Body width
+Body height
+Engine width
+Longitudinal coordinate of engine bottom
+First wedge inclination of forebody
+Second wedge inclination of forebody
+
+Axial relative coordinate of intersection of wedge 1 and wedge 2
+
+Axial relative coordinate of intersection of wedge 2 and scramjet engine
+
+Axial relative coordinate of intersection of scramjet engine and afterbody
+
+Inclination of outside part of afterbody
+
+Axial relative coordinate of the front point of engine bottom
+Axial relative coordinate of the rear point of engine bottom
+
+Chord length of wing root
+
+Chord length of wing tip
+
+Wing length
+Sweep angle of leading edge
+Relative thickness
+
+----$$$$----$$$$----
+No.1 LI Huifeng et al. / Chinese Journal of Aeronautics 24(2011) 81-89 -83-
+
+(a) Three-dimensional view
+
+(b) Orthographic views
+
+Fig.1 Effect pictures of AHV.
+3. General Parameters and Flight Conditions
+
+The general parameters and flight conditions of
+AHV should be determined before aerodynamic and
+thrust calculation. A few parameters can be obtained
+from the similar vehicle!’®!, but most of them need to
+be reassigned through times of iterations based on the
+mission object function from initially estimated values.
+The results are shown in Table 2.
+
+Table 2 General parameters of AHV
+
+Variable symbol Value Meaning
+m 671.33 kg Mass of AHV
+S 0.298 6 m? Reference area
+Reference length (mean aero-
+
+cA 0.373 2m dynamic chord)
+
+ba 0.8 m Lateral reference length
+
+I 34.13 kom? Moment of inertia around
+* s X axis
+
+1 1 040 ke-m? Moment of inertia around
+* e y axis
+
+I 1 034 kom? Moment of inertia around
+. 8 Z axis
+
+I: 430.0 kg-m? Product of inertia
+
+The setting of flight conditions decides the flight
+envelope which is critical to the calculation of
+aerodynamics/propulsion.
+
+AHV model is mainly established for guidance and
+control investigation during the cruise phase. The mag-
+nitude of angle of attack (AOA) is limited within a
+typical range, and so are the altitude and velocity. On
+the other hand, because AHV has aerodynamics/pro-
+pulsion integration configuration, the bank to turn
+(BTT) control technology has to be adopted. Thus the
+sideslip angle magnitude is constrained within permit-
+ted threshold. Table 3 gives the resultant flight condi-
+tions.
+
+Table3 Flight conditions of AHV
+
+Variable symbol Value Meaning
+H 25-35 km Height
+Ma 5-7 Mach number
+a —2°-10° Angle of attack
+—6°-6° Angle of sideslip
+
+ane 4: Deflection angles of
+Pel» Oe2 20-20 left and right wings
+é, ~10°-10° Deflection angle of
+
+vertical tail
+
+4. Aerodynamics and Propulsion Modeling
+
+4.1. Partitioning of aerodynamic force and thrust
+
+The areodynamics/propulsion integration configura-
+tion brings strong couplings between aerodynamics
+and propulsion system. To understand their interaction
+better, it is necessary to partition aerodynamic force
+and thrust. AHV is divided into aerodynamics system
+and propulsion system. Both of them are partitioned
+with the approach in Ref.[9]. The details are shown in
+Fig.2. The aerodynamics system includes forebody,
+external compression part of inlet, wings, empennage,
+the upper surface and side surface of the vehicle, the
+cowl of the engine. The propulsion system includes the
+flow passage inside the engine and the nozzle.
+
+Airframe
+Wings (aerodynamics system)
+(aerodynamics system)
+
+Forebody
+(aerodynamics system)
+
+Engine hood
+
+(aerodynamics system)
+Nozzle Scramjet engine
+
+(propulsion system) (propulsion system)
+
+Fig.2 Partitioning of aerodynamic force and thrust.
+4.2. Inviscid hypersonic aerodynamics calculation
+
+During conceptual design period, proper prediction
+of aerodynamic performance is of great importance
+because wind tunnel tests are highly time- and
+money-consuming. The CFD software such as Fluent
+is commonly used in the calculation of hypersonic
+aerodynamics because of its high precision. But it is
+still time-consuming and not suitable for exploratory
+design research of AHV. Even the geometric configu-
+ration parameters change slightly, the aircraft has to be
+re-drawn, so a simpler and more effective approximate
+aerodynamic calculation method is in need.
+
+During the hypersonic flight, most aerodynamic
+force comes from inviscid hypersonic flow. Particu-
+larly, aerodynamic force and moment could be pre-
+dicted through inviscid flow analysis. This method
+could be applied in parameterized modeling to reduce
+the modeling period.
+
+Different methods are used to estimate the pressure
+coefficient for airframe and wings, according to the
+
+----$$$$----$$$$----
+-84- LI Huifeng et al. / Chinese Journal of Aeronautics 24(2011) 81-89 No.1
+
+situations of the windward sides and the leeward sides.
+Considering the missions, flight environment and ve-
+hicle configuration, this article adopts the Dahlem-Bu-
+ck method for the windward sides of airframe, and the
+Prandtl-Meyer method for the leeward sides of air-
+frame. The cone method and expansion-wave method
+are used for windward and leeward sides for wings
+respectively!'”!, Parts of the results are shown in
+Figs.3-4.
+
+0.8
+0.6
+0.4
+
+0,2
+
+Coefficient of lift
+
+ose Ma=5
+ows \fag=6
+eevee Ma=7
+—2 0 2 4 6 8 10
+
+Angle of attack/(° )
+(a) Coefficient of lift
+
+S
+cr
+
+Coefficient of drag
+i
+S
+
+0.05 = —@ Ma-5
+eeeee Mfa=7
+
+“2 0 2 4 6 8 10
+Angle of attack/(* )
+(b) Coefficient of drag
+
+Lift to drag ratio
+
+-— = Ma-=5
+— Ma-6
+eeeece Ma=7
+
+“2 0 2 4 6 8 10
+Angle of attack/(* )
+(c) Lift to drag ratio
+
+1.2
+:
+2 1.0
+op
+ec
+= 08
+3
+‘a.
+dl
+S 0.6
+5
+3 a= @ Ma=5
+= 0.4 ome \Ma=6
+5 eeeee \fg=7
+0.2
+-2 0 2 a 6 8 10
+
+Angle of attack/(*)
+(d) Coefficient of pitching moment
+
+Fig.3 Longitudinal aerodynamic characteristics of AHV.
+
+0.2
+
+= = Mes
+ome |f7—6
+eeeee Vig]
+
+“=6 -4 -2 0 2 4 6
+Angle of sideslip/(* )
+(a) Coefficient of side force (Ma= 5,6,7)
+
+Coefficient of side force
+
+—e ie
+
+ome \fa-6
+
+eeecee Ma=7
+
+=§ -4 =2 0 2 4 6
+Angle of sideslip/(* )
+
+(b) Coefficient of rolling moment (Ma=5,6,7)
+
+S
+
+Coefficient of rolling moment
+
+I
+oS
+cm)
++
+
+0.03
+5
+= 0.02
+o
+=|
+oo 60.01
+&
+=
+Ss 60
+oa
+o
+5 -0.01
+2
+= -0.02
+5 eeeee Ma=7
+—0.03
+
+—6 -4 2 0 2 4 6
+Angle of sideslip/(* )
+(c) Coefficient of yawing moment (Ma=5,6,7)
+
+- 0.1
+
+=
+
+o
+
+&
+
+gz °
+
+=
+
+esceeveeeeer®
+
+S -0.1 eocccessoneseseeee®
+
+§ = « 5=-10°
+
+os
+
+= -0.2 owes 5 =()°
+
+& eceee 5=]0°
+3
+
+-6 -4 ~2 0 2 4 6
+Angle of sideslip/(* )
+(d) Coefficient of yawing moment (Ma=6, 5,= -10°,0°,10°)
+
+Fig.4 Lateral aerodynamic characteristics of AHV.
+
+As depicted from the above figures, aerodynamic
+characteristics of this AHV have the following fea-
+tures:
+
+The longitudinal static stability derivative 0C,,/0a 1s
+larger than 0, demonstrating that the longitudinal mode
+of AHV is statically instable; the dihedral derivative
+OC, /0f is also larger than 0, which means that the roll-
+ing mode of AHV is statically instable; the yawing
+stability derivative OC,,/0f is larger than 0, indicating
+that the yawing mode of AHV 1s statically stable. The
+
+----$$$$----$$$$----
+No.1 LI Huifeng et al. / Chinese Journal of Aeronautics 24(2011) 81-89 -85-
+
+lift to drag ratio is relatively high, which means AHV
+has good aerodynamic efficiency.
+
+4.3. Scramjet engine modeling
+
+There are two parts related to the thrust of AHV, air-
+frame’s lower surface and engine hood, as shown in
+Fig.5. The lower surface is divided into forebody,
+middle part and afterbody. The scramjet engine is
+composed of the middle part and the engine hood. The
+
+details of each and corresponding functions are shown
+in Table 4, and some of the results of thrust calculation
+are shown in Fig.6.
+
+Afterbody
+
+Middle part
+
+Forebody
+
+¢
+4
+
+Scramjet engine Engine hood
+
+Fig.5 Parts related to thrust: lower surface and engine.
+
+Table 4 Mechanism of thrust of AHV
+
+Section Position
+
+Pre-compress inflow
+(1) To reduce the inflow Mach number and lower the
+burning difficulty.
+(2) To increase pressure and improve combustion efficiency.
+
+Forebody/Inlet Front part of
+lower surface
+Middle part of
+lower surface and
+engine hood
+
+Scramjet engine
+
+Function
+
+Supersonic combustion
+(1) To control the thrust through fuel equivalence ratio 67.
+(2) To produce the uninstalled thrust.
+
+Theories involved
+Oblique shock wave theory,
+expansion wave theory, inviscid
+hypersonic aerodynamics
+calculation
+
+Quasi-one dimensional
+combustor theory!'*!
+
+Expand wake flow
+
+Rear part of lower
+
+Afterbody/Nozzle
+surface
+
+(1) To produce the thrust, aerodynamic forces and moments.
+(2) To produce expansion wave, increase the Mach number, reduce
+
+Expansion wave theory
+
+the pressure to make the pressure of wake flow be equal to the
+external pressure.
+
+os «@ Ma=5
+eeese \fq=7
+
+Coefficient of thrust
+
+0.05
+0.6 0.7 0.8 0.9 1.0
+
+Fuel equivalence ratio
+(a) Coefficient of thrust vs fuel equivalence ratio (Ma=5,6,7,H=30 km)
+
+= @ \fa=5
+
+eeeee Ma=7
+
+Coefficient of thrust
+
+2 0 2 4 6 8 10
+Angle of attack/(* )
+(b) Coefficient of thrust vs angle of attack (Ma= 5,6,7,H=30 km)
+
+oo = Ma=5
+ome \f0—6
+eeeee \a=7
+
+0.35
+
+0.15
+
+Specific fuel consumption/(kg:s"')
+
+0.05
+0.6 0.7 0.8 0.9 1.0
+
+Fuel equivalence ratio
+(c) Specific fuel consumption vs fuel equivalence ratio (Ma=5,6,7,H=30 km)
+
+0.35
+
+0.25
+
+0.15
+
+Specific fuel consumption/(kg-s"')
+
+2 0 2 + 6 8 10
+Angle of attack/(* )
+(d) Specific fuel consumption vs angle of attack (Ma=6,H=30,32,34 km)
+
+Fig.6 Engine characteristics of AHV.
+
+After analyzing the preceding calculation results,
+the following conclusions are obtained.
+
+(1) The thrust of AHV consists of two parts, one is
+the uninstalled thrust from the scramjet engine, which
+is yielded according to the momentum conservation
+law between the vehicle and high speed exhaust eject-
+ing from the nozzle; the other part is the vector sum of
+the pressure generated by the high temperature exhaust
+on the surface of vehicle afterbody, and this is calcu-
+lated with Prandtl-Meyer formula. Generally speaking,
+the thrust generated from the afterbody is larger than
+the uninstalled thrust. And the afterbody contributes
+about 60% to 80% of the total thrust.
+
+(2) The states before and after the shock wave are
+calculated by the oblique shock wave theory, and the
+results are served as the interface conditions of scram-
+jet engine. The forebody only generates aerodynamic
+force which is predicted by the inviscous hypersonic
+aerodynamic theory, as shown in Fig.2.
+
+(3) The resultant data shows that exhaust flow state,
+uninstalled thrust and specific fuel ratio are all influ-
+
+----$$$$----$$$$----
+- 86° LI Huifeng et al. / Chinese Journal of Aeronautics 24(2011) 81-89 No.1
+
+enced by the states after the oblique shock wave and
+the fuel equivalence ratio o;7. Uninstalled thrust is
+proportional to 6; and increases as the Mach number
+increases; but the increasing speed decreases with the
+increase of Mach number. The specific fuel ratio also
+linearly varies with respect to 67, and increases with
+Mach number but decreases with altitude.
+
+(4) As well as the thrust, lift force and pitch moment
+are generated at the forebody, which are part of the
+total aerodynamic force and momentum.
+
+5. Modeling Results
+5.1. AHV model
+
+Data of aerodynamic characteristics and engine
+performance can be obtained from the preceding cal-
+culation. The data could be used by interpolation or
+fitting. Interpolation is suitable for small amount of but
+accurate sample data, such as the wind tunnel test data.
+Fitting is always employed in the situation emphasiz-
+ing the approximate trends while the accuracy re-
+quirement is lower, such as the CFD calculation re-
+sults. Hence, multivariate fitting is adopted and evalu-
+ated by relative error (RE). RE is defined as
+
+RE = 100% (1)
+u
+
+where u is original data vector, @ the vector yield from
+fitting formula at the same state point, and |||| the
+
+norm of vector.
+All the resultant fitting formulas are listed as fol-
+lows:
+
+Ci, = C1,(Ma, 0,6.) 5.5) =
+
+0.149 8—0.027 51Ma + 0.072 35a —
+0.003 368a@Ma + 0.002 343Ma? +
+0.001185a7 + 0.006 515(6,, + 5.5) (2)
+
+Cpa = Cp, (Ma, @,6.),6.5) =
+
+0.050 99 — 0.004 863Ma + 0.002 967a +
+
+0.001 364a7 + 0.000 536 27(6,, +d.) +
+0.000 131 3(d;, + 53) (3)
+
+Cy =C,(Ma,a, 8,6.) =
+0.046 26 8 — 0.002 833 8Ma — 0.000 369 laf +
+(—0.007 779 + 0.000 502 69Ma)6, (4)
+C, = C,(Ma, B,6.,5.55.)) =
+(0.008 739 — 0.000 450 27Ma)f +
+
+(0.003 319 —0.000 213 96Ma)6é, +
+(0.004 906 — 0.000 228 31Ma)(6.,-5.5) (5)
+
+Cina — Crna (Ma, a,0.),0.7) —
+0.2414+0.01168Ma+
+0.101 2a@+0.001 21a? +
+(—0.037 02 + 0.001 733Ma)(6,, + 6,5) (6)
+
+C, =C,(Ma,a, B,6,,54,55.)) =
+—0.001 495 BMa — 0.000 286 42a +
+
+0.012 158 + (0.012 55+ 0.000 981 33Ma)6, —
+0.000 027 9736 — 0.000 078 7(6;, -62,) (7)
+
+Cr. = Cr, (Ma, a, 8,6; ) =
+
+Cc
+
+0.102 95, — 0.020 22(Macos $)6d, —
+0.001 757a6, + 0.000 088 233a76, +
+0.001 221(Macos f)’ 6, (8)
+Cr, = Cp, (Ma, a, B, 07) =
+
+n
+
+0.037 91+ 0.005 176a@ —0.012 35Macos BP -
+0.000 548 87(Macos B)a +
+
+0.000 968 97(Macos f)* +0.056 276, —
+0.000 774 67a6, + 0.002 103(Macos £)5, (9)
+Ci. =C,,(Ma, a, B,5,) =
+0.7215+0.026 35a +0.114 7Macos B-
+0.002 795(Macos f)a —0.578 2(Macos f)''? +
+0.289 45, — 0.004 363a6, +
+0.010 83(Macos £)6, (10)
+Cre = Cp, (Ma, a, B,6,) =
+0.002 339a@ +0.000 121 82a” —
+0.000 331 26(Macos B)a +0.005557a6, (11)
+Co = Cue(Ma, a, B,6,) =
+—0.829 7+0.270 3Macos B -0.113 3a-
+0.021 21(Macos B) +0.012 01(Macos B)a —
+1.23156, +0.016 95a, — 0.046 02(Macos f)6,
+(12)
+Tity _ ite (Maa, B,H, 5p) _
+jp 5; -
+2.480 5—0.054 55a + 0.001 599a? —0.204H +
+
+0.486Macos 2 + 0.002 515aH +0.003 635H* —
+0.008 598(Macos £)a—0.01216(Macos £B)H (13)
+
+where C;, Cp and Cy are coefficients of lift, drag and
+side forces, C);, C,, and C, are coefficients of rolling,
+pitching and yawing moments, C7 is coefficient of
+thrust, dm,/dt specific fuel consumption, subscript “a”
+means the aerodynamics calculation parts of the cor-
+responding coefficients, “e” the engine calculation
+parts, “c”’ the combustor calculation parts, “‘n’” the noz-
+zle calculation parts.
+
+The values of RE of all formulas are shown in
+Table 5. Fitting results can honestly reflect original
+data.
+
+----$$$$----$$$$----
+No.1 LI Huifeng et al. / Chinese Journal of Aeronautics 24(2011) 81-89 -87-
+
+Table 5 RE of fitting results
+
+Fitting variable RE/% Fitting variable RE/%
+Cha 4.91 Che 1.60
+Cpa 5.45 Coe 2.56
+Cy 4.05 Cie 1.59
+C 9.10 Cre 1.54
+Cina 7.31 Cin 1.59
+oF 8.59 dmg /dt 5.81
+
+Fitting results show that
+
+(1) The lift, drag and pitching moment are affected
+by the propulsion system. Thus, they include aerody-
+namics part and propulsion part. Correspondingly the
+coefficients could be described as
+
+Cr = Cra + Cre (14)
+Cp =Cpa + Coe (15)
+
+(2) The total thrust coefficient consists of unin-
+stalled thrust coefficient and afterbody thrust coeffi-
+cient, 1.e.
+
+Cr = Cp + Cr (17)
+
+(3) Because viscosity is not considered, altitude has
+no effect on aerodynamic coefficient and affects pro-
+pulsion coefficient by within 2%. Therefore, the influ-
+ence of altitude can be ignored. However, altitude still
+considerably influences fuel consumption (see Fig.6).
+
+(4) As is consistent with the configuration, the atti-
+tude of AHV is changed by the following manners:
+
+1) Rolling motion—differential movement of the
+two horizontal wings, that 1s 0.;= —dx.
+
+2) Pitching motion—linkage movement of the two
+horizontal wings, that 1s 6.;=0e2.
+
+3) Yawing motion—BTT control method is adopted,
+that is 6.;= —oOs and 6,0.
+
+In order to establish 6 DOF rigid-body model of
+AHV, equations of motion and geometric equations
+still need to be selected. For hypersonic flights, equa-
+tions of motion are established reasonably with ab-
+sence of wind and _ curved’ Earth without
+self-rotation!!??°!, All the equations are listed as fol-
+lows.
+
+Equations of motion are
+
+y= Tees aos P~P Gy sin (18)
+m R
+f=([T(cosasin fsin y+sin acos y)+Lcos y—
+Ysin y]/(mV)-{(Gy, —V7R)cos /(VR?) (19)
+g=[T(sin asin y—cos asin fcos y)+Lsin y+
+Ycos y]/(mV cos )+(V cos wtan ¢,,,sin g)/R (20)
+R=Vsin yw (21)
+Prong =V cos usin p](R COS Prat) (22)
+
+bin (V cos cos )/R (23)
+p=(qrt+e,p)qt cL +c,N (24)
+g =cspr—¢,(p> —r°)+c,M (25)
+r=(c,p-—c,r)qt+ c,L + c,N (26)
+d= p+(rcos d+qsin ¢)tan O (27)
+@=qcos ¢-rsin ¢ (28)
+
+w =(rcos + qsin ¢)/cosé (29)
+
+where V is velocity; u angle of track; @ yaw angle of
+track; y roll angle of track; R distance between Earth
+center and vehicle centroid; Qiong and @ ja are longitude
+and latitude; p, g and r roll, pitch and yaw rates; ¢, 0
+and yroll, pitch and yaw angles; T is thrust; L, D and
+Y are lift, drag and side forces; L, M and N are roll-
+ing, pitching and yawing moments; Gy 1s gravitational
+coefficient of Earth; c; to cy are constants related to the
+moment of inertia.
+Geometric equations are
+
+sin # =[cos gsin(g—w)+
+sin Osin @cos(g—yw)]|cos u—
+sin 4cos Osin @ (30)
+sin acos B=cos usin Ocos ¢cos(g—w)—
+cos sin @sin(g—yw)—
+sin 4cos Ocos @ (31)
+sin ycos 4=cos asin Psin 8+
+
+cos Ocos #sin g-
+
+cos Osin asin fcos @ (32)
+
+Atmosphere density and sound speed model"! are
+
+p= 0.003 484 p/Trems (33)
+C= 20.05, Tremp (34)
+
+where ¢ is atmospheric density, p atmospheric pres-
+sure, Temp atmospheric temperature, c sound velocity.
+Other equations are
+
+Ma=V/c (35)
+
+R=R,+H (36)
+
+L= > pV’ SC, (37)
+1
+
+D= 5 pV’ SC, (38)
+1
+
+Y= 5 pV’ SC, (39)
+
+T= . pV’ SC, (40)
+_ ] )
+
+L= tas SbC, (41)
+
+----$$$$----$$$$----
+-88- LI Huifeng et al. / Chinese Journal of Aeronautics 24(2011) 81-89 No.1
+
+M= . pV’ Sc,C,, (42)
+
+N= > pV? SbC, (43)
+
+5.2. Trim flight simulation
+
+Under the flight conditions of the given altitude,
+Mach number, longitude, and roll angle, trim flight
+simulation has been executed. The final trim result is
+shown in Fig.7. In Fig.7, g is the dynamic pressure and
+dQ the heating rate.
+
+With the control variable limits and the angle of at-
+tack limit being considered, the two triangle marked
+boundaries are obtained. Since the scramjet is applied,
+there are two velocity limits (Vin and Vinx) to suit the
+property of scramjet. Besides, with dynamic pressure
+limit (the black boundary) and heating rate limit (the
+red boundary) being concerned, the whole flight cor-
+ridor of AHV is acquired (see Fig.7). The state point
+(V, 7) within the flight corridor indicates that
+
+Oot min Ss Oot trim Ss Oct max (44)
+Oo2 min Ss e2,trim Ss Oo max (45)
+Or min < OF trim < Or max (46)
+Qin Ss Crim Ss Qinax (47)
+Vinin <Vs V max (48)
+
+Vim <9 X 10° Pa (49)
+
+dO nin < 7.910? W/m? (50)
+
+where subscript “min” and “max” mean the corre-
+sponding limits; subscript “trim” means that the vari-
+able values are obtained from the trim calculation.
+
+Altitude/km
+
+Heating rate limit
+dO=7.9 X 10° W/m?
+
+0 Trimed zone
+1.5 2.0 23 3.0
+Velocity/(km-s")
+
+Fig.7 Flight corridor of AHV.
+
+5.3. Model verification
+
+The typical flight points of the similar vehicle are
+utilized to verify AHV model, since the general pa-
+rameters and flight conditions are mainly referred to
+the vehicle (see Table 6).
+
+Table 6 Typical flight points
+
+Parameter Point 1 Point 2 Point 3
+Vi(m-s ') 1 788.2 1 812.7 1 963.8
+Alkm 24.4 24.4 30.5
+
+Obviously, all the typical flight points are within the
+flight corridor of AHV, indicating that the Eqs.(44)-
+(50) are satisfied. Thus, the modeling of AHV is ac-
+complished.
+
+6. Conclusions
+
+This article presents parameterized configuration
+approach for hypersonic vehicle modeling. Through
+parameterized aerodynamics/propulsion integration,
+inviscous hypersonic aerodynamic calculation and
+scramjet engine modeling, a 6 DOF rigid-body model
+of AHV is obtained. Trim results prove the rationality
+and effectiveness of AHV model.
+
+Further work will be focused on model analysis,
+such as evaluating the impact of typical configuration
+parameters on the vehicle performance, analyzing ve-
+hicle’s flight envelope and path constraints (angle of
+attack limit for scramjet, heating rate and dynamic
+pressure for body and wings, etc.).
+
+References
+
+[1] Zhang J M, Du X, Chen J. Development and prospect
+of nearspace vehicle technology. Nearspace Science &
+Engineering 2009; 1-6. [in Chinese]
+
+[2] Shaughnessy J D, Pinckney S Z, McMinn J D, et al.
+Hypersonic vehicle simulation model: winged-cone
+configuration. NASA TM-102610, 1990.
+
+[3] Keshmiri S, Colgren R, Mirmirani M. Development of
+an aerodynamic database for a generic hypersonic air
+vehicle. AIAA-2005-6257, 2005.
+
+[4] Keshmiri S, Mirmirani M D. Six-DOF modeling and
+simulation of a generic hypersonic vehicle for concep-
+tual design studies. AIAA-2004-4805, 2004.
+
+[5] Keshmiri S, Colgren R, Mirmirani M. Six-DOF mod-
+eling and simulation of a generic hypersonic vehicle
+for control and navigation purposes. AIAA-2006-6694,
+2006.
+
+[6] Mirmirani M, Wu C, Clark A, et al. Modeling for con-
+trol of a generic airbreathing hypersonic vehicle.
+AIAA-2005-6256, 2005.
+
+[7] Clark A, Wu C, Mirmirani M, et al. Development of an
+airframe-propulsion integrated generic hypersonic ve-
+hicle model. AIAA-2006-218, 2006.
+
+[8] Clark A D, Mirmirani M D, Wu C, et al. An aero-pro-
+pulsion integrated elastic model of a generic airbreath-
+ing hypersonic vehicle. AIAA-2006-6560, 2006.
+
+[9] Muirmirani M, Wu C, Clark A, et al. Airbreathing hy-
+personic flight vehicle modeling and control, review,
+challenges, and a CFD-based example. Workshop on
+Modeling and Control of Complex Systems. 2005;
+1-15.
+
+[10] Bolender M A, Doman D B. A non-linear model for the
+longitudinal dynamics of a hypersonic air-breathing
+vehicle. AIAA-2005-6255, 2005.
+
+[11] Oppenheimer M W, Doman D B. A hypersonic vehicle
+model developed with piston theory. AIAA-2006-6637,
+
+----$$$$----$$$$----
+[13]
+
+[14]
+
+[15]
+
+[16]
+
+[17]
+
+LI Huifeng et al. / Chinese Journal of Aeronautics 24(2011) 81-89 -89-
+
+2006.
+
+Bolender M A, Doman D B. Nonlinear longitudinal
+dynamical model of an air-breathing hypersonic vehi-
+cle. Journal of Spacecraft and Rockets 2007; 44(2):
+374-387.
+
+Rodriguez A A, Dickeson J J, Cifdaloz O, et al. Mod-
+eling and control of scramjet-powered hypersonic ve-
+hicles: challenges, trends, and tradeoffs. AIAA-2008-
+6793, 2008.
+
+Rodriguez A A, Dickeson J J, Sridharan S, et al. Con-
+trol-relevant modeling, analysis, and design for scram-
+jet-powered hypersonic vehicles. AIAA-2009-7287,
+2009.
+
+He Y Y, Le J L, Ni H L. Numerical and experimental
+study of airbreathing hypersonic airframe/propulsion
+integrative vehicle. Journal of Experiments in Flulid
+Mechanics 2007; 21(2): 29-34. [in Chinese]
+
+Hank J M, Murphy J S, Mutzman R C. The X-51A
+scramjet engine flight demonstration program. AIAA-
+2008-2540, 2008.
+
+Che J. Optimization design of waverider-hypersonic
+cruise vehicle. PhD thesis, College of Astronautics,
+Northwestern Polytechnical University, 2006; 42-46.
+[in Chinese]
+
+[18]
+
+[19]
+
+[20]
+
+[21]
+
+Heiser W H, Pratt D T. Hypersonic airbreathing pro-
+pulsion. Reston: AIAA, 1994; 175-192.
+
+Xiao Y L. Motion modeling of aeronautic and astro-
+nautical vehicle: theoretical foundation of flight dy-
+namics. Being: Beijing University of Aeronautics and
+Astronautics Press, 2003; 38-50. [in Chinese]
+
+Wu S T, Fei Y H. Flight control system. Beijing: Bei-
+jing University of Aeronautics and Astronautics Press,
+2005; 8-41. [in Chinese]
+
+National Oceanic and Atmospheric Administration,
+National Aeronautics and Space Administration, U.S.
+Air Force. U.S. standard atmosphere 1976. Washing-
+ton, D.C: U.S. Government Printing Office, 1976;
+12-23.
+
+Biography:
+
+LI Huifeng Born in 1970, she received B.S. and Ph.D.
+degrees from X1’an Jiaotong University in 1991 and 1998
+respectively, and is currently an associate professor of Bei-
+jing University of Aeronautics and Astronautics. Her main
+research fields are hypersonic vehicle guidance and control,
+and dynamic modeling.
+
+E-mail: lihuifeng@buaa.edu.cn
+
+----$$$$----$$$$----

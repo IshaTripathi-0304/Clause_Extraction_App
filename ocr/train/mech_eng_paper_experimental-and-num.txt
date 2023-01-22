@@ -1,0 +1,665 @@
+Available online at www.sciencedirect.com
+
+ScienceDirect
+
+‘ft “=e Procedia
+
+ELSEVIER Physics Procedia 56 (2014) 515 — 524
+
+Physics
+
+8" International Conference on Photonic Technologies LANE 2014
+
+Experimental and numerical investigation of an
+electromagnetic weld pool control for laser beam welding
+
+M. Bachmann’, V. Avilov®’, A. Gumenyuk’, M. Rethmeier*”*
+
+“BAM Federal Institute for Materials Research and Testing, Unter den Eichen 87, 12205 Berlin, Germany
+’ Institute of Machine Tools and Factory Management, Technical University Berlin, 10587 Berlin, Germany
+
+- Invited Paper -
+
+Abstract
+
+The objective of this study was to investigate the influence of externally applied magnetic fields on the weld quality in laser beam
+welding. The optimization of the process parameters was performed using the results of computer simulations. Welding tests
+were performed with up to 20 kW laser beam power. It was shown that the AC magnet with 3 kW power supply allows for a
+prevention of the gravity drop-out for full penetration welding of 20 mm thick stainless steel plates. For partial penetration
+welding it was shown that an 0.5 T DC magnetic field is enough for a suppression of convective flows in the weld pool. Partial
+penetration welding tests with 4 kW beam power showed that the application of AC magnetic fields can reduce weld porosity by
+a factor of 10 compared to the reference joints. The weld surface roughness was improved by 50 %.
+
+© 2014 Published by Elsevier B.V. This is an open access article under the CC BY-NC-ND license
+(http://creativecommons.org/licenses/by-nc-nd/3.0/).
+Peer-review under responsibility of the Bayerisches Laserzentrum GmbH
+
+Keywords: laser beam welding; electromagnetic weld pool support; Hartmann effect; electromagnetic rectification
+
+1. Introduction
+
+The advantages of keyhole mode laser beam welding, such as high welding speed and low heat input, are well
+known. An especially high weld quality is achieved in PA position full penetration keyhole laser beam welding. The
+
+* Corresponding author. Tel.: +49-30-8104-1559; fax: +49-30-8104-1557 .
+E-mail address: michael.rethmeier@bam.de
+
+1875-3892 © 2014 Published by Elsevier B.V. This is an open access article under the CC BY-NC-ND license
+(http://creativecommons.org/licenses/by-nc-nd/3.0/).
+
+Peer-review under responsibility of the Bayerisches Laserzentrum GmbH
+
+doi:10.1016/j.phpro.2014.08.006
+
+----$$$$----$$$$----
+516
+
+M. Bachmann et al. / Physics Procedia 56 (2014) 515 — 524
+
+laser beam forms a narrow weld pool with nearly parallel side walls. During solidification of the weld pool, the
+longitudinal and transversal shrinkage stress variations along the keyhole axis are much lower than in most other
+welding technologies. This results in very low buckling and bending of the workpiece (Ready et al. (2001)).
+Moreover, full penetration welding can suppress the development of the so-called process porosity due to the
+keyhole instability near its bottom tip, see Seto et al. (2001). However, for full penetration welding of thick metal
+parts the surface tension cannot completely compensate the hydrostatic pressure in the melt. This can result in
+sagging of the root side of the weld or even a complete drop-out of the melt when the workpiece thickness is above a
+threshold.
+
+Both AC and DC magnetic fields can be effectively used to control large amounts of molten metal in many
+industrial processes, e.g. crystal growth and metal casting. The so-called electromagnetic (EM) processing is widely
+used and well-known to stabilize the surface of solidifying material, to accelerate (EM stirring) or decelerate (the
+Hartmann effect) the convection in metal flows to refine the melt from oxide particles and gas bubbles (EM
+rectification), see e. g. the proceedings of the last EPM (Electromagnetic Processing of Materials) conference 2012.
+
+The idea to use this technology to prevent the gravity drop-out in high power laser beam welding of thick
+stainless steel plates was developed in Jones et al. (2003) and successfully verified in full penetration welding tests
+of up to 12 mm thick stainless steel (Avilov et al. (2009)) and 30 mm thick Al-alloy plates (Avilov et al. (2012)).
+
+The numerical investigations in this paper were made with the commercial finite element solver COMSOL
+Multiphysics 4.2 to get insights into the process zone and a detailed description of the underlying effects as well as
+to analyze the MHD interactions with the fluid flow and subsequent solidification behavior in the weld pool.
+Moreover, a simulation allows for an optimization of the process parameters including the amplitude and the
+frequency of the magnetic field.
+
+2. Physical Background
+The interaction between the fluid flow during welding and the applied magnetic fields is due to the Lorentz force
+F, ={xB, (1)
+where j and B are the electric current density and the magnetic flux density. When the applied magnetic field is
+
+of oscillatory nature, electric eddy currents develop in the workpiece inside the skin depth which depends on the
+applied oscillation frequency according to the classical skin effect theory, see Landau et al. (1984):
+
+0= (muaf , (2)
+
+with the magnetic permeability in vacuum My, the electric conductivity o and the frequency f . The time-
+average of the resulting electromagnetic force is directed against the gravity force. Thus, a drop-out of metal can be
+suppressed. A further component to the electric current density is due to the movement of the electrically conducting
+material transverse to the magnetic field:
+
+J, =uxB. (3)
+The part of the Lorentz force due to this effect is directed against the melt velocity acting as a braking force. That
+
+force is also present for the application of time-invariant magnetic fields and is called Hartmann effect. The strength
+of the electromagnetic deceleration can be expressed in terms of the Hartmann number:
+
+Ha? =o(BIL) /n, (4)
+
+with the half weld bead width L and the dynamic viscosity 7. Schematic illustrations of both effects can be seen
+in Figure 1.
+
+----$$$$----$$$$----
+M. Bachmann et al. / Physics Procedia 56 (2014) 515 — 524 517
+
+laser beam
+
+/ weld pool
+
+magnet pole
+
+laser beam
+
+Fig. 1. Schemas of the inductive weld pool support (left) and the Hartmann effect (right) in high power laser beam welding.
+
+The time-averaged Lorentz force is
+
+F(2)= exp -2),
+
+[M0 }
+
+(5)
+
+where B is the rms-value of the applied magnetic field on the weld pool surface.
+
+An oscillating magnetic field can effectively remove gas bubbles and other non-conducting inclusions from the
+melt (EM rectification, see e.g. Takahashi et al. (2003)). All non-conductive inclusions (e. g. bubbles or oxide
+particles) in the melt disturb the ideal profile of the electric current density. As a result, the inclusion is forced to
+move in the opposite direction of the electromagnetic force F,. Based on the Lenov—Kolin theory
+(Lenov et al. (1954)) the total EM Archimedes force F', (per unit volume) acting on a small inclusion (smaller than
+5) can be written as follows. The Lenov-Kolin factor G,, for spherical bubbles is 0.75.
+
+F,(z)= Gr FLV
+
+Another EM technology is the stabilization of the weld pool
+surface (Garnier-Moreau effect). This effect can be explained
+in terms of the so-called EM contribution to the surface
+tension. .
+
+YEM = BL Foy (5/L)/Ug (7)
+
+The function Fgy 1s shown in Figure 2.
+
+The sources of intensive EM stirring in the weld pool are
+the temperature dependence of the electrical conductivity o as
+well as irregularities (edges) of magnet poles and welded parts.
+
+(6)
+l
+0.8
+QD 0.6
+2
+0.4
+0.2
+i
+0 2 4 6 8 rag 10
+
+Fig. 2. The form-factor /gm for the EM contribution to the
+
+effective surface tension.
+
+Both of these effects can intensify undesirable EM stirring in the weld pool.
+
+3. Numerical simulation of a weld pool support by oscillating magnetic fields
+
+The availability of high power laser systems enables the full-penetration welding of very thick components, e.g.
+for pressure vessels or power station components. The hydrostatic pressure in the melt can exceed the pressure due
+to surface tension and results in sagging or even a complete drop-out of the melt, see Figure 3. Experimental results
+from Avilov et al. (2009) show the possibility of a contactless weld pool support system by oscillating magnetic
+fields that works in all welding positions. A moderate magnetic flux density of around 141 mT was necessary to
+compensate a 12 mm melt column of AISI 304 at an oscillation frequency of 3.18 kHz.
+
+----$$$$----$$$$----
+518
+
+M. Bachmann et al. / Physics Procedia 56 (2014) 515 — 524
+
+The solved equation system comprise the Navier-Stokes
+equations for the fluid dynamics, the energy equation for the
+temperature distribution and the Maxwell equations to take
+into account the influence of the arising Lorentz forces on the
+8 arn . process variables. The simulations calculate the main
+on magnet off physical aspects of the welding process; namely the
+Marangoni convection at the surfaces, the gravity-driven
+Fig. 3. Full-penetration welding of 30 mm thick AIMg3 with natural convection and the latent heat of fusion during the
+
+Ch SAB GE
+ae
+- Lk , , ~ a
+a Ds -
+
+magne
+
+magnetic weld pool support (left) and without (right). local melting and solidification. The material properties
+depend on the local temperature field.
+Bj taser The keyhole geometry and the workpiece surfaces were
+
+fixed in the simulations. Simulating the weld pool support,
+the pressure differences between the upper and lower
+surfaces were analyzed to evaluate the degree of
+compensation of the hydrostatic pressure. The formula
+apparatus and simulation details can be found in detail in
+
+E Bachmann et al. (2012), Bachmann et al. (2013) and
+. , Bachmann et al. (2014).
+\ The setup for the numerical investigations can be found in
+35mm aiid Figure 4. The magnetic field is oriented perpendicular to the
+AUOES. Does welding direction. Thus the resulting Lorentz forces are
+Fig. 4. Setup for the simulation of an electromagnetic weld directed mainly in vertical direction acting against the
+pool support system. gravitational forces independently of the oscillation cycle
+
+phase.
+3.1. Aluminum
+
+The simulation results for the full-penetration welding of 20 mm thick aluminum with a welding speed of
+0.5 m/min without applied magnetic fields (reference case) as well as with three different magnetic flux densities are
+shown in Figure 5. The hydrostatic pressure in the reference case is linearly increasing with the depth in the weld
+pool. Applying a magnetic field tends to lower the pressure differences between the surfaces up to a balance state
+with nearly no gravity driven drop-out or sagging of melt which was detected at around 70 mT and an oscillation
+frequency of 450 Hz. According to the Lorentz force distribution, the flow dynamics in the weld pool is only
+affected in the lower part within the skin depth of the applied magnetic field, see Figure 6. Large-scaled Marangoni
+vortex formations occur near the surfaces due to the temperature variation of the surface tension. In the lower part of
+the weld pool, the electromagnetic forces induce a second vortex acting against the Marangoni vortex which
+indicates a Lorentz force gradient there which is due to the relation of the magnet pole and the length of the molten
+zone (see Bachmann et al. (2012)). Hence, the weld pool shortens by the applied forces. The magnitudes of the flow
+
+20;
+
+— Reference
+— B=50mT
+— B=70mT
+— B=80mT
+
+Position in z-direction in mm
+S
+
+400° -100 0 100 200 300 400 500 (a) B=64 mT (b) B=77 mT (c) B=83 mT
+Static pressure p in Pa
+
+Fig. 5. Left: Static pressure distribution in vertical direction through the weld pool for different magnetic flux densities. The
+welding speed was 0.5 m/min and the oscillation frequency 450 Hz. Right: Experimental results obtained with a fiber laser (15 kW
+laser power, focus position -2 mm, 560 um focal spot diameter, frequency 459 Hz).
+
+----$$$$----$$$$----
+M. Bachmann et al. / Physics Procedia 56 (2014) 515 — 524 519
+
+0 0.02 0.04 0.06 0.08 0.1
+velocity magnitude in m s*
+
+Fig. 6. Velocity streamlines of the reference case and the case of optimal compensation.
+
+velocities in the upper weld pool remain nearly unaffected. Experimentally obtained weld pool macrographs of
+AlMg3 (Figure 5) show the same trends found in the simulations, namely sagging was avoided and the weld
+geometry was Y-shaped. A detailed description can be found in Bachmann et al. (2012).
+
+3.2. Stainless steel AISI 304
+
+The same approach as for aluminum was also pursued for 20 mm thick stainless steel AISI 304. In the
+simulations, the material was assumed to behave ideally non-ferromagnetic. Three different oscillation frequencies
+were investigated corresponding to skin depths of a quart, a half and the full weld depth. The welding speed was set
+to 0.4 m/min. Figure 7 shows the pressure and Lorentz force distributions for the reference case and the magnetic
+support cases. Increasing the frequency produces a steeper Lorentz force and accordingly a steeper pressure gradient
+in the lower part of the weld pool due to the skin effect. Nevertheless, an optimal control of the hydrostatic pressure
+
+20
+
+Reference
+— f=1 kHz, B=135 mT
+— f=3 kHz, B=95 mT
+
+— f=10 kHz, B=80 mT]|
+
+-
+ui
+
+10
+
+Position in z-direction in mm
+
+550 0 200 400 600 800 1000 1200 1400
+Static pressure p in Pa
+
+220 mT B = 234 mT
+
+5 mm
+SE
+
+P=8kW P=12kW P= 18kW
+d= -3mm d=-4mm d= -6mm
+
+f = 2500 Hz f = 2650 Hz f = 2575 Hz
+
+Fig. 7. Left: Static pressure distribution in vertical direction through the weld pool for different magnetic flux densities and oscillation
+frequencies. The welding speed was 0.4 m/min. Right: Experimental results obtained with a fiber laser (variable laser power, focus
+position, oscillation frequency and magnetic flux density, 560 um focal spot diameter) for plate thicknesses of 10 mm, 15 mm and
+
+20 mm.
+
+0 0.02
+
+0.04 0.06 0.08 0.1
+velocity magnitude in m s™
+
+Fig. 8. Velocity streamlines of the reference case and the case of optimal compensation for a frequency of 3 kHz.
+
+----$$$$----$$$$----
+520
+
+M. Bachmann et al. / Physics Procedia 56 (2014) 515 — 524
+
+in the melt was proven for all frequencies. Increasing the frequency leads to lower magnetic flux densities for the
+compensation of the 20 mm stainless steel, see Bachmann et al. (2014), which is due to a frequency-dependent
+relation between the applied magnetic flux density and the resulting Lorentz force.
+
+In comparison to aluminum, stainless steel has a significantly lower thermal conductivity. Therefore, the weld
+pool length for a similar welding speed is smaller, see Figure 8. The main characteristics of the fluid flow inside the
+molten pool also just remain the same. Due to the smaller weld pool dimensions at a constant magnet pole geometry,
+the Lorentz force gradient in the liquid region is smaller compared to aluminum. Therefore, the flow characteristics
+in the lower part of the weld pool is still similar to that in the upper region outside the penetration depth of the
+magnetic field when welding with electromagnetic support system. Experimental results for different thicknesses
+can be seen in Figure 7.
+
+4. Numerical simulation of a weld pool deceleration by steady magnetic fields
+
+Another MHD effect to control unfavorable dynamics in the weld pool especially when welding very thick
+components associated to severe spattering is called the Hartmann effect. Experimental work in this field in welding
+was done by Kern et al. (2000) with a CO, laser. He observed a distinct smoothing of the weld pool surface and the
+humping phenomenon was suppressed depending on the polarity of the applied magnetic field. However, the
+Hartmann number was only around 100. A disk laser was used in the present investigation for the partial penetration
+welding of aluminum with a keyhole penetration of around 21 mm. Permanent magnets were mounted on both sides
+of the workpiece to maximize the magnetic flux density in the weld pool, see Figure 9. The numerical model used
+the standard two equation k-e turbulence model.
+
+Velocity streamlines for the reference case as well as the case with an applied magnetic field of 0.5 T are shown
+in Figure 10. In the reference case, the flow characteristics is mainly due to the Marangoni stresses which cause the
+
+al laser
+
+permanent magnet 0.1 &
+cooling device 0.08 a
+E
+ind girection 0.06 €
+—" 0.04 8
+0.02 2B
+8
+0 v
+>
+Fig. 9. Setup for the simulation of an electromagnetic Fig. 10. Velocity streamlines in the weld pool without and with
+weld pool control system. magnetic control for a welding speed of 0.5 m/min.
+
+DilsBobeboloDilbelufoholitcl-tykelekohil
+Waka BU WS ered) ely Ly Ui !
+
+Fig. 12. Experimental results for the welding of AlIMg3 with a
+welding speed of 0.5 m/min without (left and right) and with
+permanent magnets (500 mT) applied (center). Welds were made
+with a disk laser (16 kW, focus position -4 mm, 300 um focal
+spot diameter, magnetic flux density 0.5 T).
+
+x-position in mm
+Fig. 11. Flow velocities along the welding direction in
+the symmetry plane 2 mm below the workpiece
+surface.
+
+----$$$$----$$$$----
+M. Bachmann et al. / Physics Procedia 56 (2014) 515 — 524
+
+liquid metal to flow from hot regions around the keyhole to the boundary regions. When a magnetic field is applied,
+the flow velocities in the weld pool are significantly smaller due to the braking nature of the Hartmann effect, see
+Figure 11. In the depth of the weld pool, the reversal of the flow due to the Marangoni effect is limited to an ever
+thinner boundary region with increasing magnetic flux density. It was found that a Hartmann number of around 10°
+was necessary for a dissipative influence of the applied magnetic forces (Bachmann et al (2013). Furthermore, the
+suppression of the flow dynamics leads to a regular V-shape of the weld bead in the simulations and in the
+experiments as well (Figure 12).
+
+5. Partial penetration laser welding with EM control of the weld pool
+
+In the next two subsections, the results of partial penetration laser beam welding tests of Al alloy components
+are shown. The first problem of partial penetration laser beam welding is the keyhole-tip instability representing the
+main source of porosity — gas bubbles leave the keyhole near its tip, see Seto et al. (2001). The second problem is
+very intensive thermocapillary (Marangoni) convection in the upper part of the weld pool. The surface tension
+cannot completely suppress oscillations of the weld pool surface and the re-solidified welds show very rough
+surfaces with large undercuts. Here, AC magnetic fields were used to suppress porosity formation and to
+stabilize the weld pool surface in bead-on-plate partial penetration laser beam welding of 10 mm thick AIMg3
+plates in flat position.
+
+5.1 Experimental set-up
+
+521
+
+All welding experiments were performed using
+4kW laser beam power. The AC magnet was
+mounted direct on the welding head of the laser
+welding optics. The externally applied AC
+magnetic field was oriented perpendicularly to the
+welding direction. To prevent optical feed-back
+the incident angle a of the laser beam was taken
+to be 18° to the vertical, see Figure 13. The
+magnet core was made of 0.05 mm thick Fe-Si
+lamination (microsil). The cross-section of both
+magnet poles (Fluxtrol A) was 20 mm x 20 mm.
+The gap between the magnet poles was 20 mm
+and the distance between the AC magnet and the
+sample was 2 mm. The shielding gas (argon with
+a flow rate of 20 l/min) was supplied to the front
+side of the weld pool.
+
+The main parameters of the laser beam source
+(TRUMPF Yb:YAG thin disk laser TruDisk
+16002, max. beam power 16 kW) are listed in
+Table 1.
+
+Fig. 13. Experimental setup:
+1- primary coil,
+
+2- two secondary coils,
+3- ferromagnetic core,
+4- magnet poles,
+
+5- assembly elements,
+6- shielding gas nozzle,
+7- laser welding head,
+8- sample,
+
+9- welding table,
+
+10- welding direction.
+
+Table 1. Parameters of the laser beam.
+beam power in all
+welding tests 4kW
+
+wave length 1.03 um
+
+beam parameter product
+8 mm x mrad
+
+focal length 300 mm
+focal spot size 300 um
+
+----$$$$----$$$$----
+522
+
+M. Bachmann et al. / Physics Procedia 56 (2014) 515 — 524
+
+x-ray images along welding line cross section porosity content
+in %
+
+welding direction
+
+reference
+
+(a) z=0mm 30.3
+Vy = 2 m/min
+f=2.1 kHz
+
+(b) B=0.26 T 2.1
+f=4.3 kHz
+
+() “p=032T 3.1
+
+(4) "B=046T
+
+Fig. 14. X-ray side images and cross sections of welds for different parameters of the AC power supply.
+
+5.2 Results and discussion
+
+Figure 14 illustrates the welding tests without and with oscillating magnetic field applied. The reference
+welds with the focal position set on the surface (z = 0) show a very intensive formation of process porosity.
+However, this type of pores is quasi-spherical and they are located in the center of the weld pool. Hence, it is
+expected, that the magnetic field can successfully prevent this type of pores. The amplitude of the magnetic
+field must be large enough and the skin depth in the order of the penetration depth (around 6 mm).
+
+Figure 14(b)-(d) show x-ray side views of the welds with EM weld pool control as well as metallographic
+cross sections. Analyses of the cross-sections and the x-ray images show a drastic reduction (more than 90 %)
+of the weld porosity for an optimal oscillation frequency. The observed effects can be explained in terms of
+EM Archimedes forces as well as the EM stirring in the weld pool.
+
+Further improvements by the application of the magnetic fields were also observed in terms of the surface
+quality, see the cross sections in Figure 14 and the measured surface profiles in Figure 15. The usage of AC
+magnetic fields results in a significant reduction of up to 50 % of the weld surface roughness. Figure 16 shows
+the surface quality in terms of welding-induced undercuts according to DIN EN ISO 13919-2:2001. Here, a
+clear reduction is remarkable and the quality level could be improved from group D in the reference case to
+group B with all oscillation frequencies of the magnetic fields applied.
+
++ “T + 80 %
+qualty level quailty level oes level
+
+= V=1 m/min, focus = -4mm 60
+= 0.21T @2kHz
+= 0.32T @4kHz
+= 0.46 T @ 8kHz 40
+Hh
+1B (ea on 0
+
+Fig. 15. Weld surface variations for the reference case (left) Fig. 16. Histogram of the measured depth on the weld seam surface.
+and case (c) from Figure 14. Only negative values are considered for undercuts.
+
+_ ah
+ot
+face variation
+
+oo
+ee <= es .
+ome
+uta
+
+
+----$$$$----$$$$----
+M. Bachmann et al. / Physics Procedia 56 (2014) 515 — 524 523
+
+6. EM weld pool control for laser beam welding with filler wire
+
+A series of welding tests was performed magnet poles
+to demonstrate that the EM weld pool
+control can also be used for industrial laser
+beam welding applications with filler wire
+such as the welding of butt joints of
+complex non-planar parts. Figure 17 shows
+the experimental setup, which simulates the
+joining of a lid to the opening of a container
+with high quality requirements (leak-proof). Fig. 17. Scheme of the EM weld pool control for partial penetration welding of the
+Both welded parts are made of AIMgSi0.5 ‘14 the container wall.
+
+alloy. Due to the risk of hot cracking, the Table 2. Parameters of the EM weld pool control for three welding tests.
+
+Hall sensor
+
+laser beam
+
+welding of this alloy is only possible with weldNr. | B,mT ~=fkHz  Qcold)mm __ weld dimensionsinmm _
+filler material (AlIMg4.5Mn, wire with eee sith & depth
+1.2 mm diameter). reference 0 4.2 3.2
+
+All welding tests were performed in flat I 173 1.9 2.1 5.0 2.7
+position using an Yb-fiber laser YLR- 2 225 1.9 2.1 5.0 2.7
+20000 at 4 kW laser beam power. The 3 264 4.0 1.4 5.0 2.7
+
+inclination angle of the laser beam was
+taken to be 8° to the vertical, see Figure 13.
+The diameter of the beam delivery fiber was 0.2 mm. The beam diameter at the focal plane corresponds to 560 um
+and the focal length was 350 mm. The focal position was z = -3 mm (under the surface). The shielding gas nozzle
+(industrial grade argon with a flow rate of 20 l/min) was placed behind the laser beam. The welding velocity and the
+wire feed rate for all welding tests were taken to be 1.7 m/min and 2.2 m/min, respectively. The gap between the
+magnet poles was 22.5 mm and the gap between the magnet and the workpiece was 2 mm. Both the focal position of
+the laser beam and the contact point of the filler wire correspond to the middle of the area located between the
+magnet poles. For full penetration welding the AC magnet can be placed near the root of the specimen and the filler
+wire nozzle can be mounted on the welding head on the front side. If the skin-depth is lower than the workpiece
+width, the AC magnet field does not influence the filler wire. However, for the container closing process there is no
+access to the interior space of the workpiece. Thus, only partial penetration laser welding process is possible. Both
+the AC magnet and the filler wire nozzle must be located on the outer side of the container wall. The filler wire
+nozzle was made of electrically non-conductive material (Teflon) and the filler wire system was electrically
+disconnected from the workpiece to prevent the excitation of eddy currents.
+
+In Figure 17, B is the rms value of the magnetic flux density measured near the center of the right magnet pole
+with a Hall sensor, fis the AC frequency and 6 is the skin depth in Eq. (2) calculated for cold Al alloy with the
+electrical conductivity at room temperature o ~ 30-10° Sim’. Note, that the electrical conductivity of the melt is
+much lower, i.e. the effective skin-depth in welding direction
+the weld pool can be up to 3 times larger
+than the values shown in Table 2. cela
+
+Figure 18 shows x-ray side images and . 173 mt @1.9-kuz
+macro sections of three welding tests |
+performed with and without EM weld pool
+control. A significant reduction in the
+number of pores and pore size is evident
+when compared to the corresponding
+reference cases for all three cases meE)
+investigated. The last two columns in > 264 mT @ 4.0 kHz
+Table 2 show the width and the depth of the tts
+welds. These values were obtained from an Fig. 18. X-ray side images for three welds listed in Table 2.
+
+weld 2
+
+225 mT @ 1.9 kHz reterence Waa
+
+| reference (B=0)
+
+
+----$$$$----$$$$----
+524
+
+M. Bachmann et al. / Physics Procedia 56 (2014) 515 — 524
+
+analysis of the weld cross-sections. The welds with EM control are wider than their references and their penetration
+depth becomes smaller. This can be explained by an intensive stirring in the melt due to an inhomogeneous Lorentz
+force distribution in the weld pool caused by the asymmetric workpiece setup. This effect, in addition to the pore
+removal, is especially useful for the dilution in the weld material when welding structures with very deep weld
+beads with filler material. The inhomogeneous Lorentz force distribution is also noticeable by the asymmetric weld
+macro sections when welding with EM control in Figure 18.
+
+7. Summary & Conclusions
+
+The present investigations reveal that oscillating and steady magnetic fields can have a significant positive effect
+on the quality as well as the stability of high-power laser beam welding processes of aluminum alloys and stainless
+steel. The results in this paper point to various EM applications in welding, e.g. the EM weld pool support, the EM
+braking of the flow velocities, the EM rectification, and EM weld surface improvements that can be used for a
+variety of industrial applications.
+
+The most decisive quantities for a successful application of EM technologies in welding are the magnetic flux
+density and, in the case of oscillating magnetic fields, the frequency and the according skin depth. Additionally, the
+orientation of the applied magnetic fields relative to the workpiece is relevant for the performance of the MHD
+effects in the weld bead.
+
+Clear improvements in terms of avoiding melt sagging, reducing spattering, decreasing surface roughness, and
+the reduction of pore content could be demonstrated. Thus, the EM technology could be numerically and
+experimentally proven to be an appropriate tool for a successful implementation in various welding applications.
+
+Acknowledgements
+
+Financial funding of the DFG (Bonn, Germany) under Grant No. DFG GU 1211/2-1 and the German Allianz
+Industrie Forschung (AiF), Grant No. 17.265N is gratefully acknowledged.
+
+References
+
+Avilov, V., Gumenyuk, A., Lammers, M., Rethmeier, M., 2012. PA position full penetration high-power laser beam welding of up to 30 mm
+thick AlMg3 plates using an electromagnetic weld pool support, Sci. Technol. Weld. Joining 17, 128-133.
+
+Avilov, V., Moldovan, R., Berger, P., Graf, T., Mock, D., 2009. Electromagnetic weld pool control by CO2 and YAG disk laser welding of thick
+stainless steel plates, Proceedings of the 6th International Conference on Electromagnetic Processing of Materials, Dresden.
+
+Bachmann, M., Avilov, V., Gumenyuk, A., Rethmeier, M., 2012. Numerical simulation of full-penetration laser beam welding of thick
+aluminium plates with inductive support, J. Phys. D: Appl. Phys. 45, 035201.
+
+Bachmann, M., Avilov, V., Gumenyuk, A., Rethmeier, M., 2013. About the influence of a steady magnetic field on weld pool dynamics in partial
+penetration high power laser beam welding of thick aluminium parts, Int. J. Heat Mass Tran. 60, 309-321.
+
+Bachmann, M., Avilov, V., Gumenyuk, A., Rethmeier, M., 2014. Experimental and numerical investigation of an electromagnetic weld pool
+support system for high power laser beam welding of austenitic stainless steel, J. Mater. Process Tech. 214, 578-591.
+
+Bojarevics, V., Freibergs, Y., Shilova, E.I., Shcherbinin, E.V., 1989. Electrically Induced Vertical Flows, Kluwer.
+
+Gatzen, M., Tang, Z., Vollertsen, F., 2011. Effect of electromagnetic stirring on the element distribution in laser beam welding of aluminium with
+filler wire, Physics Procedia 12, 56—65.
+
+Jones, L.P., Aubert, P., Avilov, V., Coste, F., Daenner, W., Jokinen, T., Nightingale, K.R., Wykes, M., 2003. Towards advanced welding
+methods for the ITER vacuum vessel sectors, Fusion Eng. Des. 69, 215-220.
+
+Kern, M., Berger, P. Hiigel, H., 2000. Magneto-Fluid Dynamic Control of Seam Quality in CO2 Laser Beam Welding, Weld. J. 3, 72s—78s.
+
+Landau, L.D., Lifshitz, E.M. 1984 Course of theoretical physics, Vol. 8: Electrodynamics of Continuous Media, Pergamon Press, 460pp.
+
+Lenov, D., Kolin, A. 1954 Theory of electromagnetophoresis (1): Magnetohydrodynamic forces experienced by spherical and symmetrically
+oriented cylindrical particles, J. Chem. Phys., 22, 683-688.
+
+Moreau, R., 1990. Magnetohydrodynamics, Kluwer, 313pp.
+
+Proceedings 7th International Conference on Electromagnetic Processing of Materials, Beijing, China, 2012.
+
+Ready, J.F., Farson, D.F., Feeley, T. 2001. LIA Handbook of Laser Materials Processing, Laser Institute of America.
+
+Seto, N., Katayama, S., Matsunawa, A., 2001. Porosity formation mechanism and suppression procedure in laser welding of aluminium alloys,
+Weld. Int. 15, 191-202.
+
+Takahashi, Koichi, Taniguchi, Shoji, 2003. Electromagnetic separation of nonmetallic inclusion from liquid metal by imposition of high
+frequency magnetic field, ISIJ International, 43, 820-827.
+
+----$$$$----$$$$----

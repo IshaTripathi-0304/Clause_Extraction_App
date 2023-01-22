@@ -1,0 +1,388 @@
+Available online at www.sciencedirect.com
+
+; ; Energy
+ScienceDirect
+
+Procedia
+
+CrossMark
+
+ELSEVIER Energy Procedia 75 (2015) 3253 — 3258
+
+The 7" International Conference on Applied Energy — ICAE2015
+
+Characterization of Energy Efficient Vapor Compression
+Cycle Prototype with a Linear Compressor
+
+Mahmoud A. Alzoubi", TieJun Zhang**
+
+“Department of Mechanical and Materials Engineering, Masdar Institute of Science and Technology, P.O. Box 54224, Abu Dhabi,
+UAE
+
+Abstract
+
+In this paper, an experimental vapour compression cycle (VCC) prototype is developed. The VCC system
+composes of a high performance 300W linear compressor with variable capacity control, expansion
+valve, air-cooled condenser, and two microchannel plate heat exchangers acting as evaporator and
+recuperator. Wide range of experimental characterization is performed to investigate the influence of
+changing the compressor capacity, evaporating temperature and expansion valve opening position on the
+VCC performance. The prototype unit is able to achieve a high coefficient of performance (COP) of 4.5.
+Component and refrigeration cycle models are developed and validated with the experimental data. The
+proposed cycle model provides the insight to guide energy-efficient compact cooling system design and
+operation.
+
+© 2015 The Authors. Published by Elsevier Ltd. This is an open access article under the CC BY-NC-ND license
+(http://creativecommons.org/licenses/by-nc-nd/4.0/).
+Peer-review under responsibility of Applied Energy Innovation Institute
+
+Keywords: Vapor compression cycly, Recuperator, Linear Compressor, Characterization
+
+1. Introduction
+
+Vapor compression cycles (VCC) are widely used in refrigeration and air conditioning systems, which
+are considered as one of the most energy-consuming domestic appliances. Refrigerators and air
+conditioning systems represent 13.7% and 16% respectively of all residential electricity consumption in
+USA for 2001 [1]. Also, air conditioning systems consume up to 70% of the UAE total energy
+consumption [2]. Hence, better designs of cooling systems are required to minimize the energy
+consumption. The trend in electronic industry is towards more compact systems. These systems required
+more effective cooling as they produce a lot of heat. Therefore, compact vapor compression cycles are
+sought for portable high-end electronic systems. A study has been done by Trutassanawin et al. [3] to
+develop a compact refrigeration system prototype to demonstrate its feasibility in electronic cooling
+
+* Corresponding author. Tel.: +971(2)810-9424; fax: +971(2)810-9901.
+E-mail address: tjzhang@masdar.ac.ae.
+
+1876-6102 © 2015 The Authors. Published by Elsevier Ltd. This is an open access article under the CC BY-NC-ND license
+(http://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+Peer-review under responsibility of Applied Energy Innovation Institute
+
+doi:10.1016/j.egypro.2015.07.695
+
+----$$$$----$$$$----
+3254
+
+Mahmoud A. Alzoubi and TieJun Zhang / Energy Procedia 75 (2015) 3253 — 3258
+
+applications. The system cooling capacity varied from 121 to 268 W, with a COP of 2.8 to 4.7, and with a
+second-law efficiency ranging from 33% and 52%. A test-bed has been developed by Chang et al. [4] to
+examine the thermal performance of a miniature VCC for electronic cooling purposes. The effect of the
+compressor speed and the expansion valve opening on the COP of the cycle has been studied. The study
+concluded that the condensation phenomena were improved when the compressor speed was reduced
+from 4200 to 3840 RPM.
+
+A detailed study of a VCC test-bed has been carried out by Arora and Kaushik [5] to analyze the cycle
+COP and exergetic efficiency for different refrigerant, where experiment were performed with evaporator
+and condenser temperature range from -50 °C to 0 °C and 40 °C to 55 °C respectively. This study
+concluded that when the evaporator temperature increases, the pressure ratio across the compressor
+decreases which lead to a lower compression work and then a higher COP. In order to enhance the COP
+of the refrigeration systems, the flow within the evaporator should remain in two phase region. Heat
+transfer coefficient deteriorated in superheated zone. Therefore, two phase flow is preferable to achieve
+higher heat transfer coefficient [6]. An analysis has been conducted by Torrella et al. [7] described a
+general methodology for analyzing six possible configuration of VCC. They found that configuration with
+higher subcooling degree has higher COP, due to the fact that the degree of subcooling increases the
+difference in specific enthalpy across the evaporator. The study by Jensen and Skogestad [8] focused on
+the optimal operation for a simple VCC. It discussed the effect of having sub-cooling and super-heating
+degrees on the compressor power consumption. The study found that super-heating degree should be
+minimized whereas some sub-cooling is optimal. The work in Aprea et al. [9] discussed the advantages of
+using suction-liquid heat exchanger on the performance of refrigeration systems from a thermodynamic
+point of view. It showed the influence of using the recuperator on the COP enhancement by adding some
+sub-cooled and super-heated degrees on the refrigerant.
+
+In the above studies, there are limited discussions on developing recuperator-based VCCs with linear
+compressors. Linear compressor has the inherent advantage for refrigeration applications since it can be
+easily controlled to provide variable refrigeration cooling capacities upon demand. This work highlights
+the effect of installing a fluid-to-fluid recuperator on the system COP. Wide range of parametric studies
+are performed to analyze the influence of changing component operating conditions on the system
+performance. Additionally, components and cycle level characterizations are developed to predict the
+cycle performance at different operation conditions. This study contributes to the development of energy-
+efficient compact vapor compression cycle. It also shows the potential of the compact VCC systems for
+portable cooling applications such as electronics cooling.
+
+2. Experimental Test-bed
+
+The basic VCC consists of compressor, condenser, evaporator and expansion device. For better heat
+transfer in the evaporator an accumulator is usually added after the evaporator so the evaporator exit is
+maintained in the two-phase flow region [6]. In addition, an internal heat exchanger can be added to
+utilize the temperature difference in the loop by exchanging the heat between the condenser and
+evaporator exits.
+
+Figure 1 shows the schematic diagram and photo of the VCC prototype we have developed. All the
+sensors are connected to data acquisition systems. The accuracy of the temperature, pressure, and mass
+flow rate are +0.7 °C, +0.15% of full scale, and +0.08% of measurement respectively. The data are
+recorded into a computer station using LabVIEW software. More details may be found in [10]. All
+components are assembled on an aluminum frame and connected using copper pipe and brass fittings as
+shown in Figure 1(b). Once the loop is assembled, it is tested for leakage, insulated and charged with
+R134a refrigerant.
+
+----$$$$----$$$$----
+Mahmoud A. Alzoubi and TieJun Zhang / Energy Procedia 75 (2015) 3253 — 3258
+
+Air-cooled
+Condenser
+
+CoD
+
+Compressor
+
+Recuperator
+
+Expansion
+Device
+
+Evaporator
+
+Fig. 1. Schematic diagram of VCC test-bed setup (left) and prototype photo before insulation (right)
+3. Experimental Characterization
+
+The controllable parameters in the VCC are the compressor capacity, heat source temperature, and
+expansion valve opening position. Changing these parameters result in different compressor and
+evaporator energy input, recuperator heat exchange rate and condenser heat rejection rate. The
+compressor capacity has been changed from 50-100% with 10% step and the expansion valve opening
+position has been changed from open number 4 into open number 6.
+
+Figure 2-a shows the effect of changing the compressor capacity on the coefficient of performance
+(COP) of the cycle at different expansion valve opening positions. With increasing the compressor
+capacity, the length of the piston stroke in the compressor increases which leads to a higher power
+consumption as shown in Figure 2-d. The increase of the piston stroke length means more refrigerant
+mass flow rate which increases the evaporator cooling capacity as shown in Figure 2-b. However, the
+increase in the power consumption is higher than the increase in the evaporator cooling capacity.
+Therefore, the cycle COP decreases as compressor capacity increases. Figure 2-c shows the effect of
+changing the compressor capacity at the pressure ratio across the compressor. With increasing the
+compressor capacity, the compressor outlet pressure increases [11] which lead to a higher pressure ratio
+across the compressor at fix valve opening position.
+
+5 (a) 100 (b) Valve Open Increase
+5 [2 Exp. Valve Open 6
+4 © Exp. Valve Open 5
+a 3 - PS 80 a $ A Exp. Valve Open 4
+ol A, | 8s a@ *
+fe) O§ 60 e
+- 5 "8
+:; 4
+bo 75 100 $0 75 100
+(c) (d)
+25 50
+A
+"s 2 A g = *
+- 4 g # § 30 -
+a” 1 % a 20 *
+*
+$0 75 100 '% 75 100
+Compressor Compressor
+Capacity [%] Capacity [%]
+
+Fig. 2. Effect of changing compressor capacity on (a) coefficient of performance (b) cooling capacity (c) pressure ratio across the
+compressor and (d) compressor power consumption
+
+3255
+
+----$$$$----$$$$----
+3256 Mahmoud A. Alzoubi and TieJun Zhang / Energy Procedia 75 (2015) 3253 — 3258
+
+4. VCC Modeling
+
+4.1. Plate Heat Exchanger (Evaporator and Recuperator) and Fin-Tube Air-Cooled Heat Exchanger
+(Condenser)
+
+In the evaporator, the refrigerant gains heat from heat source fluid. The refrigerant enters and exits the
+evaporator as a two-phase fluid. Therefore, the evaporator has only one flow zone as shown in Figure 3-a.
+In order to model the heat transfer in the evaporator, heat balance between the refrigerant, plate's wall,
+and oil should be solved to predict the evaporator outlet condition as below:
+
+[evap (Tsat ~~ Tw )Pwhp| = [ou (Toin ~ Tw)Pwh|,, + [(anctAs + mD),}) (Tamb ~ Tw lamp (1)
+
+evap
+
+The recuperator transfers the heat from refrigerant at the condenser outlet into refrigerant at the
+evaporator outlet due to the temperature difference between these two points. In the condenser side,
+refrigerant enters the recuperator as a two-phase fluid and exits as a sub-cooled liquid. On the other side,
+the refrigerant exits the evaporator and enters recuperator as a two-phase fluid and exits as super-heated
+gas. Since, the scenario of the interaction between these two fluids are unknown, an assumption of
+dividing the recuperator into three flow zones has been made as shown in Figure 3-b. In order to model
+the heat transfer in the recuperator, heat balance heat balance equations between condenser-refrigerant,
+heat exchanger wall, and evaporator-refrigerant should be solved for each zone:
+
+[@evapppll (Tw — Tsat) | yap = |cona Lt (Teona, _ Ty)]
+[Qevappph2(Tw ~~ Tsat) | yap = [@conapp 2 (Tsat ~ Tw) ona (2)
+
+| evap, L3 (Ty ~~ Tevap, )| = [@conappL3 (Tsat ~ Ty)|
+
+evap cond
+In order to predict the outlet condition of the condenser, heat balances between refrigerant, pipe wall,
+
+and air flow across the condenser should be solved for each zone. The flow inside the condenser is
+divided into two main regions as shown in Figure 3-c.
+
+[aconappL1(Tcondrp ~ Ty )Pwhre| = | tairL1 (Ty ~ Tamb) Asp
+
+amb (3)
+|condg L2 (Teond, - Ty) Pw L,| = | air L2 (Ty — Tamp VAscrar|
+cond amb
+Evaporator ta) Recuperator (b) Condenser a
+a Cc
+Evaporator Side Condenser Side Refrigerant Flow
+Ref. Two Phase Flow Sub-cooled Two Phase Two Phase Two Phase Sup-heated
+Oil Flow Two Phase Two Phase Sup-heated 1 =
+Hee: 6 [m]
+15.6 [cm] Pe Sn — Se
+<< 15.6 [cm] 1)
+
+Oil Side Evaporator Side
+
+Air Flow
+
+Fig. 3. (a) Evaporator has single flow zone (b) Recuperator has three flow zones (c) Condenser has two flow zones
+
+----$$$$----$$$$----
+Mahmoud A. Alzoubi and TieJun Zhang / Energy Procedia 75 (2015) 3253 — 3258
+
+4.2. Linear Compressor and Expansion Valve
+
+The compressor used in this work is a piston-cylinder compressor type that uses a linear motor to
+drive the piston. The governing equation to model the compressor is, m = pVwyn,, where p is the density,
+V is the compression volume, w is the frequency, and 7, is the volumetric efficiency and it is a function
+of the pressure ratio across the compressor.
+
+Mass flow rate across the expansion valve is governed as, m = C,,/ Pin (Pin — Pour), Where C, is the
+flow coefficient of the valve and it is a function of the cross sectional area, the fluid specifications and
+pressure ratio.
+
+5. Model Validation
+
+All component models have been validated with experimental data to predict inlet and outlet
+conditions of each component. Figure 4-a shows the effect of changing the compressor capacity on
+recuperator different zones lengths. With increasing compressor capacity heat transfer in the recuperator
+also increases due to higher temperature difference across recuperator plates. Therefore, refrigerants will
+gain more super-heated and sub-cooled degrees at higher compressor capacity which affects recuperator
+two-phase zone. Figure 4-b shows the P-h diagram for the VCC test-bed at different compressor
+capacities. The graph shows a very good agreement between the experimental data and the component
+model predictions.
+
+Recuperator Lengths (a) R134a P-h Diagram (b)
+= 0.1 7 r 7 800 S
+= | #* Sup-heated * * © Model
+= *
+=> 0.05 * * Experiment
+4 * 700}
+® | need. . (ee Deg ee a |
+a 4 4 4
+Yo 60 70 80 90 100 _ Recuperator Condenser ;
+= 0.2 i = x ni 600+ v1 1S
+= Ls > © Two-phase = ce) 1g
+& 0.1 © © > 4 5 1 12
+= } 2 2 Oe 1S
+S 1 @ 500; “#Q, * ‘s]
+$0 60 70 80 90 100 a. €
+Ee 0.02 : ' A a 400 Evaporator 8 Recuperator
+rj Oh mn o 4 *O *®»
+=, |
+5 A Sub-cooled |
+5 |
+a 1 ! I 4 n 1
+0.055 60 70 80 90 100 30850 250 300 350 400 450
+Compressor Capacity [%] Enthalpy [kJ/kg]
+
+Fig. 4. (a) Effect of changing compressor capacity on the recuperator different zones length (b) VCC component model validation
+
+800
+
+P-h Diagram
+
+T-s Diagram
+
+T
+
+50 —S— Model
+
+—©— Model
+* Experiment * Experiment
+700; 4
+— 40
+ow O,
+& 600} ; @
+o 2 30} |
+pm |
+77) o
+$ 500} an
+a fas
+400} 4 10: J
+3850 250 300 350 400 450 0, 1.2 1.4 1 6 1.8
+Enthalpy [kJ/kg] Entropy [kJ/(kg.K)]
+
+Fig. 5. Pressure-enthalpy and temperature-entropy diagrams of recuperator-integrated refrigeration cycle at the 100% compressor
+capacity
+
+3257
+
+----$$$$----$$$$----
+3258
+
+Mahmoud A. Alzoubi and TieJun Zhang / Energy Procedia 75 (2015) 3253 — 3258
+
+The cycle model should be self-contained and the model predictions just depend on external boundary
+conditions: Air velocity and ambient temperature at the condenser side and oil mass flow rate and inlet
+temperature at the evaporator side. Component models developed in the previous sections are combined
+and integrated together into the cycle model. Figure 5 shows the cycle model validation at evaporating
+temperature 25 °C and compressor capacity 100%. Additionally, the cycle model was able to predict the
+refrigerant mass flow rate with a maximum prediction error of 9.27%. All graphs and results show very
+good agreements between cycle model and experimental data.
+
+6. Conclusion and Future Work
+
+A compact VCC prototype was designed and developed. Extensive parametric studies were carried
+out to better understand system characteristics under changing operating conditions. Moving boundary
+models were developed for recuperator and condenser to find out the effect of changing the operating
+condition on these heat exchangers performance. The recuperator model was able to predict the amount
+of super-heat and sub-cooled degrees added to the refrigerant at different operating points. The model is
+coupled with other component models and integrated into a cycle-level model. The proposed components
+and cycle models were validated with experimental results. Components and cycle model predictions
+agree well with experimental data.
+
+Acknowledgments
+
+This work was supported by the Cooperative Agreement between the Masdar Institute of Science and
+Technology, UAE and the Massachusetts Institute of Technology, USA. In memory of Guanqiu Li
+
+References
+
+[1] C. Berry, End-use consumption of electricity (2001 (accessed February 27, 2014)). URL http://www.eia.gov
+
+[2] Air conditioning (2013 (accessed May 15, 2014)). URL http://www.powerwise.gov.ae
+
+[3] S. Trutassanawin, E. A. Groll, S. V. Garimella, L. Cremaschi, Experimental investigation of a miniature-scale refrigeration
+system for electronics cooling, JEEE Transactions on Components and Packaging Technologies 29 (3) (2006) 678-687.
+
+[4] C. Chang, N. Liang, S. Chen, Miniature vapor compressor refrigeration system for electronic cooling, JEEE Transactions on
+Components and Packaging Technologies 33 (4) (2010) 794-800.
+
+[5] A. Arora, S. C. Kaushik, Theoretical analysis of a vapour compression refrigeration system with R502, R404A and R507A,
+International Journal of Refrigeration 31 (6) (2008) 998-1005.
+
+[6] J. Catano, T. J. Zhang, J.T. Wen, M. K. Jensen, Y. Peles, Vapor compression refrigeration cycle for electronics cooling part
+I: Dynamic modeling and experimental validation, /nternational Journal of Heat and Mass Transfer 66 (2013) 911-921.
+
+[7] E. Torrella, J. A. Larumbe, R. Cabello, R. Llopis, D. Sanchez, A general methodology for energy com- parison of
+intermediate con gurations in two-stage vapour compression refrigeration systems, Energy 36 (7) (2011) 4119-4124.
+
+[8] J. B. Jensen, S. Skogestad, Optimal operation of simple refrigeration cycles part I: Degrees of freedom and optimality of
+sub-cooling, Computers and Chemical Engineering 31 (5-6) (2007) 712-721.
+
+[9] C. Aprea, M. Ascani, F. d. Rossi, A criterion for predicting the possible advantage of adopting a suction/liquid heat
+exchanger in refrigerating system, Applied Thermal Engineering 19 (4) (1999) 329-336.
+
+[10] M. Alzoubi, Development of a high-performance compact refrigeration cooling prototype, Master thesis, Masdar Institute
+of Science and Technology (2014).
+
+[11] M. Alzoubi, G. Li, T. J. Zhang, First-principle dynamic modeling of a linear micro-compressor, /nternational Mechanical
+Engineering Congress and Exposition 6B (2013) 12-17, IMECE 2013 — San Diego.
+
+Biography
+Dr. TieJun Zhang has been an assistant professor of Mechanical and Materials Engineering at the
+
+Masdar Institute of Science and Technology in UAE since 2011. He was a visiting faculty member at the
+Massachusetts Institute of Technology. He was also a postdoctoral research associate at the Rensselaer
+Polytechnic Institute, USA.
+
+
+----$$$$----$$$$----
